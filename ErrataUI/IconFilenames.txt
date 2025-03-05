@@ -1,0 +1,87 @@
+﻿
+
+DESCRIPTION					ID
+File Stack/New				0376
+Settings/Gear Hollow		1059
+Refresh, Thicker			1217
+Refresh						1220
+Toggle Oval, Off			1240
+Toggle Oval, On				1241
+Metro Tiles					1321
+
+Checkbox, Empty				0174
+Checkbox, Checked			0175
+Checkbox, Fill				0179
+
+Lock, Closed				0647
+
+Magnify Glass, Plus			1374
+Magnify Glass, Minus		1376
+Magnify Glass, Empty		1377
+
+
+Radiobutton Toggle			0956,0957
+
+Numbers						0317~0330
+
+
+File, Refresh				0414
+File, Lock					0415
+File, Question				0416
+File, Plus					0417
+
+File, Open					0811
+
+Document, New				0282
+Graph						0316
+Tools, Math/Engineer		0302
+
+Settings					0407
+
+Hamburger Icon				0485
+
+Home (Filled)				0542
+Home (Outline)				0543
+
+Add, Plus, Square			0425, 0426
+Circle X, No				0412
+Circle !, Exclaim			0413
+Circle Plus					0018
+Circle Minus				0101
+X Icon						0411
+
+DataGrid					0834
+Save						1036
+Save As						1035
+
+Circuit						1097
+
+Paint, Color, Palette		0259
+Paint, Color, Palette(Fill)	0258
+
+Nodes, Circular, Connected	0579
+Warning Triangle			1334
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

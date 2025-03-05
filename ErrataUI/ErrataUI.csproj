@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+	  <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="FontIcons\white.32\white.32.000000.jpg" />
+    <None Remove="Fonts\FluentSystemIcons-Filled.ttf" />
+    <None Remove="Fonts\FluentSystemIcons-Light.ttf" />
+    <None Remove="Fonts\FluentSystemIcons-Regular.ttf" />
+    <None Remove="Fonts\FluentSystemIcons-Resizable.ttf" />
+    <None Remove="Fonts\MaterialIcons-Regular.ttf" />
+    <None Remove="Resources\woodgrain_texture_sm.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\FluentSystemIcons-Filled.ttf" />
+    <EmbeddedResource Include="Fonts\FluentSystemIcons-Light.ttf" />
+    <EmbeddedResource Include="Fonts\FluentSystemIcons-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\FluentSystemIcons-Resizable.ttf" />
+    <EmbeddedResource Include="Fonts\MaterialIcons-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="FontIcons\white.32\white.32.000000.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,37 @@
+﻿
+
+In regular 'light mode', _500 is the "main" shade for each color
+
+In dark mode, _750 should be the "main shade"
+
+Invert Lightness: Swap lighter shades for darker ones. For example:
+
+Neutral_100 → Neutral_900
+Primary_200 → Primary_800
+Secondary_300 → Secondary_700
+Semantic_50 → Semantic_950
+Adjust Contrast: Ensure text remains readable by using a high contrast ratio between foreground and background.
+
+Preserve Semantic Meaning: Colors like warnings and success messages should retain their intent while adapting to the darker scheme.
+
+Modify Background & Surface Colors:
+
+Light backgrounds (Neutral_50) should become dark (Neutral_900 or 1000).
+Mid-tone surfaces (Neutral_500) might need slight darkening to fit better.
+
+
+
+key elements
+
+primary_500 for titles, buttons
+	become _700
+
+border nuetral in dark mode needs to stay very dark
+
+KEY CONTROLS
+	-form
+	-button
+	-label
+	-checkbox
+	-slider
+	-groupbox
