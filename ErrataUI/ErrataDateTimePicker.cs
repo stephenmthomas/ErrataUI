@@ -69,6 +69,41 @@ namespace ErrataUI
             }
         }
 
+        private bool _checked = true;
+        [Category("Misc")]
+        public bool Checked
+        {
+            get => _checked;
+            set
+            {
+                _checked = value; 
+                //if (value == false) { this.Value = null; }
+                Invalidate();
+            }
+        }
+
+        private bool _nullable = true;
+        [Category("Misc")]
+        public bool Nullable
+        {
+            get => _nullable;
+            set
+            {
+                _nullable = value; Invalidate();
+            }
+        }
+
+        private float _checkBoxProportion = 0.65F;
+        [Category("Misc")]
+        public float CheckBoxProportion
+        {
+            get => _checkBoxProportion;
+            set
+            {
+                _checkBoxProportion = value; Invalidate();
+            }
+        }
+
         #region BACKGROUNDCOLOR
         //BACKGROUNDCOLOR
         private UIRole _backgroundColorRole = UIRole.MainBackground;
@@ -253,6 +288,12 @@ namespace ErrataUI
             base.OnPaint(e);
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
+
+
+            
+
+
+
             using (Pen borderPen = new Pen(BorderColor, _borderThickness))
             using (SolidBrush textBrush = new SolidBrush(TextColor))
             using (SolidBrush backBrush = new SolidBrush(BackgroundColor))
@@ -263,6 +304,65 @@ namespace ErrataUI
                 string dateString = this.Value.ToString(this.CustomFormat);
                 e.Graphics.DrawString(dateString, Font, textBrush, new PointF(_textShiftX, _textShiftY));
             }
+
+
+            if (Nullable)
+            {
+                // Calculate checkbox dimensions based on control height
+                int checkBoxSize = (int)(this.Height * CheckBoxProportion);
+                int checkBoxX = 5; // Margin from left
+                int checkBoxY = (this.Height - checkBoxSize) / 2;
+                Rectangle checkBoxRect = new Rectangle(checkBoxX, checkBoxY, checkBoxSize, checkBoxSize);
+
+                // Draw checkbox border
+
+                if (Checked)
+                {
+                    using (Pen borderPen = new Pen(this.Focused ? ArrowActiveColor : ArrowInactiveColor, BorderThickness))
+                    {
+                        e.Graphics.DrawRectangle(borderPen, checkBoxRect);
+                    }
+                }
+                else
+                {
+                    using (Pen borderPen = new Pen(BorderColor, BorderThickness))
+                    {
+                        e.Graphics.DrawRectangle(borderPen, checkBoxRect);
+                    }
+                }
+
+
+                // Fill checkbox if checked
+                if (this.Checked)
+                {
+                    int innerCheckSize = checkBoxSize - 4; // Padding inside the checkbox
+                    Rectangle innerCheckRect = new Rectangle(
+                        checkBoxRect.X + 2,
+                        checkBoxRect.Y + 2,
+                        innerCheckSize,
+                        innerCheckSize);
+
+                    using (SolidBrush checkedBrush = new SolidBrush(this.Focused ? ArrowActiveColor : ArrowInactiveColor))
+                    {
+                        e.Graphics.FillRectangle(checkedBrush, innerCheckRect);
+                    }
+                }
+                else
+                {
+                    int innerCheckSize = checkBoxSize - 4; // Padding inside the checkbox
+                    Rectangle innerCheckRect = new Rectangle(
+                        checkBoxRect.X + 2,
+                        checkBoxRect.Y + 2,
+                        innerCheckSize,
+                        innerCheckSize);
+
+                    using (SolidBrush uncheckedBrush = new SolidBrush(BackgroundColor))
+                    {
+                        e.Graphics.FillRectangle(uncheckedBrush, innerCheckRect);
+                    }
+                }
+            }
+
 
             // Create a graphics object and set up drawing parameters
             Graphics g = e.Graphics;
@@ -288,5 +388,28 @@ namespace ErrataUI
                 g.FillPolygon(arrowBrush, arrowPoints);
             }
         }
+
+        protected override void OnMouseDown(MouseEventArgs e)
+        {
+            base.OnMouseDown(e);
+
+            if (Nullable)
+            {
+                // Calculate checkbox dimensions
+                int checkBoxSize = (int)(this.Height * CheckBoxProportion);
+                int checkBoxX = 5; // Margin from left
+                int checkBoxY = (this.Height - checkBoxSize) / 2;
+                Rectangle checkBoxRect = new Rectangle(checkBoxX, checkBoxY, checkBoxSize, checkBoxSize);
+
+                // If the mouse click is within the checkbox area, toggle Checked
+                if (checkBoxRect.Contains(e.Location))
+                {
+                    Checked = !Checked;
+                    Invalidate(); // Redraw control to reflect changes
+                }
+            }
+        }
+
+
     }
 }

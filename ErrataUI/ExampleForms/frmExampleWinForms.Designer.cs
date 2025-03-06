@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExampleWinForms));
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             errataButton1 = new ErrataButton();
             errataButton2 = new ErrataButton();
             errataButton3 = new ErrataButton();
@@ -62,6 +62,7 @@
             errataButtonIcon2 = new ErrataButtonIcon();
             errataButtonIcon1 = new ErrataButtonIcon();
             tpContainers = new TabPage();
+            egpDragExample = new ErrataGroupPanel();
             errataFlatLabel21 = new ErrataFlatLabel();
             errataFlatLabel24 = new ErrataFlatLabel();
             errataFlatLabel23 = new ErrataFlatLabel();
@@ -196,7 +197,10 @@
             errataFlatLabel39 = new ErrataFlatLabel();
             errataPianoKeys2 = new ErrataPianoKeys();
             errataFretboard2 = new ErrataFretboard();
-            egpDragExample = new ErrataGroupPanel();
+            errataDateTimePicker1 = new ErrataDateTimePicker();
+            errataDateTimePicker2 = new ErrataDateTimePicker();
+            errataDateTimePicker3 = new ErrataDateTimePicker();
+            errataFlatLabel46 = new ErrataFlatLabel();
             errataTabControl1.SuspendLayout();
             tpButtons.SuspendLayout();
             tpContainers.SuspendLayout();
@@ -1511,6 +1515,46 @@
             tpContainers.Size = new Size(1114, 582);
             tpContainers.TabIndex = 1;
             tpContainers.Text = "Containers";
+            // 
+            // egpDragExample
+            // 
+            egpDragExample.BackColorRole = ThemeManager.UIRole.MainBackground;
+            egpDragExample.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            egpDragExample.BorderColor = Color.FromArgb(128, 128, 128);
+            egpDragExample.BorderColorRole = ThemeManager.UIRole.GeneralBorders;
+            egpDragExample.BorderColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            egpDragExample.CaptionBarColor = Color.FromArgb(110, 45, 245);
+            egpDragExample.CaptionBarColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            egpDragExample.CaptionBarColorTheme = ThemeManager.ThemeColorShade.Secondary_500;
+            egpDragExample.CaptionLineColor = Color.FromArgb(128, 128, 128);
+            egpDragExample.CaptionLineColorRole = ThemeManager.UIRole.GeneralBorders;
+            egpDragExample.CaptionLineColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            egpDragExample.CaptionLineOffset = -1;
+            egpDragExample.CaptionLineWeight = 1;
+            egpDragExample.ColorCaptionLine = true;
+            egpDragExample.CompleteCaptionLine = true;
+            egpDragExample.GradientAngle = 0F;
+            egpDragExample.GradientColor = Color.FromArgb(76, 193, 253);
+            egpDragExample.GradientColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            egpDragExample.GradientColorTheme = ThemeManager.ThemeColorShade.Primary_300;
+            egpDragExample.GradientFill = true;
+            egpDragExample.GroupBoxBorderWidth = 1;
+            egpDragExample.GroupBoxFont = new Font("Segoe UI Semibold", 8F);
+            egpDragExample.GroupBoxText = "Draggable Box";
+            egpDragExample.GroupBoxTextColor = Color.FromArgb(250, 250, 250);
+            egpDragExample.GroupBoxTextColorRole = ThemeManager.UIRole.PrimaryButtonText;
+            egpDragExample.GroupBoxTextColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            egpDragExample.IgnoreRoles = true;
+            egpDragExample.IgnoreTheme = false;
+            egpDragExample.LeftPadding = 8;
+            egpDragExample.LetterSpacing = -1F;
+            egpDragExample.Location = new Point(474, 180);
+            egpDragExample.Name = "egpDragExample";
+            egpDragExample.Padding = new Padding(0, 26, 0, 0);
+            egpDragExample.ShowCaptionLine = true;
+            egpDragExample.Size = new Size(212, 88);
+            egpDragExample.TabIndex = 279;
+            egpDragExample.TopPadding = 6;
             // 
             // errataFlatLabel21
             // 
@@ -3310,6 +3354,10 @@
             // tpGenerics
             // 
             tpGenerics.BackColor = Color.FromArgb(250, 250, 250);
+            tpGenerics.Controls.Add(errataFlatLabel46);
+            tpGenerics.Controls.Add(errataDateTimePicker3);
+            tpGenerics.Controls.Add(errataDateTimePicker2);
+            tpGenerics.Controls.Add(errataDateTimePicker1);
             tpGenerics.Controls.Add(errataSeparator5);
             tpGenerics.Controls.Add(errataSeparator4);
             tpGenerics.Controls.Add(errataSeparator3);
@@ -3342,7 +3390,7 @@
             errataSeparator5.LineRole = ThemeManager.UIRole.SectionDivider;
             errataSeparator5.LineStack = ErrataSeparator.lineStack.Triple;
             errataSeparator5.LineTheme = ThemeManager.ThemeColorShade.Secondary_800;
-            errataSeparator5.Location = new Point(490, 462);
+            errataSeparator5.Location = new Point(31, 426);
             errataSeparator5.MinimumSize = new Size(1, 1);
             errataSeparator5.Name = "errataSeparator5";
             errataSeparator5.Offset = 2;
@@ -3361,7 +3409,7 @@
             errataSeparator4.LineRole = ThemeManager.UIRole.SectionDivider;
             errataSeparator4.LineStack = ErrataSeparator.lineStack.Single;
             errataSeparator4.LineTheme = ThemeManager.ThemeColorShade.Secondary_500;
-            errataSeparator4.Location = new Point(474, 462);
+            errataSeparator4.Location = new Point(15, 426);
             errataSeparator4.MinimumSize = new Size(1, 1);
             errataSeparator4.Name = "errataSeparator4";
             errataSeparator4.Offset = 2;
@@ -3380,7 +3428,7 @@
             errataSeparator3.LineRole = ThemeManager.UIRole.SectionDivider;
             errataSeparator3.LineStack = ErrataSeparator.lineStack.Double;
             errataSeparator3.LineTheme = ThemeManager.ThemeColorShade.SemanticC_500;
-            errataSeparator3.Location = new Point(57, 507);
+            errataSeparator3.Location = new Point(15, 400);
             errataSeparator3.MinimumSize = new Size(1, 1);
             errataSeparator3.Name = "errataSeparator3";
             errataSeparator3.Offset = 2;
@@ -3398,7 +3446,7 @@
             errataFlatLabel45.IgnoreRoles = false;
             errataFlatLabel45.IgnoreTheme = false;
             errataFlatLabel45.LineAlignment = StringAlignment.Center;
-            errataFlatLabel45.Location = new Point(41, 295);
+            errataFlatLabel45.Location = new Point(14, 207);
             errataFlatLabel45.Name = "errataFlatLabel45";
             errataFlatLabel45.OffsetX = 0;
             errataFlatLabel45.OffsetY = 0;
@@ -3406,7 +3454,7 @@
             errataFlatLabel45.Style = ErrataFlatLabel.TextStyle.Caption;
             errataFlatLabel45.TabIndex = 284;
             errataFlatLabel45.Text = "V. Progress Bar";
-            errataFlatLabel45.TextAlignment = StringAlignment.Center;
+            errataFlatLabel45.TextAlignment = StringAlignment.Near;
             // 
             // errataFlatLabel32
             // 
@@ -3417,7 +3465,7 @@
             errataFlatLabel32.IgnoreRoles = false;
             errataFlatLabel32.IgnoreTheme = false;
             errataFlatLabel32.LineAlignment = StringAlignment.Center;
-            errataFlatLabel32.Location = new Point(220, 29);
+            errataFlatLabel32.Location = new Point(15, 73);
             errataFlatLabel32.Name = "errataFlatLabel32";
             errataFlatLabel32.OffsetX = 0;
             errataFlatLabel32.OffsetY = 0;
@@ -3425,7 +3473,7 @@
             errataFlatLabel32.Style = ErrataFlatLabel.TextStyle.Caption;
             errataFlatLabel32.TabIndex = 283;
             errataFlatLabel32.Text = "Textbox";
-            errataFlatLabel32.TextAlignment = StringAlignment.Center;
+            errataFlatLabel32.TextAlignment = StringAlignment.Near;
             // 
             // errataTextBox1
             // 
@@ -3447,7 +3495,7 @@
             errataTextBox1.ForeColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
             errataTextBox1.IgnoreRoles = true;
             errataTextBox1.IgnoreTheme = false;
-            errataTextBox1.Location = new Point(220, 51);
+            errataTextBox1.Location = new Point(14, 94);
             errataTextBox1.Name = "errataTextBox1";
             errataTextBox1.Size = new Size(227, 34);
             errataTextBox1.TabIndex = 282;
@@ -3462,7 +3510,7 @@
             errataFlatLabel31.IgnoreRoles = false;
             errataFlatLabel31.IgnoreTheme = false;
             errataFlatLabel31.LineAlignment = StringAlignment.Center;
-            errataFlatLabel31.Location = new Point(479, 33);
+            errataFlatLabel31.Location = new Point(540, 11);
             errataFlatLabel31.Name = "errataFlatLabel31";
             errataFlatLabel31.OffsetX = 0;
             errataFlatLabel31.OffsetY = 0;
@@ -3470,15 +3518,15 @@
             errataFlatLabel31.Style = ErrataFlatLabel.TextStyle.Caption;
             errataFlatLabel31.TabIndex = 15;
             errataFlatLabel31.Text = "Data Grid View";
-            errataFlatLabel31.TextAlignment = StringAlignment.Center;
+            errataFlatLabel31.TextAlignment = StringAlignment.Near;
             // 
             // errataDataGridView1
             // 
             errataDataGridView1.AlternateRowColor = Color.FromArgb(147, 147, 147);
             errataDataGridView1.AlternateRowColorRole = ThemeManager.UIRole.HeadingText;
             errataDataGridView1.AlternateRowColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            errataDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            errataDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             errataDataGridView1.AutoGenerateColumns = false;
             errataDataGridView1.BackgroundColor = Color.FromArgb(240, 240, 240);
             errataDataGridView1.BorderStyle = BorderStyle.None;
@@ -3491,21 +3539,21 @@
             errataDataGridView1.CellTextColor = Color.FromArgb(115, 115, 115);
             errataDataGridView1.CellTextColorRole = ThemeManager.UIRole.BodyTextL3;
             errataDataGridView1.CellTextColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(15, 150, 220);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(115, 115, 115);
-            dataGridViewCellStyle2.Padding = new Padding(10, 0, 0, 0);
-            errataDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(15, 150, 220);
+            dataGridViewCellStyle6.ForeColor = Color.FromArgb(115, 115, 115);
+            dataGridViewCellStyle6.Padding = new Padding(10, 0, 0, 0);
+            errataDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             errataDataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             errataDataGridView1.Columns.AddRange(new DataGridViewColumn[] { nORMDISTRNG0DataGridViewTextBoxColumn, uNIFORMRNG1DataGridViewTextBoxColumn, bETADISTRNG2DataGridViewTextBoxColumn, bIRNSAUNRNG3DataGridViewTextBoxColumn, bURRDISTRNG4DataGridViewTextBoxColumn, cAUCHYRNG5DataGridViewTextBoxColumn, cHIDISTRNG6DataGridViewTextBoxColumn, eRLANGRNG7DataGridViewTextBoxColumn, eXPDISTRNG8DataGridViewTextBoxColumn, gUMBELRNG9DataGridViewTextBoxColumn, gAMMADISTRNG10DataGridViewTextBoxColumn, lAPLACERNG11DataGridViewTextBoxColumn, lOGNORMDISTRNG12DataGridViewTextBoxColumn, tDISTRNG13DataGridViewTextBoxColumn, fDISTRNG14DataGridViewTextBoxColumn, tUKEYLAMBRNG15DataGridViewTextBoxColumn, tRIANGDISTRNG16DataGridViewTextBoxColumn, wEIBULLDISTRNG17DataGridViewTextBoxColumn });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(115, 115, 115);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(15, 150, 220);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(147, 147, 147);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            errataDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle7.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle7.ForeColor = Color.FromArgb(115, 115, 115);
+            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(15, 150, 220);
+            dataGridViewCellStyle7.SelectionForeColor = Color.FromArgb(147, 147, 147);
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.False;
+            errataDataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             errataDataGridView1.EnableHeadersVisualStyles = false;
             errataDataGridView1.GridColor = Color.FromArgb(128, 128, 128);
             errataDataGridView1.GridLineColor = Color.FromArgb(128, 128, 128);
@@ -3516,16 +3564,16 @@
             errataDataGridView1.HeaderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
             errataDataGridView1.IgnoreRoles = false;
             errataDataGridView1.IgnoreTheme = false;
-            errataDataGridView1.Location = new Point(479, 55);
+            errataDataGridView1.Location = new Point(540, 33);
             errataDataGridView1.Name = "errataDataGridView1";
             errataDataGridView1.PrimaryColor = Color.FromArgb(15, 150, 220);
             errataDataGridView1.RowHeaderBackColor = Color.FromArgb(128, 128, 128);
             errataDataGridView1.RowHeaderBackColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(128, 128, 128);
-            dataGridViewCellStyle4.ForeColor = Color.FromArgb(115, 115, 115);
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(15, 150, 220);
-            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(147, 147, 147);
-            errataDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.BackColor = Color.FromArgb(128, 128, 128);
+            dataGridViewCellStyle8.ForeColor = Color.FromArgb(115, 115, 115);
+            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(15, 150, 220);
+            dataGridViewCellStyle8.SelectionForeColor = Color.FromArgb(147, 147, 147);
+            errataDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             errataDataGridView1.RowTemplate.Height = 30;
             errataDataGridView1.SecondaryColor = Color.FromArgb(110, 45, 245);
             errataDataGridView1.SecondaryColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
@@ -3657,7 +3705,7 @@
             errataSeparator2.LineRole = ThemeManager.UIRole.SectionDivider;
             errataSeparator2.LineStack = ErrataSeparator.lineStack.Triple;
             errataSeparator2.LineTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataSeparator2.Location = new Point(57, 477);
+            errataSeparator2.Location = new Point(15, 370);
             errataSeparator2.MinimumSize = new Size(1, 1);
             errataSeparator2.Name = "errataSeparator2";
             errataSeparator2.Offset = 2;
@@ -3675,7 +3723,7 @@
             errataFlatLabel28.IgnoreRoles = false;
             errataFlatLabel28.IgnoreTheme = false;
             errataFlatLabel28.LineAlignment = StringAlignment.Center;
-            errataFlatLabel28.Location = new Point(41, 439);
+            errataFlatLabel28.Location = new Point(15, 332);
             errataFlatLabel28.Name = "errataFlatLabel28";
             errataFlatLabel28.OffsetX = 0;
             errataFlatLabel28.OffsetY = 0;
@@ -3683,7 +3731,7 @@
             errataFlatLabel28.Style = ErrataFlatLabel.TextStyle.Caption;
             errataFlatLabel28.TabIndex = 12;
             errataFlatLabel28.Text = "Separators";
-            errataFlatLabel28.TextAlignment = StringAlignment.Center;
+            errataFlatLabel28.TextAlignment = StringAlignment.Near;
             // 
             // errataSeparator1
             // 
@@ -3695,7 +3743,7 @@
             errataSeparator1.LineRole = ThemeManager.UIRole.SectionDivider;
             errataSeparator1.LineStack = ErrataSeparator.lineStack.Single;
             errataSeparator1.LineTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataSeparator1.Location = new Point(57, 461);
+            errataSeparator1.Location = new Point(15, 354);
             errataSeparator1.MinimumSize = new Size(1, 1);
             errataSeparator1.Name = "errataSeparator1";
             errataSeparator1.Offset = 2;
@@ -3714,13 +3762,13 @@
             errataProgressBar2.IgnoreRoles = false;
             errataProgressBar2.IgnoreTheme = false;
             errataProgressBar2.isVertical = true;
-            errataProgressBar2.Location = new Point(166, 200);
+            errataProgressBar2.Location = new Point(138, 207);
             errataProgressBar2.Name = "errataProgressBar2";
             errataProgressBar2.Progress = 45;
             errataProgressBar2.ProgressColor = Color.FromArgb(15, 150, 220);
             errataProgressBar2.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
             errataProgressBar2.ProgressTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataProgressBar2.Size = new Size(10, 216);
+            errataProgressBar2.Size = new Size(10, 88);
             errataProgressBar2.TabIndex = 10;
             errataProgressBar2.Text = "errataProgressBar2";
             // 
@@ -3733,7 +3781,7 @@
             errataFlatLabel27.IgnoreRoles = false;
             errataFlatLabel27.IgnoreTheme = false;
             errataFlatLabel27.LineAlignment = StringAlignment.Center;
-            errataFlatLabel27.Location = new Point(41, 150);
+            errataFlatLabel27.Location = new Point(15, 148);
             errataFlatLabel27.Name = "errataFlatLabel27";
             errataFlatLabel27.OffsetX = 0;
             errataFlatLabel27.OffsetY = 0;
@@ -3741,7 +3789,7 @@
             errataFlatLabel27.Style = ErrataFlatLabel.TextStyle.Caption;
             errataFlatLabel27.TabIndex = 9;
             errataFlatLabel27.Text = "Progress Bar";
-            errataFlatLabel27.TextAlignment = StringAlignment.Center;
+            errataFlatLabel27.TextAlignment = StringAlignment.Near;
             // 
             // errataFlatLabel26
             // 
@@ -3752,7 +3800,7 @@
             errataFlatLabel26.IgnoreRoles = false;
             errataFlatLabel26.IgnoreTheme = false;
             errataFlatLabel26.LineAlignment = StringAlignment.Center;
-            errataFlatLabel26.Location = new Point(41, 33);
+            errataFlatLabel26.Location = new Point(14, 11);
             errataFlatLabel26.Name = "errataFlatLabel26";
             errataFlatLabel26.OffsetX = 0;
             errataFlatLabel26.OffsetY = 0;
@@ -3760,7 +3808,7 @@
             errataFlatLabel26.Style = ErrataFlatLabel.TextStyle.Caption;
             errataFlatLabel26.TabIndex = 8;
             errataFlatLabel26.Text = "Combobox";
-            errataFlatLabel26.TextAlignment = StringAlignment.Center;
+            errataFlatLabel26.TextAlignment = StringAlignment.Near;
             // 
             // errataProgressBar1
             // 
@@ -3772,7 +3820,7 @@
             errataProgressBar1.IgnoreRoles = false;
             errataProgressBar1.IgnoreTheme = false;
             errataProgressBar1.isVertical = false;
-            errataProgressBar1.Location = new Point(41, 172);
+            errataProgressBar1.Location = new Point(15, 170);
             errataProgressBar1.Name = "errataProgressBar1";
             errataProgressBar1.Progress = 45;
             errataProgressBar1.ProgressColor = Color.FromArgb(15, 150, 220);
@@ -3811,7 +3859,7 @@
             errataComboBox1.HighlightTextColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
             errataComboBox1.IgnoreRoles = false;
             errataComboBox1.IgnoreTheme = false;
-            errataComboBox1.Location = new Point(41, 55);
+            errataComboBox1.Location = new Point(14, 33);
             errataComboBox1.Name = "errataComboBox1";
             errataComboBox1.Size = new Size(150, 30);
             errataComboBox1.TabIndex = 0;
@@ -4466,6 +4514,12 @@
             errataFretboard3.Tuning.Add("D");
             errataFretboard3.Tuning.Add("A");
             errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
             errataFretboard3.Tuning.Add("G");
             errataFretboard3.Tuning.Add("D");
             errataFretboard3.Tuning.Add("A");
@@ -4586,6 +4640,12 @@
             errataFretboard1.StringTexture = (Image)resources.GetObject("errataFretboard1.StringTexture");
             errataFretboard1.TabIndex = 277;
             errataFretboard1.Text = "  ";
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
             errataFretboard1.Tuning.Add("E");
             errataFretboard1.Tuning.Add("B");
             errataFretboard1.Tuning.Add("G");
@@ -6151,47 +6211,144 @@
             errataFretboard2.Tuning.Add("D");
             errataFretboard2.Tuning.Add("A");
             errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
             errataFretboard2.WoodTexture = (Image)resources.GetObject("errataFretboard2.WoodTexture");
             // 
-            // egpDragExample
+            // errataDateTimePicker1
             // 
-            egpDragExample.BackColorRole = ThemeManager.UIRole.MainBackground;
-            egpDragExample.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
-            egpDragExample.BorderColor = Color.FromArgb(128, 128, 128);
-            egpDragExample.BorderColorRole = ThemeManager.UIRole.GeneralBorders;
-            egpDragExample.BorderColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
-            egpDragExample.CaptionBarColor = Color.FromArgb(110, 45, 245);
-            egpDragExample.CaptionBarColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
-            egpDragExample.CaptionBarColorTheme = ThemeManager.ThemeColorShade.Secondary_500;
-            egpDragExample.CaptionLineColor = Color.FromArgb(128, 128, 128);
-            egpDragExample.CaptionLineColorRole = ThemeManager.UIRole.GeneralBorders;
-            egpDragExample.CaptionLineColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
-            egpDragExample.CaptionLineOffset = -1;
-            egpDragExample.CaptionLineWeight = 1;
-            egpDragExample.ColorCaptionLine = true;
-            egpDragExample.CompleteCaptionLine = true;
-            egpDragExample.GradientAngle = 0F;
-            egpDragExample.GradientColor = Color.FromArgb(76, 193, 253);
-            egpDragExample.GradientColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
-            egpDragExample.GradientColorTheme = ThemeManager.ThemeColorShade.Primary_300;
-            egpDragExample.GradientFill = true;
-            egpDragExample.GroupBoxBorderWidth = 1;
-            egpDragExample.GroupBoxFont = new Font("Segoe UI Semibold", 8F);
-            egpDragExample.GroupBoxText = "Draggable Box";
-            egpDragExample.GroupBoxTextColor = Color.FromArgb(250, 250, 250);
-            egpDragExample.GroupBoxTextColorRole = ThemeManager.UIRole.PrimaryButtonText;
-            egpDragExample.GroupBoxTextColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
-            egpDragExample.IgnoreRoles = true;
-            egpDragExample.IgnoreTheme = false;
-            egpDragExample.LeftPadding = 8;
-            egpDragExample.LetterSpacing = -1F;
-            egpDragExample.Location = new Point(474, 180);
-            egpDragExample.Name = "egpDragExample";
-            egpDragExample.Padding = new Padding(0, 26, 0, 0);
-            egpDragExample.ShowCaptionLine = true;
-            egpDragExample.Size = new Size(212, 88);
-            egpDragExample.TabIndex = 279;
-            egpDragExample.TopPadding = 6;
+            errataDateTimePicker1.ArrowActiveColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker1.ArrowActiveColorRole = ThemeManager.UIRole.AccentColor;
+            errataDateTimePicker1.ArrowActiveColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker1.ArrowInactiveColor = Color.FromArgb(140, 140, 140);
+            errataDateTimePicker1.ArrowInactiveColorRole = ThemeManager.UIRole.DisabledText;
+            errataDateTimePicker1.ArrowInactiveColorTheme = ThemeManager.ThemeColorShade.Neutral_400;
+            errataDateTimePicker1.BackColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker1.BackgroundColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker1.BackgroundColorRole = ThemeManager.UIRole.MainBackground;
+            errataDateTimePicker1.BackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataDateTimePicker1.BorderColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker1.BorderColorRole = ThemeManager.UIRole.MenuBar;
+            errataDateTimePicker1.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker1.BorderThickness = 1;
+            errataDateTimePicker1.CheckBoxProportion = 0.65F;
+            errataDateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm";
+            errataDateTimePicker1.Font = new Font("Segoe UI", 10F);
+            errataDateTimePicker1.ForeColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker1.Format = DateTimePickerFormat.Custom;
+            errataDateTimePicker1.HoverColor = Color.FromArgb(128, 128, 128);
+            errataDateTimePicker1.HoverColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker1.HoverColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataDateTimePicker1.IgnoreRoles = false;
+            errataDateTimePicker1.IgnoreTheme = false;
+            errataDateTimePicker1.Location = new Point(292, 64);
+            errataDateTimePicker1.Name = "errataDateTimePicker1";
+            errataDateTimePicker1.Nullable = true;
+            errataDateTimePicker1.Size = new Size(200, 25);
+            errataDateTimePicker1.TabIndex = 288;
+            errataDateTimePicker1.TextColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker1.TextColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker1.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataDateTimePicker1.TextShiftX = 26;
+            errataDateTimePicker1.TextShiftY = 3;
+            // 
+            // errataDateTimePicker2
+            // 
+            errataDateTimePicker2.ArrowActiveColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker2.ArrowActiveColorRole = ThemeManager.UIRole.AccentColor;
+            errataDateTimePicker2.ArrowActiveColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker2.ArrowInactiveColor = Color.FromArgb(140, 140, 140);
+            errataDateTimePicker2.ArrowInactiveColorRole = ThemeManager.UIRole.DisabledText;
+            errataDateTimePicker2.ArrowInactiveColorTheme = ThemeManager.ThemeColorShade.Neutral_400;
+            errataDateTimePicker2.BackColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker2.BackgroundColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker2.BackgroundColorRole = ThemeManager.UIRole.MainBackground;
+            errataDateTimePicker2.BackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataDateTimePicker2.BorderColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker2.BorderColorRole = ThemeManager.UIRole.MenuBar;
+            errataDateTimePicker2.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker2.BorderThickness = 1;
+            errataDateTimePicker2.CheckBoxProportion = 0.65F;
+            errataDateTimePicker2.Checked = false;
+            errataDateTimePicker2.CustomFormat = "yyyy-MM-dd HH:mm";
+            errataDateTimePicker2.Font = new Font("Segoe UI", 10F);
+            errataDateTimePicker2.ForeColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker2.Format = DateTimePickerFormat.Custom;
+            errataDateTimePicker2.HoverColor = Color.FromArgb(128, 128, 128);
+            errataDateTimePicker2.HoverColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker2.HoverColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataDateTimePicker2.IgnoreRoles = false;
+            errataDateTimePicker2.IgnoreTheme = false;
+            errataDateTimePicker2.Location = new Point(292, 33);
+            errataDateTimePicker2.Name = "errataDateTimePicker2";
+            errataDateTimePicker2.Nullable = true;
+            errataDateTimePicker2.Size = new Size(200, 25);
+            errataDateTimePicker2.TabIndex = 289;
+            errataDateTimePicker2.TextColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker2.TextColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker2.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataDateTimePicker2.TextShiftX = 26;
+            errataDateTimePicker2.TextShiftY = 3;
+            // 
+            // errataDateTimePicker3
+            // 
+            errataDateTimePicker3.ArrowActiveColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker3.ArrowActiveColorRole = ThemeManager.UIRole.AccentColor;
+            errataDateTimePicker3.ArrowActiveColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker3.ArrowInactiveColor = Color.FromArgb(140, 140, 140);
+            errataDateTimePicker3.ArrowInactiveColorRole = ThemeManager.UIRole.DisabledText;
+            errataDateTimePicker3.ArrowInactiveColorTheme = ThemeManager.ThemeColorShade.Neutral_400;
+            errataDateTimePicker3.BackColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker3.BackgroundColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker3.BackgroundColorRole = ThemeManager.UIRole.MainBackground;
+            errataDateTimePicker3.BackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataDateTimePicker3.BorderColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker3.BorderColorRole = ThemeManager.UIRole.MenuBar;
+            errataDateTimePicker3.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker3.BorderThickness = 1;
+            errataDateTimePicker3.CheckBoxProportion = 0.65F;
+            errataDateTimePicker3.CustomFormat = "";
+            errataDateTimePicker3.Font = new Font("Segoe UI", 10F);
+            errataDateTimePicker3.ForeColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker3.Format = DateTimePickerFormat.Custom;
+            errataDateTimePicker3.HoverColor = Color.FromArgb(128, 128, 128);
+            errataDateTimePicker3.HoverColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker3.HoverColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataDateTimePicker3.IgnoreRoles = false;
+            errataDateTimePicker3.IgnoreTheme = false;
+            errataDateTimePicker3.Location = new Point(292, 95);
+            errataDateTimePicker3.Name = "errataDateTimePicker3";
+            errataDateTimePicker3.Nullable = false;
+            errataDateTimePicker3.Size = new Size(200, 25);
+            errataDateTimePicker3.TabIndex = 290;
+            errataDateTimePicker3.TextColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker3.TextColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker3.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataDateTimePicker3.TextShiftX = 5;
+            errataDateTimePicker3.TextShiftY = 3;
+            // 
+            // errataFlatLabel46
+            // 
+            errataFlatLabel46.BackColor = Color.Transparent;
+            errataFlatLabel46.Font = new Font("Segoe UI", 10F);
+            errataFlatLabel46.ForeRole = ThemeManager.UIRole.PlaceholderText;
+            errataFlatLabel46.ForeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataFlatLabel46.IgnoreRoles = false;
+            errataFlatLabel46.IgnoreTheme = false;
+            errataFlatLabel46.LineAlignment = StringAlignment.Center;
+            errataFlatLabel46.Location = new Point(292, 11);
+            errataFlatLabel46.Name = "errataFlatLabel46";
+            errataFlatLabel46.OffsetX = 0;
+            errataFlatLabel46.OffsetY = 0;
+            errataFlatLabel46.Size = new Size(107, 19);
+            errataFlatLabel46.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel46.TabIndex = 291;
+            errataFlatLabel46.Text = "Date Time Picker";
+            errataFlatLabel46.TextAlignment = StringAlignment.Near;
             // 
             // frmExampleWinForms
             // 
@@ -6391,5 +6548,9 @@
         private ErrataGraphLine errataGraphLine3;
         private ErrataFretboard errataFretboard3;
         private ErrataGroupPanel egpDragExample;
+        private ErrataFlatLabel errataFlatLabel46;
+        private ErrataDateTimePicker errataDateTimePicker3;
+        private ErrataDateTimePicker errataDateTimePicker2;
+        private ErrataDateTimePicker errataDateTimePicker1;
     }
 }

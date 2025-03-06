@@ -1040,6 +1040,5 @@
         private ToolStripMenuItem wrenchToolStripMenuItem;
         private ToolStripMenuItem screwdriverToolStripMenuItem;
         private ToolStripMenuItem midasTouchToolStripMenuItem;
-        private ErrataUI.ErrataDateTimePicker errataDateTimePicker1;
     }
 }
