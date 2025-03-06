@@ -20,7 +20,7 @@ namespace ErrataUI.ExampleForms
 
         private void frmExampleWinForms_Load(object sender, EventArgs e)
         {
-
+            egpDragExample.Draggable(true);
         }
     }
 }

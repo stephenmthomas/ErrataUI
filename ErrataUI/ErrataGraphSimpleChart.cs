@@ -3,12 +3,12 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using ErrataUI;
-using static ErrataUI.ErrataSimpleChart;
+using static ErrataUI.ErrataGraphSimpleChart;
 using static ErrataUI.ThemeManager;
 
 namespace ErrataUI
 {
-    public class ErrataSimpleChart : Control
+    public class ErrataGraphSimpleChart : Control
     {
 
         private bool _ignoreRoles = true;
@@ -338,7 +338,7 @@ namespace ErrataUI
 
         //constructor
 
-        public ErrataSimpleChart()
+        public ErrataGraphSimpleChart()
         {
             ThemeManager.Instance.ThemeChanged += (s, e) => UpdateColor();
             this.DoubleBuffered = true; // Reduce flickering

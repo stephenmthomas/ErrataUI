@@ -32,7 +32,6 @@
             btnFocusButtons = new ErrataUI.ErrataButton();
             errataGroupPanelShadow1 = new ErrataUI.ErrataGroupPanelShadow();
             btnThemeMgr = new ErrataUI.ErrataButton();
-            errataGroupPanelShadow2 = new ErrataUI.ErrataGroupPanelShadow();
             eDrawer = new ErrataUI.ErrataDrawer();
             errataPanel2 = new ErrataUI.ErrataPanel();
             errataSeparator2 = new ErrataUI.ErrataSeparator();
@@ -47,11 +46,24 @@
             errataButton13 = new ErrataUI.ErrataButton();
             errataButton12 = new ErrataUI.ErrataButton();
             btnDrawerToggle = new ErrataUI.ErrataButton();
-
+            errataFlatMenuStrip1 = new ErrataUI.ErrataFlatMenuStrip();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            openToolStripMenuItem = new ToolStripMenuItem();
+            saveToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripSeparator();
+            closeToolStripMenuItem = new ToolStripMenuItem();
+            editToolStripMenuItem = new ToolStripMenuItem();
+            copyToolStripMenuItem = new ToolStripMenuItem();
+            pasteToolStripMenuItem = new ToolStripMenuItem();
+            panicToolStripMenuItem = new ToolStripMenuItem();
+            toolsToolStripMenuItem = new ToolStripMenuItem();
+            wrenchToolStripMenuItem = new ToolStripMenuItem();
+            screwdriverToolStripMenuItem = new ToolStripMenuItem();
+            midasTouchToolStripMenuItem = new ToolStripMenuItem();
             errataGroupPanelShadow1.SuspendLayout();
             eDrawer.SuspendLayout();
-
-
+            errataPanel2.SuspendLayout();
+            errataFlatMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // btnFocusButtons
@@ -65,30 +77,32 @@
             btnFocusButtons.BorderSize = 0;
             btnFocusButtons.BorderTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_500;
             btnFocusButtons.FlatAppearance.BorderSize = 0;
-            btnFocusButtons.FlatAppearance.MouseDownBackColor = Color.FromArgb(15, 150, 220);
-            btnFocusButtons.FlatAppearance.MouseOverBackColor = Color.FromArgb(15, 150, 220);
+            btnFocusButtons.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 109, 165);
+            btnFocusButtons.FlatAppearance.MouseOverBackColor = Color.FromArgb(76, 193, 253);
             btnFocusButtons.FlatStyle = FlatStyle.Flat;
             btnFocusButtons.Font = new Font("Segoe UI Semibold", 10F);
             btnFocusButtons.ForeColor = Color.FromArgb(250, 250, 250);
             btnFocusButtons.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             btnFocusButtons.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             btnFocusButtons.GradientAngle = 0F;
-            btnFocusButtons.GradientColor = Color.Gainsboro;
+            btnFocusButtons.GradientColor = Color.FromArgb(0, 109, 165);
+            btnFocusButtons.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            btnFocusButtons.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             btnFocusButtons.GradientFill = false;
             btnFocusButtons.IgnoreMouseBackColor = false;
             btnFocusButtons.IgnoreMouseForeColor = true;
             btnFocusButtons.IgnoreRoles = false;
             btnFocusButtons.IgnoreTheme = false;
             btnFocusButtons.Location = new Point(37, 64);
-            btnFocusButtons.MouseDownBackColor = Color.FromArgb(15, 150, 220);
+            btnFocusButtons.MouseDownBackColor = Color.FromArgb(0, 109, 165);
             btnFocusButtons.MouseDownBackColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonBackground;
-            btnFocusButtons.MouseDownBackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_500;
+            btnFocusButtons.MouseDownBackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             btnFocusButtons.MouseDownForeColor = Color.FromArgb(186, 186, 186);
             btnFocusButtons.MouseDownForeRole = ErrataUI.ThemeManager.UIRole.BodyTextL1;
             btnFocusButtons.MouseDownForeTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_200;
-            btnFocusButtons.MouseOverBackColor = Color.FromArgb(15, 150, 220);
+            btnFocusButtons.MouseOverBackColor = Color.FromArgb(76, 193, 253);
             btnFocusButtons.MouseOverBackColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonBackground;
-            btnFocusButtons.MouseOverBackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_500;
+            btnFocusButtons.MouseOverBackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_300;
             btnFocusButtons.MouseOverForeColor = Color.FromArgb(140, 140, 140);
             btnFocusButtons.MouseOverForeRole = ErrataUI.ThemeManager.UIRole.BodyTextL1;
             btnFocusButtons.MouseOverForeTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_400;
@@ -96,18 +110,19 @@
             btnFocusButtons.Selectable = true;
             btnFocusButtons.Size = new Size(155, 35);
             btnFocusButtons.TabIndex = 5;
-            btnFocusButtons.Text = "Buttons (Primary)";
+            btnFocusButtons.Text = "Control Gallery";
             btnFocusButtons.Type = ErrataUI.ErrataButton.ButtonType.None;
             btnFocusButtons.UseVisualStyleBackColor = false;
+            btnFocusButtons.Click += btnFocusButtons_Click;
             // 
             // errataGroupPanelShadow1
             // 
             errataGroupPanelShadow1.BackColorRole = ErrataUI.ThemeManager.UIRole.MainBackground;
-            errataGroupPanelShadow1.BackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
+            errataGroupPanelShadow1.BackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_50;
             errataGroupPanelShadow1.BorderColor = Color.FromArgb(128, 128, 128);
             errataGroupPanelShadow1.BorderColorRole = ErrataUI.ThemeManager.UIRole.GeneralBorders;
             errataGroupPanelShadow1.BorderColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_500;
-            errataGroupPanelShadow1.Buffer = 15;
+            errataGroupPanelShadow1.Buffer = 0;
             errataGroupPanelShadow1.CaptionBarColor = Color.FromArgb(15, 150, 220);
             errataGroupPanelShadow1.CaptionBarColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonBackground;
             errataGroupPanelShadow1.CaptionBarColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_500;
@@ -136,20 +151,20 @@
             errataGroupPanelShadow1.IgnoreTheme = false;
             errataGroupPanelShadow1.LeftPadding = 8;
             errataGroupPanelShadow1.LetterSpacing = -3.5F;
-            errataGroupPanelShadow1.Location = new Point(473, 37);
+            errataGroupPanelShadow1.Location = new Point(304, 90);
             errataGroupPanelShadow1.Margin = new Padding(0);
             errataGroupPanelShadow1.Name = "errataGroupPanelShadow1";
-            errataGroupPanelShadow1.Padding = new Padding(22, 28, 22, 22);
+            errataGroupPanelShadow1.Padding = new Padding(7, 13, 7, 7);
             errataGroupPanelShadow1.ShadowColor = Color.FromArgb(60, 0, 0, 0);
             errataGroupPanelShadow1.ShadowDepth = 6;
             errataGroupPanelShadow1.ShadowFocus = 0.94F;
             errataGroupPanelShadow1.ShowCaptionLine = true;
-            errataGroupPanelShadow1.Size = new Size(408, 394);
+            errataGroupPanelShadow1.Size = new Size(232, 185);
             errataGroupPanelShadow1.TabIndex = 6;
             errataGroupPanelShadow1.TopPadding = 6;
-            errataGroupPanelShadow1.UnderColor = Color.FromArgb(186, 186, 186);
+            errataGroupPanelShadow1.UnderColor = Color.FromArgb(255, 255, 255);
             errataGroupPanelShadow1.UnderColorRole = ErrataUI.ThemeManager.UIRole.MainBackground;
-            errataGroupPanelShadow1.UnderColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_200;
+            errataGroupPanelShadow1.UnderColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_50;
             // 
             // btnThemeMgr
             // 
@@ -162,30 +177,32 @@
             btnThemeMgr.BorderSize = 0;
             btnThemeMgr.BorderTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_500;
             btnThemeMgr.FlatAppearance.BorderSize = 0;
-            btnThemeMgr.FlatAppearance.MouseDownBackColor = Color.FromArgb(15, 150, 220);
-            btnThemeMgr.FlatAppearance.MouseOverBackColor = Color.FromArgb(15, 150, 220);
+            btnThemeMgr.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 109, 165);
+            btnThemeMgr.FlatAppearance.MouseOverBackColor = Color.FromArgb(76, 193, 253);
             btnThemeMgr.FlatStyle = FlatStyle.Flat;
             btnThemeMgr.Font = new Font("Segoe UI Semibold", 10F);
             btnThemeMgr.ForeColor = Color.FromArgb(250, 250, 250);
             btnThemeMgr.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             btnThemeMgr.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             btnThemeMgr.GradientAngle = 0F;
-            btnThemeMgr.GradientColor = Color.Gainsboro;
+            btnThemeMgr.GradientColor = Color.FromArgb(0, 109, 165);
+            btnThemeMgr.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            btnThemeMgr.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             btnThemeMgr.GradientFill = false;
             btnThemeMgr.IgnoreMouseBackColor = false;
             btnThemeMgr.IgnoreMouseForeColor = true;
             btnThemeMgr.IgnoreRoles = false;
             btnThemeMgr.IgnoreTheme = false;
             btnThemeMgr.Location = new Point(37, 105);
-            btnThemeMgr.MouseDownBackColor = Color.FromArgb(15, 150, 220);
+            btnThemeMgr.MouseDownBackColor = Color.FromArgb(0, 109, 165);
             btnThemeMgr.MouseDownBackColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonBackground;
-            btnThemeMgr.MouseDownBackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_500;
+            btnThemeMgr.MouseDownBackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             btnThemeMgr.MouseDownForeColor = Color.FromArgb(186, 186, 186);
             btnThemeMgr.MouseDownForeRole = ErrataUI.ThemeManager.UIRole.BodyTextL1;
             btnThemeMgr.MouseDownForeTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_200;
-            btnThemeMgr.MouseOverBackColor = Color.FromArgb(15, 150, 220);
+            btnThemeMgr.MouseOverBackColor = Color.FromArgb(76, 193, 253);
             btnThemeMgr.MouseOverBackColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonBackground;
-            btnThemeMgr.MouseOverBackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_500;
+            btnThemeMgr.MouseOverBackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_300;
             btnThemeMgr.MouseOverForeColor = Color.FromArgb(140, 140, 140);
             btnThemeMgr.MouseOverForeRole = ErrataUI.ThemeManager.UIRole.BodyTextL1;
             btnThemeMgr.MouseOverForeTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_400;
@@ -197,55 +214,6 @@
             btnThemeMgr.Type = ErrataUI.ErrataButton.ButtonType.None;
             btnThemeMgr.UseVisualStyleBackColor = false;
             btnThemeMgr.Click += btnThemeMgr_Click;
-            // 
-            // errataGroupPanelShadow2
-            // 
-            errataGroupPanelShadow2.BackColorRole = ErrataUI.ThemeManager.UIRole.MainBackground;
-            errataGroupPanelShadow2.BackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
-            errataGroupPanelShadow2.BorderColor = Color.FromArgb(128, 128, 128);
-            errataGroupPanelShadow2.BorderColorRole = ErrataUI.ThemeManager.UIRole.GeneralBorders;
-            errataGroupPanelShadow2.BorderColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_500;
-            errataGroupPanelShadow2.Buffer = 15;
-            errataGroupPanelShadow2.CaptionBarColor = Color.FromArgb(15, 150, 220);
-            errataGroupPanelShadow2.CaptionBarColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonBackground;
-            errataGroupPanelShadow2.CaptionBarColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_500;
-            errataGroupPanelShadow2.CaptionLineColor = Color.FromArgb(128, 128, 128);
-            errataGroupPanelShadow2.CaptionLineColorRole = ErrataUI.ThemeManager.UIRole.GeneralBorders;
-            errataGroupPanelShadow2.CaptionLineColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_500;
-            errataGroupPanelShadow2.CaptionLineOffset = 0;
-            errataGroupPanelShadow2.CaptionLineWeight = 1;
-            errataGroupPanelShadow2.ColorCaptionLine = true;
-            errataGroupPanelShadow2.CompleteCaptionLine = true;
-            errataGroupPanelShadow2.EnableShadow = true;
-            errataGroupPanelShadow2.GradientAngle = 0F;
-            errataGroupPanelShadow2.GradientColor = Color.FromArgb(0, 109, 165);
-            errataGroupPanelShadow2.GradientColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonBackground;
-            errataGroupPanelShadow2.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
-            errataGroupPanelShadow2.GradientFill = false;
-            errataGroupPanelShadow2.GroupBoxBorderWidth = 1;
-            errataGroupPanelShadow2.GroupBoxFont = new Font("Segoe UI Semibold", 9F);
-            errataGroupPanelShadow2.GroupBoxText = "Control Examples";
-            errataGroupPanelShadow2.GroupBoxTextColor = Color.FromArgb(250, 250, 250);
-            errataGroupPanelShadow2.GroupBoxTextColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
-            errataGroupPanelShadow2.GroupBoxTextColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
-            errataGroupPanelShadow2.IgnoreRoles = false;
-            errataGroupPanelShadow2.IgnoreTheme = false;
-            errataGroupPanelShadow2.LeftPadding = 8;
-            errataGroupPanelShadow2.LetterSpacing = -3.5F;
-            errataGroupPanelShadow2.Location = new Point(473, 431);
-            errataGroupPanelShadow2.Margin = new Padding(0);
-            errataGroupPanelShadow2.Name = "errataGroupPanelShadow2";
-            errataGroupPanelShadow2.Padding = new Padding(22, 28, 22, 22);
-            errataGroupPanelShadow2.ShadowColor = Color.FromArgb(60, 0, 0, 0);
-            errataGroupPanelShadow2.ShadowDepth = 6;
-            errataGroupPanelShadow2.ShadowFocus = 0.94F;
-            errataGroupPanelShadow2.ShowCaptionLine = true;
-            errataGroupPanelShadow2.Size = new Size(408, 160);
-            errataGroupPanelShadow2.TabIndex = 7;
-            errataGroupPanelShadow2.TopPadding = 6;
-            errataGroupPanelShadow2.UnderColor = Color.FromArgb(186, 186, 186);
-            errataGroupPanelShadow2.UnderColorRole = ErrataUI.ThemeManager.UIRole.MainBackground;
-            errataGroupPanelShadow2.UnderColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_200;
             // 
             // eDrawer
             // 
@@ -368,7 +336,9 @@
             errataButton4.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             errataButton4.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             errataButton4.GradientAngle = 0F;
-            errataButton4.GradientColor = Color.Gainsboro;
+            errataButton4.GradientColor = Color.FromArgb(0, 109, 165);
+            errataButton4.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            errataButton4.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             errataButton4.GradientFill = false;
             errataButton4.IgnoreMouseBackColor = false;
             errataButton4.IgnoreMouseForeColor = true;
@@ -419,7 +389,9 @@
             errataButton3.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             errataButton3.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             errataButton3.GradientAngle = 0F;
-            errataButton3.GradientColor = Color.Gainsboro;
+            errataButton3.GradientColor = Color.FromArgb(0, 109, 165);
+            errataButton3.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            errataButton3.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             errataButton3.GradientFill = false;
             errataButton3.IgnoreMouseBackColor = false;
             errataButton3.IgnoreMouseForeColor = true;
@@ -470,7 +442,9 @@
             errataButton2.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             errataButton2.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             errataButton2.GradientAngle = 0F;
-            errataButton2.GradientColor = Color.Gainsboro;
+            errataButton2.GradientColor = Color.FromArgb(0, 109, 165);
+            errataButton2.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            errataButton2.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             errataButton2.GradientFill = false;
             errataButton2.IgnoreMouseBackColor = false;
             errataButton2.IgnoreMouseForeColor = true;
@@ -521,7 +495,9 @@
             errataButton1.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             errataButton1.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             errataButton1.GradientAngle = 0F;
-            errataButton1.GradientColor = Color.Gainsboro;
+            errataButton1.GradientColor = Color.FromArgb(0, 109, 165);
+            errataButton1.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            errataButton1.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             errataButton1.GradientFill = false;
             errataButton1.IgnoreMouseBackColor = false;
             errataButton1.IgnoreMouseForeColor = true;
@@ -572,7 +548,9 @@
             errataButton18.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             errataButton18.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             errataButton18.GradientAngle = 0F;
-            errataButton18.GradientColor = Color.Gainsboro;
+            errataButton18.GradientColor = Color.FromArgb(0, 109, 165);
+            errataButton18.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            errataButton18.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             errataButton18.GradientFill = false;
             errataButton18.IgnoreMouseBackColor = false;
             errataButton18.IgnoreMouseForeColor = true;
@@ -623,7 +601,9 @@
             errataButton6.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             errataButton6.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             errataButton6.GradientAngle = 0F;
-            errataButton6.GradientColor = Color.Gainsboro;
+            errataButton6.GradientColor = Color.FromArgb(0, 109, 165);
+            errataButton6.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            errataButton6.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             errataButton6.GradientFill = false;
             errataButton6.IgnoreMouseBackColor = false;
             errataButton6.IgnoreMouseForeColor = true;
@@ -675,7 +655,9 @@
             errataButton14.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             errataButton14.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             errataButton14.GradientAngle = 0F;
-            errataButton14.GradientColor = Color.Gainsboro;
+            errataButton14.GradientColor = Color.FromArgb(0, 109, 165);
+            errataButton14.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            errataButton14.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             errataButton14.GradientFill = false;
             errataButton14.IgnoreMouseBackColor = false;
             errataButton14.IgnoreMouseForeColor = true;
@@ -726,7 +708,9 @@
             errataButton13.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             errataButton13.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             errataButton13.GradientAngle = 0F;
-            errataButton13.GradientColor = Color.Gainsboro;
+            errataButton13.GradientColor = Color.FromArgb(0, 109, 165);
+            errataButton13.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            errataButton13.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             errataButton13.GradientFill = false;
             errataButton13.IgnoreMouseBackColor = false;
             errataButton13.IgnoreMouseForeColor = true;
@@ -777,7 +761,9 @@
             errataButton12.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             errataButton12.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             errataButton12.GradientAngle = 0F;
-            errataButton12.GradientColor = Color.Gainsboro;
+            errataButton12.GradientColor = Color.FromArgb(0, 109, 165);
+            errataButton12.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            errataButton12.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             errataButton12.GradientFill = false;
             errataButton12.IgnoreMouseBackColor = false;
             errataButton12.IgnoreMouseForeColor = true;
@@ -828,7 +814,9 @@
             btnDrawerToggle.ForeColorRole = ErrataUI.ThemeManager.UIRole.PrimaryButtonText;
             btnDrawerToggle.ForeColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
             btnDrawerToggle.GradientAngle = 0F;
-            btnDrawerToggle.GradientColor = Color.Gainsboro;
+            btnDrawerToggle.GradientColor = Color.FromArgb(0, 109, 165);
+            btnDrawerToggle.GradientColorRole = ErrataUI.ThemeManager.UIRole.TitleBar;
+            btnDrawerToggle.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
             btnDrawerToggle.GradientFill = false;
             btnDrawerToggle.IgnoreMouseBackColor = false;
             btnDrawerToggle.IgnoreMouseForeColor = true;
@@ -859,50 +847,166 @@
             btnDrawerToggle.UseVisualStyleBackColor = false;
             btnDrawerToggle.Click += btnDrawerToggle_Click;
             // 
-            // errataPanel1
+            // errataFlatMenuStrip1
             // 
-
+            errataFlatMenuStrip1.BackColorRole = ErrataUI.ThemeManager.UIRole.MenuBar;
+            errataFlatMenuStrip1.BackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_500;
+            errataFlatMenuStrip1.HeaderColor = Color.FromArgb(0, 72, 110);
+            errataFlatMenuStrip1.HeaderColorRole = ErrataUI.ThemeManager.UIRole.MenuBar;
+            errataFlatMenuStrip1.HeaderColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_800;
+            errataFlatMenuStrip1.HoverBackColor = Color.FromArgb(76, 193, 253);
+            errataFlatMenuStrip1.HoverBackColorRole = ErrataUI.ThemeManager.UIRole.MenuBar;
+            errataFlatMenuStrip1.HoverBackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_300;
+            errataFlatMenuStrip1.HoverTextColor = Color.FromArgb(128, 128, 128);
+            errataFlatMenuStrip1.HoverTextColorRole = ErrataUI.ThemeManager.UIRole.TitleBarText;
+            errataFlatMenuStrip1.HoverTextColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_500;
+            errataFlatMenuStrip1.IgnoreRoles = true;
+            errataFlatMenuStrip1.IgnoreTheme = false;
+            errataFlatMenuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, editToolStripMenuItem, toolsToolStripMenuItem });
+            errataFlatMenuStrip1.Location = new Point(51, 30);
+            errataFlatMenuStrip1.Name = "errataFlatMenuStrip1";
+            errataFlatMenuStrip1.SelectedBackColor = Color.FromArgb(0, 109, 165);
+            errataFlatMenuStrip1.SelectedBackColorRole = ErrataUI.ThemeManager.UIRole.MenuBar;
+            errataFlatMenuStrip1.SelectedBackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_700;
+            errataFlatMenuStrip1.SelectedTextColor = Color.FromArgb(147, 147, 147);
+            errataFlatMenuStrip1.SelectedTextColorRole = ErrataUI.ThemeManager.UIRole.TitleBarText;
+            errataFlatMenuStrip1.SelectedTextColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_300;
+            errataFlatMenuStrip1.SeparatorColor = Color.FromArgb(250, 250, 250);
+            errataFlatMenuStrip1.SeparatorColorRole = ErrataUI.ThemeManager.UIRole.EmphasizedBorders;
+            errataFlatMenuStrip1.SeparatorColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
+            errataFlatMenuStrip1.Size = new Size(501, 24);
+            errataFlatMenuStrip1.TabIndex = 9;
+            errataFlatMenuStrip1.Text = "errataFlatMenuStrip1";
+            errataFlatMenuStrip1.TextColor = Color.FromArgb(212, 212, 212);
+            errataFlatMenuStrip1.TextColorRole = ErrataUI.ThemeManager.UIRole.TitleBarText;
+            errataFlatMenuStrip1.TextColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_150;
             // 
-            // errataSplitContainer1
+            // fileToolStripMenuItem
             // 
-
-
-
-
-
-
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openToolStripMenuItem, saveToolStripMenuItem, toolStripMenuItem1, closeToolStripMenuItem });
+            fileToolStripMenuItem.ForeColor = Color.FromArgb(212, 212, 212);
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new Size(37, 20);
+            fileToolStripMenuItem.Text = "File";
+            // 
+            // openToolStripMenuItem
+            // 
+            openToolStripMenuItem.ForeColor = Color.FromArgb(212, 212, 212);
+            openToolStripMenuItem.Name = "openToolStripMenuItem";
+            openToolStripMenuItem.Size = new Size(103, 22);
+            openToolStripMenuItem.Text = "Open";
+            // 
+            // saveToolStripMenuItem
+            // 
+            saveToolStripMenuItem.ForeColor = Color.FromArgb(212, 212, 212);
+            saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            saveToolStripMenuItem.Size = new Size(103, 22);
+            saveToolStripMenuItem.Text = "Save";
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(100, 6);
+            // 
+            // closeToolStripMenuItem
+            // 
+            closeToolStripMenuItem.ForeColor = Color.FromArgb(212, 212, 212);
+            closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            closeToolStripMenuItem.Size = new Size(103, 22);
+            closeToolStripMenuItem.Text = "Close";
+            // 
+            // editToolStripMenuItem
+            // 
+            editToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { copyToolStripMenuItem, pasteToolStripMenuItem, panicToolStripMenuItem });
+            editToolStripMenuItem.ForeColor = Color.FromArgb(212, 212, 212);
+            editToolStripMenuItem.Name = "editToolStripMenuItem";
+            editToolStripMenuItem.Size = new Size(39, 20);
+            editToolStripMenuItem.Text = "Edit";
+            // 
+            // copyToolStripMenuItem
+            // 
+            copyToolStripMenuItem.ForeColor = Color.FromArgb(96, 96, 96);
+            copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            copyToolStripMenuItem.Size = new Size(103, 22);
+            copyToolStripMenuItem.Text = "Copy";
+            // 
+            // pasteToolStripMenuItem
+            // 
+            pasteToolStripMenuItem.ForeColor = Color.FromArgb(96, 96, 96);
+            pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            pasteToolStripMenuItem.Size = new Size(103, 22);
+            pasteToolStripMenuItem.Text = "Paste";
+            // 
+            // panicToolStripMenuItem
+            // 
+            panicToolStripMenuItem.ForeColor = Color.FromArgb(96, 96, 96);
+            panicToolStripMenuItem.Name = "panicToolStripMenuItem";
+            panicToolStripMenuItem.Size = new Size(103, 22);
+            panicToolStripMenuItem.Text = "Panic";
+            // 
+            // toolsToolStripMenuItem
+            // 
+            toolsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { wrenchToolStripMenuItem, screwdriverToolStripMenuItem, midasTouchToolStripMenuItem });
+            toolsToolStripMenuItem.ForeColor = Color.FromArgb(212, 212, 212);
+            toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            toolsToolStripMenuItem.Size = new Size(46, 20);
+            toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // wrenchToolStripMenuItem
+            // 
+            wrenchToolStripMenuItem.ForeColor = Color.FromArgb(96, 96, 96);
+            wrenchToolStripMenuItem.Name = "wrenchToolStripMenuItem";
+            wrenchToolStripMenuItem.Size = new Size(141, 22);
+            wrenchToolStripMenuItem.Text = "Wrench";
+            // 
+            // screwdriverToolStripMenuItem
+            // 
+            screwdriverToolStripMenuItem.ForeColor = Color.FromArgb(96, 96, 96);
+            screwdriverToolStripMenuItem.Name = "screwdriverToolStripMenuItem";
+            screwdriverToolStripMenuItem.Size = new Size(141, 22);
+            screwdriverToolStripMenuItem.Text = "Screwdriver";
+            // 
+            // midasTouchToolStripMenuItem
+            // 
+            midasTouchToolStripMenuItem.ForeColor = Color.FromArgb(96, 96, 96);
+            midasTouchToolStripMenuItem.Name = "midasTouchToolStripMenuItem";
+            midasTouchToolStripMenuItem.Size = new Size(141, 22);
+            midasTouchToolStripMenuItem.Text = "Midas Touch";
             // 
             // frmTest
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(33, 33, 33);
-            ClientSize = new Size(889, 600);
+            BackColor = Color.FromArgb(255, 255, 255);
+            BackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_50;
+            ClientSize = new Size(553, 600);
+            Controls.Add(errataFlatMenuStrip1);
             Controls.Add(eDrawer);
-            Controls.Add(errataPanel1);
-            Controls.Add(errataGroupPanelShadow2);
             Controls.Add(errataGroupPanelShadow1);
             FormTitle = "Control Examples";
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = errataFlatMenuStrip1;
+            MaximizeBox = false;
             Name = "frmTest";
-            Text = "Control Examples";
+            Text = "asdf";
             TitleBarColor = Color.FromArgb(0, 72, 110);
             TitleBarTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_800;
             Load += frmTest_Load;
             Controls.SetChildIndex(errataGroupPanelShadow1, 0);
-            Controls.SetChildIndex(errataGroupPanelShadow2, 0);
-
             Controls.SetChildIndex(eDrawer, 0);
+            Controls.SetChildIndex(errataFlatMenuStrip1, 0);
             errataGroupPanelShadow1.ResumeLayout(false);
             eDrawer.ResumeLayout(false);
-
-
+            errataPanel2.ResumeLayout(false);
+            errataFlatMenuStrip1.ResumeLayout(false);
+            errataFlatMenuStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
         private ErrataUI.ErrataButton btnFocusButtons;
         private ErrataUI.ErrataGroupPanelShadow errataGroupPanelShadow1;
-        private ErrataUI.ErrataGroupPanelShadow errataGroupPanelShadow2;
         private ErrataUI.ErrataDrawer eDrawer;
         private ErrataUI.ErrataButton btnThemeMgr;
         private ErrataUI.ErrataPanel errataPanel1;
@@ -922,5 +1026,20 @@
         private ErrataUI.ErrataPanel errataPanel3;
         private ErrataUI.ErrataPanel errataPanel5;
         private ErrataUI.ErrataPanel errataPanel6;
+        private ErrataUI.ErrataFlatMenuStrip errataFlatMenuStrip1;
+        private ToolStripMenuItem fileToolStripMenuItem;
+        private ToolStripMenuItem openToolStripMenuItem;
+        private ToolStripMenuItem saveToolStripMenuItem;
+        private ToolStripSeparator toolStripMenuItem1;
+        private ToolStripMenuItem closeToolStripMenuItem;
+        private ToolStripMenuItem editToolStripMenuItem;
+        private ToolStripMenuItem copyToolStripMenuItem;
+        private ToolStripMenuItem pasteToolStripMenuItem;
+        private ToolStripMenuItem panicToolStripMenuItem;
+        private ToolStripMenuItem toolsToolStripMenuItem;
+        private ToolStripMenuItem wrenchToolStripMenuItem;
+        private ToolStripMenuItem screwdriverToolStripMenuItem;
+        private ToolStripMenuItem midasTouchToolStripMenuItem;
+        private ErrataUI.ErrataDateTimePicker errataDateTimePicker1;
     }
 }

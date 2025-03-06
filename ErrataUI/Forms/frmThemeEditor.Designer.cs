@@ -147,9 +147,9 @@ namespace ErrataUI.Forms
             errataFlatLabel1 = new ErrataFlatLabel();
             errataSeparator3 = new ErrataSeparator();
             errataSeparator2 = new ErrataSeparator();
-            escSaturation = new ErrataSimpleChart();
+            escSaturation = new ErrataGraphSimpleChart();
             errataFlatLabel2 = new ErrataFlatLabel();
-            escBrightness = new ErrataSimpleChart();
+            escBrightness = new ErrataGraphSimpleChart();
             errataFlatLabel5 = new ErrataFlatLabel();
             errataFlatLabel6 = new ErrataFlatLabel();
             errataGroupPanel1 = new ErrataGroupPanel();
@@ -1951,7 +1951,7 @@ namespace ErrataUI.Forms
             escSaturation.Size = new Size(315, 75);
             escSaturation.TabIndex = 8;
             escSaturation.Text = "errataSimpleChart2";
-            escSaturation.Type = ErrataSimpleChart.ControlType.Line;
+            escSaturation.Type = ErrataGraphSimpleChart.ControlType.Line;
             escSaturation.VerticalBuffer = 0.05F;
             // 
             // errataFlatLabel2
@@ -2031,7 +2031,7 @@ namespace ErrataUI.Forms
             escBrightness.Size = new Size(311, 75);
             escBrightness.TabIndex = 4;
             escBrightness.Text = "errataSimpleChart1";
-            escBrightness.Type = ErrataSimpleChart.ControlType.Line;
+            escBrightness.Type = ErrataGraphSimpleChart.ControlType.Line;
             escBrightness.VerticalBuffer = 0.05F;
             // 
             // errataFlatLabel5
@@ -2539,10 +2539,10 @@ namespace ErrataUI.Forms
         private ThemeManagerPictureBox themeManagerPictureBox11;
         private ThemeManagerPictureBox themeManagerPictureBox12;
         private Label label19;
-        private ErrataSimpleChart escBrightness;
+        private ErrataGraphSimpleChart escBrightness;
         private ErrataFlatLabel errataFlatLabel1;
         private ErrataFlatLabel errataFlatLabel2;
-        private ErrataSimpleChart escSaturation;
+        private ErrataGraphSimpleChart escSaturation;
         private ErrataSeparator errataSeparator2;
         private ErrataFlatLabel errataFlatLabel3;
         private ErrataSeparator errataSeparator3;

@@ -16,14 +16,12 @@ namespace ErrataUITestComponents
 
         private void frmTest_Load(object sender, EventArgs e)
         {
-            var _form = new ErrataUI.Forms.frmThemeEditor();
-            _form.Show();
 
-            var _form2 = new ErrataUI.ExampleForms.frmExampleWinForms();
-            _form2.Show();
 
-            var _form3 = new ErrataUI.ExampleForms.frmExample_ButtonsFocus();
-            _form3.Show();
+
+
+            //var _form3 = new ErrataUI.ExampleForms.frmExample_ButtonsFocus();
+            //_form3.Show();
         }
 
         private void btnThemeMgr_Click(object sender, EventArgs e)
@@ -36,7 +34,7 @@ namespace ErrataUITestComponents
         {
             eDrawer.BringToFront();
             eDrawer.Toggle();
-            
+
 
         }
 
@@ -46,6 +44,22 @@ namespace ErrataUITestComponents
         }
 
         private void errataButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFocusButtons_Click(object sender, EventArgs e)
+        {
+            var _form2 = new ErrataUI.ExampleForms.frmExampleWinForms();
+            _form2.Show();
+        }
+
+        private void errataFlatMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }

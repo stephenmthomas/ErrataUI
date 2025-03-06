@@ -5,6 +5,8 @@
     using System.Windows.Forms;
     using System.Drawing;
 
+    //This allows all controls to be draggable. Just set [control_name].Draggable(true);
+
     public static class ControlExtension
     {
         // TKey is control to drag, TValue is a flag used while dragging

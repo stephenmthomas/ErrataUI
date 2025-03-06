@@ -62,13 +62,13 @@
             errataButtonIcon2 = new ErrataButtonIcon();
             errataButtonIcon1 = new ErrataButtonIcon();
             tpContainers = new TabPage();
+            errataFlatLabel21 = new ErrataFlatLabel();
             errataFlatLabel24 = new ErrataFlatLabel();
             errataFlatLabel23 = new ErrataFlatLabel();
             errataGroupPanelShadow1 = new ErrataGroupPanelShadow();
             errataFlatLabel22 = new ErrataFlatLabel();
             errataPanelTransparent1 = new ErrataPanelTransparent();
             errataPanelTranslucent1 = new ErrataPanelTranslucent();
-            errataFlatLabel21 = new ErrataFlatLabel();
             errataPanelArc1 = new ErrataPanelArc();
             errataPanel1 = new ErrataPanel();
             errataTabControl2 = new ErrataTabControl();
@@ -94,6 +94,10 @@
             errataFlatLabel11 = new ErrataFlatLabel();
             errataFlatLabel1 = new ErrataFlatLabel();
             tpToggle = new TabPage();
+            errataToggleSwitch7 = new ErrataToggleSwitch();
+            errataToggleSwitch8 = new ErrataToggleSwitch();
+            errataToggleSwitch6 = new ErrataToggleSwitch();
+            errataToggleSwitch5 = new ErrataToggleSwitch();
             errataCheckBox2 = new ErrataCheckBox();
             errataRadioButton2 = new ErrataRadioButton();
             errataToggleSwitch4 = new ErrataToggleSwitch();
@@ -105,6 +109,9 @@
             errataToggleSwitch1 = new ErrataToggleSwitch();
             errataFlatLabel16 = new ErrataFlatLabel();
             tpSliders = new TabPage();
+            errataRangeBar1 = new ErrataRangeBar();
+            errataTrackBarv2 = new ErrataTrackBarV();
+            errataTrackBar1 = new ErrataTrackBar();
             errataTurnKnob5 = new ErrataTurnKnob();
             errataTurnKnob4 = new ErrataTurnKnob();
             errataTurnKnob3 = new ErrataTurnKnob();
@@ -118,6 +125,9 @@
             errataTurnKnob2 = new ErrataTurnKnob();
             errataTurnKnob1 = new ErrataTurnKnob();
             tpGenerics = new TabPage();
+            errataSeparator5 = new ErrataSeparator();
+            errataSeparator4 = new ErrataSeparator();
+            errataSeparator3 = new ErrataSeparator();
             errataFlatLabel45 = new ErrataFlatLabel();
             errataFlatLabel32 = new ErrataFlatLabel();
             errataTextBox1 = new ErrataTextBox();
@@ -150,6 +160,11 @@
             errataProgressBar1 = new ErrataProgressBar();
             errataComboBox1 = new ErrataComboBox();
             tpCustoms = new TabPage();
+            errataGraphBar3 = new ErrataGraphBar();
+            errataGraphLine3 = new ErrataGraphLine();
+            errataGraphPie3 = new ErrataGraphPie();
+            errataSimpleChart4 = new ErrataGraphSimpleChart();
+            errataSimpleChart3 = new ErrataGraphSimpleChart();
             errataFlatLabel35 = new ErrataFlatLabel();
             errataFlatLabel34 = new ErrataFlatLabel();
             errataFlatLabel33 = new ErrataFlatLabel();
@@ -158,9 +173,10 @@
             errataGraphBar1 = new ErrataGraphBar();
             errataFlatLabel30 = new ErrataFlatLabel();
             errataCustomGrid1 = new ErrataCustomGrid();
-            errataSimpleChart1 = new ErrataSimpleChart();
+            errataSimpleChart1 = new ErrataGraphSimpleChart();
             errataFlatLabel29 = new ErrataFlatLabel();
             tpMusic = new TabPage();
+            errataFretboard3 = new ErrataFretboard();
             errataFlatLabel37 = new ErrataFlatLabel();
             errataFlatLabel36 = new ErrataFlatLabel();
             errataPianoKeys1 = new ErrataPianoKeys();
@@ -168,7 +184,7 @@
             tpOverview = new TabPage();
             errataFlatLabel43 = new ErrataFlatLabel();
             errataCustomGrid2 = new ErrataCustomGrid();
-            errataSimpleChart2 = new ErrataSimpleChart();
+            errataSimpleChart2 = new ErrataGraphSimpleChart();
             errataFlatLabel44 = new ErrataFlatLabel();
             errataFlatLabel40 = new ErrataFlatLabel();
             errataFlatLabel41 = new ErrataFlatLabel();
@@ -180,10 +196,10 @@
             errataFlatLabel39 = new ErrataFlatLabel();
             errataPianoKeys2 = new ErrataPianoKeys();
             errataFretboard2 = new ErrataFretboard();
+            egpDragExample = new ErrataGroupPanel();
             errataTabControl1.SuspendLayout();
             tpButtons.SuspendLayout();
             tpContainers.SuspendLayout();
-            errataPanelTranslucent1.SuspendLayout();
             errataTabControl2.SuspendLayout();
             errataDrawer1.SuspendLayout();
             errataGroupPanel4.SuspendLayout();
@@ -1475,6 +1491,8 @@
             // tpContainers
             // 
             tpContainers.BackColor = Color.FromArgb(250, 250, 250);
+            tpContainers.Controls.Add(egpDragExample);
+            tpContainers.Controls.Add(errataFlatLabel21);
             tpContainers.Controls.Add(errataFlatLabel24);
             tpContainers.Controls.Add(errataFlatLabel23);
             tpContainers.Controls.Add(errataGroupPanelShadow1);
@@ -1493,6 +1511,25 @@
             tpContainers.Size = new Size(1114, 582);
             tpContainers.TabIndex = 1;
             tpContainers.Text = "Containers";
+            // 
+            // errataFlatLabel21
+            // 
+            errataFlatLabel21.BackColor = Color.Transparent;
+            errataFlatLabel21.Font = new Font("Segoe UI", 12F);
+            errataFlatLabel21.ForeRole = ThemeManager.UIRole.PlaceholderText;
+            errataFlatLabel21.ForeTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataFlatLabel21.IgnoreRoles = true;
+            errataFlatLabel21.IgnoreTheme = false;
+            errataFlatLabel21.LineAlignment = StringAlignment.Center;
+            errataFlatLabel21.Location = new Point(632, 354);
+            errataFlatLabel21.Name = "errataFlatLabel21";
+            errataFlatLabel21.OffsetX = 0;
+            errataFlatLabel21.OffsetY = 0;
+            errataFlatLabel21.Size = new Size(144, 32);
+            errataFlatLabel21.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel21.TabIndex = 14;
+            errataFlatLabel21.Text = "Translucent Panel";
+            errataFlatLabel21.TextAlignment = StringAlignment.Center;
             // 
             // errataFlatLabel24
             // 
@@ -1589,7 +1626,7 @@
             errataFlatLabel22.IgnoreRoles = true;
             errataFlatLabel22.IgnoreTheme = false;
             errataFlatLabel22.LineAlignment = StringAlignment.Center;
-            errataFlatLabel22.Location = new Point(681, 320);
+            errataFlatLabel22.Location = new Point(841, 354);
             errataFlatLabel22.Name = "errataFlatLabel22";
             errataFlatLabel22.OffsetX = 0;
             errataFlatLabel22.OffsetY = 0;
@@ -1601,37 +1638,17 @@
             // 
             // errataPanelTransparent1
             // 
-            errataPanelTransparent1.Location = new Point(681, 355);
+            errataPanelTransparent1.Location = new Point(841, 389);
             errataPanelTransparent1.Name = "errataPanelTransparent1";
             errataPanelTransparent1.Size = new Size(248, 180);
             errataPanelTransparent1.TabIndex = 275;
             // 
             // errataPanelTranslucent1
             // 
-            errataPanelTranslucent1.Controls.Add(errataFlatLabel21);
-            errataPanelTranslucent1.Location = new Point(472, 355);
+            errataPanelTranslucent1.Location = new Point(632, 389);
             errataPanelTranslucent1.Name = "errataPanelTranslucent1";
             errataPanelTranslucent1.Size = new Size(203, 180);
             errataPanelTranslucent1.TabIndex = 274;
-            // 
-            // errataFlatLabel21
-            // 
-            errataFlatLabel21.BackColor = Color.Transparent;
-            errataFlatLabel21.Font = new Font("Segoe UI", 12F);
-            errataFlatLabel21.ForeRole = ThemeManager.UIRole.PlaceholderText;
-            errataFlatLabel21.ForeTheme = ThemeManager.ThemeColorShade.Neutral_500;
-            errataFlatLabel21.IgnoreRoles = true;
-            errataFlatLabel21.IgnoreTheme = false;
-            errataFlatLabel21.LineAlignment = StringAlignment.Center;
-            errataFlatLabel21.Location = new Point(3, 18);
-            errataFlatLabel21.Name = "errataFlatLabel21";
-            errataFlatLabel21.OffsetX = 0;
-            errataFlatLabel21.OffsetY = 0;
-            errataFlatLabel21.Size = new Size(144, 32);
-            errataFlatLabel21.Style = ErrataFlatLabel.TextStyle.Body;
-            errataFlatLabel21.TabIndex = 14;
-            errataFlatLabel21.Text = "Translucent Panel";
-            errataFlatLabel21.TextAlignment = StringAlignment.Center;
             // 
             // errataPanelArc1
             // 
@@ -2146,6 +2163,10 @@
             // tpToggle
             // 
             tpToggle.BackColor = Color.FromArgb(250, 250, 250);
+            tpToggle.Controls.Add(errataToggleSwitch7);
+            tpToggle.Controls.Add(errataToggleSwitch8);
+            tpToggle.Controls.Add(errataToggleSwitch6);
+            tpToggle.Controls.Add(errataToggleSwitch5);
             tpToggle.Controls.Add(errataCheckBox2);
             tpToggle.Controls.Add(errataRadioButton2);
             tpToggle.Controls.Add(errataToggleSwitch4);
@@ -2161,6 +2182,218 @@
             tpToggle.Size = new Size(1114, 582);
             tpToggle.TabIndex = 3;
             tpToggle.Text = "Toggles";
+            // 
+            // errataToggleSwitch7
+            // 
+            errataToggleSwitch7.AntiAlias = false;
+            errataToggleSwitch7.BackColor = Color.Transparent;
+            errataToggleSwitch7.CheckedNudge = 1;
+            errataToggleSwitch7.IgnoreRoles = true;
+            errataToggleSwitch7.IgnoreTheme = false;
+            errataToggleSwitch7.IsChecked = true;
+            errataToggleSwitch7.Location = new Point(114, 122);
+            errataToggleSwitch7.Name = "errataToggleSwitch7";
+            errataToggleSwitch7.OffBackColor = Color.FromArgb(186, 186, 186);
+            errataToggleSwitch7.OffBackRole = ThemeManager.UIRole.ModalBackground;
+            errataToggleSwitch7.OffBackTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataToggleSwitch7.OnBackColor = Color.FromArgb(186, 186, 186);
+            errataToggleSwitch7.OnBackRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataToggleSwitch7.OnBackTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataToggleSwitch7.PaddingBottomThumb = 0;
+            errataToggleSwitch7.PaddingBottomTrack = 1;
+            errataToggleSwitch7.PaddingDecompensator = 2;
+            errataToggleSwitch7.PaddingLeftThumb = 1;
+            errataToggleSwitch7.PaddingLeftTrack = 1;
+            errataToggleSwitch7.PaddingRightThumb = 0;
+            errataToggleSwitch7.PaddingRightTrack = 1;
+            errataToggleSwitch7.PaddingTopThumb = 1;
+            errataToggleSwitch7.PaddingTopTrack = 1;
+            errataToggleSwitch7.Size = new Size(44, 25);
+            errataToggleSwitch7.SquareSlider = true;
+            errataToggleSwitch7.TabIndex = 269;
+            errataToggleSwitch7.Text = "errataToggleSwitch7";
+            errataToggleSwitch7.ThumbBorderColor = Color.FromArgb(96, 96, 96);
+            errataToggleSwitch7.ThumbBorderRole = ThemeManager.UIRole.GeneralBorders;
+            errataToggleSwitch7.ThumbBorderSize = 2;
+            errataToggleSwitch7.ThumbBorderTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataToggleSwitch7.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataToggleSwitch7.ThumbColorOff = Color.FromArgb(250, 250, 250);
+            errataToggleSwitch7.ThumbColorOffRole = ThemeManager.UIRole.TitleBar;
+            errataToggleSwitch7.ThumbColorOffTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataToggleSwitch7.ThumbColorOn = Color.FromArgb(15, 150, 220);
+            errataToggleSwitch7.ThumbColorOnRole = ThemeManager.UIRole.TitleBar;
+            errataToggleSwitch7.ThumbColorOnTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataToggleSwitch7.ThumbHeightDivisor = 2;
+            errataToggleSwitch7.ThumbHeightRatio = 7;
+            errataToggleSwitch7.ThumbRole = ThemeManager.UIRole.MainBackground;
+            errataToggleSwitch7.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataToggleSwitch7.ThumbWeight = 1;
+            errataToggleSwitch7.TrackBorderColor = Color.FromArgb(115, 115, 115);
+            errataToggleSwitch7.TrackBorderRole = ThemeManager.UIRole.ModalBackground;
+            errataToggleSwitch7.TrackBorderSize = 1;
+            errataToggleSwitch7.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataToggleSwitch7.TrackRadius = 0;
+            errataToggleSwitch7.TrackWeight = 1;
+            errataToggleSwitch7.Type = ErrataToggleSwitch.SwitchType.None;
+            // 
+            // errataToggleSwitch8
+            // 
+            errataToggleSwitch8.AntiAlias = false;
+            errataToggleSwitch8.BackColor = Color.Transparent;
+            errataToggleSwitch8.CheckedNudge = 1;
+            errataToggleSwitch8.IgnoreRoles = true;
+            errataToggleSwitch8.IgnoreTheme = false;
+            errataToggleSwitch8.IsChecked = false;
+            errataToggleSwitch8.Location = new Point(57, 122);
+            errataToggleSwitch8.Name = "errataToggleSwitch8";
+            errataToggleSwitch8.OffBackColor = Color.FromArgb(186, 186, 186);
+            errataToggleSwitch8.OffBackRole = ThemeManager.UIRole.ModalBackground;
+            errataToggleSwitch8.OffBackTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataToggleSwitch8.OnBackColor = Color.FromArgb(186, 186, 186);
+            errataToggleSwitch8.OnBackRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataToggleSwitch8.OnBackTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataToggleSwitch8.PaddingBottomThumb = 0;
+            errataToggleSwitch8.PaddingBottomTrack = 1;
+            errataToggleSwitch8.PaddingDecompensator = 2;
+            errataToggleSwitch8.PaddingLeftThumb = 1;
+            errataToggleSwitch8.PaddingLeftTrack = 1;
+            errataToggleSwitch8.PaddingRightThumb = 0;
+            errataToggleSwitch8.PaddingRightTrack = 1;
+            errataToggleSwitch8.PaddingTopThumb = 1;
+            errataToggleSwitch8.PaddingTopTrack = 1;
+            errataToggleSwitch8.Size = new Size(44, 25);
+            errataToggleSwitch8.SquareSlider = true;
+            errataToggleSwitch8.TabIndex = 268;
+            errataToggleSwitch8.Text = "errataToggleSwitch8";
+            errataToggleSwitch8.ThumbBorderColor = Color.FromArgb(96, 96, 96);
+            errataToggleSwitch8.ThumbBorderRole = ThemeManager.UIRole.GeneralBorders;
+            errataToggleSwitch8.ThumbBorderSize = 2;
+            errataToggleSwitch8.ThumbBorderTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataToggleSwitch8.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataToggleSwitch8.ThumbColorOff = Color.FromArgb(250, 250, 250);
+            errataToggleSwitch8.ThumbColorOffRole = ThemeManager.UIRole.TitleBar;
+            errataToggleSwitch8.ThumbColorOffTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataToggleSwitch8.ThumbColorOn = Color.FromArgb(15, 150, 220);
+            errataToggleSwitch8.ThumbColorOnRole = ThemeManager.UIRole.TitleBar;
+            errataToggleSwitch8.ThumbColorOnTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataToggleSwitch8.ThumbHeightDivisor = 2;
+            errataToggleSwitch8.ThumbHeightRatio = 7;
+            errataToggleSwitch8.ThumbRole = ThemeManager.UIRole.MainBackground;
+            errataToggleSwitch8.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataToggleSwitch8.ThumbWeight = 1;
+            errataToggleSwitch8.TrackBorderColor = Color.FromArgb(115, 115, 115);
+            errataToggleSwitch8.TrackBorderRole = ThemeManager.UIRole.ModalBackground;
+            errataToggleSwitch8.TrackBorderSize = 1;
+            errataToggleSwitch8.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataToggleSwitch8.TrackRadius = 0;
+            errataToggleSwitch8.TrackWeight = 1;
+            errataToggleSwitch8.Type = ErrataToggleSwitch.SwitchType.None;
+            // 
+            // errataToggleSwitch6
+            // 
+            errataToggleSwitch6.AntiAlias = true;
+            errataToggleSwitch6.BackColor = Color.Transparent;
+            errataToggleSwitch6.CheckedNudge = 4;
+            errataToggleSwitch6.IgnoreRoles = true;
+            errataToggleSwitch6.IgnoreTheme = false;
+            errataToggleSwitch6.IsChecked = true;
+            errataToggleSwitch6.Location = new Point(114, 91);
+            errataToggleSwitch6.Name = "errataToggleSwitch6";
+            errataToggleSwitch6.OffBackColor = Color.FromArgb(186, 186, 186);
+            errataToggleSwitch6.OffBackRole = ThemeManager.UIRole.ModalBackground;
+            errataToggleSwitch6.OffBackTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataToggleSwitch6.OnBackColor = Color.FromArgb(186, 186, 186);
+            errataToggleSwitch6.OnBackRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataToggleSwitch6.OnBackTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataToggleSwitch6.PaddingBottomThumb = 0;
+            errataToggleSwitch6.PaddingBottomTrack = 8;
+            errataToggleSwitch6.PaddingDecompensator = 2;
+            errataToggleSwitch6.PaddingLeftThumb = 2;
+            errataToggleSwitch6.PaddingLeftTrack = 1;
+            errataToggleSwitch6.PaddingRightThumb = 0;
+            errataToggleSwitch6.PaddingRightTrack = 1;
+            errataToggleSwitch6.PaddingTopThumb = 0;
+            errataToggleSwitch6.PaddingTopTrack = 8;
+            errataToggleSwitch6.Size = new Size(44, 25);
+            errataToggleSwitch6.SquareSlider = false;
+            errataToggleSwitch6.TabIndex = 267;
+            errataToggleSwitch6.Text = "errataToggleSwitch6";
+            errataToggleSwitch6.ThumbBorderColor = Color.FromArgb(96, 96, 96);
+            errataToggleSwitch6.ThumbBorderRole = ThemeManager.UIRole.GeneralBorders;
+            errataToggleSwitch6.ThumbBorderSize = 2;
+            errataToggleSwitch6.ThumbBorderTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataToggleSwitch6.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataToggleSwitch6.ThumbColorOff = Color.FromArgb(250, 250, 250);
+            errataToggleSwitch6.ThumbColorOffRole = ThemeManager.UIRole.TitleBar;
+            errataToggleSwitch6.ThumbColorOffTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataToggleSwitch6.ThumbColorOn = Color.FromArgb(15, 150, 220);
+            errataToggleSwitch6.ThumbColorOnRole = ThemeManager.UIRole.TitleBar;
+            errataToggleSwitch6.ThumbColorOnTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataToggleSwitch6.ThumbHeightDivisor = 2;
+            errataToggleSwitch6.ThumbHeightRatio = 6;
+            errataToggleSwitch6.ThumbRole = ThemeManager.UIRole.MainBackground;
+            errataToggleSwitch6.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataToggleSwitch6.ThumbWeight = 1;
+            errataToggleSwitch6.TrackBorderColor = Color.FromArgb(115, 115, 115);
+            errataToggleSwitch6.TrackBorderRole = ThemeManager.UIRole.ModalBackground;
+            errataToggleSwitch6.TrackBorderSize = 0;
+            errataToggleSwitch6.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataToggleSwitch6.TrackRadius = 10;
+            errataToggleSwitch6.TrackWeight = 1;
+            errataToggleSwitch6.Type = ErrataToggleSwitch.SwitchType.None;
+            // 
+            // errataToggleSwitch5
+            // 
+            errataToggleSwitch5.AntiAlias = true;
+            errataToggleSwitch5.BackColor = Color.Transparent;
+            errataToggleSwitch5.CheckedNudge = 4;
+            errataToggleSwitch5.IgnoreRoles = true;
+            errataToggleSwitch5.IgnoreTheme = false;
+            errataToggleSwitch5.IsChecked = false;
+            errataToggleSwitch5.Location = new Point(57, 91);
+            errataToggleSwitch5.Name = "errataToggleSwitch5";
+            errataToggleSwitch5.OffBackColor = Color.FromArgb(186, 186, 186);
+            errataToggleSwitch5.OffBackRole = ThemeManager.UIRole.ModalBackground;
+            errataToggleSwitch5.OffBackTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataToggleSwitch5.OnBackColor = Color.FromArgb(186, 186, 186);
+            errataToggleSwitch5.OnBackRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataToggleSwitch5.OnBackTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataToggleSwitch5.PaddingBottomThumb = 0;
+            errataToggleSwitch5.PaddingBottomTrack = 8;
+            errataToggleSwitch5.PaddingDecompensator = 2;
+            errataToggleSwitch5.PaddingLeftThumb = 2;
+            errataToggleSwitch5.PaddingLeftTrack = 1;
+            errataToggleSwitch5.PaddingRightThumb = 0;
+            errataToggleSwitch5.PaddingRightTrack = 1;
+            errataToggleSwitch5.PaddingTopThumb = 0;
+            errataToggleSwitch5.PaddingTopTrack = 8;
+            errataToggleSwitch5.Size = new Size(44, 25);
+            errataToggleSwitch5.SquareSlider = false;
+            errataToggleSwitch5.TabIndex = 266;
+            errataToggleSwitch5.Text = "errataToggleSwitch5";
+            errataToggleSwitch5.ThumbBorderColor = Color.FromArgb(96, 96, 96);
+            errataToggleSwitch5.ThumbBorderRole = ThemeManager.UIRole.GeneralBorders;
+            errataToggleSwitch5.ThumbBorderSize = 2;
+            errataToggleSwitch5.ThumbBorderTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataToggleSwitch5.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataToggleSwitch5.ThumbColorOff = Color.FromArgb(250, 250, 250);
+            errataToggleSwitch5.ThumbColorOffRole = ThemeManager.UIRole.TitleBar;
+            errataToggleSwitch5.ThumbColorOffTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataToggleSwitch5.ThumbColorOn = Color.FromArgb(15, 150, 220);
+            errataToggleSwitch5.ThumbColorOnRole = ThemeManager.UIRole.TitleBar;
+            errataToggleSwitch5.ThumbColorOnTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataToggleSwitch5.ThumbHeightDivisor = 2;
+            errataToggleSwitch5.ThumbHeightRatio = 6;
+            errataToggleSwitch5.ThumbRole = ThemeManager.UIRole.MainBackground;
+            errataToggleSwitch5.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataToggleSwitch5.ThumbWeight = 1;
+            errataToggleSwitch5.TrackBorderColor = Color.FromArgb(115, 115, 115);
+            errataToggleSwitch5.TrackBorderRole = ThemeManager.UIRole.ModalBackground;
+            errataToggleSwitch5.TrackBorderSize = 0;
+            errataToggleSwitch5.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataToggleSwitch5.TrackRadius = 10;
+            errataToggleSwitch5.TrackWeight = 1;
+            errataToggleSwitch5.Type = ErrataToggleSwitch.SwitchType.None;
             // 
             // errataCheckBox2
             // 
@@ -2182,7 +2415,7 @@
             errataCheckBox2.ForeTheme = ThemeManager.ThemeColorShade.Neutral_900;
             errataCheckBox2.IgnoreRoles = false;
             errataCheckBox2.IgnoreTheme = false;
-            errataCheckBox2.Location = new Point(31, 261);
+            errataCheckBox2.Location = new Point(31, 390);
             errataCheckBox2.Name = "errataCheckBox2";
             errataCheckBox2.Size = new Size(127, 19);
             errataCheckBox2.TabIndex = 265;
@@ -2212,7 +2445,7 @@
             errataRadioButton2.ForeTheme = ThemeManager.ThemeColorShade.Neutral_900;
             errataRadioButton2.IgnoreRoles = false;
             errataRadioButton2.IgnoreTheme = false;
-            errataRadioButton2.Location = new Point(31, 211);
+            errataRadioButton2.Location = new Point(31, 340);
             errataRadioButton2.Name = "errataRadioButton2";
             errataRadioButton2.Size = new Size(127, 19);
             errataRadioButton2.TabIndex = 264;
@@ -2231,7 +2464,7 @@
             errataToggleSwitch4.IgnoreRoles = true;
             errataToggleSwitch4.IgnoreTheme = false;
             errataToggleSwitch4.IsChecked = false;
-            errataToggleSwitch4.Location = new Point(57, 145);
+            errataToggleSwitch4.Location = new Point(57, 245);
             errataToggleSwitch4.Name = "errataToggleSwitch4";
             errataToggleSwitch4.OffBackColor = Color.FromArgb(255, 255, 255);
             errataToggleSwitch4.OffBackRole = ThemeManager.UIRole.ModalBackground;
@@ -2347,7 +2580,7 @@
             errataCheckBox1.ForeTheme = ThemeManager.ThemeColorShade.Neutral_900;
             errataCheckBox1.IgnoreRoles = false;
             errataCheckBox1.IgnoreTheme = false;
-            errataCheckBox1.Location = new Point(31, 236);
+            errataCheckBox1.Location = new Point(31, 365);
             errataCheckBox1.Name = "errataCheckBox1";
             errataCheckBox1.Size = new Size(127, 19);
             errataCheckBox1.TabIndex = 261;
@@ -2376,7 +2609,7 @@
             errataRadioButton1.ForeTheme = ThemeManager.ThemeColorShade.Neutral_900;
             errataRadioButton1.IgnoreRoles = false;
             errataRadioButton1.IgnoreTheme = false;
-            errataRadioButton1.Location = new Point(31, 186);
+            errataRadioButton1.Location = new Point(31, 315);
             errataRadioButton1.Name = "errataRadioButton1";
             errataRadioButton1.Size = new Size(127, 19);
             errataRadioButton1.TabIndex = 260;
@@ -2403,7 +2636,7 @@
             errataFlatLabel15.Style = ErrataFlatLabel.TextStyle.Body;
             errataFlatLabel15.TabIndex = 259;
             errataFlatLabel15.Text = "Toggleswitch";
-            errataFlatLabel15.TextAlignment = StringAlignment.Far;
+            errataFlatLabel15.TextAlignment = StringAlignment.Near;
             // 
             // errataToggleSwitch2
             // 
@@ -2466,7 +2699,7 @@
             errataToggleSwitch1.IgnoreRoles = true;
             errataToggleSwitch1.IgnoreTheme = false;
             errataToggleSwitch1.IsChecked = true;
-            errataToggleSwitch1.Location = new Point(114, 145);
+            errataToggleSwitch1.Location = new Point(87, 245);
             errataToggleSwitch1.Name = "errataToggleSwitch1";
             errataToggleSwitch1.OffBackColor = Color.FromArgb(255, 255, 255);
             errataToggleSwitch1.OffBackRole = ThemeManager.UIRole.ModalBackground;
@@ -2520,7 +2753,7 @@
             errataFlatLabel16.IgnoreRoles = true;
             errataFlatLabel16.IgnoreTheme = false;
             errataFlatLabel16.LineAlignment = StringAlignment.Center;
-            errataFlatLabel16.Location = new Point(31, 119);
+            errataFlatLabel16.Location = new Point(31, 201);
             errataFlatLabel16.Name = "errataFlatLabel16";
             errataFlatLabel16.OffsetX = 0;
             errataFlatLabel16.OffsetY = 0;
@@ -2529,11 +2762,14 @@
             errataFlatLabel16.TabIndex = 257;
             errataFlatLabel16.Text = "Togglebox";
             errataFlatLabel16.TextAlign = ContentAlignment.TopRight;
-            errataFlatLabel16.TextAlignment = StringAlignment.Center;
+            errataFlatLabel16.TextAlignment = StringAlignment.Near;
             // 
             // tpSliders
             // 
             tpSliders.BackColor = Color.FromArgb(250, 250, 250);
+            tpSliders.Controls.Add(errataRangeBar1);
+            tpSliders.Controls.Add(errataTrackBarv2);
+            tpSliders.Controls.Add(errataTrackBar1);
             tpSliders.Controls.Add(errataTurnKnob5);
             tpSliders.Controls.Add(errataTurnKnob4);
             tpSliders.Controls.Add(errataTurnKnob3);
@@ -2551,6 +2787,95 @@
             tpSliders.Size = new Size(1114, 582);
             tpSliders.TabIndex = 4;
             tpSliders.Text = "Sliders";
+            // 
+            // errataRangeBar1
+            // 
+            errataRangeBar1.BorderColor = Color.FromArgb(0, 109, 165);
+            errataRangeBar1.BorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataRangeBar1.BorderTheme = ThemeManager.ThemeColorShade.Primary_700;
+            errataRangeBar1.BorderWidth = 2;
+            errataRangeBar1.CirclularThumb = false;
+            errataRangeBar1.IgnoreRoles = true;
+            errataRangeBar1.IgnoreTheme = false;
+            errataRangeBar1.Location = new Point(395, 306);
+            errataRangeBar1.Maximum = 17;
+            errataRangeBar1.Minimum = 0;
+            errataRangeBar1.Name = "errataRangeBar1";
+            errataRangeBar1.Pinch = 3;
+            errataRangeBar1.ProgressColor = Color.FromArgb(25, 128, 56);
+            errataRangeBar1.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataRangeBar1.ProgressTheme = ThemeManager.ThemeColorShade.SemanticA_500;
+            errataRangeBar1.SelectedMax = 15;
+            errataRangeBar1.SelectedMin = 5;
+            errataRangeBar1.Size = new Size(200, 24);
+            errataRangeBar1.TabIndex = 295;
+            errataRangeBar1.Text = "errataRangeBar1";
+            errataRangeBar1.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataRangeBar1.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataRangeBar1.ThumbSize = 12;
+            errataRangeBar1.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataRangeBar1.TrackColor = Color.FromArgb(128, 128, 128);
+            errataRangeBar1.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
+            errataRangeBar1.TrackSize = 5;
+            errataRangeBar1.TrackTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            // 
+            // errataTrackBarv2
+            // 
+            errataTrackBarv2.BorderColor = Color.FromArgb(3, 96, 31);
+            errataTrackBarv2.BorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv2.BorderTheme = ThemeManager.ThemeColorShade.SemanticA_700;
+            errataTrackBarv2.BorderWidth = 2;
+            errataTrackBarv2.CirclularThumb = false;
+            errataTrackBarv2.IgnoreRoles = false;
+            errataTrackBarv2.IgnoreTheme = false;
+            errataTrackBarv2.Location = new Point(103, 384);
+            errataTrackBarv2.Maximum = 100;
+            errataTrackBarv2.Minimum = 0;
+            errataTrackBarv2.Name = "errataTrackBarv2";
+            errataTrackBarv2.ProgressColor = Color.FromArgb(25, 128, 56);
+            errataTrackBarv2.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataTrackBarv2.ProgressTheme = ThemeManager.ThemeColorShade.SemanticA_500;
+            errataTrackBarv2.Size = new Size(40, 150);
+            errataTrackBarv2.TabIndex = 294;
+            errataTrackBarv2.Text = "errataTrackBarv2";
+            errataTrackBarv2.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataTrackBarv2.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataTrackBarv2.ThumbSize = 15;
+            errataTrackBarv2.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTrackBarv2.TrackColor = Color.FromArgb(128, 128, 128);
+            errataTrackBarv2.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
+            errataTrackBarv2.TrackSize = 5;
+            errataTrackBarv2.TrackTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataTrackBarv2.Value = 50;
+            // 
+            // errataTrackBar1
+            // 
+            errataTrackBar1.BorderColor = Color.FromArgb(62, 4, 184);
+            errataTrackBar1.BorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBar1.BorderTheme = ThemeManager.ThemeColorShade.Secondary_700;
+            errataTrackBar1.BorderWidth = 2;
+            errataTrackBar1.CirclularThumb = false;
+            errataTrackBar1.IgnoreRoles = false;
+            errataTrackBar1.IgnoreTheme = false;
+            errataTrackBar1.Location = new Point(31, 306);
+            errataTrackBar1.Maximum = 100;
+            errataTrackBar1.Minimum = 0;
+            errataTrackBar1.Name = "errataTrackBar1";
+            errataTrackBar1.ProgressColor = Color.FromArgb(110, 45, 245);
+            errataTrackBar1.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataTrackBar1.ProgressTheme = ThemeManager.ThemeColorShade.Secondary_500;
+            errataTrackBar1.Size = new Size(333, 18);
+            errataTrackBar1.TabIndex = 293;
+            errataTrackBar1.Tag = "modTrack";
+            errataTrackBar1.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataTrackBar1.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataTrackBar1.ThumbSize = 12;
+            errataTrackBar1.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTrackBar1.TrackColor = Color.FromArgb(128, 128, 128);
+            errataTrackBar1.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
+            errataTrackBar1.TrackSize = 6;
+            errataTrackBar1.TrackTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataTrackBar1.Value = 60;
             // 
             // errataTurnKnob5
             // 
@@ -2720,7 +3045,7 @@
             errataFlatLabel20.IgnoreRoles = false;
             errataFlatLabel20.IgnoreTheme = false;
             errataFlatLabel20.LineAlignment = StringAlignment.Center;
-            errataFlatLabel20.Location = new Point(111, 333);
+            errataFlatLabel20.Location = new Point(31, 358);
             errataFlatLabel20.Name = "errataFlatLabel20";
             errataFlatLabel20.OffsetX = 0;
             errataFlatLabel20.OffsetY = 0;
@@ -2739,7 +3064,7 @@
             errataTrackBarv1.CirclularThumb = true;
             errataTrackBarv1.IgnoreRoles = false;
             errataTrackBarv1.IgnoreTheme = false;
-            errataTrackBarv1.Location = new Point(137, 359);
+            errataTrackBarv1.Location = new Point(57, 384);
             errataTrackBarv1.Maximum = 100;
             errataTrackBarv1.Minimum = 0;
             errataTrackBarv1.Name = "errataTrackBarv1";
@@ -2768,7 +3093,7 @@
             errataFlatLabel19.IgnoreRoles = false;
             errataFlatLabel19.IgnoreTheme = false;
             errataFlatLabel19.LineAlignment = StringAlignment.Center;
-            errataFlatLabel19.Location = new Point(421, 250);
+            errataFlatLabel19.Location = new Point(395, 250);
             errataFlatLabel19.Name = "errataFlatLabel19";
             errataFlatLabel19.OffsetX = 0;
             errataFlatLabel19.OffsetY = 0;
@@ -2787,7 +3112,7 @@
             erbGtrFret.CirclularThumb = true;
             erbGtrFret.IgnoreRoles = true;
             erbGtrFret.IgnoreTheme = false;
-            erbGtrFret.Location = new Point(421, 276);
+            erbGtrFret.Location = new Point(395, 276);
             erbGtrFret.Maximum = 17;
             erbGtrFret.Minimum = 0;
             erbGtrFret.Name = "erbGtrFret";
@@ -2985,6 +3310,9 @@
             // tpGenerics
             // 
             tpGenerics.BackColor = Color.FromArgb(250, 250, 250);
+            tpGenerics.Controls.Add(errataSeparator5);
+            tpGenerics.Controls.Add(errataSeparator4);
+            tpGenerics.Controls.Add(errataSeparator3);
             tpGenerics.Controls.Add(errataFlatLabel45);
             tpGenerics.Controls.Add(errataFlatLabel32);
             tpGenerics.Controls.Add(errataTextBox1);
@@ -3003,6 +3331,63 @@
             tpGenerics.Size = new Size(1114, 582);
             tpGenerics.TabIndex = 5;
             tpGenerics.Text = "Generics";
+            // 
+            // errataSeparator5
+            // 
+            errataSeparator5.IgnoreRoles = false;
+            errataSeparator5.IgnoreTheme = false;
+            errataSeparator5.isVertical = true;
+            errataSeparator5.LineColor = Color.FromArgb(40, 0, 122);
+            errataSeparator5.linePattern = ErrataSeparator.LinePattern.Solid;
+            errataSeparator5.LineRole = ThemeManager.UIRole.SectionDivider;
+            errataSeparator5.LineStack = ErrataSeparator.lineStack.Triple;
+            errataSeparator5.LineTheme = ThemeManager.ThemeColorShade.Secondary_800;
+            errataSeparator5.Location = new Point(490, 462);
+            errataSeparator5.MinimumSize = new Size(1, 1);
+            errataSeparator5.Name = "errataSeparator5";
+            errataSeparator5.Offset = 2;
+            errataSeparator5.Size = new Size(10, 111);
+            errataSeparator5.TabIndex = 287;
+            errataSeparator5.Text = "errataSeparator5";
+            errataSeparator5.Thickness = 2F;
+            // 
+            // errataSeparator4
+            // 
+            errataSeparator4.IgnoreRoles = false;
+            errataSeparator4.IgnoreTheme = false;
+            errataSeparator4.isVertical = true;
+            errataSeparator4.LineColor = Color.FromArgb(110, 45, 245);
+            errataSeparator4.linePattern = ErrataSeparator.LinePattern.Solid;
+            errataSeparator4.LineRole = ThemeManager.UIRole.SectionDivider;
+            errataSeparator4.LineStack = ErrataSeparator.lineStack.Single;
+            errataSeparator4.LineTheme = ThemeManager.ThemeColorShade.Secondary_500;
+            errataSeparator4.Location = new Point(474, 462);
+            errataSeparator4.MinimumSize = new Size(1, 1);
+            errataSeparator4.Name = "errataSeparator4";
+            errataSeparator4.Offset = 2;
+            errataSeparator4.Size = new Size(10, 111);
+            errataSeparator4.TabIndex = 286;
+            errataSeparator4.Text = "errataSeparator4";
+            errataSeparator4.Thickness = 2F;
+            // 
+            // errataSeparator3
+            // 
+            errataSeparator3.IgnoreRoles = false;
+            errataSeparator3.IgnoreTheme = false;
+            errataSeparator3.isVertical = false;
+            errataSeparator3.LineColor = Color.FromArgb(218, 30, 40);
+            errataSeparator3.linePattern = ErrataSeparator.LinePattern.Dot;
+            errataSeparator3.LineRole = ThemeManager.UIRole.SectionDivider;
+            errataSeparator3.LineStack = ErrataSeparator.lineStack.Double;
+            errataSeparator3.LineTheme = ThemeManager.ThemeColorShade.SemanticC_500;
+            errataSeparator3.Location = new Point(57, 507);
+            errataSeparator3.MinimumSize = new Size(1, 1);
+            errataSeparator3.Name = "errataSeparator3";
+            errataSeparator3.Offset = 2;
+            errataSeparator3.Size = new Size(391, 10);
+            errataSeparator3.TabIndex = 285;
+            errataSeparator3.Text = "errataSeparator3";
+            errataSeparator3.Thickness = 2F;
             // 
             // errataFlatLabel45
             // 
@@ -3272,7 +3657,7 @@
             errataSeparator2.LineRole = ThemeManager.UIRole.SectionDivider;
             errataSeparator2.LineStack = ErrataSeparator.lineStack.Triple;
             errataSeparator2.LineTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataSeparator2.Location = new Point(41, 496);
+            errataSeparator2.Location = new Point(57, 477);
             errataSeparator2.MinimumSize = new Size(1, 1);
             errataSeparator2.Name = "errataSeparator2";
             errataSeparator2.Offset = 2;
@@ -3290,7 +3675,7 @@
             errataFlatLabel28.IgnoreRoles = false;
             errataFlatLabel28.IgnoreTheme = false;
             errataFlatLabel28.LineAlignment = StringAlignment.Center;
-            errataFlatLabel28.Location = new Point(41, 458);
+            errataFlatLabel28.Location = new Point(41, 439);
             errataFlatLabel28.Name = "errataFlatLabel28";
             errataFlatLabel28.OffsetX = 0;
             errataFlatLabel28.OffsetY = 0;
@@ -3310,7 +3695,7 @@
             errataSeparator1.LineRole = ThemeManager.UIRole.SectionDivider;
             errataSeparator1.LineStack = ErrataSeparator.lineStack.Single;
             errataSeparator1.LineTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataSeparator1.Location = new Point(41, 480);
+            errataSeparator1.Location = new Point(57, 461);
             errataSeparator1.MinimumSize = new Size(1, 1);
             errataSeparator1.Name = "errataSeparator1";
             errataSeparator1.Offset = 2;
@@ -3441,6 +3826,11 @@
             // tpCustoms
             // 
             tpCustoms.BackColor = Color.FromArgb(250, 250, 250);
+            tpCustoms.Controls.Add(errataGraphBar3);
+            tpCustoms.Controls.Add(errataGraphLine3);
+            tpCustoms.Controls.Add(errataGraphPie3);
+            tpCustoms.Controls.Add(errataSimpleChart4);
+            tpCustoms.Controls.Add(errataSimpleChart3);
             tpCustoms.Controls.Add(errataFlatLabel35);
             tpCustoms.Controls.Add(errataFlatLabel34);
             tpCustoms.Controls.Add(errataFlatLabel33);
@@ -3456,6 +3846,224 @@
             tpCustoms.Size = new Size(1114, 582);
             tpCustoms.TabIndex = 6;
             tpCustoms.Text = "Customs";
+            // 
+            // errataGraphBar3
+            // 
+            errataGraphBar3.BackColorRole = ThemeManager.UIRole.TitleBar;
+            errataGraphBar3.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataGraphBar3.ColorGradientEnd = Color.FromArgb(218, 30, 40);
+            errataGraphBar3.ColorGradientEndRole = ThemeManager.UIRole.TitleBar;
+            errataGraphBar3.ColorGradientEndTheme = ThemeManager.ThemeColorShade.SemanticC_500;
+            errataGraphBar3.ColorGradientStart = Color.FromArgb(110, 45, 245);
+            errataGraphBar3.ColorGradientStartRole = ThemeManager.UIRole.TitleBar;
+            errataGraphBar3.ColorGradientStartTheme = ThemeManager.ThemeColorShade.Secondary_500;
+            errataGraphBar3.GraphOrientation = ErrataGraphBar.Orientation.Horizontal;
+            errataGraphBar3.GraphStyle = ErrataGraphBar.Style.Material;
+            errataGraphBar3.GridColor = Color.FromArgb(64, 64, 64);
+            errataGraphBar3.GridColorRole = ThemeManager.UIRole.MainBackground;
+            errataGraphBar3.GridColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataGraphBar3.IgnoreRoles = true;
+            errataGraphBar3.IgnoreTheme = false;
+            errataGraphBar3.Location = new Point(856, 191);
+            errataGraphBar3.Name = "errataGraphBar3";
+            errataGraphBar3.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            errataGraphBar3.ScaleMultiplier = 0.75F;
+            errataGraphBar3.ShowGrid = false;
+            errataGraphBar3.Size = new Size(225, 328);
+            errataGraphBar3.Sorting = ErrataGraphBar.SortStyle.Ascending;
+            errataGraphBar3.SplitterColor = Color.FromArgb(96, 96, 96);
+            errataGraphBar3.SplitterColorRole = ThemeManager.UIRole.MainBackground;
+            errataGraphBar3.SplitterColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataGraphBar3.TabIndex = 27;
+            errataGraphBar3.Text = "errataGraphBar3";
+            errataGraphBar3.TextAlignment = ErrataGraphBar.Aligning.Far;
+            errataGraphBar3.TextColor = Color.FromArgb(128, 128, 128);
+            errataGraphBar3.TextColorRole = ThemeManager.UIRole.MainBackground;
+            errataGraphBar3.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataGraphBar3.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            // 
+            // errataGraphLine3
+            // 
+            errataGraphLine3.BackColorRole = ThemeManager.UIRole.TitleBar;
+            errataGraphLine3.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataGraphLine3.BorderColor = Color.FromArgb(250, 250, 250);
+            errataGraphLine3.BorderColorRole = ThemeManager.UIRole.MainBackground;
+            errataGraphLine3.BorderColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataGraphLine3.ColorGradientEnd = Color.FromArgb(241, 194, 27);
+            errataGraphLine3.ColorGradientEndRole = ThemeManager.UIRole.TitleBar;
+            errataGraphLine3.ColorGradientEndTheme = ThemeManager.ThemeColorShade.SemanticB_500;
+            errataGraphLine3.ColorGradientStart = Color.FromArgb(110, 45, 245);
+            errataGraphLine3.ColorGradientStartRole = ThemeManager.UIRole.TitleBar;
+            errataGraphLine3.ColorGradientStartTheme = ThemeManager.ThemeColorShade.Secondary_500;
+            errataGraphLine3.GraphStyle = ErrataGraphLine.Style.Material;
+            errataGraphLine3.GraphTitle = "Errata Line Graph";
+            errataGraphLine3.GraphTitleColor = Color.FromArgb(15, 150, 220);
+            errataGraphLine3.GraphTitleColorRole = ThemeManager.UIRole.MainBackground;
+            errataGraphLine3.GraphTitleColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataGraphLine3.IgnoreRoles = false;
+            errataGraphLine3.IgnoreTheme = false;
+            errataGraphLine3.LineColor = Color.FromArgb(110, 45, 245);
+            errataGraphLine3.LineColorRole = ThemeManager.UIRole.TitleBar;
+            errataGraphLine3.LineColorTheme = ThemeManager.ThemeColorShade.Secondary_500;
+            errataGraphLine3.Location = new Point(561, 191);
+            errataGraphLine3.Name = "errataGraphLine3";
+            errataGraphLine3.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            errataGraphLine3.PointSize = 7;
+            errataGraphLine3.ShowBorder = false;
+            errataGraphLine3.ShowPoints = true;
+            errataGraphLine3.ShowTitle = false;
+            errataGraphLine3.ShowVerticalLines = false;
+            errataGraphLine3.Size = new Size(200, 100);
+            errataGraphLine3.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            errataGraphLine3.TabIndex = 26;
+            errataGraphLine3.Text = "errataGraphLine3";
+            errataGraphLine3.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            errataGraphLine3.TitleAlignment = StringAlignment.Near;
+            errataGraphLine3.VerticalLineColor = Color.FromArgb(110, 45, 245);
+            errataGraphLine3.VerticalLineColorRole = ThemeManager.UIRole.MainBackground;
+            errataGraphLine3.VerticalLineColorTheme = ThemeManager.ThemeColorShade.Secondary_500;
+            // 
+            // errataGraphPie3
+            // 
+            errataGraphPie3.BackColorRole = ThemeManager.UIRole.TitleBar;
+            errataGraphPie3.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataGraphPie3.ColorGradientEnd = Color.FromArgb(218, 30, 40);
+            errataGraphPie3.ColorGradientEndRole = ThemeManager.UIRole.TitleBar;
+            errataGraphPie3.ColorGradientEndTheme = ThemeManager.ThemeColorShade.SemanticC_500;
+            errataGraphPie3.ColorGradientMid = Color.FromArgb(241, 194, 27);
+            errataGraphPie3.ColorGradientMidRole = ThemeManager.UIRole.MainBackground;
+            errataGraphPie3.ColorGradientMidTheme = ThemeManager.ThemeColorShade.SemanticB_500;
+            errataGraphPie3.ColorGradientStart = Color.FromArgb(25, 128, 56);
+            errataGraphPie3.ColorGradientStartRole = ThemeManager.UIRole.TitleBar;
+            errataGraphPie3.ColorGradientStartTheme = ThemeManager.ThemeColorShade.SemanticA_500;
+            errataGraphPie3.Colors = (List<Color>)resources.GetObject("errataGraphPie3.Colors");
+            errataGraphPie3.IgnoreRoles = true;
+            errataGraphPie3.IgnoreTheme = false;
+            errataGraphPie3.Location = new Point(380, 191);
+            errataGraphPie3.Name = "errataGraphPie3";
+            errataGraphPie3.PieInset = 8;
+            errataGraphPie3.Size = new Size(130, 130);
+            errataGraphPie3.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            errataGraphPie3.TabIndex = 25;
+            errataGraphPie3.Text = "errataGraphPie3";
+            // 
+            // errataSimpleChart4
+            // 
+            errataSimpleChart4.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataSimpleChart4.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataSimpleChart4.ChartAreaBorderColor = Color.FromArgb(128, 128, 128);
+            errataSimpleChart4.ChartAreaBorderColorRole = ThemeManager.UIRole.GeneralBorders;
+            errataSimpleChart4.ChartAreaBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataSimpleChart4.ChartAreaBorderWeight = 1;
+            errataSimpleChart4.ChartBackColor = Color.FromArgb(255, 255, 255);
+            errataSimpleChart4.ChartBackColorRole = ThemeManager.UIRole.MainBackground;
+            errataSimpleChart4.ChartBackColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataSimpleChart4.ChartInset = 2;
+            errataSimpleChart4.DataPoints = new double[]
+    {
+    -1.3276955364706313D,
+    -0.93597612495048343D,
+    -0.49938224811093646D,
+    -0.28861781887098292D,
+    0.22033720131360068D,
+    0.49872314230556292D,
+    0.736282945584597D,
+    0.76775666211920557D,
+    0.82834215101181208D,
+    1.1122349511902798D,
+    1.2464231498337508D,
+    1.3009853606232538D
+    };
+            errataSimpleChart4.DataPoints2 = new double[]
+    {
+    -1.2178832879643053D,
+    -1.1884468841044391D,
+    -0.751462137154054D,
+    -0.67064240700830535D,
+    -0.56509389296573942D,
+    -0.45209524121985423D,
+    -0.28012549461761305D,
+    -0.26822248118491077D,
+    -0.043318639807690573D,
+    0.020071036966305078D,
+    0.78469200378588422D,
+    1.08088152930189D
+    };
+            errataSimpleChart4.IgnoreRoles = false;
+            errataSimpleChart4.IgnoreTheme = false;
+            errataSimpleChart4.LineColor = Color.FromArgb(181, 141, 0);
+            errataSimpleChart4.LineColorRole = ThemeManager.UIRole.ChartPrimary;
+            errataSimpleChart4.LineColorTheme = ThemeManager.ThemeColorShade.SemanticB_700;
+            errataSimpleChart4.LineWeight = 2F;
+            errataSimpleChart4.Location = new Point(60, 240);
+            errataSimpleChart4.MarkerColor = Color.FromArgb(218, 30, 40);
+            errataSimpleChart4.MarkerColorRole = ThemeManager.UIRole.ChartSecondary;
+            errataSimpleChart4.MarkerColorTheme = ThemeManager.ThemeColorShade.SemanticC_500;
+            errataSimpleChart4.Name = "errataSimpleChart4";
+            errataSimpleChart4.Size = new Size(304, 81);
+            errataSimpleChart4.TabIndex = 24;
+            errataSimpleChart4.Text = "errataSimpleChart4";
+            errataSimpleChart4.Type = ErrataGraphSimpleChart.ControlType.LineDot;
+            errataSimpleChart4.VerticalBuffer = 0.75F;
+            // 
+            // errataSimpleChart3
+            // 
+            errataSimpleChart3.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataSimpleChart3.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataSimpleChart3.ChartAreaBorderColor = Color.FromArgb(128, 128, 128);
+            errataSimpleChart3.ChartAreaBorderColorRole = ThemeManager.UIRole.GeneralBorders;
+            errataSimpleChart3.ChartAreaBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataSimpleChart3.ChartAreaBorderWeight = 1;
+            errataSimpleChart3.ChartBackColor = Color.FromArgb(212, 212, 212);
+            errataSimpleChart3.ChartBackColorRole = ThemeManager.UIRole.MainBackground;
+            errataSimpleChart3.ChartBackColorTheme = ThemeManager.ThemeColorShade.Neutral_150;
+            errataSimpleChart3.ChartInset = 2;
+            errataSimpleChart3.DataPoints = new double[]
+    {
+    -1.3276955364706313D,
+    -0.93597612495048343D,
+    -0.49938224811093646D,
+    -0.28861781887098292D,
+    0.22033720131360068D,
+    0.49872314230556292D,
+    0.736282945584597D,
+    0.76775666211920557D,
+    0.82834215101181208D,
+    1.1122349511902798D,
+    1.2464231498337508D,
+    1.3009853606232538D
+    };
+            errataSimpleChart3.DataPoints2 = new double[]
+    {
+    -1.2178832879643053D,
+    -1.1884468841044391D,
+    -0.751462137154054D,
+    -0.67064240700830535D,
+    -0.56509389296573942D,
+    -0.45209524121985423D,
+    -0.28012549461761305D,
+    -0.26822248118491077D,
+    -0.043318639807690573D,
+    0.020071036966305078D,
+    0.78469200378588422D,
+    1.08088152930189D
+    };
+            errataSimpleChart3.IgnoreRoles = false;
+            errataSimpleChart3.IgnoreTheme = false;
+            errataSimpleChart3.LineColor = Color.FromArgb(15, 150, 220);
+            errataSimpleChart3.LineColorRole = ThemeManager.UIRole.ChartPrimary;
+            errataSimpleChart3.LineColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataSimpleChart3.LineWeight = 2F;
+            errataSimpleChart3.Location = new Point(60, 153);
+            errataSimpleChart3.MarkerColor = Color.FromArgb(110, 45, 245);
+            errataSimpleChart3.MarkerColorRole = ThemeManager.UIRole.ChartSecondary;
+            errataSimpleChart3.MarkerColorTheme = ThemeManager.ThemeColorShade.Secondary_500;
+            errataSimpleChart3.Name = "errataSimpleChart3";
+            errataSimpleChart3.Size = new Size(304, 81);
+            errataSimpleChart3.TabIndex = 23;
+            errataSimpleChart3.Text = "errataSimpleChart3";
+            errataSimpleChart3.Type = ErrataGraphSimpleChart.ControlType.Dot;
+            errataSimpleChart3.VerticalBuffer = 0.75F;
             // 
             // errataFlatLabel35
             // 
@@ -3474,7 +4082,7 @@
             errataFlatLabel35.Style = ErrataFlatLabel.TextStyle.Caption;
             errataFlatLabel35.TabIndex = 22;
             errataFlatLabel35.Text = "Bar Graph";
-            errataFlatLabel35.TextAlignment = StringAlignment.Center;
+            errataFlatLabel35.TextAlignment = StringAlignment.Near;
             // 
             // errataFlatLabel34
             // 
@@ -3493,7 +4101,7 @@
             errataFlatLabel34.Style = ErrataFlatLabel.TextStyle.Caption;
             errataFlatLabel34.TabIndex = 21;
             errataFlatLabel34.Text = "Line Chart";
-            errataFlatLabel34.TextAlignment = StringAlignment.Center;
+            errataFlatLabel34.TextAlignment = StringAlignment.Near;
             // 
             // errataFlatLabel33
             // 
@@ -3512,7 +4120,7 @@
             errataFlatLabel33.Style = ErrataFlatLabel.TextStyle.Caption;
             errataFlatLabel33.TabIndex = 20;
             errataFlatLabel33.Text = "Pie Chart";
-            errataFlatLabel33.TextAlignment = StringAlignment.Center;
+            errataFlatLabel33.TextAlignment = StringAlignment.Near;
             // 
             // errataGraphPie1
             // 
@@ -3623,7 +4231,7 @@
             errataFlatLabel30.IgnoreRoles = false;
             errataFlatLabel30.IgnoreTheme = false;
             errataFlatLabel30.LineAlignment = StringAlignment.Center;
-            errataFlatLabel30.Location = new Point(60, 225);
+            errataFlatLabel30.Location = new Point(60, 349);
             errataFlatLabel30.Name = "errataFlatLabel30";
             errataFlatLabel30.OffsetX = 0;
             errataFlatLabel30.OffsetY = 0;
@@ -3664,7 +4272,7 @@
             errataCustomGrid1.Font = new Font("Segoe UI Semibold", 10F);
             errataCustomGrid1.IgnoreRoles = true;
             errataCustomGrid1.IgnoreTheme = false;
-            errataCustomGrid1.Location = new Point(60, 247);
+            errataCustomGrid1.Location = new Point(60, 371);
             errataCustomGrid1.Name = "errataCustomGrid1";
             errataCustomGrid1.RootCell = true;
             errataCustomGrid1.RootCellBackColor = Color.FromArgb(0, 36, 55);
@@ -3691,7 +4299,7 @@
             errataCustomGrid1.RowHeaders.Add("8");
             errataCustomGrid1.RowHeaders.Add("9");
             errataCustomGrid1.Rows = 6;
-            errataCustomGrid1.Size = new Size(501, 118);
+            errataCustomGrid1.Size = new Size(433, 134);
             errataCustomGrid1.TabIndex = 15;
             errataCustomGrid1.Text = "errataCustomGrid1";
             // 
@@ -3751,7 +4359,7 @@
             errataSimpleChart1.Size = new Size(304, 81);
             errataSimpleChart1.TabIndex = 14;
             errataSimpleChart1.Text = "errataSimpleChart1";
-            errataSimpleChart1.Type = ErrataSimpleChart.ControlType.Line;
+            errataSimpleChart1.Type = ErrataGraphSimpleChart.ControlType.Line;
             errataSimpleChart1.VerticalBuffer = 0.75F;
             // 
             // errataFlatLabel29
@@ -3771,11 +4379,12 @@
             errataFlatLabel29.Style = ErrataFlatLabel.TextStyle.Caption;
             errataFlatLabel29.TabIndex = 13;
             errataFlatLabel29.Text = "Simple Chart";
-            errataFlatLabel29.TextAlignment = StringAlignment.Center;
+            errataFlatLabel29.TextAlignment = StringAlignment.Near;
             // 
             // tpMusic
             // 
             tpMusic.BackColor = Color.FromArgb(250, 250, 250);
+            tpMusic.Controls.Add(errataFretboard3);
             tpMusic.Controls.Add(errataFlatLabel37);
             tpMusic.Controls.Add(errataFlatLabel36);
             tpMusic.Controls.Add(errataPianoKeys1);
@@ -3785,6 +4394,83 @@
             tpMusic.Size = new Size(1114, 582);
             tpMusic.TabIndex = 7;
             tpMusic.Text = "Music";
+            // 
+            // errataFretboard3
+            // 
+            errataFretboard3.BorderColor = Color.FromArgb(64, 64, 64);
+            errataFretboard3.BorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataFretboard3.BorderColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataFretboard3.BorderWidth = 2;
+            errataFretboard3.ClearDragMarkers = true;
+            errataFretboard3.ForeColorRole = ThemeManager.UIRole.TitleBar;
+            errataFretboard3.ForeColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataFretboard3.FretColor = Color.FromArgb(186, 186, 186);
+            errataFretboard3.FretColorRole = ThemeManager.UIRole.TitleBar;
+            errataFretboard3.FretColorTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataFretboard3.FretInlayAlpha = 75;
+            errataFretboard3.FretInlayColor = Color.FromArgb(15, 150, 220);
+            errataFretboard3.FretInlayColorRole = ThemeManager.UIRole.TitleBar;
+            errataFretboard3.FretInlayColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataFretboard3.FretInlayDiameter = 10;
+            errataFretboard3.FretInlays = true;
+            errataFretboard3.FretTexture = (Image)resources.GetObject("errataFretboard3.FretTexture");
+            errataFretboard3.FretTextureWidth = 3;
+            errataFretboard3.HeadStockColor = Color.FromArgb(64, 64, 64);
+            errataFretboard3.HeadStockColorRole = ThemeManager.UIRole.TitleBar;
+            errataFretboard3.HeadStockColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataFretboard3.HeadTexture = (Image)resources.GetObject("errataFretboard3.HeadTexture");
+            errataFretboard3.IgnoreRoles = true;
+            errataFretboard3.IgnoreTheme = false;
+            errataFretboard3.Location = new Point(19, 383);
+            errataFretboard3.MarkerColor = Color.FromArgb(218, 30, 40);
+            errataFretboard3.MarkerColorRole = ThemeManager.UIRole.TitleBar;
+            errataFretboard3.MarkerColorTheme = ThemeManager.ThemeColorShade.SemanticC_500;
+            errataFretboard3.Name = "errataFretboard3";
+            errataFretboard3.NeckColor = Color.FromArgb(120, 94, 0);
+            errataFretboard3.NeckColorRole = ThemeManager.UIRole.TitleBar;
+            errataFretboard3.NeckColorTheme = ThemeManager.ThemeColorShade.SemanticB_800;
+            errataFretboard3.NumberOfFrets = 13;
+            errataFretboard3.NumberOfStrings = 4;
+            errataFretboard3.Size = new Size(917, 150);
+            errataFretboard3.StringColor = Color.FromArgb(196, 235, 255);
+            errataFretboard3.StringColorRole = ThemeManager.UIRole.TitleBar;
+            errataFretboard3.StringColorTheme = ThemeManager.ThemeColorShade.Primary_100;
+            errataFretboard3.StringGaugeIncrement = 0.4F;
+            errataFretboard3.StringGaugeInitial = 4;
+            errataFretboard3.StringGauges = false;
+            errataFretboard3.StringTextPadding = 10;
+            errataFretboard3.StringTexture = (Image)resources.GetObject("errataFretboard3.StringTexture");
+            errataFretboard3.TabIndex = 281;
+            errataFretboard3.Text = "  ";
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.WoodTexture = (Image)resources.GetObject("errataFretboard3.WoodTexture");
             // 
             // errataFlatLabel37
             // 
@@ -3832,7 +4518,7 @@
             errataPianoKeys1.IgnoreRoles = true;
             errataPianoKeys1.IgnoreTheme = false;
             errataPianoKeys1.KeyPressColorGradient = true;
-            errataPianoKeys1.KeyPressColors = null;
+            errataPianoKeys1.KeyPressColors = (List<Color>)resources.GetObject("errataPianoKeys1.KeyPressColors");
             errataPianoKeys1.KeyPressGradientColorHigh = Color.FromArgb(110, 45, 245);
             errataPianoKeys1.KeyPressGradientColorHighRole = ThemeManager.UIRole.MainBackground;
             errataPianoKeys1.KeyPressGradientColorHighTheme = ThemeManager.ThemeColorShade.Secondary_500;
@@ -3889,7 +4575,7 @@
             errataFretboard1.NeckColorTheme = ThemeManager.ThemeColorShade.SemanticB_800;
             errataFretboard1.NumberOfFrets = 17;
             errataFretboard1.NumberOfStrings = 6;
-            errataFretboard1.Size = new Size(1020, 180);
+            errataFretboard1.Size = new Size(917, 150);
             errataFretboard1.StringColor = Color.FromArgb(196, 235, 255);
             errataFretboard1.StringColorRole = ThemeManager.UIRole.TitleBar;
             errataFretboard1.StringColorTheme = ThemeManager.ThemeColorShade.Primary_100;
@@ -3900,6 +4586,36 @@
             errataFretboard1.StringTexture = (Image)resources.GetObject("errataFretboard1.StringTexture");
             errataFretboard1.TabIndex = 277;
             errataFretboard1.Text = "  ";
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
             errataFretboard1.Tuning.Add("E");
             errataFretboard1.Tuning.Add("B");
             errataFretboard1.Tuning.Add("G");
@@ -4584,7 +5300,7 @@
             errataSimpleChart2.Size = new Size(194, 100);
             errataSimpleChart2.TabIndex = 292;
             errataSimpleChart2.Text = "errataSimpleChart2";
-            errataSimpleChart2.Type = ErrataSimpleChart.ControlType.Line;
+            errataSimpleChart2.Type = ErrataGraphSimpleChart.ControlType.Line;
             errataSimpleChart2.VerticalBuffer = 0.75F;
             // 
             // errataFlatLabel44
@@ -4809,7 +5525,7 @@
             errataPianoKeys2.IgnoreRoles = true;
             errataPianoKeys2.IgnoreTheme = false;
             errataPianoKeys2.KeyPressColorGradient = true;
-            errataPianoKeys2.KeyPressColors = null;
+            errataPianoKeys2.KeyPressColors = (List<Color>)resources.GetObject("errataPianoKeys2.KeyPressColors");
             errataPianoKeys2.KeyPressGradientColorHigh = Color.FromArgb(110, 45, 245);
             errataPianoKeys2.KeyPressGradientColorHighRole = ThemeManager.UIRole.MainBackground;
             errataPianoKeys2.KeyPressGradientColorHighTheme = ThemeManager.ThemeColorShade.Secondary_500;
@@ -5405,7 +6121,77 @@
             errataFretboard2.Tuning.Add("D");
             errataFretboard2.Tuning.Add("A");
             errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
             errataFretboard2.WoodTexture = (Image)resources.GetObject("errataFretboard2.WoodTexture");
+            // 
+            // egpDragExample
+            // 
+            egpDragExample.BackColorRole = ThemeManager.UIRole.MainBackground;
+            egpDragExample.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            egpDragExample.BorderColor = Color.FromArgb(128, 128, 128);
+            egpDragExample.BorderColorRole = ThemeManager.UIRole.GeneralBorders;
+            egpDragExample.BorderColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            egpDragExample.CaptionBarColor = Color.FromArgb(110, 45, 245);
+            egpDragExample.CaptionBarColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            egpDragExample.CaptionBarColorTheme = ThemeManager.ThemeColorShade.Secondary_500;
+            egpDragExample.CaptionLineColor = Color.FromArgb(128, 128, 128);
+            egpDragExample.CaptionLineColorRole = ThemeManager.UIRole.GeneralBorders;
+            egpDragExample.CaptionLineColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            egpDragExample.CaptionLineOffset = -1;
+            egpDragExample.CaptionLineWeight = 1;
+            egpDragExample.ColorCaptionLine = true;
+            egpDragExample.CompleteCaptionLine = true;
+            egpDragExample.GradientAngle = 0F;
+            egpDragExample.GradientColor = Color.FromArgb(76, 193, 253);
+            egpDragExample.GradientColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            egpDragExample.GradientColorTheme = ThemeManager.ThemeColorShade.Primary_300;
+            egpDragExample.GradientFill = true;
+            egpDragExample.GroupBoxBorderWidth = 1;
+            egpDragExample.GroupBoxFont = new Font("Segoe UI Semibold", 8F);
+            egpDragExample.GroupBoxText = "Draggable Box";
+            egpDragExample.GroupBoxTextColor = Color.FromArgb(250, 250, 250);
+            egpDragExample.GroupBoxTextColorRole = ThemeManager.UIRole.PrimaryButtonText;
+            egpDragExample.GroupBoxTextColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            egpDragExample.IgnoreRoles = true;
+            egpDragExample.IgnoreTheme = false;
+            egpDragExample.LeftPadding = 8;
+            egpDragExample.LetterSpacing = -1F;
+            egpDragExample.Location = new Point(474, 180);
+            egpDragExample.Name = "egpDragExample";
+            egpDragExample.Padding = new Padding(0, 26, 0, 0);
+            egpDragExample.ShowCaptionLine = true;
+            egpDragExample.Size = new Size(212, 88);
+            egpDragExample.TabIndex = 279;
+            egpDragExample.TopPadding = 6;
             // 
             // frmExampleWinForms
             // 
@@ -5413,8 +6199,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1130, 652);
             Controls.Add(errataTabControl1);
+            FormTitle = "WinForm Example";
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmExampleWinForms";
-            Text = "frmExampleWinForms";
+            Text = "WinForm Example";
+            TitleBarGradientFill = true;
             TitleExtensionColor = Color.FromArgb(15, 150, 220);
             TitleExtensionColorGradient = Color.FromArgb(0, 109, 165);
             Load += frmExampleWinForms_Load;
@@ -5422,7 +6211,6 @@
             errataTabControl1.ResumeLayout(false);
             tpButtons.ResumeLayout(false);
             tpContainers.ResumeLayout(false);
-            errataPanelTranslucent1.ResumeLayout(false);
             errataTabControl2.ResumeLayout(false);
             errataDrawer1.ResumeLayout(false);
             errataGroupPanel4.ResumeLayout(false);
@@ -5551,7 +6339,7 @@
         private DataGridViewTextBoxColumn wEIBULLDISTRNG17DataGridViewTextBoxColumn;
         private ErrataFlatLabel errataFlatLabel30;
         private ErrataCustomGrid errataCustomGrid1;
-        private ErrataSimpleChart errataSimpleChart1;
+        private ErrataGraphSimpleChart errataSimpleChart1;
         private ErrataFlatLabel errataFlatLabel29;
         private ErrataTurnKnob errataTurnKnob3;
         private ErrataFlatLabel errataFlatLabel32;
@@ -5584,7 +6372,24 @@
         private ErrataFlatLabel errataFlatLabel45;
         private ErrataFlatLabel errataFlatLabel43;
         private ErrataCustomGrid errataCustomGrid2;
-        private ErrataSimpleChart errataSimpleChart2;
+        private ErrataGraphSimpleChart errataSimpleChart2;
         private ErrataFlatLabel errataFlatLabel44;
+        private ErrataToggleSwitch errataToggleSwitch7;
+        private ErrataToggleSwitch errataToggleSwitch8;
+        private ErrataToggleSwitch errataToggleSwitch6;
+        private ErrataToggleSwitch errataToggleSwitch5;
+        private ErrataRangeBar errataRangeBar1;
+        private ErrataTrackBarV errataTrackBarv2;
+        private ErrataTrackBar errataTrackBar1;
+        private ErrataSeparator errataSeparator5;
+        private ErrataSeparator errataSeparator4;
+        private ErrataSeparator errataSeparator3;
+        private ErrataGraphPie errataGraphPie3;
+        private ErrataGraphSimpleChart errataSimpleChart4;
+        private ErrataGraphSimpleChart errataSimpleChart3;
+        private ErrataGraphBar errataGraphBar3;
+        private ErrataGraphLine errataGraphLine3;
+        private ErrataFretboard errataFretboard3;
+        private ErrataGroupPanel egpDragExample;
     }
 }

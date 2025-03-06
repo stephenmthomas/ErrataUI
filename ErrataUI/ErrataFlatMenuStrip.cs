@@ -4,6 +4,7 @@
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
+using static ErrataUI.ThemeManager;
 
 #endregion
 
@@ -13,122 +14,271 @@ namespace ErrataUI
 
     public class ErrataFlatMenuStrip : MenuStrip
     {
-        public ErrataFlatMenuStrip()
+        private bool _ignoreRoles;
+        [Category("Theme Manager"), Description("If true, role updates will be ignored, allowing individual theme application.")]
+        public bool IgnoreRoles
         {
-            base.Renderer = new ErrataMenuStripRenderer(base.BackColor, backColor, selectedBackColor, hoverBackColor, textColor, hoverTextColor, selectedTextColor, separatorColor);
-            base.BackColor = Color.DodgerBlue;
+            get => _ignoreRoles;
+            set
+            {
+                _ignoreRoles = value;
+            }
         }
+
+        private bool _ignoreTheme;
+        [Category("Theme Manager"), Description("If true, color updates will be ignored, allowing manual color selection.")]
+        public bool IgnoreTheme
+        {
+            get => _ignoreTheme;
+            set
+            {
+                _ignoreTheme = value;
+                UpdateColor();  // Update color immediately if the property changes
+            }
+        }
+
+        #region BACKCOLOR
+        //BACKCOLOR
+        private UIRole _backColorRole = UIRole.MenuBar;
+        private ThemeColorShade _backColorTheme = ThemeColorShade.Primary_500;
+        private Color _backColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Primary_500);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole BackColorRole { get => _backColorRole; set { _backColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade BackColorTheme
+        {
+            get => _backColorTheme; set
+            {
+                _backColorTheme = value;
+                if (!_ignoreTheme) { BackColor = ThemeManager.Instance.GetThemeColorShade(_backColorTheme); }
+            }
+        }
+
+        [Category("Misc"), Description("Color.")]
+        public Color BackColor { get => _backColor; set { _backColor = value; RefreshUI(); Invalidate(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
+
+        #region SELECTEDBACKCOLOR
+        //SELECTEDBACKCOLOR
+        private UIRole _selectedBackColorRole = UIRole.MenuBar;
+        private ThemeColorShade _selectedBackColorTheme = ThemeColorShade.Primary_700;
+        private Color _selectedBackColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Primary_700);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole SelectedBackColorRole { get => _selectedBackColorRole; set { _selectedBackColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade SelectedBackColorTheme
+        {
+            get => _selectedBackColorTheme; set
+            {
+                _selectedBackColorTheme = value;
+                if (!_ignoreTheme) { SelectedBackColor = ThemeManager.Instance.GetThemeColorShade(_selectedBackColorTheme); }
+            }
+        }
+
+        [Category("Misc"), Description("Color.")]
+        public Color SelectedBackColor { get => _selectedBackColor; set { _selectedBackColor = value; RefreshUI(); Invalidate(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
+
+        #region HOVERBACKCOLOR
+        //HOVERBACKCOLOR
+        private UIRole _hoverBackColorRole = UIRole.MenuBar;
+        private ThemeColorShade _hoverBackColorTheme = ThemeColorShade.Primary_300;
+        private Color _hoverBackColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Primary_300);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole HoverBackColorRole { get => _hoverBackColorRole; set { _hoverBackColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade HoverBackColorTheme
+        {
+            get => _hoverBackColorTheme; set
+            {
+                _hoverBackColorTheme = value;
+                if (!_ignoreTheme) { HoverBackColor = ThemeManager.Instance.GetThemeColorShade(_hoverBackColorTheme); }
+            }
+        }
+
+        [Category("Misc"), Description("Color.")]
+        public Color HoverBackColor { get => _hoverBackColor; set { _hoverBackColor = value; RefreshUI(); Invalidate(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
+
+        #region TEXTCOLOR
+        //TEXTCOLOR
+        private UIRole _textColorRole = UIRole.TitleBarText;
+        private ThemeColorShade _textColorTheme = ThemeColorShade.Neutral_700;
+        private Color _textColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Neutral_700);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole TextColorRole { get => _textColorRole; set { _textColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade TextColorTheme
+        {
+            get => _textColorTheme; set
+            {
+                _textColorTheme = value;
+                if (!_ignoreTheme) { TextColor = ThemeManager.Instance.GetThemeColorShade(_textColorTheme); }
+            }
+        }
+
+        [Category("Misc"), Description("Color.")]
+        public Color TextColor { get => _textColor; set { _textColor = value; RefreshUI(); Invalidate(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
+
+        #region HOVERTEXTCOLOR
+        //HOVERTEXTCOLOR
+        private UIRole _hoverTextColorRole = UIRole.TitleBarText;
+        private ThemeColorShade _hoverTextColorTheme = ThemeColorShade.Neutral_500;
+        private Color _hoverTextColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Neutral_500);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole HoverTextColorRole { get => _hoverTextColorRole; set { _hoverTextColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade HoverTextColorTheme
+        {
+            get => _hoverTextColorTheme; set
+            {
+                _hoverTextColorTheme = value;
+                if (!_ignoreTheme) { HoverTextColor = ThemeManager.Instance.GetThemeColorShade(_hoverTextColorTheme); }
+            }
+        }
+
+        [Category("Misc"), Description("Color.")]
+        public Color HoverTextColor { get => _hoverTextColor; set { _hoverTextColor = value; RefreshUI(); Invalidate(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
+
+        #region SELECTEDTEXTCOLOR
+        //SELECTEDTEXTCOLOR
+        private UIRole _selectedTextColorRole = UIRole.TitleBarText;
+        private ThemeColorShade _selectedTextColorTheme = ThemeColorShade.Neutral_800;
+        private Color _selectedTextColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Neutral_800);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole SelectedTextColorRole { get => _selectedTextColorRole; set { _selectedTextColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade SelectedTextColorTheme
+        {
+            get => _selectedTextColorTheme; set
+            {
+                _selectedTextColorTheme = value;
+                if (!_ignoreTheme) { SelectedTextColor = ThemeManager.Instance.GetThemeColorShade(_selectedTextColorTheme); }
+            }
+        }
+
+        [Category("Misc"), Description("Color.")]
+        public Color SelectedTextColor { get => _selectedTextColor; set { _selectedTextColor = value; RefreshUI(); Invalidate(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
+
+        #region SEPARATORCOLOR
+        //SEPARATORCOLOR
+        private UIRole _separatorColorRole = UIRole.EmphasizedBorders;
+        private ThemeColorShade _separatorColorTheme = ThemeColorShade.Neutral_100;
+        private Color _separatorColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Neutral_100);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole SeparatorColorRole { get => _separatorColorRole; set { _separatorColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade SeparatorColorTheme
+        {
+            get => _separatorColorTheme; set
+            {
+                _separatorColorTheme = value;
+                if (!_ignoreTheme) { SeparatorColor = ThemeManager.Instance.GetThemeColorShade(_separatorColorTheme); }
+            }
+        }
+
+        [Category("Misc"), Description("Color.")]
+        public Color SeparatorColor { get => _separatorColor; set { _separatorColor = value;  Invalidate(); RefreshUI(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
+
+        #region HEADERCOLOR
+        //HEADERCOLOR
+        private UIRole _headerColorRole = UIRole.MenuBar;
+        private ThemeColorShade _headerColorTheme = ThemeColorShade.Primary_500;
+        private Color _headerColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Primary_500);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole HeaderColorRole { get => _headerColorRole; set { _headerColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade HeaderColorTheme
+        {
+            get => _headerColorTheme; set
+            {
+                _headerColorTheme = value;
+                if (!_ignoreTheme) { HeaderColor = ThemeManager.Instance.GetThemeColorShade(_headerColorTheme); }
+            }
+        }
+
+        [Category("Misc"), Description("Color.")]
+        public Color HeaderColor { get => _headerColor; set { _headerColor = value; Invalidate(); RefreshUI(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
+
+        private void UpdateColor()
+        {
+            if (!_ignoreTheme)
+            {
+                BackColor = ThemeManager.Instance.GetThemeColorShadeOffset(BackColorTheme);
+                SelectedBackColor = ThemeManager.Instance.GetThemeColorShadeOffset(SelectedBackColorTheme);
+                HoverBackColor = ThemeManager.Instance.GetThemeColorShadeOffset(HoverBackColorTheme);
+                TextColor = ThemeManager.Instance.GetThemeColorShadeOffset(TextColorTheme);
+                HoverTextColor = ThemeManager.Instance.GetThemeColorShadeOffset(HoverTextColorTheme);
+                SelectedTextColor = ThemeManager.Instance.GetThemeColorShadeOffset(SelectedTextColorTheme);
+                SeparatorColor = ThemeManager.Instance.GetThemeColorShadeOffset(SeparatorColorTheme);
+                HeaderColor = ThemeManager.Instance.GetThemeColorShadeOffset(HeaderColorTheme);
+            }
+        }
+
+        
 
         private void RefreshUI()
         {
-            base.Renderer = new ErrataMenuStripRenderer(base.BackColor, backColor, selectedBackColor, hoverBackColor, textColor, hoverTextColor, selectedTextColor, separatorColor);
+            base.Renderer = new ErrataMenuStripRenderer(HeaderColor, BackColor, SelectedBackColor, HoverBackColor, TextColor, HoverTextColor, SelectedTextColor, SeparatorColor);
         }
 
-        [Category("Parrot")]
-        [Browsable(true)]
-        [Description("Item background color")]
-        public Color ItemBackColor
+
+        public ErrataFlatMenuStrip()
         {
-            get => backColor;
-            set
-            {
-                backColor = value;
-                RefreshUI();
-            }
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
+            ThemeManager.Instance.ThemeChanged += (s, e) => UpdateColor();
+            base.Renderer = new ErrataMenuStripRenderer(HeaderColor, BackColor, SelectedBackColor, HoverBackColor, TextColor, HoverTextColor, SelectedTextColor, SeparatorColor);
+            
         }
 
-        [Category("Parrot")]
-        [Browsable(true)]
-        [Description("Selected item background color")]
-        public Color SelectedBackColor
-        {
-            get => selectedBackColor;
-            set
-            {
-                selectedBackColor = value;
-                RefreshUI();
-            }
-        }
-
-        [Category("Parrot")]
-        [Browsable(true)]
-        [Description("Hover item background color")]
-        public Color HoverBackColor
-        {
-            get => hoverBackColor;
-            set
-            {
-                hoverBackColor = value;
-                RefreshUI();
-            }
-        }
-
-        [Category("Parrot")]
-        [Browsable(true)]
-        [Description("Item text color")]
-        public Color TextColor
-        {
-            get => textColor;
-            set
-            {
-                textColor = value;
-                RefreshUI();
-            }
-        }
-
-        [Category("Parrot")]
-        [Browsable(true)]
-        [Description("Hover item text color")]
-        public Color HoverTextColor
-        {
-            get => hoverTextColor;
-            set
-            {
-                hoverTextColor = value;
-                RefreshUI();
-            }
-        }
-
-        [Category("Parrot")]
-        [Browsable(true)]
-        [Description("Selected item text color")]
-        public Color SelectedTextColor
-        {
-            get => selectedTextColor;
-            set
-            {
-                selectedTextColor = value;
-                RefreshUI();
-            }
-        }
-
-        [Category("Parrot")]
-        [Browsable(true)]
-        [Description("Separator color")]
-        public Color SeparatorColor
-        {
-            get => separatorColor;
-            set
-            {
-                separatorColor = value;
-                RefreshUI();
-            }
-        }
-
-        private Color backColor = Color.DodgerBlue;
-
-        private Color selectedBackColor = Color.DarkOrchid;
-
-        private Color hoverBackColor = Color.RoyalBlue;
-
-        private Color textColor = Color.White;
-
-        private Color hoverTextColor = Color.White;
-
-        private Color selectedTextColor = Color.White;
-
-        private Color separatorColor = Color.White;
     }
+
+
 
     public class ErrataMenuStripRenderer : System.Windows.Forms.ToolStripRenderer
     {
@@ -142,6 +292,16 @@ namespace ErrataUI
             hoverTextColor = htc;
             selectedTextColor = stc;
             separatorColor = sc;
+        }
+
+        // Set the menu background color
+        protected override void OnRenderToolStripBackground(ToolStripRenderEventArgs e)
+        {
+            base.OnRenderToolStripBackground(e);
+            using (SolidBrush brush = new(headerColor))
+            {
+                e.Graphics.FillRectangle(brush, e.AffectedBounds);
+            }
         }
 
         protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)

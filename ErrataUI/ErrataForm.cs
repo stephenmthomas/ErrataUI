@@ -229,7 +229,7 @@ namespace ErrataUI
         }
 
         private bool _titleExtension = false;
-        [Category("Misc"), Description("Extends the title bar down the left side.")]
+        [Category("Misc"), Description("Extends the title bar down the left side - useful with a drawer.")]
         public bool TitleExtension
         {
             get => _titleExtension;
