@@ -422,7 +422,7 @@ namespace ErrataUI
                 using (Brush brush = new SolidBrush(key.IsPressed ? key.PressedColor : (key.IsBlack ? _blackKeyColor : _whiteKeyColor)))
                 {
                     e.Graphics.FillRectangle(brush, key.Bounds);
-                    e.Graphics.DrawImage(key.IsBlack ? blackKeyImage : whiteKeyImage, new Rectangle(0, 0, this.Width, this.Height));
+                    //e.Graphics.DrawImage(key.IsBlack ? blackKeyImage : whiteKeyImage, new Rectangle(0, 0, this.Width, this.Height));
                 }
                 e.Graphics.DrawRectangle(Pens.Black, key.Bounds);
             }
@@ -433,7 +433,7 @@ namespace ErrataUI
                 using (Brush brush = new SolidBrush(key.IsPressed ? key.PressedColor : key.IsBlack ? _blackKeyColor : _whiteKeyColor))
                 {
                     e.Graphics.FillRectangle(brush, key.Bounds);
-                    e.Graphics.DrawImage(key.IsBlack ? blackKeyImage : whiteKeyImage, new Rectangle(0, 0, this.Width, this.Height));
+                    //e.Graphics.DrawImage(key.IsBlack ? blackKeyImage : whiteKeyImage, new Rectangle(0, 0, this.Width, this.Height));
                 }
                 e.Graphics.DrawRectangle(Pens.Black, key.Bounds);
             }
