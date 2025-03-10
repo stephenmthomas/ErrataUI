@@ -6,6 +6,8 @@ using System.Drawing.Drawing2D;
 using static ErrataUI.ThemeManager;
 using System.Diagnostics;
 using System.Reflection.Metadata;
+using System.IO;
+using System.Drawing.Design;
 
 namespace ErrataUI
 {
@@ -34,7 +36,27 @@ namespace ErrataUI
             }
         }
 
-        
+
+
+        private Image _dialTexture;
+        [Category("Textures")]
+        [Description("The texture for the dial face.")]
+        [Editor(typeof(System.Drawing.Design.ImageEditor), typeof(UITypeEditor))] // This makes it editable in the designer
+        public Image WoodTexture
+        {
+            get { return _dialTexture; }
+            set
+            {
+                _dialTexture = value;
+                Invalidate(); // Redraw the control when the image is changed
+            }
+        }
+
+
+
+
+
+
         private bool _isMouseDown = false; // Track mouse down state
         private Point _lastMousePos; // Last mouse position
 
@@ -115,6 +137,18 @@ namespace ErrataUI
                 _dialBorderOnTop = value; Invalidate();
             }
         }
+
+        private bool _dialGradient = false;
+        [Category("Misc.Dial")]
+        public bool DialGradient
+        {
+            get => _dialGradient;
+            set
+            {
+                _dialGradient = value; Invalidate();
+            }
+        }
+
 
         private float _controlRotation = 0F;
         [Category("Misc")]
@@ -273,7 +307,69 @@ namespace ErrataUI
             }
         }
 
+        private int _progressRingThickness = 3;
+        [Category("Misc.Ring")]
+        public int ProgressRingThickness
+        {
+            get => _progressRingThickness;
+            set
+            {
+                _progressRingThickness = value; Invalidate();
+            }
+        }
 
+        private float[] defaultData = { 0.00f, 0.3f, 0.55f, 0.6f, 0.75f, 0.9f, 1.0f };
+
+        private float[] dialGradientPositions;
+        [Category("Misc.Dial")]
+        public float[] DialGradientPositions
+        {
+            get => dialGradientPositions;
+            set
+            {
+                dialGradientPositions = value;
+                Invalidate(); // Redraw the control when data changes
+            }
+        }
+
+
+
+        private float[] dialGradientFactors;
+        [Category("Misc.Dial")]
+        public float[] DialGradientFactors
+        {
+            get => dialGradientFactors;
+            set
+            {
+                dialGradientFactors = value;
+                Invalidate(); // Redraw the control when data changes
+            }
+        }
+
+
+        private int _progressRingPadding = 2;
+        [Category("Misc.Ring")]
+        public int ProgressRingPadding
+        {
+            get => _progressRingPadding;
+            set
+            {
+                _progressRingPadding = value; Invalidate();
+            }
+        }
+
+
+        private bool _centeredMode = false;
+        [Description("Sets the knob to a positive/negative mode.")]
+        [Category("Misc")]
+        public bool CenteredMode
+        {
+            get => _centeredMode;
+            set
+            {
+                _centeredMode = value; Invalidate();
+            }
+        }
 
         #region KNOBBACKGROUNDCOLOR
         //KNOBBACKGROUNDCOLOR
@@ -294,7 +390,7 @@ namespace ErrataUI
             }
         }
 
-        [Category("Misc"), Description("Color.")]
+        [Category("Color"), Description("Color.")]
         public Color KnobBackgroundColor { get => _knobBackgroundColor; set { _knobBackgroundColor = value; Invalidate(); } }
 
         //ADD TO UPDATECOLOR METHOD
@@ -319,13 +415,12 @@ namespace ErrataUI
             }
         }
 
-        [Category("Misc"), Description("Color.")]
+        [Category("Color"), Description("Color.")]
         public Color KnobBorderColor { get => _knobBorderColor; set { _knobBorderColor = value; Invalidate(); } }
 
         //ADD TO UPDATECOLOR METHOD
         ////
         #endregion
-
         #region NEEDLECOLOR
         //NEEDLECOLOR
         private UIRole _needleColorRole = UIRole.TitleBar;
@@ -345,7 +440,7 @@ namespace ErrataUI
             }
         }
 
-        [Category("Misc"), Description("Color.")]
+        [Category("Color"), Description("Color.")]
         public Color NeedleColor { get => _needleColor; set { _needleColor = value; Invalidate(); } }
 
         //ADD TO UPDATECOLOR METHOD
@@ -370,7 +465,7 @@ namespace ErrataUI
             }
         }
 
-        [Category("Misc"), Description("Color.")]
+        [Category("Color"), Description("Color.")]
         public Color DialFaceColor { get => _dialFaceColor; set { _dialFaceColor = value; Invalidate(); } }
 
         //ADD TO UPDATECOLOR METHOD
@@ -395,13 +490,12 @@ namespace ErrataUI
             }
         }
 
-        [Category("Misc"), Description("Color.")]
+        [Category("Color"), Description("Color.")]
         public Color DialBorderColor { get => _dialBorderColor; set { _dialBorderColor = value; Invalidate(); } }
 
         //ADD TO UPDATECOLOR METHOD
         ////
         #endregion
-
         #region TEXTCOLOR
         //TEXTCOLOR
         private UIRole _textColorRole = UIRole.TitleBar;
@@ -421,13 +515,12 @@ namespace ErrataUI
             }
         }
 
-        [Category("Misc"), Description("Color.")]
+        [Category("Color"), Description("Color.")]
         public Color TextColor { get => _textColor; set { _textColor = value; Invalidate(); } }
 
         //ADD TO UPDATECOLOR METHOD
         ////
         #endregion
-
         #region TICKCOLOR
         //TICKCOLOR
         private UIRole _tickColorRole = UIRole.TitleBar;
@@ -447,13 +540,88 @@ namespace ErrataUI
             }
         }
 
-        [Category("Ticks"), Description("Color.")]
+        [Category("Color"), Description("Color.")]
         public Color TickColor { get => _tickColor; set { _tickColor = value; Invalidate(); } }
 
         //ADD TO UPDATECOLOR METHOD
         ////
         #endregion
+        #region PROGRESSRINGCOLOR
+        //PROGRESSRINGCOLOR
+        private UIRole _progressRingColorRole = UIRole.EmphasizedBorders;
+        private ThemeColorShade _progressRingColorTheme = ThemeColorShade.Primary_500;
+        private Color _progressRingColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Primary_500);
 
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole ProgressRingColorRole { get => _progressRingColorRole; set { _progressRingColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade ProgressRingColorTheme
+        {
+            get => _progressRingColorTheme; set
+            {
+                _progressRingColorTheme = value;
+                if (!_ignoreTheme) { ProgressRingColor = ThemeManager.Instance.GetThemeColorShade(_progressRingColorTheme); }
+            }
+        }
+
+        [Category("Color"), Description("Color.")]
+        public Color ProgressRingColor { get => _progressRingColor; set { _progressRingColor = value; Invalidate(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
+        #region PROGRESSRINGTRACKCOLOR
+        //PROGRESSRINGTRACKCOLOR
+        private UIRole _progressRingTrackColorRole = UIRole.EmphasizedBorders;
+        private ThemeColorShade _progressRingTrackColorTheme = ThemeColorShade.Neutral_800;
+        private Color _progressRingTrackColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Neutral_800);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole ProgressRingTrackColorRole { get => _progressRingTrackColorRole; set { _progressRingTrackColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade ProgressRingTrackColorTheme
+        {
+            get => _progressRingTrackColorTheme; set
+            {
+                _progressRingTrackColorTheme = value;
+                if (!_ignoreTheme) { ProgressRingTrackColor = ThemeManager.Instance.GetThemeColorShade(_progressRingTrackColorTheme); }
+            }
+        }
+
+        [Category("Color"), Description("Color.")]
+        public Color ProgressRingTrackColor { get => _progressRingTrackColor; set { _progressRingTrackColor = value; Invalidate(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
+
+        #region BACKCOLOR
+        //BACKCOLOR
+        private UIRole _backColorRole = UIRole.MainBackground;
+        private ThemeColorShade _backColorTheme = ThemeColorShade.Neutral_100;
+        private Color _backColor = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Neutral_100);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole BackColorRole { get => _backColorRole; set { _backColorRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade BackColorTheme
+        {
+            get => _backColorTheme; set
+            {
+                _backColorTheme = value;
+                if (!_ignoreTheme) { BackColor = ThemeManager.Instance.GetThemeColorShade(_backColorTheme); }
+            }
+        }
+
+        [Category("Color"), Description("Color.")]
+        public Color BackColor { get => _backColor; set { _backColor = value; Invalidate(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////BackColor = ThemeManager.Instance.GetThemeColorShadeOffset(BackColorTheme);
+        #endregion
 
 
         private void UpdateColor()
@@ -467,12 +635,18 @@ namespace ErrataUI
                 KnobBorderColor = ThemeManager.Instance.GetThemeColorShadeOffset(KnobBorderColorTheme);
                 TextColor = ThemeManager.Instance.GetThemeColorShadeOffset(TextColorTheme);
                 TickColor = ThemeManager.Instance.GetThemeColorShadeOffset(TickColorTheme);
+                ProgressRingColor = ThemeManager.Instance.GetThemeColorShadeOffset(ProgressRingColorTheme);
+                ProgressRingTrackColor = ThemeManager.Instance.GetThemeColorShadeOffset(ProgressRingTrackColorTheme);
             }
         }
 
 
         public ErrataTurnKnob()
         {
+            dialGradientPositions = defaultData;
+            Array.Reverse(defaultData);
+            dialGradientFactors = defaultData;
+
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.DoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
 
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
@@ -486,24 +660,108 @@ namespace ErrataUI
         {
             base.OnPaint(e);
             Graphics g = e.Graphics;
-            g.SmoothingMode = SmoothingMode.AntiAlias;
+            g.SmoothingMode = SmoothingMode.HighQuality;
+
+
+
 
             // DIAL FACE
-            using (Brush backBrush = new SolidBrush(_dialFaceColor))
-            {
-                g.FillEllipse(backBrush, _dialPadding, _dialPadding, this.Width - 2 * _dialPadding, this.Height - 2 * _dialPadding);
-            }
 
-            if (_dialBorderWidth > 0)
+            //If an image is loaded for the dial...
+            if (_dialTexture != null )
             {
-                using (Pen borderPen = new Pen(_dialBorderColor, _dialBorderWidth))
+                using (TextureBrush dialText = new TextureBrush(_dialTexture))
                 {
-                    g.DrawEllipse(borderPen, _dialPadding, _dialPadding, this.Width - 2 * _dialPadding, this.Height - 2 * _dialPadding);
+                    g.FillEllipse(dialText, _dialPadding, _dialPadding, this.Width - 2 * _dialPadding, this.Height - 2 * _dialPadding);
+                }
+            }           
+            else if (_dialGradient)//GRADIENT BRUSH
+            {
+                using (GraphicsPath path = new GraphicsPath())
+                {
+                    path.AddEllipse(_dialPadding, _dialPadding, this.Width - 2 * _dialPadding, this.Height - 2 * _dialPadding);
+                    using (PathGradientBrush brush = new PathGradientBrush(path))
+                    {
+                        // Set center and surrounding colors
+                        brush.CenterColor = _dialFaceColor;  // Inner color (bright center)
+                        brush.SurroundColors = new Color[] { _dialBorderColor }; // Outer color
+                        // Create a smooth blend transition
+                        Blend blend = new Blend()
+                        {
+                            Factors = dialGradientFactors,
+                            Positions = dialGradientPositions
+                        };                       
+                        brush.Blend = blend;
+                        // Fill the ellipse with the radial gradient
+                        g.FillEllipse(brush, _dialPadding, _dialPadding, this.Width - 2 * _dialPadding, this.Height - 2 * _dialPadding);
+                    }
+                }
+            }
+            else //REGULAR FLAT DIAL
+            {
+                using (Brush backBrush = new SolidBrush(_dialFaceColor))
+                {
+                    g.FillEllipse(backBrush, _dialPadding, _dialPadding, this.Width - 2 * _dialPadding, this.Height - 2 * _dialPadding);
+                }
+
+                if (_dialBorderWidth > 0)
+                {
+                    using (Pen borderPen = new Pen(_dialBorderColor, _dialBorderWidth))
+                    {
+                        g.DrawEllipse(borderPen, _dialPadding, _dialPadding, this.Width - 2 * _dialPadding, this.Height - 2 * _dialPadding);
+                    }
                 }
             }
             
 
+            
 
+
+            // PROGRESS RING (FULL TRACK)
+            float progressThickness = _progressRingThickness;
+            float progressPadding = _progressRingPadding;
+            float progressSize = this.Width - 2 * (progressPadding + _dialPadding);
+
+            using (Pen trackPen = new Pen(_progressRingTrackColor, progressThickness)) // Background track color
+            {
+                trackPen.SetLineCap(LineCap.Round, LineCap.Round, DashCap.Round);
+                g.DrawArc(trackPen, progressPadding + _dialPadding, progressPadding + _dialPadding,
+                          progressSize, progressSize, 0, 360); // Full circle track
+            }
+
+
+
+            // PROGRESSIVE RING
+            float sweepAngle;
+            float halfRange = (_endAngle - _startAngle) / 2f; // Half of the full range
+
+            if (_centeredMode)
+            {
+                float normalizedValue = (Value - 50) / 50f; // Convert value range (0-100) to (-1 to 1)
+                sweepAngle = halfRange * normalizedValue;
+            }
+            else
+            {
+                sweepAngle = (_endAngle - _startAngle) * (Value / 100f);
+            }
+
+            using (Pen progressPen = new Pen(_progressRingColor, progressThickness))
+            {
+                progressPen.SetLineCap(LineCap.Round, LineCap.Round, DashCap.Round);
+                float arcStartAngle = _startAngle + _controlRotation - 90;
+                if (_centeredMode)
+                    arcStartAngle = _startAngle + halfRange + _controlRotation - 90;
+
+                g.DrawArc(progressPen, progressPadding + _dialPadding, progressPadding + _dialPadding,
+                          progressSize, progressSize, arcStartAngle, sweepAngle);
+            }
+
+
+            // Draw tick marks (dashes)
+            if (_tickEnabled)
+            {
+                DrawTicks(g);
+            }
 
 
 
@@ -540,12 +798,14 @@ namespace ErrataUI
 
 
 
-            // KNOB
+            // KNOB [CENTER OF DIAL]
             using (Brush centerBrush = new SolidBrush(_knobBackgroundColor))
             {
                 g.FillEllipse(centerBrush, this.Width / 2 - (_knobSize / 2), this.Height / 2 - (_knobSize / 2), _knobSize, _knobSize);
             }
 
+
+            //KNOB BORDER
             if (_knobBorderWidth > 0)
             {
                 using (Pen borderPen = new Pen(_knobBorderColor, _knobBorderWidth))
@@ -568,11 +828,7 @@ namespace ErrataUI
                 }
             }
 
-            // Draw tick marks (dashes)
-            if (_tickEnabled)
-            {
-                DrawTicks(g);
-            }
+            
 
 
             if (_dialBorderWidth > 0 && _dialBorderOnTop)

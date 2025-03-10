@@ -1,4 +1,5 @@
 using ErrataUI;
+using System.Security.Cryptography;
 
 namespace ErrataUITestComponents
 {
@@ -62,6 +63,21 @@ namespace ErrataUITestComponents
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void errataButton5_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        static string GetMD5(string filePath)
+        {
+            using (var md5 = MD5.Create())
+            using (var stream = File.OpenRead(filePath))
+            {
+                byte[] hash = md5.ComputeHash(stream);
+                return BitConverter.ToString(hash).Replace("-", "").ToLower();
+            }
         }
     }
 }

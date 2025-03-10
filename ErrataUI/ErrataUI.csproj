@@ -14,6 +14,8 @@
     <None Remove="Fonts\FluentSystemIcons-Regular.ttf" />
     <None Remove="Fonts\FluentSystemIcons-Resizable.ttf" />
     <None Remove="Fonts\MaterialIcons-Regular.ttf" />
+    <None Remove="Resources\key_black.png" />
+    <None Remove="Resources\key_white.png" />
     <None Remove="Resources\woodgrain_texture_sm.jpg" />
   </ItemGroup>
 
@@ -27,6 +29,8 @@
 
   <ItemGroup>
     <EmbeddedResource Include="FontIcons\white.32\white.32.000000.jpg" />
+    <EmbeddedResource Include="Resources\key_black.png" />
+    <EmbeddedResource Include="Resources\key_white.png" />
   </ItemGroup>
 
   <ItemGroup>

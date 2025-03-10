@@ -334,7 +334,7 @@ namespace ErrataUI.Forms
         {
             ThemeManager.Instance.IsDarkMode = togDarkMode.IsChecked;
 
-            if (ThemeManager.Instance.IsDarkMode) 
+            if (ThemeManager.Instance.IsDarkMode)
             {
                 ThemeManager.Instance.UpdateColor(ThemeColor.Neutral, pbNeutral.BackColor, null, null, true);
             }
@@ -342,12 +342,36 @@ namespace ErrataUI.Forms
             {
                 ThemeManager.Instance.UpdateColor(ThemeColor.Neutral, pbNeutral.BackColor, null, null, false);
             }
-            
+
         }
 
         private void togDarkMode_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbAccent_Click(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pictureBox)
+            {
+                using (var colorPicker = new frmColorPicker(pictureBox.BackColor)) // Pass current color
+                {
+                    if (colorPicker.ShowDialog() == DialogResult.OK)
+                    {
+                        string swatchName = "Accent" + pictureBox.Tag.ToString(); // e.g., "AccentA"
+
+                        var themeManager = ThemeManager.Instance;
+
+                        // Use reflection to update the corresponding property in ThemeManager
+                        var property = typeof(ThemeManager).GetProperty(swatchName);
+                        if (property != null && property.PropertyType == typeof(Color))
+                        {
+                            property.SetValue(themeManager, colorPicker.dialogColor);
+                            pictureBox.BackColor = colorPicker.dialogColor;
+                        }
+                    }
+                }
+            }
         }
     }
 }

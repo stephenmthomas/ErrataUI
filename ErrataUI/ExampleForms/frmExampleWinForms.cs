@@ -22,5 +22,10 @@ namespace ErrataUI.ExampleForms
         {
             egpDragExample.Draggable(true);
         }
+
+        private void errataTrackBarv5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -44,7 +44,7 @@ namespace ErrataUI
         private int maximum = 100;
         private int value = 50;
         private bool thumbCircle = true;
-        private int thumbSize = 10;
+
         private int trackHeight = 4;
         private int borderWidth = 2;  // Default border width
         public event EventHandler ValueChanged;
@@ -114,9 +114,31 @@ namespace ErrataUI
         }
 
 
+        private int _thumbShiftX = 0;
+        [Category("Misc")]
+        public int ThumbShiftX
+        {
+            get => _thumbShiftX;
+            set
+            {
+                _thumbShiftX = value; Invalidate();
+            }
+        }
+
+        private int _thumbShiftY = 0;
+        [Category("Misc")]
+        public int ThumbShiftY
+        {
+            get => _thumbShiftY;
+            set
+            {
+                _thumbShiftY = value; Invalidate();
+            }
+        }
 
 
 
+        private int thumbSize = 10;
         public int ThumbSize
         {
             get => thumbSize;
@@ -135,6 +157,16 @@ namespace ErrataUI
             set { trackSize = value; Invalidate(); }
         }
 
+        private int _trackBorderSize = 2;
+        [Category("Misc")]
+        public int TrackBorderSize
+        {
+            get => _trackBorderSize;
+            set
+            {
+                _trackBorderSize = value; Invalidate();
+            }
+        }
 
         #region BORDER
         //BORDER COLOR
@@ -158,9 +190,6 @@ namespace ErrataUI
         [Description("Color.")]
         public Color BorderColor { get => _borderColor; set { _borderColor = value; Invalidate(); } }
         #endregion
-
-
-
         #region TRACK
         //TRACK COLOR
         private UIRole _trackRole = UIRole.ScrollbarTrack;
@@ -183,9 +212,6 @@ namespace ErrataUI
         [Description("Color.")]
         public Color TrackColor { get => _trackColor; set { _trackColor = value; Invalidate(); } }
         #endregion
-
-
-
         #region PROGRESS
         //PROGRESS COLOR
         private UIRole _progressRole = UIRole.PrimaryButtonBackground;
@@ -208,8 +234,6 @@ namespace ErrataUI
         [Description("Color.")]
         public Color ProgressColor { get => _progressColor; set { _progressColor = value; Invalidate(); } }
         #endregion
-
-
         #region THUMB
         //THUMB COLOR
         private UIRole _thumbRole = UIRole.ScrollbarThumb;
@@ -233,6 +257,31 @@ namespace ErrataUI
         public Color ThumbColor { get => _thumbColor; set { _thumbColor = value; Invalidate(); } }
         #endregion
 
+        #region TRACKBORDER
+        //TRACKBORDER
+        private UIRole _trackBorderRole = UIRole.EmphasizedBorders;
+        private ThemeColorShade _trackBorderTheme = ThemeColorShade.Neutral_700;
+        private Color _trackBorder = ThemeManager.Instance.GetThemeColorShade(ThemeColorShade.Neutral_700);
+
+        [Category("UIRole"), Description("Implements role type.")]
+        public UIRole TrackBorderRole { get => _trackBorderRole; set { _trackBorderRole = value; } }
+
+        [Category("Theme Manager"), Description("Theme shade.")]
+        public ThemeColorShade TrackBorderTheme
+        {
+            get => _trackBorderTheme; set
+            {
+                _trackBorderTheme = value;
+                if (!_ignoreTheme) { TrackBorder = ThemeManager.Instance.GetThemeColorShade(_trackBorderTheme); }
+            }
+        }
+
+        [Category("Misc"), Description("Color.")]
+        public Color TrackBorder { get => _trackBorder; set { _trackBorder = value; Invalidate(); } }
+
+        //ADD TO UPDATECOLOR METHOD
+        ////
+        #endregion
 
 
         private void UpdateColor()
@@ -242,6 +291,7 @@ namespace ErrataUI
                 ThumbColor = ThemeManager.Instance.GetThemeColorShade(ThumbTheme);
                 ProgressColor = ThemeManager.Instance.GetThemeColorShade(ProgressTheme);
                 TrackColor = ThemeManager.Instance.GetThemeColorShade(TrackTheme);
+                TrackBorder = ThemeManager.Instance.GetThemeColorShadeOffset(TrackBorderTheme);
                 BorderColor = ThemeManager.Instance.GetThemeColorShade(BorderTheme);
             }
         }
@@ -288,7 +338,7 @@ namespace ErrataUI
 
 
 
-            Rectangle thumbRect = new Rectangle(thumbX, Height / 2 - (thumbSize / 2), thumbSize, thumbSize);
+            Rectangle thumbRect = new Rectangle(thumbX + ThumbShiftX, Height / 2 - (thumbSize / 2) + ThumbShiftY, thumbSize, thumbSize);
             using (Brush thumbBrush = new SolidBrush(ThumbColor))
             {
                 if (thumbCircle)

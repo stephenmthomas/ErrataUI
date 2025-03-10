@@ -41,9 +41,12 @@ namespace ErrataUI
 
 
 
-        //Theme Manager enums and dictionaries to handle the enumes
+
         //These definitions control most of the behavior of ErrataUI
         #region EnumsDicts
+
+
+        //as of right now, roles are under utilized
         public static readonly Dictionary<UIRole, ThemeColorShade> LightModeRoleShades = new()
         {
             // Header and Navigation
@@ -325,7 +328,14 @@ namespace ErrataUI
             SemanticC_900,
             SemanticC_1000,
             None,
-            Transparent
+            Transparent,
+            AccentA,
+            AccentB,
+            AccentC,
+            AccentD,
+            AccentE,
+            AccentF,
+            AccentG
         }
         public enum UIRole
         {
@@ -444,6 +454,15 @@ namespace ErrataUI
         public Color SemanticB { get; set; } = Color.FromArgb(241, 194, 27);  //Yellow
         public Color SemanticC { get; set; } = Color.FromArgb(218, 30, 40);  //Red
 
+        //Custom Color Swatch
+        public Color AccentA { get; set; } = Color.FromArgb(255, 0, 0);
+        public Color AccentB { get; set; } = Color.FromArgb(0, 255, 0);
+        public Color AccentC { get; set; } = Color.FromArgb(0, 0, 255);
+        public Color AccentD { get; set; } = Color.FromArgb(255, 255, 0);
+        public Color AccentE { get; set; } = Color.FromArgb(255, 0, 255);
+        public Color AccentF { get; set; } = Color.FromArgb(0, 255, 255);
+        public Color AccentG { get; set; } = Color.FromArgb(122, 200, 78);
+
 
         //Dictionaries to store the shades.
         public Dictionary<int, Color> NeutralSwatch { get; set; }
@@ -490,7 +509,7 @@ namespace ErrataUI
             "FelizSaturation"
         };
 
-
+        public static string PadLights = "f80015,fdf139,ff7a1b,ffb011,ff4316,72107f,ab0277,021989,3b147e,019342,02718d,97c524";
 
 
 
@@ -518,6 +537,13 @@ namespace ErrataUI
                                 SemanticA={ColorToString(SemanticA)}
                                 SemanticB={ColorToString(SemanticB)}
                                 SemanticC={ColorToString(SemanticC)}
+                                AccentA={ColorToString(AccentA)}
+                                AccentB={ColorToString(AccentB)}
+                                AccentC={ColorToString(AccentC)}
+                                AccentD={ColorToString(AccentD)}
+                                AccentE={ColorToString(AccentE)}
+                                AccentF={ColorToString(AccentF)}
+                                AccentG={ColorToString(AccentG)}
                                 BrightnessCurve={ArrayToString(BrightnessCurve)}
                                 SaturationCurve={ArrayToString(SaturationCurve)}";
 
@@ -578,6 +604,27 @@ namespace ErrataUI
                         break;
                     case "SemanticC":
                         SemanticC = StringToColor(value);
+                        break;
+                    case "AccentA":
+                        AccentA = StringToColor(value);
+                        break;
+                    case "AccentB":
+                        AccentB = StringToColor(value);
+                        break;
+                    case "AccentC":
+                        AccentC = StringToColor(value);
+                        break;
+                    case "AccentD":
+                        AccentD = StringToColor(value);
+                        break;
+                    case "AccentE":
+                        AccentE = StringToColor(value);
+                        break;
+                    case "AccentF":
+                        AccentF = StringToColor(value);
+                        break;
+                    case "AccentG":
+                        AccentG = StringToColor(value);
                         break;
                     case "BrightnessCurve":
                         BrightnessCurve = StringToFloatArray(value);
@@ -789,8 +836,17 @@ namespace ErrataUI
         }
         public Color GetThemeColorShade(ThemeColorShade themeColorShade)
         {
+            //AccentA-G, Transparent, None have special return considerations
+
             if (themeColorShade == ThemeColorShade.None) { return Color.Empty; }
             if (themeColorShade == ThemeColorShade.Transparent) { return Color.Transparent; }
+            if (themeColorShade == ThemeColorShade.AccentA) { return AccentA; }
+            if (themeColorShade == ThemeColorShade.AccentB) { return AccentB; }
+            if (themeColorShade == ThemeColorShade.AccentC) { return AccentC; }
+            if (themeColorShade == ThemeColorShade.AccentD) { return AccentD; }
+            if (themeColorShade == ThemeColorShade.AccentE) { return AccentE; }
+            if (themeColorShade == ThemeColorShade.AccentF) { return AccentF; }
+            if (themeColorShade == ThemeColorShade.AccentG) { return AccentG; }
 
             // Split the ThemeColorShade (e.g., Primary_500) into ThemeColor and Shade
             string[] colorShade = themeColorShade.ToString().Split("_");

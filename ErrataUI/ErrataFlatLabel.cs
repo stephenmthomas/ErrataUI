@@ -22,6 +22,18 @@ namespace ErrataUI
             }
         }
 
+        private bool _preventEnumOverride = false;
+        [Category("Misc")]
+        [Description("Prevents style and type enums from reverting the control. Useful if you want to use type/style enums to set an appearance, and then modify it from there.")]
+        public bool StyleOverride
+        {
+            get => _preventEnumOverride;
+            set
+            {
+                _preventEnumOverride = value; Invalidate();
+            }
+        }
+
         private bool _ignoreTheme;
         [Browsable(true)]
         [Category("Theme Manager")]
@@ -199,6 +211,8 @@ namespace ErrataUI
 
         private void UpdateFont()
         {
+            if (StyleOverride) { return; }
+
             switch (_style)
             {
                 case TextStyle.None:

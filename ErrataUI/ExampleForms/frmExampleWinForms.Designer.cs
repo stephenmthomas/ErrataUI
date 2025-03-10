@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExampleWinForms));
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             errataButton1 = new ErrataButton();
             errataButton2 = new ErrataButton();
             errataButton3 = new ErrataButton();
@@ -62,7 +62,10 @@
             errataButtonIcon2 = new ErrataButtonIcon();
             errataButtonIcon1 = new ErrataButtonIcon();
             tpContainers = new TabPage();
+            errataGroupPanel1 = new ErrataGroupPanel();
+            errataGroupPanel2 = new ErrataGroupPanel();
             egpDragExample = new ErrataGroupPanel();
+            errataFlatLabel47 = new ErrataFlatLabel();
             errataFlatLabel21 = new ErrataFlatLabel();
             errataFlatLabel24 = new ErrataFlatLabel();
             errataFlatLabel23 = new ErrataFlatLabel();
@@ -110,22 +113,41 @@
             errataToggleSwitch1 = new ErrataToggleSwitch();
             errataFlatLabel16 = new ErrataFlatLabel();
             tpSliders = new TabPage();
+            errataTrackBarv1 = new ErrataTrackBarV();
+            errataTrackBarv6 = new ErrataTrackBarV();
+            errataTrackBarv5 = new ErrataTrackBarV();
+            errataTrackBarv4 = new ErrataTrackBarV();
+            errataTrackBarv3 = new ErrataTrackBarV();
+            errataTrackBarv7 = new ErrataTrackBarV();
+            errataTrackBarv8 = new ErrataTrackBarV();
             errataRangeBar1 = new ErrataRangeBar();
             errataTrackBarv2 = new ErrataTrackBarV();
             errataTrackBar1 = new ErrataTrackBar();
-            errataTurnKnob5 = new ErrataTurnKnob();
-            errataTurnKnob4 = new ErrataTurnKnob();
-            errataTurnKnob3 = new ErrataTurnKnob();
             errataFlatLabel20 = new ErrataFlatLabel();
-            errataTrackBarv1 = new ErrataTrackBarV();
             errataFlatLabel19 = new ErrataFlatLabel();
             erbGtrFret = new ErrataRangeBar();
             errataFlatLabel18 = new ErrataFlatLabel();
             hsGenMotiffChance = new ErrataTrackBar();
+            tpKnobs = new TabPage();
+            errataTurnKnob7 = new ErrataTurnKnob();
+            errataTurnKnob6 = new ErrataTurnKnob();
+            errataTurnKnob15 = new ErrataTurnKnob();
+            errataTurnKnob16 = new ErrataTurnKnob();
+            errataTurnKnob17 = new ErrataTurnKnob();
+            errataTurnKnob23 = new ErrataTurnKnob();
+            errataTurnKnob24 = new ErrataTurnKnob();
+            errataTurnKnob18 = new ErrataTurnKnob();
+            errataTurnKnob5 = new ErrataTurnKnob();
+            errataTurnKnob4 = new ErrataTurnKnob();
+            errataTurnKnob3 = new ErrataTurnKnob();
             errataFlatLabel17 = new ErrataFlatLabel();
             errataTurnKnob2 = new ErrataTurnKnob();
             errataTurnKnob1 = new ErrataTurnKnob();
             tpGenerics = new TabPage();
+            errataFlatLabel46 = new ErrataFlatLabel();
+            errataDateTimePicker3 = new ErrataDateTimePicker();
+            errataDateTimePicker2 = new ErrataDateTimePicker();
+            errataDateTimePicker1 = new ErrataDateTimePicker();
             errataSeparator5 = new ErrataSeparator();
             errataSeparator4 = new ErrataSeparator();
             errataSeparator3 = new ErrataSeparator();
@@ -164,8 +186,8 @@
             errataGraphBar3 = new ErrataGraphBar();
             errataGraphLine3 = new ErrataGraphLine();
             errataGraphPie3 = new ErrataGraphPie();
-            errataSimpleChart4 = new ErrataGraphSimpleChart();
-            errataSimpleChart3 = new ErrataGraphSimpleChart();
+            errataSimpleChart4 = new ErrataSimpleChart();
+            errataSimpleChart3 = new ErrataSimpleChart();
             errataFlatLabel35 = new ErrataFlatLabel();
             errataFlatLabel34 = new ErrataFlatLabel();
             errataFlatLabel33 = new ErrataFlatLabel();
@@ -174,7 +196,7 @@
             errataGraphBar1 = new ErrataGraphBar();
             errataFlatLabel30 = new ErrataFlatLabel();
             errataCustomGrid1 = new ErrataCustomGrid();
-            errataSimpleChart1 = new ErrataGraphSimpleChart();
+            errataSimpleChart1 = new ErrataSimpleChart();
             errataFlatLabel29 = new ErrataFlatLabel();
             tpMusic = new TabPage();
             errataFretboard3 = new ErrataFretboard();
@@ -185,7 +207,7 @@
             tpOverview = new TabPage();
             errataFlatLabel43 = new ErrataFlatLabel();
             errataCustomGrid2 = new ErrataCustomGrid();
-            errataSimpleChart2 = new ErrataGraphSimpleChart();
+            errataSimpleChart2 = new ErrataSimpleChart();
             errataFlatLabel44 = new ErrataFlatLabel();
             errataFlatLabel40 = new ErrataFlatLabel();
             errataFlatLabel41 = new ErrataFlatLabel();
@@ -197,19 +219,18 @@
             errataFlatLabel39 = new ErrataFlatLabel();
             errataPianoKeys2 = new ErrataPianoKeys();
             errataFretboard2 = new ErrataFretboard();
-            errataDateTimePicker1 = new ErrataDateTimePicker();
-            errataDateTimePicker2 = new ErrataDateTimePicker();
-            errataDateTimePicker3 = new ErrataDateTimePicker();
-            errataFlatLabel46 = new ErrataFlatLabel();
+            listView1 = new ListView();
             errataTabControl1.SuspendLayout();
             tpButtons.SuspendLayout();
             tpContainers.SuspendLayout();
+            errataGroupPanel1.SuspendLayout();
             errataTabControl2.SuspendLayout();
             errataDrawer1.SuspendLayout();
             errataGroupPanel4.SuspendLayout();
             tpLabels.SuspendLayout();
             tpToggle.SuspendLayout();
             tpSliders.SuspendLayout();
+            tpKnobs.SuspendLayout();
             tpGenerics.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)errataDataGridView1).BeginInit();
             tpCustoms.SuspendLayout();
@@ -1131,6 +1152,7 @@
             errataTabControl1.Controls.Add(tpLabels);
             errataTabControl1.Controls.Add(tpToggle);
             errataTabControl1.Controls.Add(tpSliders);
+            errataTabControl1.Controls.Add(tpKnobs);
             errataTabControl1.Controls.Add(tpGenerics);
             errataTabControl1.Controls.Add(tpCustoms);
             errataTabControl1.Controls.Add(tpMusic);
@@ -1176,6 +1198,7 @@
             // tpButtons
             // 
             tpButtons.BackColor = Color.FromArgb(250, 250, 250);
+            tpButtons.Controls.Add(listView1);
             tpButtons.Controls.Add(errataFlatLabel25);
             tpButtons.Controls.Add(errataButtonIcon5);
             tpButtons.Controls.Add(errataButtonIcon6);
@@ -1224,6 +1247,7 @@
             errataFlatLabel25.OffsetY = 0;
             errataFlatLabel25.Size = new Size(100, 23);
             errataFlatLabel25.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel25.StyleOverride = false;
             errataFlatLabel25.TabIndex = 13;
             errataFlatLabel25.Text = "Icon Buttons";
             errataFlatLabel25.TextAlignment = StringAlignment.Near;
@@ -1495,7 +1519,9 @@
             // tpContainers
             // 
             tpContainers.BackColor = Color.FromArgb(250, 250, 250);
+            tpContainers.Controls.Add(errataGroupPanel1);
             tpContainers.Controls.Add(egpDragExample);
+            tpContainers.Controls.Add(errataFlatLabel47);
             tpContainers.Controls.Add(errataFlatLabel21);
             tpContainers.Controls.Add(errataFlatLabel24);
             tpContainers.Controls.Add(errataFlatLabel23);
@@ -1516,6 +1542,95 @@
             tpContainers.TabIndex = 1;
             tpContainers.Text = "Containers";
             // 
+            // errataGroupPanel1
+            // 
+            errataGroupPanel1.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataGroupPanel1.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataGroupPanel1.BorderColor = Color.FromArgb(15, 150, 220);
+            errataGroupPanel1.BorderColorRole = ThemeManager.UIRole.GeneralBorders;
+            errataGroupPanel1.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataGroupPanel1.BorderPadH = 3;
+            errataGroupPanel1.BorderPadW = 3;
+            errataGroupPanel1.BorderPadX = 2;
+            errataGroupPanel1.BorderPadY = 2;
+            errataGroupPanel1.CaptionBarColor = Color.FromArgb(15, 150, 220);
+            errataGroupPanel1.CaptionBarColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataGroupPanel1.CaptionBarColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataGroupPanel1.CaptionLineColor = Color.FromArgb(128, 128, 128);
+            errataGroupPanel1.CaptionLineColorRole = ThemeManager.UIRole.GeneralBorders;
+            errataGroupPanel1.CaptionLineColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataGroupPanel1.CaptionLineOffset = -1;
+            errataGroupPanel1.CaptionLineWeight = 1;
+            errataGroupPanel1.ColorCaptionLine = false;
+            errataGroupPanel1.CompleteCaptionLine = false;
+            errataGroupPanel1.Controls.Add(errataGroupPanel2);
+            errataGroupPanel1.GradientAngle = 0F;
+            errataGroupPanel1.GradientColor = Color.FromArgb(0, 109, 165);
+            errataGroupPanel1.GradientColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataGroupPanel1.GradientColorTheme = ThemeManager.ThemeColorShade.Primary_700;
+            errataGroupPanel1.GradientFill = false;
+            errataGroupPanel1.GroupBoxBorderWidth = 2;
+            errataGroupPanel1.GroupBoxFont = new Font("Segoe UI Semibold", 8F);
+            errataGroupPanel1.GroupBoxText = "GroupBox";
+            errataGroupPanel1.GroupBoxTextColor = Color.FromArgb(250, 250, 250);
+            errataGroupPanel1.GroupBoxTextColorRole = ThemeManager.UIRole.PrimaryButtonText;
+            errataGroupPanel1.GroupBoxTextColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataGroupPanel1.IgnoreRoles = true;
+            errataGroupPanel1.IgnoreTheme = false;
+            errataGroupPanel1.LeftPadding = 8;
+            errataGroupPanel1.LetterSpacing = -1F;
+            errataGroupPanel1.Location = new Point(474, 311);
+            errataGroupPanel1.Name = "errataGroupPanel1";
+            errataGroupPanel1.Padding = new Padding(0, 26, 0, 0);
+            errataGroupPanel1.ShowCaptionLine = false;
+            errataGroupPanel1.Size = new Size(212, 94);
+            errataGroupPanel1.TabIndex = 280;
+            errataGroupPanel1.TopPadding = 6;
+            // 
+            // errataGroupPanel2
+            // 
+            errataGroupPanel2.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataGroupPanel2.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataGroupPanel2.BorderColor = Color.FromArgb(15, 150, 220);
+            errataGroupPanel2.BorderColorRole = ThemeManager.UIRole.GeneralBorders;
+            errataGroupPanel2.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataGroupPanel2.BorderPadH = 2;
+            errataGroupPanel2.BorderPadW = 2;
+            errataGroupPanel2.BorderPadX = 1;
+            errataGroupPanel2.BorderPadY = 1;
+            errataGroupPanel2.CaptionBarColor = Color.FromArgb(15, 150, 220);
+            errataGroupPanel2.CaptionBarColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataGroupPanel2.CaptionBarColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataGroupPanel2.CaptionLineColor = Color.FromArgb(128, 128, 128);
+            errataGroupPanel2.CaptionLineColorRole = ThemeManager.UIRole.GeneralBorders;
+            errataGroupPanel2.CaptionLineColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataGroupPanel2.CaptionLineOffset = -1;
+            errataGroupPanel2.CaptionLineWeight = 1;
+            errataGroupPanel2.ColorCaptionLine = false;
+            errataGroupPanel2.CompleteCaptionLine = false;
+            errataGroupPanel2.GradientAngle = 0F;
+            errataGroupPanel2.GradientColor = Color.FromArgb(0, 109, 165);
+            errataGroupPanel2.GradientColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataGroupPanel2.GradientColorTheme = ThemeManager.ThemeColorShade.Primary_700;
+            errataGroupPanel2.GradientFill = false;
+            errataGroupPanel2.GroupBoxBorderWidth = 1;
+            errataGroupPanel2.GroupBoxFont = new Font("Segoe UI Semibold", 8F);
+            errataGroupPanel2.GroupBoxText = "GroupBox";
+            errataGroupPanel2.GroupBoxTextColor = Color.FromArgb(250, 250, 250);
+            errataGroupPanel2.GroupBoxTextColorRole = ThemeManager.UIRole.PrimaryButtonText;
+            errataGroupPanel2.GroupBoxTextColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataGroupPanel2.IgnoreRoles = true;
+            errataGroupPanel2.IgnoreTheme = false;
+            errataGroupPanel2.LeftPadding = 8;
+            errataGroupPanel2.LetterSpacing = -1F;
+            errataGroupPanel2.Location = new Point(34, 12);
+            errataGroupPanel2.Name = "errataGroupPanel2";
+            errataGroupPanel2.Padding = new Padding(0, 26, 0, 0);
+            errataGroupPanel2.ShowCaptionLine = false;
+            errataGroupPanel2.Size = new Size(130, 69);
+            errataGroupPanel2.TabIndex = 281;
+            errataGroupPanel2.TopPadding = 6;
+            // 
             // egpDragExample
             // 
             egpDragExample.BackColorRole = ThemeManager.UIRole.MainBackground;
@@ -1523,6 +1638,10 @@
             egpDragExample.BorderColor = Color.FromArgb(128, 128, 128);
             egpDragExample.BorderColorRole = ThemeManager.UIRole.GeneralBorders;
             egpDragExample.BorderColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            egpDragExample.BorderPadH = 0;
+            egpDragExample.BorderPadW = 0;
+            egpDragExample.BorderPadX = 0;
+            egpDragExample.BorderPadY = 0;
             egpDragExample.CaptionBarColor = Color.FromArgb(110, 45, 245);
             egpDragExample.CaptionBarColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
             egpDragExample.CaptionBarColorTheme = ThemeManager.ThemeColorShade.Secondary_500;
@@ -1556,6 +1675,26 @@
             egpDragExample.TabIndex = 279;
             egpDragExample.TopPadding = 6;
             // 
+            // errataFlatLabel47
+            // 
+            errataFlatLabel47.BackColor = Color.Transparent;
+            errataFlatLabel47.Font = new Font("Segoe UI", 12F);
+            errataFlatLabel47.ForeRole = ThemeManager.UIRole.PlaceholderText;
+            errataFlatLabel47.ForeTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataFlatLabel47.IgnoreRoles = true;
+            errataFlatLabel47.IgnoreTheme = false;
+            errataFlatLabel47.LineAlignment = StringAlignment.Center;
+            errataFlatLabel47.Location = new Point(474, 276);
+            errataFlatLabel47.Name = "errataFlatLabel47";
+            errataFlatLabel47.OffsetX = 0;
+            errataFlatLabel47.OffsetY = 0;
+            errataFlatLabel47.Size = new Size(144, 32);
+            errataFlatLabel47.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel47.StyleOverride = false;
+            errataFlatLabel47.TabIndex = 14;
+            errataFlatLabel47.Text = "Group Border";
+            errataFlatLabel47.TextAlignment = StringAlignment.Center;
+            // 
             // errataFlatLabel21
             // 
             errataFlatLabel21.BackColor = Color.Transparent;
@@ -1565,12 +1704,13 @@
             errataFlatLabel21.IgnoreRoles = true;
             errataFlatLabel21.IgnoreTheme = false;
             errataFlatLabel21.LineAlignment = StringAlignment.Center;
-            errataFlatLabel21.Location = new Point(632, 354);
+            errataFlatLabel21.Location = new Point(632, 420);
             errataFlatLabel21.Name = "errataFlatLabel21";
             errataFlatLabel21.OffsetX = 0;
             errataFlatLabel21.OffsetY = 0;
             errataFlatLabel21.Size = new Size(144, 32);
             errataFlatLabel21.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel21.StyleOverride = false;
             errataFlatLabel21.TabIndex = 14;
             errataFlatLabel21.Text = "Translucent Panel";
             errataFlatLabel21.TextAlignment = StringAlignment.Center;
@@ -1590,6 +1730,7 @@
             errataFlatLabel24.OffsetY = 0;
             errataFlatLabel24.Size = new Size(144, 32);
             errataFlatLabel24.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel24.StyleOverride = false;
             errataFlatLabel24.TabIndex = 278;
             errataFlatLabel24.Text = "Basic Panel";
             errataFlatLabel24.TextAlignment = StringAlignment.Center;
@@ -1609,6 +1750,7 @@
             errataFlatLabel23.OffsetY = 0;
             errataFlatLabel23.Size = new Size(144, 32);
             errataFlatLabel23.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel23.StyleOverride = false;
             errataFlatLabel23.TabIndex = 277;
             errataFlatLabel23.Text = "Arc Panel";
             errataFlatLabel23.TextAlignment = StringAlignment.Center;
@@ -1670,28 +1812,29 @@
             errataFlatLabel22.IgnoreRoles = true;
             errataFlatLabel22.IgnoreTheme = false;
             errataFlatLabel22.LineAlignment = StringAlignment.Center;
-            errataFlatLabel22.Location = new Point(841, 354);
+            errataFlatLabel22.Location = new Point(841, 420);
             errataFlatLabel22.Name = "errataFlatLabel22";
             errataFlatLabel22.OffsetX = 0;
             errataFlatLabel22.OffsetY = 0;
             errataFlatLabel22.Size = new Size(144, 32);
             errataFlatLabel22.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel22.StyleOverride = false;
             errataFlatLabel22.TabIndex = 15;
             errataFlatLabel22.Text = "Transparent Panel";
             errataFlatLabel22.TextAlignment = StringAlignment.Center;
             // 
             // errataPanelTransparent1
             // 
-            errataPanelTransparent1.Location = new Point(841, 389);
+            errataPanelTransparent1.Location = new Point(841, 455);
             errataPanelTransparent1.Name = "errataPanelTransparent1";
-            errataPanelTransparent1.Size = new Size(248, 180);
+            errataPanelTransparent1.Size = new Size(248, 114);
             errataPanelTransparent1.TabIndex = 275;
             // 
             // errataPanelTranslucent1
             // 
-            errataPanelTranslucent1.Location = new Point(632, 389);
+            errataPanelTranslucent1.Location = new Point(632, 455);
             errataPanelTranslucent1.Name = "errataPanelTranslucent1";
-            errataPanelTranslucent1.Size = new Size(203, 180);
+            errataPanelTranslucent1.Size = new Size(203, 114);
             errataPanelTranslucent1.TabIndex = 274;
             // 
             // errataPanelArc1
@@ -1836,6 +1979,7 @@
             errataFlatLabel14.OffsetY = 0;
             errataFlatLabel14.Size = new Size(144, 32);
             errataFlatLabel14.Style = ErrataFlatLabel.TextStyle.Title;
+            errataFlatLabel14.StyleOverride = false;
             errataFlatLabel14.TabIndex = 13;
             errataFlatLabel14.Text = "Drawer";
             errataFlatLabel14.TextAlignment = StringAlignment.Center;
@@ -1847,6 +1991,10 @@
             errataGroupPanel4.BorderColor = Color.FromArgb(128, 128, 128);
             errataGroupPanel4.BorderColorRole = ThemeManager.UIRole.GeneralBorders;
             errataGroupPanel4.BorderColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataGroupPanel4.BorderPadH = 0;
+            errataGroupPanel4.BorderPadW = 0;
+            errataGroupPanel4.BorderPadX = 0;
+            errataGroupPanel4.BorderPadY = 0;
             errataGroupPanel4.CaptionBarColor = Color.FromArgb(250, 250, 250);
             errataGroupPanel4.CaptionBarColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
             errataGroupPanel4.CaptionBarColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
@@ -1900,6 +2048,10 @@
             errataGroupPanel6.BorderColor = Color.FromArgb(128, 128, 128);
             errataGroupPanel6.BorderColorRole = ThemeManager.UIRole.GeneralBorders;
             errataGroupPanel6.BorderColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataGroupPanel6.BorderPadH = 0;
+            errataGroupPanel6.BorderPadW = 0;
+            errataGroupPanel6.BorderPadX = 0;
+            errataGroupPanel6.BorderPadY = 0;
             errataGroupPanel6.CaptionBarColor = Color.FromArgb(15, 150, 220);
             errataGroupPanel6.CaptionBarColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
             errataGroupPanel6.CaptionBarColorTheme = ThemeManager.ThemeColorShade.Primary_500;
@@ -1971,6 +2123,7 @@
             errataFlatLabel12.OffsetY = 0;
             errataFlatLabel12.Size = new Size(363, 25);
             errataFlatLabel12.Style = ErrataFlatLabel.TextStyle.Subtitle;
+            errataFlatLabel12.StyleOverride = false;
             errataFlatLabel12.TabIndex = 18;
             errataFlatLabel12.Text = "Spacing25";
             errataFlatLabel12.TextAlignment = StringAlignment.Center;
@@ -1990,6 +2143,7 @@
             errataFlatLabel10.OffsetY = 0;
             errataFlatLabel10.Size = new Size(107, 13);
             errataFlatLabel10.Style = ErrataFlatLabel.TextStyle.Small;
+            errataFlatLabel10.StyleOverride = false;
             errataFlatLabel10.TabIndex = 6;
             errataFlatLabel10.Text = "errataFlatLabel1";
             errataFlatLabel10.TextAlignment = StringAlignment.Center;
@@ -2009,6 +2163,7 @@
             errataFlatLabel9.OffsetY = 0;
             errataFlatLabel9.Size = new Size(107, 19);
             errataFlatLabel9.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel9.StyleOverride = false;
             errataFlatLabel9.TabIndex = 7;
             errataFlatLabel9.Text = "Caption";
             errataFlatLabel9.TextAlignment = StringAlignment.Center;
@@ -2028,6 +2183,7 @@
             errataFlatLabel8.OffsetY = 0;
             errataFlatLabel8.Size = new Size(107, 21);
             errataFlatLabel8.Style = ErrataFlatLabel.TextStyle.BodyStrong;
+            errataFlatLabel8.StyleOverride = false;
             errataFlatLabel8.TabIndex = 8;
             errataFlatLabel8.Text = "BodyStrong";
             errataFlatLabel8.TextAlignment = StringAlignment.Center;
@@ -2047,6 +2203,7 @@
             errataFlatLabel7.OffsetY = 0;
             errataFlatLabel7.Size = new Size(107, 21);
             errataFlatLabel7.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel7.StyleOverride = false;
             errataFlatLabel7.TabIndex = 9;
             errataFlatLabel7.Text = "Body";
             errataFlatLabel7.TextAlignment = StringAlignment.Center;
@@ -2066,6 +2223,7 @@
             errataFlatLabel6.OffsetY = 0;
             errataFlatLabel6.Size = new Size(182, 25);
             errataFlatLabel6.Style = ErrataFlatLabel.TextStyle.Subtitle;
+            errataFlatLabel6.StyleOverride = false;
             errataFlatLabel6.TabIndex = 10;
             errataFlatLabel6.Text = "Subtitle";
             errataFlatLabel6.TextAlignment = StringAlignment.Center;
@@ -2086,6 +2244,7 @@
             errataFlatLabel13.OffsetY = 0;
             errataFlatLabel13.Size = new Size(271, 32);
             errataFlatLabel13.Style = ErrataFlatLabel.TextStyle.Title;
+            errataFlatLabel13.StyleOverride = false;
             errataFlatLabel13.TabIndex = 11;
             errataFlatLabel13.Text = "CRUSHED";
             errataFlatLabel13.TextAlignment = StringAlignment.Center;
@@ -2105,6 +2264,7 @@
             errataFlatLabel5.OffsetY = 0;
             errataFlatLabel5.Size = new Size(182, 32);
             errataFlatLabel5.Style = ErrataFlatLabel.TextStyle.Title;
+            errataFlatLabel5.StyleOverride = false;
             errataFlatLabel5.TabIndex = 12;
             errataFlatLabel5.Text = "Title";
             errataFlatLabel5.TextAlignment = StringAlignment.Center;
@@ -2124,6 +2284,7 @@
             errataFlatLabel4.OffsetY = 0;
             errataFlatLabel4.Size = new Size(271, 30);
             errataFlatLabel4.Style = ErrataFlatLabel.TextStyle.Header3;
+            errataFlatLabel4.StyleOverride = false;
             errataFlatLabel4.TabIndex = 13;
             errataFlatLabel4.Text = "Header3";
             errataFlatLabel4.TextAlignment = StringAlignment.Center;
@@ -2143,6 +2304,7 @@
             errataFlatLabel3.OffsetY = 0;
             errataFlatLabel3.Size = new Size(271, 37);
             errataFlatLabel3.Style = ErrataFlatLabel.TextStyle.Header2;
+            errataFlatLabel3.StyleOverride = false;
             errataFlatLabel3.TabIndex = 14;
             errataFlatLabel3.Text = "Header2";
             errataFlatLabel3.TextAlignment = StringAlignment.Center;
@@ -2162,6 +2324,7 @@
             errataFlatLabel2.OffsetY = 0;
             errataFlatLabel2.Size = new Size(271, 45);
             errataFlatLabel2.Style = ErrataFlatLabel.TextStyle.Header1;
+            errataFlatLabel2.StyleOverride = false;
             errataFlatLabel2.TabIndex = 15;
             errataFlatLabel2.Text = "Header1";
             errataFlatLabel2.TextAlignment = StringAlignment.Center;
@@ -2181,6 +2344,7 @@
             errataFlatLabel11.OffsetY = 0;
             errataFlatLabel11.Size = new Size(271, 64);
             errataFlatLabel11.Style = ErrataFlatLabel.TextStyle.Display2;
+            errataFlatLabel11.StyleOverride = false;
             errataFlatLabel11.TabIndex = 16;
             errataFlatLabel11.Text = "Display2";
             errataFlatLabel11.TextAlignment = StringAlignment.Center;
@@ -2200,6 +2364,7 @@
             errataFlatLabel1.OffsetY = 0;
             errataFlatLabel1.Size = new Size(363, 120);
             errataFlatLabel1.Style = ErrataFlatLabel.TextStyle.Display;
+            errataFlatLabel1.StyleOverride = false;
             errataFlatLabel1.TabIndex = 17;
             errataFlatLabel1.Text = "Display";
             errataFlatLabel1.TextAlignment = StringAlignment.Near;
@@ -2678,6 +2843,7 @@
             errataFlatLabel15.OffsetY = 0;
             errataFlatLabel15.Size = new Size(100, 23);
             errataFlatLabel15.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel15.StyleOverride = false;
             errataFlatLabel15.TabIndex = 259;
             errataFlatLabel15.Text = "Toggleswitch";
             errataFlatLabel15.TextAlignment = StringAlignment.Near;
@@ -2803,6 +2969,7 @@
             errataFlatLabel16.OffsetY = 0;
             errataFlatLabel16.Size = new Size(100, 23);
             errataFlatLabel16.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel16.StyleOverride = false;
             errataFlatLabel16.TabIndex = 257;
             errataFlatLabel16.Text = "Togglebox";
             errataFlatLabel16.TextAlign = ContentAlignment.TopRight;
@@ -2811,26 +2978,447 @@
             // tpSliders
             // 
             tpSliders.BackColor = Color.FromArgb(250, 250, 250);
+            tpSliders.Controls.Add(errataTrackBarv1);
+            tpSliders.Controls.Add(errataTrackBarv6);
+            tpSliders.Controls.Add(errataTrackBarv5);
+            tpSliders.Controls.Add(errataTrackBarv4);
+            tpSliders.Controls.Add(errataTrackBarv3);
+            tpSliders.Controls.Add(errataTrackBarv7);
+            tpSliders.Controls.Add(errataTrackBarv8);
             tpSliders.Controls.Add(errataRangeBar1);
             tpSliders.Controls.Add(errataTrackBarv2);
             tpSliders.Controls.Add(errataTrackBar1);
-            tpSliders.Controls.Add(errataTurnKnob5);
-            tpSliders.Controls.Add(errataTurnKnob4);
-            tpSliders.Controls.Add(errataTurnKnob3);
             tpSliders.Controls.Add(errataFlatLabel20);
-            tpSliders.Controls.Add(errataTrackBarv1);
             tpSliders.Controls.Add(errataFlatLabel19);
             tpSliders.Controls.Add(erbGtrFret);
             tpSliders.Controls.Add(errataFlatLabel18);
             tpSliders.Controls.Add(hsGenMotiffChance);
-            tpSliders.Controls.Add(errataFlatLabel17);
-            tpSliders.Controls.Add(errataTurnKnob2);
-            tpSliders.Controls.Add(errataTurnKnob1);
             tpSliders.Location = new Point(4, 29);
             tpSliders.Name = "tpSliders";
             tpSliders.Size = new Size(1114, 582);
             tpSliders.TabIndex = 4;
             tpSliders.Text = "Sliders";
+            // 
+            // errataTrackBarv1
+            // 
+            errataTrackBarv1.BorderColor = Color.FromArgb(0, 109, 165);
+            errataTrackBarv1.CirclularThumb = true;
+            errataTrackBarv1.IgnoreRoles = true;
+            errataTrackBarv1.IgnoreTheme = false;
+            errataTrackBarv1.IsHorizontal = false;
+            errataTrackBarv1.Location = new Point(15, 36);
+            errataTrackBarv1.Maximum = 100;
+            errataTrackBarv1.Minimum = 0;
+            errataTrackBarv1.Name = "errataTrackBarv1";
+            errataTrackBarv1.ProgressColor = Color.FromArgb(15, 150, 220);
+            errataTrackBarv1.ProgressGradient = false;
+            errataTrackBarv1.ProgressGradientAngle = 0F;
+            errataTrackBarv1.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataTrackBarv1.ProgressTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTrackBarv1.Size = new Size(40, 257);
+            errataTrackBarv1.TabIndex = 394;
+            errataTrackBarv1.Text = "errataTrackBarv1";
+            errataTrackBarv1.ThumbBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv1.ThumbBorderTheme = ThemeManager.ThemeColorShade.Primary_700;
+            errataTrackBarv1.ThumbBorderWidth = 2;
+            errataTrackBarv1.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataTrackBarv1.ThumbColorFade = Color.FromArgb(128, 128, 128);
+            errataTrackBarv1.ThumbColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv1.ThumbColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataTrackBarv1.ThumbColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTrackBarv1.ThumbGradient = false;
+            errataTrackBarv1.ThumbGradientAngle = 0F;
+            errataTrackBarv1.ThumbGrip = false;
+            errataTrackBarv1.ThumbGripCircular = false;
+            errataTrackBarv1.ThumbGripColor = Color.FromArgb(128, 128, 128);
+            errataTrackBarv1.ThumbGripColorRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv1.ThumbGripColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataTrackBarv1.ThumbGripSpacing = 6;
+            errataTrackBarv1.ThumbGripThickness = 2;
+            errataTrackBarv1.ThumbHeight = 15;
+            errataTrackBarv1.ThumbLinearize = true;
+            errataTrackBarv1.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataTrackBarv1.ThumbShiftX = 0;
+            errataTrackBarv1.ThumbShiftY = 0;
+            errataTrackBarv1.ThumbWidth = 15;
+            errataTrackBarv1.TrackBorder = Color.FromArgb(96, 96, 96);
+            errataTrackBarv1.TrackBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv1.TrackBorderSize = 0;
+            errataTrackBarv1.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataTrackBarv1.TrackColor = Color.FromArgb(128, 128, 128);
+            errataTrackBarv1.TrackColorFade = Color.FromArgb(64, 64, 64);
+            errataTrackBarv1.TrackColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv1.TrackColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTrackBarv1.TrackColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataTrackBarv1.TrackGradient = false;
+            errataTrackBarv1.TrackGradientAngle = 0F;
+            errataTrackBarv1.TrackProgressFade = Color.FromArgb(0, 109, 165);
+            errataTrackBarv1.TrackProgressFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv1.TrackProgressFadeTheme = ThemeManager.ThemeColorShade.Primary_700;
+            errataTrackBarv1.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
+            errataTrackBarv1.TrackSize = 5;
+            errataTrackBarv1.Value = 50;
+            // 
+            // errataTrackBarv6
+            // 
+            errataTrackBarv6.BorderColor = Color.FromArgb(32, 32, 32);
+            errataTrackBarv6.CirclularThumb = true;
+            errataTrackBarv6.IgnoreRoles = true;
+            errataTrackBarv6.IgnoreTheme = false;
+            errataTrackBarv6.IsHorizontal = false;
+            errataTrackBarv6.Location = new Point(285, 35);
+            errataTrackBarv6.Maximum = 100;
+            errataTrackBarv6.Minimum = 0;
+            errataTrackBarv6.Name = "errataTrackBarv6";
+            errataTrackBarv6.ProgressColor = Color.FromArgb(103, 186, 128);
+            errataTrackBarv6.ProgressGradient = true;
+            errataTrackBarv6.ProgressGradientAngle = -90F;
+            errataTrackBarv6.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataTrackBarv6.ProgressTheme = ThemeManager.ThemeColorShade.SemanticA_200;
+            errataTrackBarv6.Size = new Size(32, 258);
+            errataTrackBarv6.TabIndex = 393;
+            errataTrackBarv6.Text = "  ";
+            errataTrackBarv6.ThumbBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv6.ThumbBorderTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTrackBarv6.ThumbBorderWidth = 1;
+            errataTrackBarv6.ThumbColor = Color.FromArgb(124, 210, 255);
+            errataTrackBarv6.ThumbColorFade = Color.FromArgb(58, 147, 85);
+            errataTrackBarv6.ThumbColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv6.ThumbColorFadeTheme = ThemeManager.ThemeColorShade.SemanticA_300;
+            errataTrackBarv6.ThumbColorTheme = ThemeManager.ThemeColorShade.Primary_200;
+            errataTrackBarv6.ThumbGradient = true;
+            errataTrackBarv6.ThumbGradientAngle = -90F;
+            errataTrackBarv6.ThumbGrip = false;
+            errataTrackBarv6.ThumbGripCircular = true;
+            errataTrackBarv6.ThumbGripColor = Color.FromArgb(39, 171, 240);
+            errataTrackBarv6.ThumbGripColorRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv6.ThumbGripColorTheme = ThemeManager.ThemeColorShade.Primary_400;
+            errataTrackBarv6.ThumbGripSpacing = 4;
+            errataTrackBarv6.ThumbGripThickness = 3;
+            errataTrackBarv6.ThumbHeight = 30;
+            errataTrackBarv6.ThumbLinearize = false;
+            errataTrackBarv6.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataTrackBarv6.ThumbShiftX = 0;
+            errataTrackBarv6.ThumbShiftY = 0;
+            errataTrackBarv6.ThumbWidth = 20;
+            errataTrackBarv6.TrackBorder = Color.FromArgb(15, 15, 15);
+            errataTrackBarv6.TrackBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv6.TrackBorderSize = 1;
+            errataTrackBarv6.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_1000;
+            errataTrackBarv6.TrackColor = Color.FromArgb(250, 250, 250);
+            errataTrackBarv6.TrackColorFade = Color.FromArgb(186, 186, 186);
+            errataTrackBarv6.TrackColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv6.TrackColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataTrackBarv6.TrackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTrackBarv6.TrackGradient = true;
+            errataTrackBarv6.TrackGradientAngle = 90F;
+            errataTrackBarv6.TrackProgressFade = Color.FromArgb(0, 109, 165);
+            errataTrackBarv6.TrackProgressFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv6.TrackProgressFadeTheme = ThemeManager.ThemeColorShade.Primary_700;
+            errataTrackBarv6.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
+            errataTrackBarv6.TrackSize = 22;
+            errataTrackBarv6.Value = 50;
+            // 
+            // errataTrackBarv5
+            // 
+            errataTrackBarv5.BorderColor = Color.FromArgb(32, 32, 32);
+            errataTrackBarv5.CirclularThumb = false;
+            errataTrackBarv5.IgnoreRoles = true;
+            errataTrackBarv5.IgnoreTheme = false;
+            errataTrackBarv5.IsHorizontal = false;
+            errataTrackBarv5.Location = new Point(92, 49);
+            errataTrackBarv5.Maximum = 100;
+            errataTrackBarv5.Minimum = 0;
+            errataTrackBarv5.Name = "errataTrackBarv5";
+            errataTrackBarv5.ProgressColor = Color.FromArgb(255, 255, 255);
+            errataTrackBarv5.ProgressGradient = false;
+            errataTrackBarv5.ProgressGradientAngle = 0F;
+            errataTrackBarv5.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataTrackBarv5.ProgressTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataTrackBarv5.Size = new Size(32, 236);
+            errataTrackBarv5.TabIndex = 392;
+            errataTrackBarv5.Text = "  ";
+            errataTrackBarv5.ThumbBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv5.ThumbBorderTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTrackBarv5.ThumbBorderWidth = 2;
+            errataTrackBarv5.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataTrackBarv5.ThumbColorFade = Color.FromArgb(186, 186, 186);
+            errataTrackBarv5.ThumbColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv5.ThumbColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataTrackBarv5.ThumbColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTrackBarv5.ThumbGradient = false;
+            errataTrackBarv5.ThumbGradientAngle = 90F;
+            errataTrackBarv5.ThumbGrip = false;
+            errataTrackBarv5.ThumbGripCircular = true;
+            errataTrackBarv5.ThumbGripColor = Color.FromArgb(32, 32, 32);
+            errataTrackBarv5.ThumbGripColorRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv5.ThumbGripColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTrackBarv5.ThumbGripSpacing = 0;
+            errataTrackBarv5.ThumbGripThickness = 2;
+            errataTrackBarv5.ThumbHeight = 5;
+            errataTrackBarv5.ThumbLinearize = true;
+            errataTrackBarv5.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataTrackBarv5.ThumbShiftX = 0;
+            errataTrackBarv5.ThumbShiftY = 1;
+            errataTrackBarv5.ThumbWidth = 19;
+            errataTrackBarv5.TrackBorder = Color.FromArgb(15, 15, 15);
+            errataTrackBarv5.TrackBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv5.TrackBorderSize = 2;
+            errataTrackBarv5.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_1000;
+            errataTrackBarv5.TrackColor = Color.FromArgb(255, 255, 255);
+            errataTrackBarv5.TrackColorFade = Color.FromArgb(186, 186, 186);
+            errataTrackBarv5.TrackColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv5.TrackColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataTrackBarv5.TrackColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataTrackBarv5.TrackGradient = false;
+            errataTrackBarv5.TrackGradientAngle = 0F;
+            errataTrackBarv5.TrackProgressFade = Color.FromArgb(124, 210, 255);
+            errataTrackBarv5.TrackProgressFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv5.TrackProgressFadeTheme = ThemeManager.ThemeColorShade.Primary_200;
+            errataTrackBarv5.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
+            errataTrackBarv5.TrackSize = 1;
+            errataTrackBarv5.Value = 50;
+            errataTrackBarv5.Click += errataTrackBarv5_Click;
+            // 
+            // errataTrackBarv4
+            // 
+            errataTrackBarv4.BorderColor = Color.FromArgb(15, 15, 15);
+            errataTrackBarv4.CirclularThumb = true;
+            errataTrackBarv4.IgnoreRoles = true;
+            errataTrackBarv4.IgnoreTheme = false;
+            errataTrackBarv4.IsHorizontal = false;
+            errataTrackBarv4.Location = new Point(255, 45);
+            errataTrackBarv4.Maximum = 100;
+            errataTrackBarv4.Minimum = 0;
+            errataTrackBarv4.Name = "errataTrackBarv4";
+            errataTrackBarv4.ProgressColor = Color.FromArgb(255, 228, 130);
+            errataTrackBarv4.ProgressGradient = true;
+            errataTrackBarv4.ProgressGradientAngle = 0F;
+            errataTrackBarv4.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataTrackBarv4.ProgressTheme = ThemeManager.ThemeColorShade.SemanticB_200;
+            errataTrackBarv4.Size = new Size(26, 242);
+            errataTrackBarv4.TabIndex = 391;
+            errataTrackBarv4.Text = "  ";
+            errataTrackBarv4.ThumbBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv4.ThumbBorderTheme = ThemeManager.ThemeColorShade.Neutral_1000;
+            errataTrackBarv4.ThumbBorderWidth = 1;
+            errataTrackBarv4.ThumbColor = Color.FromArgb(115, 115, 115);
+            errataTrackBarv4.ThumbColorFade = Color.FromArgb(64, 64, 64);
+            errataTrackBarv4.ThumbColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv4.ThumbColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTrackBarv4.ThumbColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataTrackBarv4.ThumbGradient = true;
+            errataTrackBarv4.ThumbGradientAngle = 90F;
+            errataTrackBarv4.ThumbGrip = true;
+            errataTrackBarv4.ThumbGripCircular = true;
+            errataTrackBarv4.ThumbGripColor = Color.FromArgb(217, 170, 5);
+            errataTrackBarv4.ThumbGripColorRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv4.ThumbGripColorTheme = ThemeManager.ThemeColorShade.SemanticB_600;
+            errataTrackBarv4.ThumbGripSpacing = 5;
+            errataTrackBarv4.ThumbGripThickness = 4;
+            errataTrackBarv4.ThumbHeight = 18;
+            errataTrackBarv4.ThumbLinearize = true;
+            errataTrackBarv4.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataTrackBarv4.ThumbShiftX = 0;
+            errataTrackBarv4.ThumbShiftY = 0;
+            errataTrackBarv4.ThumbWidth = 18;
+            errataTrackBarv4.TrackBorder = Color.FromArgb(15, 15, 15);
+            errataTrackBarv4.TrackBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv4.TrackBorderSize = 1;
+            errataTrackBarv4.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_1000;
+            errataTrackBarv4.TrackColor = Color.FromArgb(147, 147, 147);
+            errataTrackBarv4.TrackColorFade = Color.FromArgb(64, 64, 64);
+            errataTrackBarv4.TrackColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv4.TrackColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTrackBarv4.TrackColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTrackBarv4.TrackGradient = true;
+            errataTrackBarv4.TrackGradientAngle = 0F;
+            errataTrackBarv4.TrackProgressFade = Color.FromArgb(181, 141, 0);
+            errataTrackBarv4.TrackProgressFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv4.TrackProgressFadeTheme = ThemeManager.ThemeColorShade.SemanticB_700;
+            errataTrackBarv4.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
+            errataTrackBarv4.TrackSize = 4;
+            errataTrackBarv4.Value = 50;
+            // 
+            // errataTrackBarv3
+            // 
+            errataTrackBarv3.BorderColor = Color.FromArgb(32, 32, 32);
+            errataTrackBarv3.CirclularThumb = false;
+            errataTrackBarv3.IgnoreRoles = true;
+            errataTrackBarv3.IgnoreTheme = false;
+            errataTrackBarv3.IsHorizontal = false;
+            errataTrackBarv3.Location = new Point(210, 45);
+            errataTrackBarv3.Maximum = 100;
+            errataTrackBarv3.Minimum = 0;
+            errataTrackBarv3.Name = "errataTrackBarv3";
+            errataTrackBarv3.ProgressColor = Color.FromArgb(178, 141, 255);
+            errataTrackBarv3.ProgressGradient = true;
+            errataTrackBarv3.ProgressGradientAngle = 180F;
+            errataTrackBarv3.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataTrackBarv3.ProgressTheme = ThemeManager.ThemeColorShade.Secondary_200;
+            errataTrackBarv3.Size = new Size(31, 236);
+            errataTrackBarv3.TabIndex = 390;
+            errataTrackBarv3.Text = "  ";
+            errataTrackBarv3.ThumbBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv3.ThumbBorderTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTrackBarv3.ThumbBorderWidth = 1;
+            errataTrackBarv3.ThumbColor = Color.FromArgb(115, 115, 115);
+            errataTrackBarv3.ThumbColorFade = Color.FromArgb(64, 64, 64);
+            errataTrackBarv3.ThumbColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv3.ThumbColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTrackBarv3.ThumbColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataTrackBarv3.ThumbGradient = true;
+            errataTrackBarv3.ThumbGradientAngle = 0F;
+            errataTrackBarv3.ThumbGrip = true;
+            errataTrackBarv3.ThumbGripCircular = false;
+            errataTrackBarv3.ThumbGripColor = Color.FromArgb(48, 0, 147);
+            errataTrackBarv3.ThumbGripColorRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv3.ThumbGripColorTheme = ThemeManager.ThemeColorShade.Secondary_750;
+            errataTrackBarv3.ThumbGripSpacing = 3;
+            errataTrackBarv3.ThumbGripThickness = 3;
+            errataTrackBarv3.ThumbHeight = 10;
+            errataTrackBarv3.ThumbLinearize = true;
+            errataTrackBarv3.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataTrackBarv3.ThumbShiftX = 0;
+            errataTrackBarv3.ThumbShiftY = 0;
+            errataTrackBarv3.ThumbWidth = 26;
+            errataTrackBarv3.TrackBorder = Color.FromArgb(15, 15, 15);
+            errataTrackBarv3.TrackBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv3.TrackBorderSize = 1;
+            errataTrackBarv3.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_1000;
+            errataTrackBarv3.TrackColor = Color.FromArgb(147, 147, 147);
+            errataTrackBarv3.TrackColorFade = Color.FromArgb(64, 64, 64);
+            errataTrackBarv3.TrackColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv3.TrackColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTrackBarv3.TrackColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTrackBarv3.TrackGradient = true;
+            errataTrackBarv3.TrackGradientAngle = 180F;
+            errataTrackBarv3.TrackProgressFade = Color.FromArgb(62, 4, 184);
+            errataTrackBarv3.TrackProgressFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv3.TrackProgressFadeTheme = ThemeManager.ThemeColorShade.Secondary_700;
+            errataTrackBarv3.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
+            errataTrackBarv3.TrackSize = 26;
+            errataTrackBarv3.Value = 50;
+            // 
+            // errataTrackBarv7
+            // 
+            errataTrackBarv7.BorderColor = Color.FromArgb(32, 32, 32);
+            errataTrackBarv7.CirclularThumb = false;
+            errataTrackBarv7.IgnoreRoles = true;
+            errataTrackBarv7.IgnoreTheme = false;
+            errataTrackBarv7.IsHorizontal = false;
+            errataTrackBarv7.Location = new Point(132, 28);
+            errataTrackBarv7.Maximum = 100;
+            errataTrackBarv7.Minimum = 0;
+            errataTrackBarv7.Name = "errataTrackBarv7";
+            errataTrackBarv7.ProgressColor = Color.FromArgb(96, 96, 96);
+            errataTrackBarv7.ProgressGradient = false;
+            errataTrackBarv7.ProgressGradientAngle = 0F;
+            errataTrackBarv7.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataTrackBarv7.ProgressTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataTrackBarv7.Size = new Size(24, 270);
+            errataTrackBarv7.TabIndex = 389;
+            errataTrackBarv7.Text = "  ";
+            errataTrackBarv7.ThumbBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv7.ThumbBorderTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTrackBarv7.ThumbBorderWidth = 1;
+            errataTrackBarv7.ThumbColor = Color.FromArgb(147, 147, 147);
+            errataTrackBarv7.ThumbColorFade = Color.FromArgb(64, 64, 64);
+            errataTrackBarv7.ThumbColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv7.ThumbColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTrackBarv7.ThumbColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTrackBarv7.ThumbGradient = true;
+            errataTrackBarv7.ThumbGradientAngle = 15F;
+            errataTrackBarv7.ThumbGrip = true;
+            errataTrackBarv7.ThumbGripCircular = false;
+            errataTrackBarv7.ThumbGripColor = Color.FromArgb(64, 64, 64);
+            errataTrackBarv7.ThumbGripColorRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv7.ThumbGripColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTrackBarv7.ThumbGripSpacing = 4;
+            errataTrackBarv7.ThumbGripThickness = 3;
+            errataTrackBarv7.ThumbHeight = 40;
+            errataTrackBarv7.ThumbLinearize = false;
+            errataTrackBarv7.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataTrackBarv7.ThumbShiftX = 0;
+            errataTrackBarv7.ThumbShiftY = 0;
+            errataTrackBarv7.ThumbWidth = 20;
+            errataTrackBarv7.TrackBorder = Color.FromArgb(15, 15, 15);
+            errataTrackBarv7.TrackBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv7.TrackBorderSize = 1;
+            errataTrackBarv7.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_1000;
+            errataTrackBarv7.TrackColor = Color.FromArgb(147, 147, 147);
+            errataTrackBarv7.TrackColorFade = Color.FromArgb(64, 64, 64);
+            errataTrackBarv7.TrackColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv7.TrackColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTrackBarv7.TrackColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTrackBarv7.TrackGradient = false;
+            errataTrackBarv7.TrackGradientAngle = 0F;
+            errataTrackBarv7.TrackProgressFade = Color.FromArgb(0, 109, 165);
+            errataTrackBarv7.TrackProgressFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv7.TrackProgressFadeTheme = ThemeManager.ThemeColorShade.Primary_700;
+            errataTrackBarv7.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
+            errataTrackBarv7.TrackSize = 4;
+            errataTrackBarv7.Value = 50;
+            // 
+            // errataTrackBarv8
+            // 
+            errataTrackBarv8.BorderColor = Color.FromArgb(32, 32, 32);
+            errataTrackBarv8.CirclularThumb = false;
+            errataTrackBarv8.IgnoreRoles = true;
+            errataTrackBarv8.IgnoreTheme = false;
+            errataTrackBarv8.IsHorizontal = false;
+            errataTrackBarv8.Location = new Point(171, 32);
+            errataTrackBarv8.Maximum = 100;
+            errataTrackBarv8.Minimum = 0;
+            errataTrackBarv8.Name = "errataTrackBarv8";
+            errataTrackBarv8.ProgressColor = Color.FromArgb(15, 150, 220);
+            errataTrackBarv8.ProgressGradient = false;
+            errataTrackBarv8.ProgressGradientAngle = 0F;
+            errataTrackBarv8.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
+            errataTrackBarv8.ProgressTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTrackBarv8.Size = new Size(19, 261);
+            errataTrackBarv8.TabIndex = 388;
+            errataTrackBarv8.Text = "  ";
+            errataTrackBarv8.ThumbBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv8.ThumbBorderTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTrackBarv8.ThumbBorderWidth = 1;
+            errataTrackBarv8.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataTrackBarv8.ThumbColorFade = Color.FromArgb(128, 128, 128);
+            errataTrackBarv8.ThumbColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv8.ThumbColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataTrackBarv8.ThumbColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTrackBarv8.ThumbGradient = true;
+            errataTrackBarv8.ThumbGradientAngle = 90F;
+            errataTrackBarv8.ThumbGrip = true;
+            errataTrackBarv8.ThumbGripCircular = false;
+            errataTrackBarv8.ThumbGripColor = Color.FromArgb(32, 32, 32);
+            errataTrackBarv8.ThumbGripColorRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv8.ThumbGripColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTrackBarv8.ThumbGripSpacing = 0;
+            errataTrackBarv8.ThumbGripThickness = 1;
+            errataTrackBarv8.ThumbHeight = 35;
+            errataTrackBarv8.ThumbLinearize = true;
+            errataTrackBarv8.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataTrackBarv8.ThumbShiftX = 0;
+            errataTrackBarv8.ThumbShiftY = 0;
+            errataTrackBarv8.ThumbWidth = 13;
+            errataTrackBarv8.TrackBorder = Color.FromArgb(15, 15, 15);
+            errataTrackBarv8.TrackBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv8.TrackBorderSize = 1;
+            errataTrackBarv8.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_1000;
+            errataTrackBarv8.TrackColor = Color.FromArgb(147, 147, 147);
+            errataTrackBarv8.TrackColorFade = Color.FromArgb(64, 64, 64);
+            errataTrackBarv8.TrackColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv8.TrackColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTrackBarv8.TrackColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTrackBarv8.TrackGradient = false;
+            errataTrackBarv8.TrackGradientAngle = 0F;
+            errataTrackBarv8.TrackProgressFade = Color.FromArgb(0, 109, 165);
+            errataTrackBarv8.TrackProgressFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv8.TrackProgressFadeTheme = ThemeManager.ThemeColorShade.Primary_700;
+            errataTrackBarv8.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
+            errataTrackBarv8.TrackSize = 13;
+            errataTrackBarv8.Value = 50;
             // 
             // errataRangeBar1
             // 
@@ -2841,7 +3429,7 @@
             errataRangeBar1.CirclularThumb = false;
             errataRangeBar1.IgnoreRoles = true;
             errataRangeBar1.IgnoreTheme = false;
-            errataRangeBar1.Location = new Point(395, 306);
+            errataRangeBar1.Location = new Point(366, 521);
             errataRangeBar1.Maximum = 17;
             errataRangeBar1.Minimum = 0;
             errataRangeBar1.Name = "errataRangeBar1";
@@ -2866,30 +3454,61 @@
             // errataTrackBarv2
             // 
             errataTrackBarv2.BorderColor = Color.FromArgb(3, 96, 31);
-            errataTrackBarv2.BorderRole = ThemeManager.UIRole.EmphasizedBorders;
-            errataTrackBarv2.BorderTheme = ThemeManager.ThemeColorShade.SemanticA_700;
-            errataTrackBarv2.BorderWidth = 2;
             errataTrackBarv2.CirclularThumb = false;
             errataTrackBarv2.IgnoreRoles = false;
             errataTrackBarv2.IgnoreTheme = false;
-            errataTrackBarv2.Location = new Point(103, 384);
+            errataTrackBarv2.IsHorizontal = false;
+            errataTrackBarv2.Location = new Point(51, 35);
             errataTrackBarv2.Maximum = 100;
             errataTrackBarv2.Minimum = 0;
             errataTrackBarv2.Name = "errataTrackBarv2";
             errataTrackBarv2.ProgressColor = Color.FromArgb(25, 128, 56);
+            errataTrackBarv2.ProgressGradient = false;
+            errataTrackBarv2.ProgressGradientAngle = 0F;
             errataTrackBarv2.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
             errataTrackBarv2.ProgressTheme = ThemeManager.ThemeColorShade.SemanticA_500;
-            errataTrackBarv2.Size = new Size(40, 150);
+            errataTrackBarv2.Size = new Size(40, 258);
             errataTrackBarv2.TabIndex = 294;
             errataTrackBarv2.Text = "errataTrackBarv2";
+            errataTrackBarv2.ThumbBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv2.ThumbBorderTheme = ThemeManager.ThemeColorShade.SemanticA_700;
+            errataTrackBarv2.ThumbBorderWidth = 2;
             errataTrackBarv2.ThumbColor = Color.FromArgb(250, 250, 250);
+            errataTrackBarv2.ThumbColorFade = Color.FromArgb(128, 128, 128);
+            errataTrackBarv2.ThumbColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv2.ThumbColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataTrackBarv2.ThumbColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTrackBarv2.ThumbGradient = false;
+            errataTrackBarv2.ThumbGradientAngle = 0F;
+            errataTrackBarv2.ThumbGrip = true;
+            errataTrackBarv2.ThumbGripCircular = false;
+            errataTrackBarv2.ThumbGripColor = Color.FromArgb(128, 128, 128);
+            errataTrackBarv2.ThumbGripColorRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv2.ThumbGripColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataTrackBarv2.ThumbGripSpacing = 6;
+            errataTrackBarv2.ThumbGripThickness = 2;
+            errataTrackBarv2.ThumbHeight = 25;
+            errataTrackBarv2.ThumbLinearize = true;
             errataTrackBarv2.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
-            errataTrackBarv2.ThumbSize = 15;
-            errataTrackBarv2.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTrackBarv2.ThumbShiftX = 0;
+            errataTrackBarv2.ThumbShiftY = 0;
+            errataTrackBarv2.ThumbWidth = 15;
+            errataTrackBarv2.TrackBorder = Color.FromArgb(96, 96, 96);
+            errataTrackBarv2.TrackBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBarv2.TrackBorderSize = 2;
+            errataTrackBarv2.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_700;
             errataTrackBarv2.TrackColor = Color.FromArgb(128, 128, 128);
+            errataTrackBarv2.TrackColorFade = Color.FromArgb(64, 64, 64);
+            errataTrackBarv2.TrackColorFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv2.TrackColorFadeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTrackBarv2.TrackColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataTrackBarv2.TrackGradient = false;
+            errataTrackBarv2.TrackGradientAngle = 0F;
+            errataTrackBarv2.TrackProgressFade = Color.FromArgb(0, 109, 165);
+            errataTrackBarv2.TrackProgressFadeRole = ThemeManager.UIRole.SectionDivider;
+            errataTrackBarv2.TrackProgressFadeTheme = ThemeManager.ThemeColorShade.Primary_700;
             errataTrackBarv2.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
             errataTrackBarv2.TrackSize = 5;
-            errataTrackBarv2.TrackTheme = ThemeManager.ThemeColorShade.Neutral_500;
             errataTrackBarv2.Value = 50;
             // 
             // errataTrackBar1
@@ -2901,7 +3520,7 @@
             errataTrackBar1.CirclularThumb = false;
             errataTrackBar1.IgnoreRoles = false;
             errataTrackBar1.IgnoreTheme = false;
-            errataTrackBar1.Location = new Point(31, 306);
+            errataTrackBar1.Location = new Point(15, 521);
             errataTrackBar1.Maximum = 100;
             errataTrackBar1.Minimum = 0;
             errataTrackBar1.Name = "errataTrackBar1";
@@ -2913,172 +3532,19 @@
             errataTrackBar1.Tag = "modTrack";
             errataTrackBar1.ThumbColor = Color.FromArgb(250, 250, 250);
             errataTrackBar1.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            errataTrackBar1.ThumbShiftX = 0;
+            errataTrackBar1.ThumbShiftY = 0;
             errataTrackBar1.ThumbSize = 12;
             errataTrackBar1.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTrackBar1.TrackBorder = Color.FromArgb(96, 96, 96);
+            errataTrackBar1.TrackBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTrackBar1.TrackBorderSize = 2;
+            errataTrackBar1.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_700;
             errataTrackBar1.TrackColor = Color.FromArgb(128, 128, 128);
             errataTrackBar1.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
             errataTrackBar1.TrackSize = 6;
             errataTrackBar1.TrackTheme = ThemeManager.ThemeColorShade.Neutral_500;
             errataTrackBar1.Value = 60;
-            // 
-            // errataTurnKnob5
-            // 
-            errataTurnKnob5.BackColor = Color.Transparent;
-            errataTurnKnob5.ControlRotation = 180F;
-            errataTurnKnob5.DialBorderColor = Color.FromArgb(15, 150, 220);
-            errataTurnKnob5.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob5.DialBorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataTurnKnob5.DialBorderOnTop = true;
-            errataTurnKnob5.DialBorderWidth = 2;
-            errataTurnKnob5.DialFaceColor = Color.Transparent;
-            errataTurnKnob5.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob5.DialFaceColorTheme = ThemeManager.ThemeColorShade.Transparent;
-            errataTurnKnob5.DialPadding = 2;
-            errataTurnKnob5.EndAngle = 330F;
-            errataTurnKnob5.IgnoreRoles = true;
-            errataTurnKnob5.IgnoreTheme = false;
-            errataTurnKnob5.KnobBackgroundColor = Color.FromArgb(0, 109, 165);
-            errataTurnKnob5.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob5.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Primary_700;
-            errataTurnKnob5.KnobBorderColor = Color.Transparent;
-            errataTurnKnob5.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob5.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Transparent;
-            errataTurnKnob5.KnobBorderWidth = 2;
-            errataTurnKnob5.KnobSize = 8;
-            errataTurnKnob5.Location = new Point(455, 82);
-            errataTurnKnob5.MouseSensitivity = 0.2F;
-            errataTurnKnob5.Name = "errataTurnKnob5";
-            errataTurnKnob5.NeedleColor = Color.FromArgb(131, 0, 7);
-            errataTurnKnob5.NeedleColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob5.NeedleColorTheme = ThemeManager.ThemeColorShade.SemanticC_750;
-            errataTurnKnob5.NeedleDot = false;
-            errataTurnKnob5.NeedleLength = 12;
-            errataTurnKnob5.NeedleOffset = 0;
-            errataTurnKnob5.NeedleThickness = 2;
-            errataTurnKnob5.Size = new Size(40, 40);
-            errataTurnKnob5.StartAngle = 30F;
-            errataTurnKnob5.TabIndex = 292;
-            errataTurnKnob5.Text = "errataTurnKnob5";
-            errataTurnKnob5.TextColor = Color.FromArgb(64, 64, 64);
-            errataTurnKnob5.TextColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob5.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
-            errataTurnKnob5.TextVisible = false;
-            errataTurnKnob5.TickColor = Color.FromArgb(48, 0, 147);
-            errataTurnKnob5.TickColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob5.TickColorTheme = ThemeManager.ThemeColorShade.Secondary_750;
-            errataTurnKnob5.TickCount = 11;
-            errataTurnKnob5.TickDot = false;
-            errataTurnKnob5.TickEnabled = true;
-            errataTurnKnob5.TickLength = 4;
-            errataTurnKnob5.TickOffset = 5;
-            errataTurnKnob5.TickThickness = 2;
-            errataTurnKnob5.Value = 0F;
-            // 
-            // errataTurnKnob4
-            // 
-            errataTurnKnob4.BackColor = Color.Transparent;
-            errataTurnKnob4.ControlRotation = 180F;
-            errataTurnKnob4.DialBorderColor = Color.FromArgb(15, 150, 220);
-            errataTurnKnob4.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob4.DialBorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataTurnKnob4.DialBorderOnTop = true;
-            errataTurnKnob4.DialBorderWidth = 2;
-            errataTurnKnob4.DialFaceColor = Color.Transparent;
-            errataTurnKnob4.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob4.DialFaceColorTheme = ThemeManager.ThemeColorShade.Transparent;
-            errataTurnKnob4.DialPadding = 5;
-            errataTurnKnob4.EndAngle = 350F;
-            errataTurnKnob4.IgnoreRoles = true;
-            errataTurnKnob4.IgnoreTheme = false;
-            errataTurnKnob4.KnobBackgroundColor = Color.FromArgb(0, 109, 165);
-            errataTurnKnob4.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob4.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Primary_700;
-            errataTurnKnob4.KnobBorderColor = Color.Transparent;
-            errataTurnKnob4.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob4.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Transparent;
-            errataTurnKnob4.KnobBorderWidth = 10;
-            errataTurnKnob4.KnobSize = 20;
-            errataTurnKnob4.Location = new Point(349, 54);
-            errataTurnKnob4.MouseSensitivity = 0.2F;
-            errataTurnKnob4.Name = "errataTurnKnob4";
-            errataTurnKnob4.NeedleColor = Color.FromArgb(131, 0, 7);
-            errataTurnKnob4.NeedleColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob4.NeedleColorTheme = ThemeManager.ThemeColorShade.SemanticC_750;
-            errataTurnKnob4.NeedleDot = false;
-            errataTurnKnob4.NeedleLength = 35;
-            errataTurnKnob4.NeedleOffset = 0;
-            errataTurnKnob4.NeedleThickness = 2;
-            errataTurnKnob4.Size = new Size(100, 100);
-            errataTurnKnob4.StartAngle = 10F;
-            errataTurnKnob4.TabIndex = 291;
-            errataTurnKnob4.Text = "errataTurnKnob4";
-            errataTurnKnob4.TextColor = Color.FromArgb(64, 64, 64);
-            errataTurnKnob4.TextColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob4.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
-            errataTurnKnob4.TextVisible = false;
-            errataTurnKnob4.TickColor = Color.FromArgb(48, 0, 147);
-            errataTurnKnob4.TickColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob4.TickColorTheme = ThemeManager.ThemeColorShade.Secondary_750;
-            errataTurnKnob4.TickCount = 40;
-            errataTurnKnob4.TickDot = false;
-            errataTurnKnob4.TickEnabled = true;
-            errataTurnKnob4.TickLength = 8;
-            errataTurnKnob4.TickOffset = 12;
-            errataTurnKnob4.TickThickness = 2;
-            errataTurnKnob4.Value = 0F;
-            // 
-            // errataTurnKnob3
-            // 
-            errataTurnKnob3.BackColor = Color.Transparent;
-            errataTurnKnob3.ControlRotation = -90F;
-            errataTurnKnob3.DialBorderColor = Color.FromArgb(32, 32, 32);
-            errataTurnKnob3.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob3.DialBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
-            errataTurnKnob3.DialBorderOnTop = false;
-            errataTurnKnob3.DialBorderWidth = 3;
-            errataTurnKnob3.DialFaceColor = Color.FromArgb(96, 96, 96);
-            errataTurnKnob3.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob3.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
-            errataTurnKnob3.DialPadding = 12;
-            errataTurnKnob3.EndAngle = 180F;
-            errataTurnKnob3.IgnoreRoles = true;
-            errataTurnKnob3.IgnoreTheme = false;
-            errataTurnKnob3.KnobBackgroundColor = Color.FromArgb(96, 96, 96);
-            errataTurnKnob3.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob3.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
-            errataTurnKnob3.KnobBorderColor = Color.FromArgb(77, 77, 77);
-            errataTurnKnob3.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob3.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_750;
-            errataTurnKnob3.KnobBorderWidth = 2;
-            errataTurnKnob3.KnobSize = 20;
-            errataTurnKnob3.Location = new Point(243, 54);
-            errataTurnKnob3.MouseSensitivity = 0.2F;
-            errataTurnKnob3.Name = "errataTurnKnob3";
-            errataTurnKnob3.NeedleColor = Color.FromArgb(0, 130, 198);
-            errataTurnKnob3.NeedleColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob3.NeedleColorTheme = ThemeManager.ThemeColorShade.Primary_600;
-            errataTurnKnob3.NeedleDot = true;
-            errataTurnKnob3.NeedleLength = 25;
-            errataTurnKnob3.NeedleOffset = -2;
-            errataTurnKnob3.NeedleThickness = 9;
-            errataTurnKnob3.Size = new Size(100, 100);
-            errataTurnKnob3.StartAngle = 0F;
-            errataTurnKnob3.TabIndex = 290;
-            errataTurnKnob3.Text = "errataTurnKnob1";
-            errataTurnKnob3.TextColor = Color.FromArgb(231, 247, 255);
-            errataTurnKnob3.TextColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob3.TextColorTheme = ThemeManager.ThemeColorShade.Primary_50;
-            errataTurnKnob3.TextVisible = false;
-            errataTurnKnob3.TickColor = Color.FromArgb(40, 0, 122);
-            errataTurnKnob3.TickColorRole = ThemeManager.UIRole.TitleBar;
-            errataTurnKnob3.TickColorTheme = ThemeManager.ThemeColorShade.Secondary_800;
-            errataTurnKnob3.TickCount = 10;
-            errataTurnKnob3.TickDot = true;
-            errataTurnKnob3.TickEnabled = false;
-            errataTurnKnob3.TickLength = 6;
-            errataTurnKnob3.TickOffset = 4;
-            errataTurnKnob3.TickThickness = 2;
-            errataTurnKnob3.Value = 0F;
             // 
             // errataFlatLabel20
             // 
@@ -3089,44 +3555,16 @@
             errataFlatLabel20.IgnoreRoles = false;
             errataFlatLabel20.IgnoreTheme = false;
             errataFlatLabel20.LineAlignment = StringAlignment.Center;
-            errataFlatLabel20.Location = new Point(31, 358);
+            errataFlatLabel20.Location = new Point(15, 10);
             errataFlatLabel20.Name = "errataFlatLabel20";
             errataFlatLabel20.OffsetX = 0;
             errataFlatLabel20.OffsetY = 0;
             errataFlatLabel20.Size = new Size(100, 23);
             errataFlatLabel20.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel20.StyleOverride = false;
             errataFlatLabel20.TabIndex = 289;
             errataFlatLabel20.Text = "Track Bar [V]";
             errataFlatLabel20.TextAlignment = StringAlignment.Center;
-            // 
-            // errataTrackBarv1
-            // 
-            errataTrackBarv1.BorderColor = Color.FromArgb(0, 109, 165);
-            errataTrackBarv1.BorderRole = ThemeManager.UIRole.EmphasizedBorders;
-            errataTrackBarv1.BorderTheme = ThemeManager.ThemeColorShade.Primary_700;
-            errataTrackBarv1.BorderWidth = 2;
-            errataTrackBarv1.CirclularThumb = true;
-            errataTrackBarv1.IgnoreRoles = false;
-            errataTrackBarv1.IgnoreTheme = false;
-            errataTrackBarv1.Location = new Point(57, 384);
-            errataTrackBarv1.Maximum = 100;
-            errataTrackBarv1.Minimum = 0;
-            errataTrackBarv1.Name = "errataTrackBarv1";
-            errataTrackBarv1.ProgressColor = Color.FromArgb(15, 150, 220);
-            errataTrackBarv1.ProgressRole = ThemeManager.UIRole.PrimaryButtonBackground;
-            errataTrackBarv1.ProgressTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataTrackBarv1.Size = new Size(40, 150);
-            errataTrackBarv1.TabIndex = 288;
-            errataTrackBarv1.Text = "errataTrackBarv1";
-            errataTrackBarv1.ThumbColor = Color.FromArgb(250, 250, 250);
-            errataTrackBarv1.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
-            errataTrackBarv1.ThumbSize = 15;
-            errataTrackBarv1.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
-            errataTrackBarv1.TrackColor = Color.FromArgb(128, 128, 128);
-            errataTrackBarv1.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
-            errataTrackBarv1.TrackSize = 5;
-            errataTrackBarv1.TrackTheme = ThemeManager.ThemeColorShade.Neutral_500;
-            errataTrackBarv1.Value = 50;
             // 
             // errataFlatLabel19
             // 
@@ -3137,12 +3575,13 @@
             errataFlatLabel19.IgnoreRoles = false;
             errataFlatLabel19.IgnoreTheme = false;
             errataFlatLabel19.LineAlignment = StringAlignment.Center;
-            errataFlatLabel19.Location = new Point(395, 250);
+            errataFlatLabel19.Location = new Point(366, 465);
             errataFlatLabel19.Name = "errataFlatLabel19";
             errataFlatLabel19.OffsetX = 0;
             errataFlatLabel19.OffsetY = 0;
             errataFlatLabel19.Size = new Size(100, 23);
             errataFlatLabel19.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel19.StyleOverride = false;
             errataFlatLabel19.TabIndex = 287;
             errataFlatLabel19.Text = "Range Bar";
             errataFlatLabel19.TextAlignment = StringAlignment.Center;
@@ -3156,7 +3595,7 @@
             erbGtrFret.CirclularThumb = true;
             erbGtrFret.IgnoreRoles = true;
             erbGtrFret.IgnoreTheme = false;
-            erbGtrFret.Location = new Point(395, 276);
+            erbGtrFret.Location = new Point(366, 491);
             erbGtrFret.Maximum = 17;
             erbGtrFret.Minimum = 0;
             erbGtrFret.Name = "erbGtrFret";
@@ -3187,12 +3626,13 @@
             errataFlatLabel18.IgnoreRoles = false;
             errataFlatLabel18.IgnoreTheme = false;
             errataFlatLabel18.LineAlignment = StringAlignment.Center;
-            errataFlatLabel18.Location = new Point(31, 250);
+            errataFlatLabel18.Location = new Point(15, 465);
             errataFlatLabel18.Name = "errataFlatLabel18";
             errataFlatLabel18.OffsetX = 0;
             errataFlatLabel18.OffsetY = 0;
             errataFlatLabel18.Size = new Size(100, 23);
             errataFlatLabel18.Style = ErrataFlatLabel.TextStyle.Body;
+            errataFlatLabel18.StyleOverride = false;
             errataFlatLabel18.TabIndex = 285;
             errataFlatLabel18.Text = "Track Bar";
             errataFlatLabel18.TextAlignment = StringAlignment.Center;
@@ -3206,7 +3646,7 @@
             hsGenMotiffChance.CirclularThumb = true;
             hsGenMotiffChance.IgnoreRoles = false;
             hsGenMotiffChance.IgnoreTheme = false;
-            hsGenMotiffChance.Location = new Point(31, 282);
+            hsGenMotiffChance.Location = new Point(15, 497);
             hsGenMotiffChance.Maximum = 100;
             hsGenMotiffChance.Minimum = 0;
             hsGenMotiffChance.Name = "hsGenMotiffChance";
@@ -3218,13 +3658,1004 @@
             hsGenMotiffChance.Tag = "modTrack";
             hsGenMotiffChance.ThumbColor = Color.FromArgb(250, 250, 250);
             hsGenMotiffChance.ThumbRole = ThemeManager.UIRole.ScrollbarThumb;
+            hsGenMotiffChance.ThumbShiftX = 0;
+            hsGenMotiffChance.ThumbShiftY = 0;
             hsGenMotiffChance.ThumbSize = 10;
             hsGenMotiffChance.ThumbTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            hsGenMotiffChance.TrackBorder = Color.FromArgb(96, 96, 96);
+            hsGenMotiffChance.TrackBorderRole = ThemeManager.UIRole.EmphasizedBorders;
+            hsGenMotiffChance.TrackBorderSize = 2;
+            hsGenMotiffChance.TrackBorderTheme = ThemeManager.ThemeColorShade.Neutral_700;
             hsGenMotiffChance.TrackColor = Color.FromArgb(128, 128, 128);
             hsGenMotiffChance.TrackRole = ThemeManager.UIRole.ScrollbarTrack;
             hsGenMotiffChance.TrackSize = 4;
             hsGenMotiffChance.TrackTheme = ThemeManager.ThemeColorShade.Neutral_500;
             hsGenMotiffChance.Value = 60;
+            // 
+            // tpKnobs
+            // 
+            tpKnobs.BackColor = Color.FromArgb(250, 250, 250);
+            tpKnobs.Controls.Add(errataTurnKnob7);
+            tpKnobs.Controls.Add(errataTurnKnob6);
+            tpKnobs.Controls.Add(errataTurnKnob15);
+            tpKnobs.Controls.Add(errataTurnKnob16);
+            tpKnobs.Controls.Add(errataTurnKnob17);
+            tpKnobs.Controls.Add(errataTurnKnob23);
+            tpKnobs.Controls.Add(errataTurnKnob24);
+            tpKnobs.Controls.Add(errataTurnKnob18);
+            tpKnobs.Controls.Add(errataTurnKnob5);
+            tpKnobs.Controls.Add(errataTurnKnob4);
+            tpKnobs.Controls.Add(errataTurnKnob3);
+            tpKnobs.Controls.Add(errataFlatLabel17);
+            tpKnobs.Controls.Add(errataTurnKnob2);
+            tpKnobs.Controls.Add(errataTurnKnob1);
+            tpKnobs.Location = new Point(4, 29);
+            tpKnobs.Name = "tpKnobs";
+            tpKnobs.Size = new Size(1114, 582);
+            tpKnobs.TabIndex = 9;
+            tpKnobs.Text = "Knobs";
+            // 
+            // errataTurnKnob7
+            // 
+            errataTurnKnob7.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob7.BackColorTheme = ThemeManager.ThemeColorShade.Transparent;
+            errataTurnKnob7.CenteredMode = false;
+            errataTurnKnob7.ControlRotation = 180F;
+            errataTurnKnob7.DialBorderColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob7.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob7.DialBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob7.DialBorderOnTop = false;
+            errataTurnKnob7.DialBorderWidth = 1;
+            errataTurnKnob7.DialFaceColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob7.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob7.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob7.DialGradient = false;
+            errataTurnKnob7.DialGradientFactors = new float[]
+    {
+    1.5F,
+    1.4F,
+    1.35F,
+    1.3F,
+    1.2F,
+    1.1F,
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0.2F
+    };
+            errataTurnKnob7.DialGradientPositions = new float[]
+    {
+    1.5F,
+    1.4F,
+    1.35F,
+    1.3F,
+    1.2F,
+    1.1F,
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0.2F
+    };
+            errataTurnKnob7.DialPadding = 2;
+            errataTurnKnob7.EndAngle = 315F;
+            errataTurnKnob7.IgnoreRoles = true;
+            errataTurnKnob7.IgnoreTheme = false;
+            errataTurnKnob7.KnobBackgroundColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob7.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob7.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob7.KnobBorderColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob7.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob7.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob7.KnobBorderWidth = 5;
+            errataTurnKnob7.KnobSize = 0;
+            errataTurnKnob7.Location = new Point(727, 442);
+            errataTurnKnob7.MouseSensitivity = 0.5F;
+            errataTurnKnob7.Name = "errataTurnKnob7";
+            errataTurnKnob7.NeedleColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob7.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob7.NeedleColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob7.NeedleDot = false;
+            errataTurnKnob7.NeedleLength = 5;
+            errataTurnKnob7.NeedleOffset = 5;
+            errataTurnKnob7.NeedleThickness = 2;
+            errataTurnKnob7.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob7.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob7.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob7.ProgressRingPadding = 2;
+            errataTurnKnob7.ProgressRingThickness = 4;
+            errataTurnKnob7.ProgressRingTrackColor = Color.FromArgb(32, 32, 32);
+            errataTurnKnob7.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob7.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTurnKnob7.Size = new Size(35, 35);
+            errataTurnKnob7.StartAngle = 45F;
+            errataTurnKnob7.TabIndex = 399;
+            errataTurnKnob7.Text = "errataTurnKnob7";
+            errataTurnKnob7.TextColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob7.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob7.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob7.TextVisible = false;
+            errataTurnKnob7.TickColor = Color.FromArgb(115, 115, 115);
+            errataTurnKnob7.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob7.TickColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataTurnKnob7.TickCount = 10;
+            errataTurnKnob7.TickDot = false;
+            errataTurnKnob7.TickEnabled = false;
+            errataTurnKnob7.TickLength = 3;
+            errataTurnKnob7.TickOffset = 15;
+            errataTurnKnob7.TickThickness = 2;
+            errataTurnKnob7.Value = 0F;
+            errataTurnKnob7.WoodTexture = null;
+            // 
+            // errataTurnKnob6
+            // 
+            errataTurnKnob6.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob6.BackColorTheme = ThemeManager.ThemeColorShade.Transparent;
+            errataTurnKnob6.CenteredMode = false;
+            errataTurnKnob6.ControlRotation = 180F;
+            errataTurnKnob6.DialBorderColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob6.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob6.DialBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob6.DialBorderOnTop = false;
+            errataTurnKnob6.DialBorderWidth = 1;
+            errataTurnKnob6.DialFaceColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob6.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob6.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob6.DialGradient = false;
+            errataTurnKnob6.DialGradientFactors = new float[]
+    {
+    1.5F,
+    1.4F,
+    1.35F,
+    1.3F,
+    1.2F,
+    1.1F,
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0.2F
+    };
+            errataTurnKnob6.DialGradientPositions = new float[]
+    {
+    1.5F,
+    1.4F,
+    1.35F,
+    1.3F,
+    1.2F,
+    1.1F,
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0.2F
+    };
+            errataTurnKnob6.DialPadding = 2;
+            errataTurnKnob6.EndAngle = 315F;
+            errataTurnKnob6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            errataTurnKnob6.IgnoreRoles = true;
+            errataTurnKnob6.IgnoreTheme = false;
+            errataTurnKnob6.KnobBackgroundColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob6.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob6.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob6.KnobBorderColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob6.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob6.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob6.KnobBorderWidth = 5;
+            errataTurnKnob6.KnobSize = 0;
+            errataTurnKnob6.Location = new Point(671, 427);
+            errataTurnKnob6.MouseSensitivity = 0.5F;
+            errataTurnKnob6.Name = "errataTurnKnob6";
+            errataTurnKnob6.NeedleColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob6.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob6.NeedleColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob6.NeedleDot = false;
+            errataTurnKnob6.NeedleLength = 8;
+            errataTurnKnob6.NeedleOffset = 10;
+            errataTurnKnob6.NeedleThickness = 2;
+            errataTurnKnob6.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob6.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob6.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob6.ProgressRingPadding = 2;
+            errataTurnKnob6.ProgressRingThickness = 4;
+            errataTurnKnob6.ProgressRingTrackColor = Color.FromArgb(32, 32, 32);
+            errataTurnKnob6.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob6.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTurnKnob6.RightToLeft = RightToLeft.No;
+            errataTurnKnob6.Size = new Size(50, 50);
+            errataTurnKnob6.StartAngle = 45F;
+            errataTurnKnob6.TabIndex = 398;
+            errataTurnKnob6.Text = "errataTurnKnob6";
+            errataTurnKnob6.TextColor = Color.FromArgb(212, 212, 212);
+            errataTurnKnob6.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob6.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_150;
+            errataTurnKnob6.TextVisible = false;
+            errataTurnKnob6.TickColor = Color.FromArgb(115, 115, 115);
+            errataTurnKnob6.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob6.TickColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataTurnKnob6.TickCount = 10;
+            errataTurnKnob6.TickDot = false;
+            errataTurnKnob6.TickEnabled = false;
+            errataTurnKnob6.TickLength = 3;
+            errataTurnKnob6.TickOffset = 15;
+            errataTurnKnob6.TickThickness = 2;
+            errataTurnKnob6.Value = 0F;
+            errataTurnKnob6.WoodTexture = null;
+            // 
+            // errataTurnKnob15
+            // 
+            errataTurnKnob15.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob15.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob15.CenteredMode = false;
+            errataTurnKnob15.ControlRotation = 180F;
+            errataTurnKnob15.DialBorderColor = Color.FromArgb(212, 212, 212);
+            errataTurnKnob15.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob15.DialBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_150;
+            errataTurnKnob15.DialBorderOnTop = false;
+            errataTurnKnob15.DialBorderWidth = 0;
+            errataTurnKnob15.DialFaceColor = Color.FromArgb(212, 212, 212);
+            errataTurnKnob15.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob15.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_150;
+            errataTurnKnob15.DialGradient = false;
+            errataTurnKnob15.DialGradientFactors = new float[]
+    {
+    0F,
+    0.3F,
+    1F
+    };
+            errataTurnKnob15.DialGradientPositions = new float[]
+    {
+    0F,
+    0.05F,
+    1F
+    };
+            errataTurnKnob15.DialPadding = 8;
+            errataTurnKnob15.EndAngle = 315F;
+            errataTurnKnob15.IgnoreRoles = true;
+            errataTurnKnob15.IgnoreTheme = false;
+            errataTurnKnob15.KnobBackgroundColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob15.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob15.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob15.KnobBorderColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob15.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob15.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob15.KnobBorderWidth = 0;
+            errataTurnKnob15.KnobSize = 0;
+            errataTurnKnob15.Location = new Point(458, 149);
+            errataTurnKnob15.MouseSensitivity = 0.5F;
+            errataTurnKnob15.Name = "errataTurnKnob15";
+            errataTurnKnob15.NeedleColor = Color.FromArgb(77, 77, 77);
+            errataTurnKnob15.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob15.NeedleColorTheme = ThemeManager.ThemeColorShade.Neutral_750;
+            errataTurnKnob15.NeedleDot = false;
+            errataTurnKnob15.NeedleLength = 14;
+            errataTurnKnob15.NeedleOffset = 21;
+            errataTurnKnob15.NeedleThickness = 3;
+            errataTurnKnob15.ProgressRingColor = Color.FromArgb(186, 186, 186);
+            errataTurnKnob15.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob15.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataTurnKnob15.ProgressRingPadding = 2;
+            errataTurnKnob15.ProgressRingThickness = 6;
+            errataTurnKnob15.ProgressRingTrackColor = Color.FromArgb(32, 32, 32);
+            errataTurnKnob15.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob15.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTurnKnob15.Size = new Size(100, 100);
+            errataTurnKnob15.StartAngle = 45F;
+            errataTurnKnob15.TabIndex = 396;
+            errataTurnKnob15.Text = "errataTurnKnob15";
+            errataTurnKnob15.TextColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob15.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob15.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob15.TextVisible = false;
+            errataTurnKnob15.TickColor = Color.FromArgb(115, 115, 115);
+            errataTurnKnob15.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob15.TickColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataTurnKnob15.TickCount = 50;
+            errataTurnKnob15.TickDot = false;
+            errataTurnKnob15.TickEnabled = true;
+            errataTurnKnob15.TickLength = 4;
+            errataTurnKnob15.TickOffset = 0;
+            errataTurnKnob15.TickThickness = 2;
+            errataTurnKnob15.Value = 50F;
+            errataTurnKnob15.WoodTexture = null;
+            // 
+            // errataTurnKnob16
+            // 
+            errataTurnKnob16.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob16.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob16.CenteredMode = false;
+            errataTurnKnob16.ControlRotation = 180F;
+            errataTurnKnob16.DialBorderColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob16.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob16.DialBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob16.DialBorderOnTop = false;
+            errataTurnKnob16.DialBorderWidth = 1;
+            errataTurnKnob16.DialFaceColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob16.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob16.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob16.DialGradient = false;
+            errataTurnKnob16.DialGradientFactors = new float[]
+    {
+    1.5F,
+    1.4F,
+    1.35F,
+    1.3F,
+    1.2F,
+    1.1F,
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0.2F
+    };
+            errataTurnKnob16.DialGradientPositions = new float[]
+    {
+    1.5F,
+    1.4F,
+    1.35F,
+    1.3F,
+    1.2F,
+    1.1F,
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0.2F
+    };
+            errataTurnKnob16.DialPadding = 2;
+            errataTurnKnob16.EndAngle = 315F;
+            errataTurnKnob16.IgnoreRoles = true;
+            errataTurnKnob16.IgnoreTheme = false;
+            errataTurnKnob16.KnobBackgroundColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob16.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob16.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob16.KnobBorderColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob16.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob16.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob16.KnobBorderWidth = 5;
+            errataTurnKnob16.KnobSize = 0;
+            errataTurnKnob16.Location = new Point(565, 43);
+            errataTurnKnob16.MouseSensitivity = 0.5F;
+            errataTurnKnob16.Name = "errataTurnKnob16";
+            errataTurnKnob16.NeedleColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob16.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob16.NeedleColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob16.NeedleDot = false;
+            errataTurnKnob16.NeedleLength = 8;
+            errataTurnKnob16.NeedleOffset = 10;
+            errataTurnKnob16.NeedleThickness = 3;
+            errataTurnKnob16.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob16.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob16.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob16.ProgressRingPadding = 2;
+            errataTurnKnob16.ProgressRingThickness = 4;
+            errataTurnKnob16.ProgressRingTrackColor = Color.FromArgb(32, 32, 32);
+            errataTurnKnob16.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob16.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTurnKnob16.Size = new Size(50, 50);
+            errataTurnKnob16.StartAngle = 45F;
+            errataTurnKnob16.TabIndex = 395;
+            errataTurnKnob16.Text = "errataTurnKnob16";
+            errataTurnKnob16.TextColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob16.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob16.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob16.TextVisible = false;
+            errataTurnKnob16.TickColor = Color.FromArgb(115, 115, 115);
+            errataTurnKnob16.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob16.TickColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataTurnKnob16.TickCount = 10;
+            errataTurnKnob16.TickDot = false;
+            errataTurnKnob16.TickEnabled = false;
+            errataTurnKnob16.TickLength = 3;
+            errataTurnKnob16.TickOffset = 15;
+            errataTurnKnob16.TickThickness = 2;
+            errataTurnKnob16.Value = 75F;
+            errataTurnKnob16.WoodTexture = null;
+            // 
+            // errataTurnKnob17
+            // 
+            errataTurnKnob17.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob17.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob17.CenteredMode = false;
+            errataTurnKnob17.ControlRotation = 180F;
+            errataTurnKnob17.DialBorderColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob17.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob17.DialBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob17.DialBorderOnTop = false;
+            errataTurnKnob17.DialBorderWidth = 0;
+            errataTurnKnob17.DialFaceColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob17.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob17.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob17.DialGradient = false;
+            errataTurnKnob17.DialGradientFactors = new float[]
+    {
+    0F,
+    0.3F,
+    1F
+    };
+            errataTurnKnob17.DialGradientPositions = new float[]
+    {
+    0F,
+    0.05F,
+    1F
+    };
+            errataTurnKnob17.DialPadding = 2;
+            errataTurnKnob17.EndAngle = 315F;
+            errataTurnKnob17.IgnoreRoles = true;
+            errataTurnKnob17.IgnoreTheme = false;
+            errataTurnKnob17.KnobBackgroundColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob17.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob17.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob17.KnobBorderColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob17.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob17.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob17.KnobBorderWidth = 0;
+            errataTurnKnob17.KnobSize = 0;
+            errataTurnKnob17.Location = new Point(621, 43);
+            errataTurnKnob17.MouseSensitivity = 0.5F;
+            errataTurnKnob17.Name = "errataTurnKnob17";
+            errataTurnKnob17.NeedleColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob17.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob17.NeedleColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob17.NeedleDot = false;
+            errataTurnKnob17.NeedleLength = 20;
+            errataTurnKnob17.NeedleOffset = 20;
+            errataTurnKnob17.NeedleThickness = 3;
+            errataTurnKnob17.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob17.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob17.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob17.ProgressRingPadding = 2;
+            errataTurnKnob17.ProgressRingThickness = 6;
+            errataTurnKnob17.ProgressRingTrackColor = Color.FromArgb(32, 32, 32);
+            errataTurnKnob17.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob17.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTurnKnob17.Size = new Size(100, 100);
+            errataTurnKnob17.StartAngle = 45F;
+            errataTurnKnob17.TabIndex = 394;
+            errataTurnKnob17.Text = "errataTurnKnob17";
+            errataTurnKnob17.TextColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob17.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob17.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob17.TextVisible = false;
+            errataTurnKnob17.TickColor = Color.FromArgb(115, 115, 115);
+            errataTurnKnob17.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob17.TickColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataTurnKnob17.TickCount = 10;
+            errataTurnKnob17.TickDot = false;
+            errataTurnKnob17.TickEnabled = false;
+            errataTurnKnob17.TickLength = 3;
+            errataTurnKnob17.TickOffset = 15;
+            errataTurnKnob17.TickThickness = 2;
+            errataTurnKnob17.Value = 50F;
+            errataTurnKnob17.WoodTexture = null;
+            // 
+            // errataTurnKnob23
+            // 
+            errataTurnKnob23.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob23.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob23.CenteredMode = false;
+            errataTurnKnob23.ControlRotation = 180F;
+            errataTurnKnob23.DialBorderColor = Color.FromArgb(255, 255, 255);
+            errataTurnKnob23.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob23.DialBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataTurnKnob23.DialBorderOnTop = false;
+            errataTurnKnob23.DialBorderWidth = 2;
+            errataTurnKnob23.DialFaceColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob23.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob23.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob23.DialGradient = false;
+            errataTurnKnob23.DialGradientFactors = new float[]
+    {
+    1.5F,
+    1.4F,
+    1.35F,
+    1.3F,
+    1.2F,
+    1.1F,
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0.2F
+    };
+            errataTurnKnob23.DialGradientPositions = new float[]
+    {
+    1.5F,
+    1.4F,
+    1.35F,
+    1.3F,
+    1.2F,
+    1.1F,
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0.2F
+    };
+            errataTurnKnob23.DialPadding = 2;
+            errataTurnKnob23.EndAngle = 315F;
+            errataTurnKnob23.IgnoreRoles = true;
+            errataTurnKnob23.IgnoreTheme = false;
+            errataTurnKnob23.KnobBackgroundColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob23.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob23.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob23.KnobBorderColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob23.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob23.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob23.KnobBorderWidth = 5;
+            errataTurnKnob23.KnobSize = 0;
+            errataTurnKnob23.Location = new Point(565, 93);
+            errataTurnKnob23.MouseSensitivity = 0.5F;
+            errataTurnKnob23.Name = "errataTurnKnob23";
+            errataTurnKnob23.NeedleColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob23.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob23.NeedleColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob23.NeedleDot = false;
+            errataTurnKnob23.NeedleLength = 8;
+            errataTurnKnob23.NeedleOffset = 10;
+            errataTurnKnob23.NeedleThickness = 3;
+            errataTurnKnob23.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob23.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob23.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob23.ProgressRingPadding = 2;
+            errataTurnKnob23.ProgressRingThickness = 4;
+            errataTurnKnob23.ProgressRingTrackColor = Color.FromArgb(32, 32, 32);
+            errataTurnKnob23.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob23.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTurnKnob23.Size = new Size(50, 50);
+            errataTurnKnob23.StartAngle = 45F;
+            errataTurnKnob23.TabIndex = 389;
+            errataTurnKnob23.Text = "errataTurnKnob23";
+            errataTurnKnob23.TextColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob23.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob23.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob23.TextVisible = false;
+            errataTurnKnob23.TickColor = Color.FromArgb(115, 115, 115);
+            errataTurnKnob23.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob23.TickColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataTurnKnob23.TickCount = 10;
+            errataTurnKnob23.TickDot = false;
+            errataTurnKnob23.TickEnabled = false;
+            errataTurnKnob23.TickLength = 3;
+            errataTurnKnob23.TickOffset = 15;
+            errataTurnKnob23.TickThickness = 2;
+            errataTurnKnob23.Value = 25F;
+            errataTurnKnob23.WoodTexture = null;
+            // 
+            // errataTurnKnob24
+            // 
+            errataTurnKnob24.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob24.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob24.CenteredMode = false;
+            errataTurnKnob24.ControlRotation = 180F;
+            errataTurnKnob24.DialBorderColor = Color.FromArgb(212, 212, 212);
+            errataTurnKnob24.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob24.DialBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_150;
+            errataTurnKnob24.DialBorderOnTop = false;
+            errataTurnKnob24.DialBorderWidth = 0;
+            errataTurnKnob24.DialFaceColor = Color.FromArgb(140, 140, 140);
+            errataTurnKnob24.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob24.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_400;
+            errataTurnKnob24.DialGradient = false;
+            errataTurnKnob24.DialGradientFactors = new float[]
+    {
+    0F,
+    0.3F,
+    1F
+    };
+            errataTurnKnob24.DialGradientPositions = new float[]
+    {
+    0F,
+    0.05F,
+    1F
+    };
+            errataTurnKnob24.DialPadding = 2;
+            errataTurnKnob24.EndAngle = 315F;
+            errataTurnKnob24.IgnoreRoles = true;
+            errataTurnKnob24.IgnoreTheme = false;
+            errataTurnKnob24.KnobBackgroundColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob24.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob24.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob24.KnobBorderColor = Color.FromArgb(147, 147, 147);
+            errataTurnKnob24.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob24.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob24.KnobBorderWidth = 0;
+            errataTurnKnob24.KnobSize = 0;
+            errataTurnKnob24.Location = new Point(458, 43);
+            errataTurnKnob24.MouseSensitivity = 0.5F;
+            errataTurnKnob24.Name = "errataTurnKnob24";
+            errataTurnKnob24.NeedleColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob24.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob24.NeedleColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob24.NeedleDot = false;
+            errataTurnKnob24.NeedleLength = 20;
+            errataTurnKnob24.NeedleOffset = 20;
+            errataTurnKnob24.NeedleThickness = 3;
+            errataTurnKnob24.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob24.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob24.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob24.ProgressRingPadding = 2;
+            errataTurnKnob24.ProgressRingThickness = 6;
+            errataTurnKnob24.ProgressRingTrackColor = Color.FromArgb(32, 32, 32);
+            errataTurnKnob24.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob24.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTurnKnob24.Size = new Size(100, 100);
+            errataTurnKnob24.StartAngle = 45F;
+            errataTurnKnob24.TabIndex = 388;
+            errataTurnKnob24.Text = "errataTurnKnob24";
+            errataTurnKnob24.TextColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob24.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob24.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob24.TextVisible = false;
+            errataTurnKnob24.TickColor = Color.FromArgb(115, 115, 115);
+            errataTurnKnob24.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob24.TickColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
+            errataTurnKnob24.TickCount = 10;
+            errataTurnKnob24.TickDot = false;
+            errataTurnKnob24.TickEnabled = false;
+            errataTurnKnob24.TickLength = 3;
+            errataTurnKnob24.TickOffset = 15;
+            errataTurnKnob24.TickThickness = 2;
+            errataTurnKnob24.Value = 50F;
+            errataTurnKnob24.WoodTexture = null;
+            // 
+            // errataTurnKnob18
+            // 
+            errataTurnKnob18.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob18.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob18.CenteredMode = false;
+            errataTurnKnob18.ControlRotation = 180F;
+            errataTurnKnob18.DialBorderColor = Color.FromArgb(20, 0, 61);
+            errataTurnKnob18.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob18.DialBorderColorTheme = ThemeManager.ThemeColorShade.Secondary_900;
+            errataTurnKnob18.DialBorderOnTop = true;
+            errataTurnKnob18.DialBorderWidth = 2;
+            errataTurnKnob18.DialFaceColor = Color.FromArgb(250, 250, 250);
+            errataTurnKnob18.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob18.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob18.DialGradient = false;
+            errataTurnKnob18.DialGradientFactors = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
+            errataTurnKnob18.DialGradientPositions = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
+            errataTurnKnob18.DialPadding = 2;
+            errataTurnKnob18.EndAngle = 310F;
+            errataTurnKnob18.IgnoreRoles = true;
+            errataTurnKnob18.IgnoreTheme = false;
+            errataTurnKnob18.KnobBackgroundColor = Color.FromArgb(77, 77, 77);
+            errataTurnKnob18.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob18.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_750;
+            errataTurnKnob18.KnobBorderColor = Color.FromArgb(32, 32, 32);
+            errataTurnKnob18.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob18.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTurnKnob18.KnobBorderWidth = 2;
+            errataTurnKnob18.KnobSize = 16;
+            errataTurnKnob18.Location = new Point(51, 445);
+            errataTurnKnob18.Margin = new Padding(3, 2, 3, 2);
+            errataTurnKnob18.MouseSensitivity = 0.2F;
+            errataTurnKnob18.Name = "errataTurnKnob18";
+            errataTurnKnob18.NeedleColor = Color.FromArgb(0, 87, 132);
+            errataTurnKnob18.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob18.NeedleColorTheme = ThemeManager.ThemeColorShade.Primary_750;
+            errataTurnKnob18.NeedleDot = false;
+            errataTurnKnob18.NeedleLength = 20;
+            errataTurnKnob18.NeedleOffset = 0;
+            errataTurnKnob18.NeedleThickness = 5;
+            errataTurnKnob18.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob18.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob18.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob18.ProgressRingPadding = 2;
+            errataTurnKnob18.ProgressRingThickness = 3;
+            errataTurnKnob18.ProgressRingTrackColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob18.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob18.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob18.Size = new Size(50, 50);
+            errataTurnKnob18.StartAngle = 50F;
+            errataTurnKnob18.TabIndex = 385;
+            errataTurnKnob18.Text = "errataTurnKnob18";
+            errataTurnKnob18.TextColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob18.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob18.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob18.TextVisible = false;
+            errataTurnKnob18.TickColor = Color.FromArgb(87, 22, 220);
+            errataTurnKnob18.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob18.TickColorTheme = ThemeManager.ThemeColorShade.Secondary_600;
+            errataTurnKnob18.TickCount = 7;
+            errataTurnKnob18.TickDot = false;
+            errataTurnKnob18.TickEnabled = true;
+            errataTurnKnob18.TickLength = 10;
+            errataTurnKnob18.TickOffset = 1;
+            errataTurnKnob18.TickThickness = 2;
+            errataTurnKnob18.Value = 50F;
+            errataTurnKnob18.WoodTexture = null;
+            // 
+            // errataTurnKnob5
+            // 
+            errataTurnKnob5.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob5.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob5.CenteredMode = false;
+            errataTurnKnob5.ControlRotation = 180F;
+            errataTurnKnob5.DialBorderColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob5.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob5.DialBorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob5.DialBorderOnTop = true;
+            errataTurnKnob5.DialBorderWidth = 2;
+            errataTurnKnob5.DialFaceColor = Color.Transparent;
+            errataTurnKnob5.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob5.DialFaceColorTheme = ThemeManager.ThemeColorShade.Transparent;
+            errataTurnKnob5.DialGradient = false;
+            errataTurnKnob5.DialGradientFactors = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
+            errataTurnKnob5.DialGradientPositions = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
+            errataTurnKnob5.DialPadding = 2;
+            errataTurnKnob5.EndAngle = 330F;
+            errataTurnKnob5.IgnoreRoles = true;
+            errataTurnKnob5.IgnoreTheme = false;
+            errataTurnKnob5.KnobBackgroundColor = Color.FromArgb(0, 109, 165);
+            errataTurnKnob5.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob5.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Primary_700;
+            errataTurnKnob5.KnobBorderColor = Color.Transparent;
+            errataTurnKnob5.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob5.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Transparent;
+            errataTurnKnob5.KnobBorderWidth = 2;
+            errataTurnKnob5.KnobSize = 8;
+            errataTurnKnob5.Location = new Point(5, 455);
+            errataTurnKnob5.MouseSensitivity = 0.2F;
+            errataTurnKnob5.Name = "errataTurnKnob5";
+            errataTurnKnob5.NeedleColor = Color.FromArgb(131, 0, 7);
+            errataTurnKnob5.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob5.NeedleColorTheme = ThemeManager.ThemeColorShade.SemanticC_750;
+            errataTurnKnob5.NeedleDot = false;
+            errataTurnKnob5.NeedleLength = 12;
+            errataTurnKnob5.NeedleOffset = 0;
+            errataTurnKnob5.NeedleThickness = 2;
+            errataTurnKnob5.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob5.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob5.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob5.ProgressRingPadding = 2;
+            errataTurnKnob5.ProgressRingThickness = 3;
+            errataTurnKnob5.ProgressRingTrackColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob5.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob5.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob5.Size = new Size(40, 40);
+            errataTurnKnob5.StartAngle = 30F;
+            errataTurnKnob5.TabIndex = 384;
+            errataTurnKnob5.Text = "errataTurnKnob5";
+            errataTurnKnob5.TextColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob5.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob5.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob5.TextVisible = false;
+            errataTurnKnob5.TickColor = Color.FromArgb(48, 0, 147);
+            errataTurnKnob5.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob5.TickColorTheme = ThemeManager.ThemeColorShade.Secondary_750;
+            errataTurnKnob5.TickCount = 11;
+            errataTurnKnob5.TickDot = false;
+            errataTurnKnob5.TickEnabled = true;
+            errataTurnKnob5.TickLength = 4;
+            errataTurnKnob5.TickOffset = 5;
+            errataTurnKnob5.TickThickness = 2;
+            errataTurnKnob5.Value = 0F;
+            errataTurnKnob5.WoodTexture = null;
+            // 
+            // errataTurnKnob4
+            // 
+            errataTurnKnob4.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob4.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob4.CenteredMode = false;
+            errataTurnKnob4.ControlRotation = 180F;
+            errataTurnKnob4.DialBorderColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob4.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob4.DialBorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob4.DialBorderOnTop = true;
+            errataTurnKnob4.DialBorderWidth = 2;
+            errataTurnKnob4.DialFaceColor = Color.Transparent;
+            errataTurnKnob4.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob4.DialFaceColorTheme = ThemeManager.ThemeColorShade.Transparent;
+            errataTurnKnob4.DialGradient = false;
+            errataTurnKnob4.DialGradientFactors = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
+            errataTurnKnob4.DialGradientPositions = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
+            errataTurnKnob4.DialPadding = 5;
+            errataTurnKnob4.EndAngle = 350F;
+            errataTurnKnob4.IgnoreRoles = true;
+            errataTurnKnob4.IgnoreTheme = false;
+            errataTurnKnob4.KnobBackgroundColor = Color.FromArgb(0, 109, 165);
+            errataTurnKnob4.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob4.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Primary_700;
+            errataTurnKnob4.KnobBorderColor = Color.Transparent;
+            errataTurnKnob4.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob4.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Transparent;
+            errataTurnKnob4.KnobBorderWidth = 10;
+            errataTurnKnob4.KnobSize = 20;
+            errataTurnKnob4.Location = new Point(5, 137);
+            errataTurnKnob4.MouseSensitivity = 0.2F;
+            errataTurnKnob4.Name = "errataTurnKnob4";
+            errataTurnKnob4.NeedleColor = Color.FromArgb(131, 0, 7);
+            errataTurnKnob4.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob4.NeedleColorTheme = ThemeManager.ThemeColorShade.SemanticC_750;
+            errataTurnKnob4.NeedleDot = false;
+            errataTurnKnob4.NeedleLength = 35;
+            errataTurnKnob4.NeedleOffset = 0;
+            errataTurnKnob4.NeedleThickness = 2;
+            errataTurnKnob4.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob4.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob4.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob4.ProgressRingPadding = 2;
+            errataTurnKnob4.ProgressRingThickness = 3;
+            errataTurnKnob4.ProgressRingTrackColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob4.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob4.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob4.Size = new Size(100, 100);
+            errataTurnKnob4.StartAngle = 10F;
+            errataTurnKnob4.TabIndex = 383;
+            errataTurnKnob4.Text = "errataTurnKnob4";
+            errataTurnKnob4.TextColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob4.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob4.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob4.TextVisible = false;
+            errataTurnKnob4.TickColor = Color.FromArgb(48, 0, 147);
+            errataTurnKnob4.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob4.TickColorTheme = ThemeManager.ThemeColorShade.Secondary_750;
+            errataTurnKnob4.TickCount = 40;
+            errataTurnKnob4.TickDot = false;
+            errataTurnKnob4.TickEnabled = true;
+            errataTurnKnob4.TickLength = 8;
+            errataTurnKnob4.TickOffset = 12;
+            errataTurnKnob4.TickThickness = 2;
+            errataTurnKnob4.Value = 0F;
+            errataTurnKnob4.WoodTexture = null;
+            // 
+            // errataTurnKnob3
+            // 
+            errataTurnKnob3.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob3.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob3.CenteredMode = false;
+            errataTurnKnob3.ControlRotation = -90F;
+            errataTurnKnob3.DialBorderColor = Color.FromArgb(32, 32, 32);
+            errataTurnKnob3.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob3.DialBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_900;
+            errataTurnKnob3.DialBorderOnTop = false;
+            errataTurnKnob3.DialBorderWidth = 3;
+            errataTurnKnob3.DialFaceColor = Color.FromArgb(96, 96, 96);
+            errataTurnKnob3.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob3.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataTurnKnob3.DialGradient = false;
+            errataTurnKnob3.DialGradientFactors = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
+            errataTurnKnob3.DialGradientPositions = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
+            errataTurnKnob3.DialPadding = 12;
+            errataTurnKnob3.EndAngle = 180F;
+            errataTurnKnob3.IgnoreRoles = true;
+            errataTurnKnob3.IgnoreTheme = false;
+            errataTurnKnob3.KnobBackgroundColor = Color.FromArgb(96, 96, 96);
+            errataTurnKnob3.KnobBackgroundColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob3.KnobBackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataTurnKnob3.KnobBorderColor = Color.FromArgb(77, 77, 77);
+            errataTurnKnob3.KnobBorderColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob3.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_750;
+            errataTurnKnob3.KnobBorderWidth = 2;
+            errataTurnKnob3.KnobSize = 20;
+            errataTurnKnob3.Location = new Point(5, 349);
+            errataTurnKnob3.MouseSensitivity = 0.2F;
+            errataTurnKnob3.Name = "errataTurnKnob3";
+            errataTurnKnob3.NeedleColor = Color.FromArgb(0, 130, 198);
+            errataTurnKnob3.NeedleColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob3.NeedleColorTheme = ThemeManager.ThemeColorShade.Primary_600;
+            errataTurnKnob3.NeedleDot = true;
+            errataTurnKnob3.NeedleLength = 25;
+            errataTurnKnob3.NeedleOffset = -2;
+            errataTurnKnob3.NeedleThickness = 9;
+            errataTurnKnob3.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob3.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob3.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob3.ProgressRingPadding = 2;
+            errataTurnKnob3.ProgressRingThickness = 3;
+            errataTurnKnob3.ProgressRingTrackColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob3.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob3.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataTurnKnob3.Size = new Size(100, 100);
+            errataTurnKnob3.StartAngle = 0F;
+            errataTurnKnob3.TabIndex = 382;
+            errataTurnKnob3.Text = "errataTurnKnob1";
+            errataTurnKnob3.TextColor = Color.FromArgb(231, 247, 255);
+            errataTurnKnob3.TextColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob3.TextColorTheme = ThemeManager.ThemeColorShade.Primary_50;
+            errataTurnKnob3.TextVisible = false;
+            errataTurnKnob3.TickColor = Color.FromArgb(40, 0, 122);
+            errataTurnKnob3.TickColorRole = ThemeManager.UIRole.TitleBar;
+            errataTurnKnob3.TickColorTheme = ThemeManager.ThemeColorShade.Secondary_800;
+            errataTurnKnob3.TickCount = 10;
+            errataTurnKnob3.TickDot = true;
+            errataTurnKnob3.TickEnabled = false;
+            errataTurnKnob3.TickLength = 6;
+            errataTurnKnob3.TickOffset = 4;
+            errataTurnKnob3.TickThickness = 2;
+            errataTurnKnob3.Value = 0F;
+            errataTurnKnob3.WoodTexture = null;
             // 
             // errataFlatLabel17
             // 
@@ -3235,19 +4666,22 @@
             errataFlatLabel17.IgnoreRoles = false;
             errataFlatLabel17.IgnoreTheme = false;
             errataFlatLabel17.LineAlignment = StringAlignment.Center;
-            errataFlatLabel17.Location = new Point(31, 28);
+            errataFlatLabel17.Location = new Point(5, 5);
             errataFlatLabel17.Name = "errataFlatLabel17";
             errataFlatLabel17.OffsetX = 0;
             errataFlatLabel17.OffsetY = 0;
             errataFlatLabel17.Size = new Size(100, 23);
             errataFlatLabel17.Style = ErrataFlatLabel.TextStyle.Body;
-            errataFlatLabel17.TabIndex = 283;
+            errataFlatLabel17.StyleOverride = false;
+            errataFlatLabel17.TabIndex = 381;
             errataFlatLabel17.Text = "Turn Knobs";
             errataFlatLabel17.TextAlignment = StringAlignment.Center;
             // 
             // errataTurnKnob2
             // 
-            errataTurnKnob2.BackColor = Color.Transparent;
+            errataTurnKnob2.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob2.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob2.CenteredMode = false;
             errataTurnKnob2.ControlRotation = 270F;
             errataTurnKnob2.DialBorderColor = Color.FromArgb(15, 15, 15);
             errataTurnKnob2.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
@@ -3257,6 +4691,27 @@
             errataTurnKnob2.DialFaceColor = Color.FromArgb(147, 147, 147);
             errataTurnKnob2.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
             errataTurnKnob2.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
+            errataTurnKnob2.DialGradient = false;
+            errataTurnKnob2.DialGradientFactors = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
+            errataTurnKnob2.DialGradientPositions = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
             errataTurnKnob2.DialPadding = 12;
             errataTurnKnob2.EndAngle = 350F;
             errataTurnKnob2.IgnoreRoles = true;
@@ -3269,7 +4724,7 @@
             errataTurnKnob2.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_750;
             errataTurnKnob2.KnobBorderWidth = 10;
             errataTurnKnob2.KnobSize = 20;
-            errataTurnKnob2.Location = new Point(137, 54);
+            errataTurnKnob2.Location = new Point(5, 243);
             errataTurnKnob2.MouseSensitivity = 0.2F;
             errataTurnKnob2.Name = "errataTurnKnob2";
             errataTurnKnob2.NeedleColor = Color.FromArgb(131, 0, 7);
@@ -3279,9 +4734,17 @@
             errataTurnKnob2.NeedleLength = 35;
             errataTurnKnob2.NeedleOffset = 0;
             errataTurnKnob2.NeedleThickness = 2;
+            errataTurnKnob2.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob2.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob2.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob2.ProgressRingPadding = 2;
+            errataTurnKnob2.ProgressRingThickness = 3;
+            errataTurnKnob2.ProgressRingTrackColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob2.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob2.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
             errataTurnKnob2.Size = new Size(100, 100);
             errataTurnKnob2.StartAngle = 10F;
-            errataTurnKnob2.TabIndex = 282;
+            errataTurnKnob2.TabIndex = 380;
             errataTurnKnob2.Text = "errataTurnKnob2";
             errataTurnKnob2.TextColor = Color.FromArgb(64, 64, 64);
             errataTurnKnob2.TextColorRole = ThemeManager.UIRole.TitleBar;
@@ -3297,10 +4760,13 @@
             errataTurnKnob2.TickOffset = 12;
             errataTurnKnob2.TickThickness = 2;
             errataTurnKnob2.Value = 0F;
+            errataTurnKnob2.WoodTexture = null;
             // 
             // errataTurnKnob1
             // 
-            errataTurnKnob1.BackColor = Color.Transparent;
+            errataTurnKnob1.BackColorRole = ThemeManager.UIRole.MainBackground;
+            errataTurnKnob1.BackColorTheme = ThemeManager.ThemeColorShade.Neutral_100;
+            errataTurnKnob1.CenteredMode = false;
             errataTurnKnob1.ControlRotation = 180F;
             errataTurnKnob1.DialBorderColor = Color.FromArgb(0, 87, 132);
             errataTurnKnob1.DialBorderColorRole = ThemeManager.UIRole.TitleBar;
@@ -3310,6 +4776,27 @@
             errataTurnKnob1.DialFaceColor = Color.FromArgb(186, 186, 186);
             errataTurnKnob1.DialFaceColorRole = ThemeManager.UIRole.TitleBar;
             errataTurnKnob1.DialFaceColorTheme = ThemeManager.ThemeColorShade.Neutral_200;
+            errataTurnKnob1.DialGradient = false;
+            errataTurnKnob1.DialGradientFactors = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
+            errataTurnKnob1.DialGradientPositions = new float[]
+    {
+    1F,
+    0.9F,
+    0.75F,
+    0.6F,
+    0.55F,
+    0.3F,
+    0F
+    };
             errataTurnKnob1.DialPadding = 12;
             errataTurnKnob1.EndAngle = 315F;
             errataTurnKnob1.IgnoreRoles = true;
@@ -3322,7 +4809,7 @@
             errataTurnKnob1.KnobBorderColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
             errataTurnKnob1.KnobBorderWidth = 2;
             errataTurnKnob1.KnobSize = 20;
-            errataTurnKnob1.Location = new Point(31, 54);
+            errataTurnKnob1.Location = new Point(5, 31);
             errataTurnKnob1.MouseSensitivity = 0.2F;
             errataTurnKnob1.Name = "errataTurnKnob1";
             errataTurnKnob1.NeedleColor = Color.FromArgb(15, 150, 220);
@@ -3332,9 +4819,17 @@
             errataTurnKnob1.NeedleLength = 25;
             errataTurnKnob1.NeedleOffset = 6;
             errataTurnKnob1.NeedleThickness = 4;
+            errataTurnKnob1.ProgressRingColor = Color.FromArgb(15, 150, 220);
+            errataTurnKnob1.ProgressRingColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob1.ProgressRingColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataTurnKnob1.ProgressRingPadding = 2;
+            errataTurnKnob1.ProgressRingThickness = 3;
+            errataTurnKnob1.ProgressRingTrackColor = Color.FromArgb(64, 64, 64);
+            errataTurnKnob1.ProgressRingTrackColorRole = ThemeManager.UIRole.EmphasizedBorders;
+            errataTurnKnob1.ProgressRingTrackColorTheme = ThemeManager.ThemeColorShade.Neutral_800;
             errataTurnKnob1.Size = new Size(100, 100);
             errataTurnKnob1.StartAngle = 45F;
-            errataTurnKnob1.TabIndex = 281;
+            errataTurnKnob1.TabIndex = 379;
             errataTurnKnob1.Text = "errataTurnKnob1";
             errataTurnKnob1.TextColor = Color.FromArgb(64, 64, 64);
             errataTurnKnob1.TextColorRole = ThemeManager.UIRole.TitleBar;
@@ -3350,6 +4845,7 @@
             errataTurnKnob1.TickOffset = 4;
             errataTurnKnob1.TickThickness = 2;
             errataTurnKnob1.Value = 0F;
+            errataTurnKnob1.WoodTexture = null;
             // 
             // tpGenerics
             // 
@@ -3379,6 +4875,138 @@
             tpGenerics.Size = new Size(1114, 582);
             tpGenerics.TabIndex = 5;
             tpGenerics.Text = "Generics";
+            // 
+            // errataFlatLabel46
+            // 
+            errataFlatLabel46.BackColor = Color.Transparent;
+            errataFlatLabel46.Font = new Font("Segoe UI", 10F);
+            errataFlatLabel46.ForeRole = ThemeManager.UIRole.PlaceholderText;
+            errataFlatLabel46.ForeTheme = ThemeManager.ThemeColorShade.Neutral_800;
+            errataFlatLabel46.IgnoreRoles = false;
+            errataFlatLabel46.IgnoreTheme = false;
+            errataFlatLabel46.LineAlignment = StringAlignment.Center;
+            errataFlatLabel46.Location = new Point(292, 11);
+            errataFlatLabel46.Name = "errataFlatLabel46";
+            errataFlatLabel46.OffsetX = 0;
+            errataFlatLabel46.OffsetY = 0;
+            errataFlatLabel46.Size = new Size(107, 19);
+            errataFlatLabel46.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel46.StyleOverride = false;
+            errataFlatLabel46.TabIndex = 291;
+            errataFlatLabel46.Text = "Date Time Picker";
+            errataFlatLabel46.TextAlignment = StringAlignment.Near;
+            // 
+            // errataDateTimePicker3
+            // 
+            errataDateTimePicker3.ArrowActiveColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker3.ArrowActiveColorRole = ThemeManager.UIRole.AccentColor;
+            errataDateTimePicker3.ArrowActiveColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker3.ArrowInactiveColor = Color.FromArgb(140, 140, 140);
+            errataDateTimePicker3.ArrowInactiveColorRole = ThemeManager.UIRole.DisabledText;
+            errataDateTimePicker3.ArrowInactiveColorTheme = ThemeManager.ThemeColorShade.Neutral_400;
+            errataDateTimePicker3.BackColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker3.BackgroundColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker3.BackgroundColorRole = ThemeManager.UIRole.MainBackground;
+            errataDateTimePicker3.BackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataDateTimePicker3.BorderColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker3.BorderColorRole = ThemeManager.UIRole.MenuBar;
+            errataDateTimePicker3.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker3.BorderThickness = 1;
+            errataDateTimePicker3.CheckBoxProportion = 0.65F;
+            errataDateTimePicker3.CustomFormat = "";
+            errataDateTimePicker3.Font = new Font("Segoe UI", 10F);
+            errataDateTimePicker3.ForeColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker3.Format = DateTimePickerFormat.Custom;
+            errataDateTimePicker3.HoverColor = Color.FromArgb(128, 128, 128);
+            errataDateTimePicker3.HoverColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker3.HoverColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataDateTimePicker3.IgnoreRoles = false;
+            errataDateTimePicker3.IgnoreTheme = false;
+            errataDateTimePicker3.Location = new Point(292, 95);
+            errataDateTimePicker3.Name = "errataDateTimePicker3";
+            errataDateTimePicker3.Nullable = false;
+            errataDateTimePicker3.Size = new Size(200, 25);
+            errataDateTimePicker3.TabIndex = 290;
+            errataDateTimePicker3.TextColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker3.TextColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker3.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataDateTimePicker3.TextShiftX = 5;
+            errataDateTimePicker3.TextShiftY = 3;
+            // 
+            // errataDateTimePicker2
+            // 
+            errataDateTimePicker2.ArrowActiveColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker2.ArrowActiveColorRole = ThemeManager.UIRole.AccentColor;
+            errataDateTimePicker2.ArrowActiveColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker2.ArrowInactiveColor = Color.FromArgb(140, 140, 140);
+            errataDateTimePicker2.ArrowInactiveColorRole = ThemeManager.UIRole.DisabledText;
+            errataDateTimePicker2.ArrowInactiveColorTheme = ThemeManager.ThemeColorShade.Neutral_400;
+            errataDateTimePicker2.BackColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker2.BackgroundColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker2.BackgroundColorRole = ThemeManager.UIRole.MainBackground;
+            errataDateTimePicker2.BackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataDateTimePicker2.BorderColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker2.BorderColorRole = ThemeManager.UIRole.MenuBar;
+            errataDateTimePicker2.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker2.BorderThickness = 1;
+            errataDateTimePicker2.CheckBoxProportion = 0.65F;
+            errataDateTimePicker2.Checked = false;
+            errataDateTimePicker2.CustomFormat = "yyyy-MM-dd HH:mm";
+            errataDateTimePicker2.Font = new Font("Segoe UI", 10F);
+            errataDateTimePicker2.ForeColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker2.Format = DateTimePickerFormat.Custom;
+            errataDateTimePicker2.HoverColor = Color.FromArgb(128, 128, 128);
+            errataDateTimePicker2.HoverColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker2.HoverColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataDateTimePicker2.IgnoreRoles = false;
+            errataDateTimePicker2.IgnoreTheme = false;
+            errataDateTimePicker2.Location = new Point(292, 33);
+            errataDateTimePicker2.Name = "errataDateTimePicker2";
+            errataDateTimePicker2.Nullable = true;
+            errataDateTimePicker2.Size = new Size(200, 25);
+            errataDateTimePicker2.TabIndex = 289;
+            errataDateTimePicker2.TextColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker2.TextColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker2.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataDateTimePicker2.TextShiftX = 26;
+            errataDateTimePicker2.TextShiftY = 3;
+            // 
+            // errataDateTimePicker1
+            // 
+            errataDateTimePicker1.ArrowActiveColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker1.ArrowActiveColorRole = ThemeManager.UIRole.AccentColor;
+            errataDateTimePicker1.ArrowActiveColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker1.ArrowInactiveColor = Color.FromArgb(140, 140, 140);
+            errataDateTimePicker1.ArrowInactiveColorRole = ThemeManager.UIRole.DisabledText;
+            errataDateTimePicker1.ArrowInactiveColorTheme = ThemeManager.ThemeColorShade.Neutral_400;
+            errataDateTimePicker1.BackColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker1.BackgroundColor = Color.FromArgb(255, 255, 255);
+            errataDateTimePicker1.BackgroundColorRole = ThemeManager.UIRole.MainBackground;
+            errataDateTimePicker1.BackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
+            errataDateTimePicker1.BorderColor = Color.FromArgb(15, 150, 220);
+            errataDateTimePicker1.BorderColorRole = ThemeManager.UIRole.MenuBar;
+            errataDateTimePicker1.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
+            errataDateTimePicker1.BorderThickness = 1;
+            errataDateTimePicker1.CheckBoxProportion = 0.65F;
+            errataDateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm";
+            errataDateTimePicker1.Font = new Font("Segoe UI", 10F);
+            errataDateTimePicker1.ForeColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker1.Format = DateTimePickerFormat.Custom;
+            errataDateTimePicker1.HoverColor = Color.FromArgb(128, 128, 128);
+            errataDateTimePicker1.HoverColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker1.HoverColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
+            errataDateTimePicker1.IgnoreRoles = false;
+            errataDateTimePicker1.IgnoreTheme = false;
+            errataDateTimePicker1.Location = new Point(292, 64);
+            errataDateTimePicker1.Name = "errataDateTimePicker1";
+            errataDateTimePicker1.Nullable = true;
+            errataDateTimePicker1.Size = new Size(200, 25);
+            errataDateTimePicker1.TabIndex = 288;
+            errataDateTimePicker1.TextColor = Color.FromArgb(96, 96, 96);
+            errataDateTimePicker1.TextColorRole = ThemeManager.UIRole.TitleBarText;
+            errataDateTimePicker1.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
+            errataDateTimePicker1.TextShiftX = 26;
+            errataDateTimePicker1.TextShiftY = 3;
             // 
             // errataSeparator5
             // 
@@ -3452,6 +5080,7 @@
             errataFlatLabel45.OffsetY = 0;
             errataFlatLabel45.Size = new Size(107, 19);
             errataFlatLabel45.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel45.StyleOverride = false;
             errataFlatLabel45.TabIndex = 284;
             errataFlatLabel45.Text = "V. Progress Bar";
             errataFlatLabel45.TextAlignment = StringAlignment.Near;
@@ -3471,6 +5100,7 @@
             errataFlatLabel32.OffsetY = 0;
             errataFlatLabel32.Size = new Size(107, 19);
             errataFlatLabel32.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel32.StyleOverride = false;
             errataFlatLabel32.TabIndex = 283;
             errataFlatLabel32.Text = "Textbox";
             errataFlatLabel32.TextAlignment = StringAlignment.Near;
@@ -3516,6 +5146,7 @@
             errataFlatLabel31.OffsetY = 0;
             errataFlatLabel31.Size = new Size(107, 19);
             errataFlatLabel31.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel31.StyleOverride = false;
             errataFlatLabel31.TabIndex = 15;
             errataFlatLabel31.Text = "Data Grid View";
             errataFlatLabel31.TextAlignment = StringAlignment.Near;
@@ -3525,8 +5156,8 @@
             errataDataGridView1.AlternateRowColor = Color.FromArgb(147, 147, 147);
             errataDataGridView1.AlternateRowColorRole = ThemeManager.UIRole.HeadingText;
             errataDataGridView1.AlternateRowColorTheme = ThemeManager.ThemeColorShade.Neutral_300;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            errataDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            errataDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             errataDataGridView1.AutoGenerateColumns = false;
             errataDataGridView1.BackgroundColor = Color.FromArgb(240, 240, 240);
             errataDataGridView1.BorderStyle = BorderStyle.None;
@@ -3539,21 +5170,21 @@
             errataDataGridView1.CellTextColor = Color.FromArgb(115, 115, 115);
             errataDataGridView1.CellTextColorRole = ThemeManager.UIRole.BodyTextL3;
             errataDataGridView1.CellTextColorTheme = ThemeManager.ThemeColorShade.Neutral_600;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(15, 150, 220);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(115, 115, 115);
-            dataGridViewCellStyle6.Padding = new Padding(10, 0, 0, 0);
-            errataDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(15, 150, 220);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(115, 115, 115);
+            dataGridViewCellStyle2.Padding = new Padding(10, 0, 0, 0);
+            errataDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             errataDataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             errataDataGridView1.Columns.AddRange(new DataGridViewColumn[] { nORMDISTRNG0DataGridViewTextBoxColumn, uNIFORMRNG1DataGridViewTextBoxColumn, bETADISTRNG2DataGridViewTextBoxColumn, bIRNSAUNRNG3DataGridViewTextBoxColumn, bURRDISTRNG4DataGridViewTextBoxColumn, cAUCHYRNG5DataGridViewTextBoxColumn, cHIDISTRNG6DataGridViewTextBoxColumn, eRLANGRNG7DataGridViewTextBoxColumn, eXPDISTRNG8DataGridViewTextBoxColumn, gUMBELRNG9DataGridViewTextBoxColumn, gAMMADISTRNG10DataGridViewTextBoxColumn, lAPLACERNG11DataGridViewTextBoxColumn, lOGNORMDISTRNG12DataGridViewTextBoxColumn, tDISTRNG13DataGridViewTextBoxColumn, fDISTRNG14DataGridViewTextBoxColumn, tUKEYLAMBRNG15DataGridViewTextBoxColumn, tRIANGDISTRNG16DataGridViewTextBoxColumn, wEIBULLDISTRNG17DataGridViewTextBoxColumn });
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle7.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle7.ForeColor = Color.FromArgb(115, 115, 115);
-            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(15, 150, 220);
-            dataGridViewCellStyle7.SelectionForeColor = Color.FromArgb(147, 147, 147);
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.False;
-            errataDataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(115, 115, 115);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(15, 150, 220);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(147, 147, 147);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            errataDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             errataDataGridView1.EnableHeadersVisualStyles = false;
             errataDataGridView1.GridColor = Color.FromArgb(128, 128, 128);
             errataDataGridView1.GridLineColor = Color.FromArgb(128, 128, 128);
@@ -3569,11 +5200,11 @@
             errataDataGridView1.PrimaryColor = Color.FromArgb(15, 150, 220);
             errataDataGridView1.RowHeaderBackColor = Color.FromArgb(128, 128, 128);
             errataDataGridView1.RowHeaderBackColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
-            dataGridViewCellStyle8.BackColor = Color.FromArgb(128, 128, 128);
-            dataGridViewCellStyle8.ForeColor = Color.FromArgb(115, 115, 115);
-            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(15, 150, 220);
-            dataGridViewCellStyle8.SelectionForeColor = Color.FromArgb(147, 147, 147);
-            errataDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(128, 128, 128);
+            dataGridViewCellStyle4.ForeColor = Color.FromArgb(115, 115, 115);
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(15, 150, 220);
+            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(147, 147, 147);
+            errataDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             errataDataGridView1.RowTemplate.Height = 30;
             errataDataGridView1.SecondaryColor = Color.FromArgb(110, 45, 245);
             errataDataGridView1.SecondaryColorRole = ThemeManager.UIRole.PrimaryButtonBackground;
@@ -3729,6 +5360,7 @@
             errataFlatLabel28.OffsetY = 0;
             errataFlatLabel28.Size = new Size(107, 19);
             errataFlatLabel28.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel28.StyleOverride = false;
             errataFlatLabel28.TabIndex = 12;
             errataFlatLabel28.Text = "Separators";
             errataFlatLabel28.TextAlignment = StringAlignment.Near;
@@ -3787,6 +5419,7 @@
             errataFlatLabel27.OffsetY = 0;
             errataFlatLabel27.Size = new Size(107, 19);
             errataFlatLabel27.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel27.StyleOverride = false;
             errataFlatLabel27.TabIndex = 9;
             errataFlatLabel27.Text = "Progress Bar";
             errataFlatLabel27.TextAlignment = StringAlignment.Near;
@@ -3806,6 +5439,7 @@
             errataFlatLabel26.OffsetY = 0;
             errataFlatLabel26.Size = new Size(107, 19);
             errataFlatLabel26.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel26.StyleOverride = false;
             errataFlatLabel26.TabIndex = 8;
             errataFlatLabel26.Text = "Combobox";
             errataFlatLabel26.TextAlignment = StringAlignment.Near;
@@ -4051,7 +5685,7 @@
             errataSimpleChart4.Size = new Size(304, 81);
             errataSimpleChart4.TabIndex = 24;
             errataSimpleChart4.Text = "errataSimpleChart4";
-            errataSimpleChart4.Type = ErrataGraphSimpleChart.ControlType.LineDot;
+            errataSimpleChart4.Type = ErrataSimpleChart.ControlType.LineDot;
             errataSimpleChart4.VerticalBuffer = 0.75F;
             // 
             // errataSimpleChart3
@@ -4110,7 +5744,7 @@
             errataSimpleChart3.Size = new Size(304, 81);
             errataSimpleChart3.TabIndex = 23;
             errataSimpleChart3.Text = "errataSimpleChart3";
-            errataSimpleChart3.Type = ErrataGraphSimpleChart.ControlType.Dot;
+            errataSimpleChart3.Type = ErrataSimpleChart.ControlType.Dot;
             errataSimpleChart3.VerticalBuffer = 0.75F;
             // 
             // errataFlatLabel35
@@ -4128,6 +5762,7 @@
             errataFlatLabel35.OffsetY = 0;
             errataFlatLabel35.Size = new Size(107, 19);
             errataFlatLabel35.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel35.StyleOverride = false;
             errataFlatLabel35.TabIndex = 22;
             errataFlatLabel35.Text = "Bar Graph";
             errataFlatLabel35.TextAlignment = StringAlignment.Near;
@@ -4147,6 +5782,7 @@
             errataFlatLabel34.OffsetY = 0;
             errataFlatLabel34.Size = new Size(107, 19);
             errataFlatLabel34.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel34.StyleOverride = false;
             errataFlatLabel34.TabIndex = 21;
             errataFlatLabel34.Text = "Line Chart";
             errataFlatLabel34.TextAlignment = StringAlignment.Near;
@@ -4166,6 +5802,7 @@
             errataFlatLabel33.OffsetY = 0;
             errataFlatLabel33.Size = new Size(107, 19);
             errataFlatLabel33.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel33.StyleOverride = false;
             errataFlatLabel33.TabIndex = 20;
             errataFlatLabel33.Text = "Pie Chart";
             errataFlatLabel33.TextAlignment = StringAlignment.Near;
@@ -4285,6 +5922,7 @@
             errataFlatLabel30.OffsetY = 0;
             errataFlatLabel30.Size = new Size(107, 19);
             errataFlatLabel30.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel30.StyleOverride = false;
             errataFlatLabel30.TabIndex = 16;
             errataFlatLabel30.Text = "Custom Grid";
             errataFlatLabel30.TextAlignment = StringAlignment.Center;
@@ -4407,7 +6045,7 @@
             errataSimpleChart1.Size = new Size(304, 81);
             errataSimpleChart1.TabIndex = 14;
             errataSimpleChart1.Text = "errataSimpleChart1";
-            errataSimpleChart1.Type = ErrataGraphSimpleChart.ControlType.Line;
+            errataSimpleChart1.Type = ErrataSimpleChart.ControlType.Line;
             errataSimpleChart1.VerticalBuffer = 0.75F;
             // 
             // errataFlatLabel29
@@ -4425,6 +6063,7 @@
             errataFlatLabel29.OffsetY = 0;
             errataFlatLabel29.Size = new Size(107, 19);
             errataFlatLabel29.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel29.StyleOverride = false;
             errataFlatLabel29.TabIndex = 13;
             errataFlatLabel29.Text = "Simple Chart";
             errataFlatLabel29.TextAlignment = StringAlignment.Near;
@@ -4520,6 +6159,96 @@
             errataFretboard3.Tuning.Add("D");
             errataFretboard3.Tuning.Add("A");
             errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("E");
+            errataFretboard3.Tuning.Add("B");
+            errataFretboard3.Tuning.Add("G");
+            errataFretboard3.Tuning.Add("D");
+            errataFretboard3.Tuning.Add("A");
+            errataFretboard3.Tuning.Add("E");
             errataFretboard3.Tuning.Add("G");
             errataFretboard3.Tuning.Add("D");
             errataFretboard3.Tuning.Add("A");
@@ -4541,6 +6270,7 @@
             errataFlatLabel37.OffsetY = 0;
             errataFlatLabel37.Size = new Size(107, 19);
             errataFlatLabel37.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel37.StyleOverride = false;
             errataFlatLabel37.TabIndex = 280;
             errataFlatLabel37.Text = "Fretboard";
             errataFlatLabel37.TextAlignment = StringAlignment.Center;
@@ -4560,6 +6290,7 @@
             errataFlatLabel36.OffsetY = 0;
             errataFlatLabel36.Size = new Size(107, 19);
             errataFlatLabel36.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel36.StyleOverride = false;
             errataFlatLabel36.TabIndex = 279;
             errataFlatLabel36.Text = "Piano Keys";
             errataFlatLabel36.TextAlignment = StringAlignment.Center;
@@ -4573,6 +6304,7 @@
             errataPianoKeys1.IgnoreTheme = false;
             errataPianoKeys1.KeyPressColorGradient = true;
             errataPianoKeys1.KeyPressColors = (List<Color>)resources.GetObject("errataPianoKeys1.KeyPressColors");
+            errataPianoKeys1.KeyPressGradient = true;
             errataPianoKeys1.KeyPressGradientColorHigh = Color.FromArgb(110, 45, 245);
             errataPianoKeys1.KeyPressGradientColorHighRole = ThemeManager.UIRole.MainBackground;
             errataPianoKeys1.KeyPressGradientColorHighTheme = ThemeManager.ThemeColorShade.Secondary_500;
@@ -4585,7 +6317,7 @@
             errataPianoKeys1.PressedKeyColor = Color.FromArgb(15, 150, 220);
             errataPianoKeys1.PressedKeyColorRole = ThemeManager.UIRole.TitleBar;
             errataPianoKeys1.PressedKeyColorTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataPianoKeys1.Size = new Size(520, 129);
+            errataPianoKeys1.Size = new Size(519, 129);
             errataPianoKeys1.TabIndex = 278;
             errataPianoKeys1.Text = "errataPianoKeys1";
             errataPianoKeys1.WhiteKeyColor = Color.FromArgb(255, 255, 255);
@@ -5198,6 +6930,96 @@
             errataFretboard1.Tuning.Add("D");
             errataFretboard1.Tuning.Add("A");
             errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("E");
+            errataFretboard1.Tuning.Add("B");
+            errataFretboard1.Tuning.Add("G");
+            errataFretboard1.Tuning.Add("D");
+            errataFretboard1.Tuning.Add("A");
+            errataFretboard1.Tuning.Add("E");
             errataFretboard1.WoodTexture = (Image)resources.GetObject("errataFretboard1.WoodTexture");
             // 
             // tpOverview
@@ -5238,6 +7060,7 @@
             errataFlatLabel43.OffsetY = 0;
             errataFlatLabel43.Size = new Size(107, 19);
             errataFlatLabel43.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel43.StyleOverride = false;
             errataFlatLabel43.TabIndex = 294;
             errataFlatLabel43.Text = "Custom Grid";
             errataFlatLabel43.TextAlignment = StringAlignment.Near;
@@ -5360,7 +7183,7 @@
             errataSimpleChart2.Size = new Size(194, 100);
             errataSimpleChart2.TabIndex = 292;
             errataSimpleChart2.Text = "errataSimpleChart2";
-            errataSimpleChart2.Type = ErrataGraphSimpleChart.ControlType.Line;
+            errataSimpleChart2.Type = ErrataSimpleChart.ControlType.Line;
             errataSimpleChart2.VerticalBuffer = 0.75F;
             // 
             // errataFlatLabel44
@@ -5378,6 +7201,7 @@
             errataFlatLabel44.OffsetY = 0;
             errataFlatLabel44.Size = new Size(107, 19);
             errataFlatLabel44.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel44.StyleOverride = false;
             errataFlatLabel44.TabIndex = 291;
             errataFlatLabel44.Text = "Simple Chart";
             errataFlatLabel44.TextAlignment = StringAlignment.Near;
@@ -5397,6 +7221,7 @@
             errataFlatLabel40.OffsetY = 0;
             errataFlatLabel40.Size = new Size(107, 19);
             errataFlatLabel40.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel40.StyleOverride = false;
             errataFlatLabel40.TabIndex = 290;
             errataFlatLabel40.Text = "Bar Graph";
             errataFlatLabel40.TextAlignment = StringAlignment.Near;
@@ -5416,6 +7241,7 @@
             errataFlatLabel41.OffsetY = 0;
             errataFlatLabel41.Size = new Size(107, 19);
             errataFlatLabel41.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel41.StyleOverride = false;
             errataFlatLabel41.TabIndex = 289;
             errataFlatLabel41.Text = "Line Chart";
             errataFlatLabel41.TextAlignment = StringAlignment.Near;
@@ -5435,6 +7261,7 @@
             errataFlatLabel42.OffsetY = 0;
             errataFlatLabel42.Size = new Size(107, 19);
             errataFlatLabel42.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel42.StyleOverride = false;
             errataFlatLabel42.TabIndex = 288;
             errataFlatLabel42.Text = "Pie Chart";
             errataFlatLabel42.TextAlignment = StringAlignment.Near;
@@ -5554,6 +7381,7 @@
             errataFlatLabel38.OffsetY = 0;
             errataFlatLabel38.Size = new Size(107, 19);
             errataFlatLabel38.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel38.StyleOverride = false;
             errataFlatLabel38.TabIndex = 284;
             errataFlatLabel38.Text = "Fretboard";
             errataFlatLabel38.TextAlignment = StringAlignment.Near;
@@ -5573,6 +7401,7 @@
             errataFlatLabel39.OffsetY = 0;
             errataFlatLabel39.Size = new Size(107, 19);
             errataFlatLabel39.Style = ErrataFlatLabel.TextStyle.Caption;
+            errataFlatLabel39.StyleOverride = false;
             errataFlatLabel39.TabIndex = 283;
             errataFlatLabel39.Text = "Piano Keys";
             errataFlatLabel39.TextAlignment = StringAlignment.Near;
@@ -5586,6 +7415,7 @@
             errataPianoKeys2.IgnoreTheme = false;
             errataPianoKeys2.KeyPressColorGradient = true;
             errataPianoKeys2.KeyPressColors = (List<Color>)resources.GetObject("errataPianoKeys2.KeyPressColors");
+            errataPianoKeys2.KeyPressGradient = true;
             errataPianoKeys2.KeyPressGradientColorHigh = Color.FromArgb(110, 45, 245);
             errataPianoKeys2.KeyPressGradientColorHighRole = ThemeManager.UIRole.MainBackground;
             errataPianoKeys2.KeyPressGradientColorHighTheme = ThemeManager.ThemeColorShade.Secondary_500;
@@ -6217,138 +8047,105 @@
             errataFretboard2.Tuning.Add("D");
             errataFretboard2.Tuning.Add("A");
             errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("E");
+            errataFretboard2.Tuning.Add("B");
+            errataFretboard2.Tuning.Add("G");
+            errataFretboard2.Tuning.Add("D");
+            errataFretboard2.Tuning.Add("A");
+            errataFretboard2.Tuning.Add("E");
             errataFretboard2.WoodTexture = (Image)resources.GetObject("errataFretboard2.WoodTexture");
             // 
-            // errataDateTimePicker1
+            // listView1
             // 
-            errataDateTimePicker1.ArrowActiveColor = Color.FromArgb(15, 150, 220);
-            errataDateTimePicker1.ArrowActiveColorRole = ThemeManager.UIRole.AccentColor;
-            errataDateTimePicker1.ArrowActiveColorTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataDateTimePicker1.ArrowInactiveColor = Color.FromArgb(140, 140, 140);
-            errataDateTimePicker1.ArrowInactiveColorRole = ThemeManager.UIRole.DisabledText;
-            errataDateTimePicker1.ArrowInactiveColorTheme = ThemeManager.ThemeColorShade.Neutral_400;
-            errataDateTimePicker1.BackColor = Color.FromArgb(255, 255, 255);
-            errataDateTimePicker1.BackgroundColor = Color.FromArgb(255, 255, 255);
-            errataDateTimePicker1.BackgroundColorRole = ThemeManager.UIRole.MainBackground;
-            errataDateTimePicker1.BackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
-            errataDateTimePicker1.BorderColor = Color.FromArgb(15, 150, 220);
-            errataDateTimePicker1.BorderColorRole = ThemeManager.UIRole.MenuBar;
-            errataDateTimePicker1.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataDateTimePicker1.BorderThickness = 1;
-            errataDateTimePicker1.CheckBoxProportion = 0.65F;
-            errataDateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm";
-            errataDateTimePicker1.Font = new Font("Segoe UI", 10F);
-            errataDateTimePicker1.ForeColor = Color.FromArgb(96, 96, 96);
-            errataDateTimePicker1.Format = DateTimePickerFormat.Custom;
-            errataDateTimePicker1.HoverColor = Color.FromArgb(128, 128, 128);
-            errataDateTimePicker1.HoverColorRole = ThemeManager.UIRole.TitleBarText;
-            errataDateTimePicker1.HoverColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
-            errataDateTimePicker1.IgnoreRoles = false;
-            errataDateTimePicker1.IgnoreTheme = false;
-            errataDateTimePicker1.Location = new Point(292, 64);
-            errataDateTimePicker1.Name = "errataDateTimePicker1";
-            errataDateTimePicker1.Nullable = true;
-            errataDateTimePicker1.Size = new Size(200, 25);
-            errataDateTimePicker1.TabIndex = 288;
-            errataDateTimePicker1.TextColor = Color.FromArgb(96, 96, 96);
-            errataDateTimePicker1.TextColorRole = ThemeManager.UIRole.TitleBarText;
-            errataDateTimePicker1.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
-            errataDateTimePicker1.TextShiftX = 26;
-            errataDateTimePicker1.TextShiftY = 3;
-            // 
-            // errataDateTimePicker2
-            // 
-            errataDateTimePicker2.ArrowActiveColor = Color.FromArgb(15, 150, 220);
-            errataDateTimePicker2.ArrowActiveColorRole = ThemeManager.UIRole.AccentColor;
-            errataDateTimePicker2.ArrowActiveColorTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataDateTimePicker2.ArrowInactiveColor = Color.FromArgb(140, 140, 140);
-            errataDateTimePicker2.ArrowInactiveColorRole = ThemeManager.UIRole.DisabledText;
-            errataDateTimePicker2.ArrowInactiveColorTheme = ThemeManager.ThemeColorShade.Neutral_400;
-            errataDateTimePicker2.BackColor = Color.FromArgb(255, 255, 255);
-            errataDateTimePicker2.BackgroundColor = Color.FromArgb(255, 255, 255);
-            errataDateTimePicker2.BackgroundColorRole = ThemeManager.UIRole.MainBackground;
-            errataDateTimePicker2.BackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
-            errataDateTimePicker2.BorderColor = Color.FromArgb(15, 150, 220);
-            errataDateTimePicker2.BorderColorRole = ThemeManager.UIRole.MenuBar;
-            errataDateTimePicker2.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataDateTimePicker2.BorderThickness = 1;
-            errataDateTimePicker2.CheckBoxProportion = 0.65F;
-            errataDateTimePicker2.Checked = false;
-            errataDateTimePicker2.CustomFormat = "yyyy-MM-dd HH:mm";
-            errataDateTimePicker2.Font = new Font("Segoe UI", 10F);
-            errataDateTimePicker2.ForeColor = Color.FromArgb(96, 96, 96);
-            errataDateTimePicker2.Format = DateTimePickerFormat.Custom;
-            errataDateTimePicker2.HoverColor = Color.FromArgb(128, 128, 128);
-            errataDateTimePicker2.HoverColorRole = ThemeManager.UIRole.TitleBarText;
-            errataDateTimePicker2.HoverColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
-            errataDateTimePicker2.IgnoreRoles = false;
-            errataDateTimePicker2.IgnoreTheme = false;
-            errataDateTimePicker2.Location = new Point(292, 33);
-            errataDateTimePicker2.Name = "errataDateTimePicker2";
-            errataDateTimePicker2.Nullable = true;
-            errataDateTimePicker2.Size = new Size(200, 25);
-            errataDateTimePicker2.TabIndex = 289;
-            errataDateTimePicker2.TextColor = Color.FromArgb(96, 96, 96);
-            errataDateTimePicker2.TextColorRole = ThemeManager.UIRole.TitleBarText;
-            errataDateTimePicker2.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
-            errataDateTimePicker2.TextShiftX = 26;
-            errataDateTimePicker2.TextShiftY = 3;
-            // 
-            // errataDateTimePicker3
-            // 
-            errataDateTimePicker3.ArrowActiveColor = Color.FromArgb(15, 150, 220);
-            errataDateTimePicker3.ArrowActiveColorRole = ThemeManager.UIRole.AccentColor;
-            errataDateTimePicker3.ArrowActiveColorTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataDateTimePicker3.ArrowInactiveColor = Color.FromArgb(140, 140, 140);
-            errataDateTimePicker3.ArrowInactiveColorRole = ThemeManager.UIRole.DisabledText;
-            errataDateTimePicker3.ArrowInactiveColorTheme = ThemeManager.ThemeColorShade.Neutral_400;
-            errataDateTimePicker3.BackColor = Color.FromArgb(255, 255, 255);
-            errataDateTimePicker3.BackgroundColor = Color.FromArgb(255, 255, 255);
-            errataDateTimePicker3.BackgroundColorRole = ThemeManager.UIRole.MainBackground;
-            errataDateTimePicker3.BackgroundColorTheme = ThemeManager.ThemeColorShade.Neutral_50;
-            errataDateTimePicker3.BorderColor = Color.FromArgb(15, 150, 220);
-            errataDateTimePicker3.BorderColorRole = ThemeManager.UIRole.MenuBar;
-            errataDateTimePicker3.BorderColorTheme = ThemeManager.ThemeColorShade.Primary_500;
-            errataDateTimePicker3.BorderThickness = 1;
-            errataDateTimePicker3.CheckBoxProportion = 0.65F;
-            errataDateTimePicker3.CustomFormat = "";
-            errataDateTimePicker3.Font = new Font("Segoe UI", 10F);
-            errataDateTimePicker3.ForeColor = Color.FromArgb(96, 96, 96);
-            errataDateTimePicker3.Format = DateTimePickerFormat.Custom;
-            errataDateTimePicker3.HoverColor = Color.FromArgb(128, 128, 128);
-            errataDateTimePicker3.HoverColorRole = ThemeManager.UIRole.TitleBarText;
-            errataDateTimePicker3.HoverColorTheme = ThemeManager.ThemeColorShade.Neutral_500;
-            errataDateTimePicker3.IgnoreRoles = false;
-            errataDateTimePicker3.IgnoreTheme = false;
-            errataDateTimePicker3.Location = new Point(292, 95);
-            errataDateTimePicker3.Name = "errataDateTimePicker3";
-            errataDateTimePicker3.Nullable = false;
-            errataDateTimePicker3.Size = new Size(200, 25);
-            errataDateTimePicker3.TabIndex = 290;
-            errataDateTimePicker3.TextColor = Color.FromArgb(96, 96, 96);
-            errataDateTimePicker3.TextColorRole = ThemeManager.UIRole.TitleBarText;
-            errataDateTimePicker3.TextColorTheme = ThemeManager.ThemeColorShade.Neutral_700;
-            errataDateTimePicker3.TextShiftX = 5;
-            errataDateTimePicker3.TextShiftY = 3;
-            // 
-            // errataFlatLabel46
-            // 
-            errataFlatLabel46.BackColor = Color.Transparent;
-            errataFlatLabel46.Font = new Font("Segoe UI", 10F);
-            errataFlatLabel46.ForeRole = ThemeManager.UIRole.PlaceholderText;
-            errataFlatLabel46.ForeTheme = ThemeManager.ThemeColorShade.Neutral_800;
-            errataFlatLabel46.IgnoreRoles = false;
-            errataFlatLabel46.IgnoreTheme = false;
-            errataFlatLabel46.LineAlignment = StringAlignment.Center;
-            errataFlatLabel46.Location = new Point(292, 11);
-            errataFlatLabel46.Name = "errataFlatLabel46";
-            errataFlatLabel46.OffsetX = 0;
-            errataFlatLabel46.OffsetY = 0;
-            errataFlatLabel46.Size = new Size(107, 19);
-            errataFlatLabel46.Style = ErrataFlatLabel.TextStyle.Caption;
-            errataFlatLabel46.TabIndex = 291;
-            errataFlatLabel46.Text = "Date Time Picker";
-            errataFlatLabel46.TextAlignment = StringAlignment.Near;
+            listView1.Location = new Point(853, 366);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(121, 97);
+            listView1.TabIndex = 14;
+            listView1.UseCompatibleStateImageBehavior = false;
             // 
             // frmExampleWinForms
             // 
@@ -6368,12 +8165,14 @@
             errataTabControl1.ResumeLayout(false);
             tpButtons.ResumeLayout(false);
             tpContainers.ResumeLayout(false);
+            errataGroupPanel1.ResumeLayout(false);
             errataTabControl2.ResumeLayout(false);
             errataDrawer1.ResumeLayout(false);
             errataGroupPanel4.ResumeLayout(false);
             tpLabels.ResumeLayout(false);
             tpToggle.ResumeLayout(false);
             tpSliders.ResumeLayout(false);
+            tpKnobs.ResumeLayout(false);
             tpGenerics.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)errataDataGridView1).EndInit();
             tpCustoms.ResumeLayout(false);
@@ -6434,9 +8233,6 @@
         private ErrataToggleSwitch errataToggleSwitch2;
         private ErrataToggleSwitch errataToggleSwitch1;
         private ErrataFlatLabel errataFlatLabel16;
-        private ErrataFlatLabel errataFlatLabel17;
-        private ErrataTurnKnob errataTurnKnob2;
-        private ErrataTurnKnob errataTurnKnob1;
         private ErrataFlatLabel errataFlatLabel18;
         private ErrataTrackBar hsGenMotiffChance;
         private ErrataPanelArc errataPanelArc1;
@@ -6447,7 +8243,6 @@
         private ErrataPanelTranslucent errataPanelTranslucent1;
         private ErrataFlatLabel errataFlatLabel21;
         private ErrataFlatLabel errataFlatLabel20;
-        private ErrataTrackBarV errataTrackBarv1;
         private ErrataFlatLabel errataFlatLabel19;
         private ErrataRangeBar erbGtrFret;
         private ErrataButtonIcon errataButtonIcon2;
@@ -6496,13 +8291,10 @@
         private DataGridViewTextBoxColumn wEIBULLDISTRNG17DataGridViewTextBoxColumn;
         private ErrataFlatLabel errataFlatLabel30;
         private ErrataCustomGrid errataCustomGrid1;
-        private ErrataGraphSimpleChart errataSimpleChart1;
+        private ErrataSimpleChart errataSimpleChart1;
         private ErrataFlatLabel errataFlatLabel29;
-        private ErrataTurnKnob errataTurnKnob3;
         private ErrataFlatLabel errataFlatLabel32;
         private ErrataTextBox errataTextBox1;
-        private ErrataTurnKnob errataTurnKnob4;
-        private ErrataTurnKnob errataTurnKnob5;
         private ErrataFlatLabel errataFlatLabel35;
         private ErrataFlatLabel errataFlatLabel34;
         private ErrataFlatLabel errataFlatLabel33;
@@ -6529,7 +8321,7 @@
         private ErrataFlatLabel errataFlatLabel45;
         private ErrataFlatLabel errataFlatLabel43;
         private ErrataCustomGrid errataCustomGrid2;
-        private ErrataGraphSimpleChart errataSimpleChart2;
+        private ErrataSimpleChart errataSimpleChart2;
         private ErrataFlatLabel errataFlatLabel44;
         private ErrataToggleSwitch errataToggleSwitch7;
         private ErrataToggleSwitch errataToggleSwitch8;
@@ -6542,8 +8334,8 @@
         private ErrataSeparator errataSeparator4;
         private ErrataSeparator errataSeparator3;
         private ErrataGraphPie errataGraphPie3;
-        private ErrataGraphSimpleChart errataSimpleChart4;
-        private ErrataGraphSimpleChart errataSimpleChart3;
+        private ErrataSimpleChart errataSimpleChart4;
+        private ErrataSimpleChart errataSimpleChart3;
         private ErrataGraphBar errataGraphBar3;
         private ErrataGraphLine errataGraphLine3;
         private ErrataFretboard errataFretboard3;
@@ -6552,5 +8344,31 @@
         private ErrataDateTimePicker errataDateTimePicker3;
         private ErrataDateTimePicker errataDateTimePicker2;
         private ErrataDateTimePicker errataDateTimePicker1;
+        private ErrataGroupPanel errataGroupPanel1;
+        private ErrataFlatLabel errataFlatLabel47;
+        private ErrataGroupPanel errataGroupPanel2;
+        private ErrataTrackBarV errataTrackBarv6;
+        private ErrataTrackBarV errataTrackBarv5;
+        private ErrataTrackBarV errataTrackBarv4;
+        private ErrataTrackBarV errataTrackBarv3;
+        private ErrataTrackBarV errataTrackBarv7;
+        private ErrataTrackBarV errataTrackBarv8;
+        private ErrataTrackBarV errataTrackBarv1;
+        private TabPage tpKnobs;
+        private ErrataTurnKnob errataTurnKnob18;
+        private ErrataTurnKnob errataTurnKnob5;
+        private ErrataTurnKnob errataTurnKnob4;
+        private ErrataTurnKnob errataTurnKnob3;
+        private ErrataFlatLabel errataFlatLabel17;
+        private ErrataTurnKnob errataTurnKnob2;
+        private ErrataTurnKnob errataTurnKnob1;
+        private ErrataTurnKnob errataTurnKnob15;
+        private ErrataTurnKnob errataTurnKnob16;
+        private ErrataTurnKnob errataTurnKnob17;
+        private ErrataTurnKnob errataTurnKnob23;
+        private ErrataTurnKnob errataTurnKnob24;
+        private ErrataTurnKnob errataTurnKnob6;
+        private ErrataTurnKnob errataTurnKnob7;
+        private ListView listView1;
     }
 }

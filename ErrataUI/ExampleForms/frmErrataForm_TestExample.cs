@@ -11,9 +11,9 @@ using ErrataUI;
 
 namespace ErrataUI.ExampleForms
 {
-    public partial class frmExample_ButtonsFocus : ErrataForm
+    public partial class frmErrataForm_TestExample : ErrataForm
     {
-        public frmExample_ButtonsFocus()
+        public frmErrataForm_TestExample()
         {
             InitializeComponent();
         }

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
+using System.Reflection;
 using System.Windows.Forms;
 using static ErrataUI.ThemeManager;
 
@@ -10,6 +12,12 @@ namespace ErrataUI
 {
     public class ErrataPianoKeys : Control
     {
+        private static Image whiteKeyImage;
+        private static Image blackKeyImage;
+
+
+
+
         private bool _ignoreRoles = true;
         [Category("Theme Manager"), Description("If true, role updates will be ignored, allowing individual theme application.")]
         public bool IgnoreRoles
@@ -40,9 +48,12 @@ namespace ErrataUI
         private List<PianoKey> _keys = new List<PianoKey>();
         private Dictionary<Keys, string> _keyMapping;
         public event EventHandler<string> KeyPressed;
+        //public event EventHandler<PianoKeyEventArgs> KeyPressed;
+
         public event EventHandler<string> KeyReleased;
 
         private bool _isMouseDown = false;
+        private string _currentKeyPressed = null;  // Track the currently pressed key
 
         private bool _keyPressColorGradient = true;
         [Category("Misc")]
@@ -85,6 +96,17 @@ namespace ErrataUI
             set
             {
                 _whiteKeyHeightTrim = value; Invalidate();
+            }
+        }
+
+        private bool _keyPressGradient = true;
+        [Category("Misc")]
+        public bool KeyPressGradient
+        {
+            get => _keyPressGradient;
+            set
+            {
+                _keyPressGradient = value; Invalidate();
             }
         }
 
@@ -224,9 +246,12 @@ namespace ErrataUI
                 KeyPressGradientColorLow = ThemeManager.Instance.GetThemeColorShadeOffset(KeyPressGradientColorLowTheme);
                 KeyPressGradientColorHigh = ThemeManager.Instance.GetThemeColorShadeOffset(KeyPressGradientColorHighTheme);
                 _keyPressColors = ThemeManager.ColorGenerateGradient(KeyPressGradientColorLow, KeyPressGradientColorHigh, KeyCount);
+                
+                
                 for (int i = 0; i < _keys.Count; i++)
                 {
-                    _keys[i].PressedColor = _keyPressColors[i];
+                    _keys[i].PressedColor = KeyPressColorGradient ? _keyPressColors[i] : PressedKeyColor;
+
                 }
             }
         }
@@ -238,17 +263,101 @@ namespace ErrataUI
             ThemeManager.Instance.ThemeChanged += (s, e) => UpdateColor();
             this.DoubleBuffered = true;
             GenerateKeys();
-            SetupKeyMapping();
+            QWERTYKeyMap();
+
+            this.MouseCaptureChanged += OnMouseCaptureChanged;
             this.KeyDown += PianoKeyboard_KeyDown;
             this.KeyUp += PianoKeyboard_KeyUp;
+
             this.Focus();
+            _keyPressColors = ThemeManager.ColorGenerateGradient(KeyPressGradientColorLow, KeyPressGradientColorHigh, KeyCount);
+            for (int i = 0; i < _keys.Count; i++)
+            {
+                _keys[i].PressedColor = _keyPressColors[i];
+                
+            }
+
+            this.LoadImages();
         }
+
+
+        private void LoadImages()
+        {
+            if (whiteKeyImage == null || blackKeyImage == null)
+            {
+                var assembly = Assembly.GetExecutingAssembly();
+                whiteKeyImage = LoadEmbeddedImage("ErrataUI.Resources.key_white.png");
+                blackKeyImage = LoadEmbeddedImage("ErrataUI.Resources.key_black.png");
+            }
+        }
+
+        private Image LoadEmbeddedImage(string resourceName)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            using (var stream = assembly.GetManifestResourceStream(resourceName))
+            {
+                return stream != null ? Image.FromStream(stream) : null;
+            }
+        }
+
+
+
+
+        public void GeneratePressedGradient()
+        {
+            _keyPressColors = ThemeManager.ColorGenerateGradient(KeyPressGradientColorLow, KeyPressGradientColorHigh, KeyCount);
+            for (int i = 0; i < _keys.Count; i++)
+            {
+                _keys[i].PressedColor = _keyPressColors[i];
+
+            }
+        }
+
+        public void GenerateQWERTYMap(int octave = 1)
+        {
+            QWERTYKeyMap(octave);
+        }
+
+
+        public void SimulateKeyPress(string note)
+        {
+            foreach (var key in _keys)
+            {
+                if (key.Note == note)
+                {
+                    key.IsPressed = true;
+                    Invalidate(); // Redraw the control
+                    break;
+                }
+            }
+        }
+
+        public void SimulateKeyRelease(string note)
+        {
+            foreach (var key in _keys)
+            {
+                if (key.Note == note)
+                {
+                    key.IsPressed = false;
+                    Invalidate(); // Redraw the control
+                    break;
+                }
+            }
+        }
+
 
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
+
+            int whiteKeyCount = _octaves * 7;
+            if (whiteKeyCount > 0)
+            {
+                int keyWidth = Width / whiteKeyCount;  // Determine key width
+                Width = (keyWidth * whiteKeyCount) + 1;      // Adjust width to be a multiple
+            }
             GenerateKeys();
-            Invalidate();  // Force repaint
+            Invalidate(); // Redraw to reflect changes
         }
 
         private void GenerateKeys()
@@ -286,19 +395,20 @@ namespace ErrataUI
             }
         }
 
-        private void SetupKeyMapping()
+        private void QWERTYKeyMap(int octave = 1)
         {
+            string o = octave.ToString().Trim();
             _keyMapping = new Dictionary<Keys, string>
-        {
-            { Keys.A, "C1" }, { Keys.W, "C#1" },
-            { Keys.S, "D1" }, { Keys.E, "D#1" },
-            { Keys.D, "E1" },
-            { Keys.F, "F1" }, { Keys.T, "F#1" },
-            { Keys.G, "G1" }, { Keys.Y, "G#1" },
-            { Keys.H, "A1" }, { Keys.U, "A#1" },
-            { Keys.J, "B1" },
-            { Keys.K, "C2" }
-        };
+                {
+                    { Keys.A, $"C{o}" }, { Keys.W, $"C#{o}" },
+                    { Keys.S, $"D{o}" }, { Keys.E, $"D#{o}" },
+                    { Keys.D, $"E{o}" },
+                    { Keys.F, $"F{o}" }, { Keys.T, $"F#{o}" },
+                    { Keys.G, $"G{o}" }, { Keys.Y, $"G#{o}" },
+                    { Keys.H, $"A{o}" }, { Keys.U, $"A#{o}" },
+                    { Keys.J, $"B{o}" },
+                    { Keys.K, $"C{octave + 1}" }
+                };
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -309,9 +419,10 @@ namespace ErrataUI
             // Draw white keys first
             foreach (var key in _keys.Where(k => !k.IsBlack))
             {
-                using (Brush brush = new SolidBrush(key.IsPressed ? key.PressedColor : key.IsBlack ? _blackKeyColor : _whiteKeyColor))
+                using (Brush brush = new SolidBrush(key.IsPressed ? key.PressedColor : (key.IsBlack ? _blackKeyColor : _whiteKeyColor)))
                 {
                     e.Graphics.FillRectangle(brush, key.Bounds);
+                    e.Graphics.DrawImage(key.IsBlack ? blackKeyImage : whiteKeyImage, new Rectangle(0, 0, this.Width, this.Height));
                 }
                 e.Graphics.DrawRectangle(Pens.Black, key.Bounds);
             }
@@ -322,6 +433,7 @@ namespace ErrataUI
                 using (Brush brush = new SolidBrush(key.IsPressed ? key.PressedColor : key.IsBlack ? _blackKeyColor : _whiteKeyColor))
                 {
                     e.Graphics.FillRectangle(brush, key.Bounds);
+                    e.Graphics.DrawImage(key.IsBlack ? blackKeyImage : whiteKeyImage, new Rectangle(0, 0, this.Width, this.Height));
                 }
                 e.Graphics.DrawRectangle(Pens.Black, key.Bounds);
             }
@@ -331,22 +443,17 @@ namespace ErrataUI
         {
             base.OnMouseDown(e);
             _isMouseDown = true;
+            _currentKeyPressed = GetNoteFromMousePosition(e.X, e.Y);
+            Debug.Print($"OnMouseDown");
             HandleMouseInteraction(e.Location);
           
         }
 
-        protected override void OnMouseMove(MouseEventArgs e)
-        {
-            base.OnMouseMove(e);
-
-            if (_isMouseDown) // Only trigger if mouse is held down
-            {
-                HandleMouseInteraction(e.Location);
-            }
-        }
+        
 
         protected override void OnMouseUp(MouseEventArgs e)
         {
+            Debug.Print($"OnMouseUp");
             base.OnMouseUp(e);
             _isMouseDown = false;
 
@@ -356,42 +463,141 @@ namespace ErrataUI
                 key.IsPressed = false;
             }
 
+            string note = GetNoteFromMousePosition(e.X, e.Y);
+            OnKeyReleased(note);
+
             Invalidate();  // Redraw the keyboard
         }
 
-        private void HandleMouseInteraction(Point location)
+        private string GetNoteFromMousePosition(int x, int y)
         {
-            // Reset all keys first
-            foreach (var key in _keys)
-            {
-                key.IsPressed = false;
-            }
 
-            // Check black keys first (since they overlap white keys)
-            var blackKey = _keys.FirstOrDefault(k => k.IsBlack && k.Bounds.Contains(location));
+            var blackKey = _keys.FirstOrDefault(k => k.IsBlack && k.Bounds.Contains(x, y));
+            var whiteKey = _keys.FirstOrDefault(k => !k.IsBlack && k.Bounds.Contains(x, y));
             if (blackKey != null)
             {
-                blackKey.IsPressed = true;
-                KeyPressed?.Invoke(this, blackKey.Note);
-                Invalidate();
-                return;  // Stop further checking
+                return blackKey.Note;  // Stop further checking
             }
 
-            // Check white keys
-            var whiteKey = _keys.FirstOrDefault(k => !k.IsBlack && k.Bounds.Contains(location));
+
             if (whiteKey != null)
             {
-                whiteKey.IsPressed = true;
-                KeyPressed?.Invoke(this, whiteKey.Note);
-                Invalidate();
+                return whiteKey.Note;
             }
+
+            foreach (var key in _keys)
+            {
+                if (key.Bounds.Contains(x, y))
+                {
+                    return key.Note; // Return the corresponding note name
+                }
+            }
+
+            return null; // If no key was found
+        }
+
+
+        private void OnKeyReleased(string note)
+        {
+            Debug.Print($"OnKeyReleased");
+            KeyReleased?.Invoke(this, note);
+        }
+
+        private void OnMouseCaptureChanged(object sender, EventArgs e)
+        {
+            Debug.Print($"CaptureChanged");
+            // If mouse capture changes, handle releasing the key
+            if (_currentKeyPressed != null)
+            {
+                //midi.SendNoteOff(0, MusicFunctions.GenNoteToMIDI(_currentKeyPressed));
+                KeyReleased?.Invoke(this, _currentKeyPressed);
+                _currentKeyPressed = null;
+            }
+        }
+
+        protected override void OnMouseMove(MouseEventArgs e)
+        {
+            base.OnMouseMove(e);
+
+            if (_isMouseDown) // Only trigger if mouse is held down
+            {
+                Debug.Print($"OnMouseMove-mouseDown");
+                HandleMouseInteraction(e.Location);
+            }
+        }
+
+
+
+
+        private void HandleMouseInteraction(Point location)
+        {
+            
+            string keyUnderMouse = GetNoteFromMousePosition(location.X, location.Y);
+            Debug.Print($"HandleMouseInteraction, keyUnder={keyUnderMouse}");
+            var blackKey = _keys.FirstOrDefault(k => k.IsBlack && k.Bounds.Contains(location));
+            var whiteKey = _keys.FirstOrDefault(k => !k.IsBlack && k.Bounds.Contains(location));
+
+            // Reset all keys first
+            
+
+            if (_currentKeyPressed != null && keyUnderMouse == _currentKeyPressed)
+            {
+                
+
+                if (blackKey != null)
+                {
+                    if (blackKey.IsPressed) { return; }
+                    blackKey.IsPressed = true;
+                    KeyPressed?.Invoke(this, keyUnderMouse);
+                    _currentKeyPressed = keyUnderMouse;
+                    Invalidate();
+                    whiteKey = null;
+                }
+
+                if (whiteKey != null)
+                {
+                    if (whiteKey.IsPressed) { return; }
+                    whiteKey.IsPressed = true;
+                    KeyPressed?.Invoke(this, keyUnderMouse);
+                    _currentKeyPressed = keyUnderMouse;
+                    Invalidate();
+                }
+            }
+
+            if (_currentKeyPressed != null && keyUnderMouse != _currentKeyPressed)
+            {
+                
+                foreach (var key in _keys)
+                {
+                    key.IsPressed = false;
+                    KeyReleased?.Invoke(this, key.Note);
+                }
+                
+
+                if (blackKey != null)
+                {
+                    blackKey.IsPressed = true;
+                    KeyPressed?.Invoke(this, keyUnderMouse);
+                    _currentKeyPressed = keyUnderMouse;
+                    Invalidate();
+                }
+
+                if (whiteKey != null)
+                {
+                    whiteKey.IsPressed = true;
+                    KeyPressed?.Invoke(this, keyUnderMouse);
+                    _currentKeyPressed = keyUnderMouse;
+                    Invalidate();
+                } 
+            }
+
+
+
         }
 
 
         private void PianoKeyboard_KeyDown(object sender, KeyEventArgs e)
         {
-
-            base.OnKeyDown(e);
 
             if (_keyMapping.TryGetValue(e.KeyCode, out string note))
             {
@@ -401,6 +607,7 @@ namespace ErrataUI
                     {
                         key.IsPressed = true;
                         KeyPressed?.Invoke(this, key.Note);
+                        Debug.Print($"note={key.Note}");
                         Invalidate();
                         break;
                     }
@@ -410,7 +617,6 @@ namespace ErrataUI
 
         private void PianoKeyboard_KeyUp(object sender, KeyEventArgs e)
         {
-            base.OnKeyUp(e);
 
             if (_keyMapping.TryGetValue(e.KeyCode, out string note))
             {
@@ -444,6 +650,16 @@ namespace ErrataUI
             Note = note;
             IsBlack = isBlack;
             IsPressed = false;
+        }
+    }
+
+    public class PianoKeyEventArgs : EventArgs
+    {
+        public int Note { get; }
+
+        public PianoKeyEventArgs(int note)
+        {
+            Note = note;
         }
     }
 }

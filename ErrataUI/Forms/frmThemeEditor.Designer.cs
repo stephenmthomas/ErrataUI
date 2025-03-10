@@ -33,6 +33,25 @@ namespace ErrataUI.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThemeEditor));
             errataGroupPanel2 = new ErrataGroupPanel();
+            errataFlatLabel9 = new ErrataFlatLabel();
+            errataSeparator7 = new ErrataSeparator();
+            errataFlatLabel8 = new ErrataFlatLabel();
+            errataSeparator6 = new ErrataSeparator();
+            label26 = new Label();
+            label25 = new Label();
+            label24 = new Label();
+            label23 = new Label();
+            label22 = new Label();
+            label21 = new Label();
+            label20 = new Label();
+            pbAccentG = new PictureBox();
+            pbAccentF = new PictureBox();
+            pbAccentE = new PictureBox();
+            pbAccentD = new PictureBox();
+            pbAccentC = new PictureBox();
+            pbAccentB = new PictureBox();
+            pbAccentA = new PictureBox();
+            errataSeparator5 = new ErrataSeparator();
             themeManagerPictureBox2 = new ThemeManagerPictureBox();
             themeManagerPictureBox7 = new ThemeManagerPictureBox();
             themeManagerPictureBox9 = new ThemeManagerPictureBox();
@@ -147,9 +166,9 @@ namespace ErrataUI.Forms
             errataFlatLabel1 = new ErrataFlatLabel();
             errataSeparator3 = new ErrataSeparator();
             errataSeparator2 = new ErrataSeparator();
-            escSaturation = new ErrataGraphSimpleChart();
+            escSaturation = new ErrataSimpleChart();
             errataFlatLabel2 = new ErrataFlatLabel();
-            escBrightness = new ErrataGraphSimpleChart();
+            escBrightness = new ErrataSimpleChart();
             errataFlatLabel5 = new ErrataFlatLabel();
             errataFlatLabel6 = new ErrataFlatLabel();
             errataGroupPanel1 = new ErrataGroupPanel();
@@ -159,6 +178,13 @@ namespace ErrataUI.Forms
             btnSaveTheme = new ErrataButton();
             btnLoadTheme = new ErrataButton();
             errataGroupPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbAccentG).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentF).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentE).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentD).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentC).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentB).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentA).BeginInit();
             ((System.ComponentModel.ISupportInitialize)themeManagerPictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)themeManagerPictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)themeManagerPictureBox9).BeginInit();
@@ -263,6 +289,25 @@ namespace ErrataUI.Forms
             errataGroupPanel2.CaptionLineWeight = 1;
             errataGroupPanel2.ColorCaptionLine = true;
             errataGroupPanel2.CompleteCaptionLine = true;
+            errataGroupPanel2.Controls.Add(errataFlatLabel9);
+            errataGroupPanel2.Controls.Add(errataSeparator7);
+            errataGroupPanel2.Controls.Add(errataFlatLabel8);
+            errataGroupPanel2.Controls.Add(errataSeparator6);
+            errataGroupPanel2.Controls.Add(label26);
+            errataGroupPanel2.Controls.Add(label25);
+            errataGroupPanel2.Controls.Add(label24);
+            errataGroupPanel2.Controls.Add(label23);
+            errataGroupPanel2.Controls.Add(label22);
+            errataGroupPanel2.Controls.Add(label21);
+            errataGroupPanel2.Controls.Add(label20);
+            errataGroupPanel2.Controls.Add(pbAccentG);
+            errataGroupPanel2.Controls.Add(pbAccentF);
+            errataGroupPanel2.Controls.Add(pbAccentE);
+            errataGroupPanel2.Controls.Add(pbAccentD);
+            errataGroupPanel2.Controls.Add(pbAccentC);
+            errataGroupPanel2.Controls.Add(pbAccentB);
+            errataGroupPanel2.Controls.Add(pbAccentA);
+            errataGroupPanel2.Controls.Add(errataSeparator5);
             errataGroupPanel2.Controls.Add(themeManagerPictureBox2);
             errataGroupPanel2.Controls.Add(themeManagerPictureBox7);
             errataGroupPanel2.Controls.Add(themeManagerPictureBox9);
@@ -386,15 +431,262 @@ namespace ErrataUI.Forms
             errataGroupPanel2.Name = "errataGroupPanel2";
             errataGroupPanel2.Padding = new Padding(0, 26, 0, 0);
             errataGroupPanel2.ShowCaptionLine = true;
-            errataGroupPanel2.Size = new Size(611, 276);
+            errataGroupPanel2.Size = new Size(611, 341);
             errataGroupPanel2.TabIndex = 3;
             errataGroupPanel2.TopPadding = 6;
+            // 
+            // errataFlatLabel9
+            // 
+            errataFlatLabel9.AutoSize = true;
+            errataFlatLabel9.BackColor = Color.Transparent;
+            errataFlatLabel9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            errataFlatLabel9.ForeRole = UIRole.BodyTextL1;
+            errataFlatLabel9.ForeTheme = ThemeColorShade.Neutral_800;
+            errataFlatLabel9.IgnoreRoles = false;
+            errataFlatLabel9.IgnoreTheme = false;
+            errataFlatLabel9.LineAlignment = StringAlignment.Center;
+            errataFlatLabel9.Location = new Point(24, 299);
+            errataFlatLabel9.Name = "errataFlatLabel9";
+            errataFlatLabel9.OffsetX = 0;
+            errataFlatLabel9.OffsetY = 0;
+            errataFlatLabel9.Size = new Size(69, 21);
+            errataFlatLabel9.Style = ErrataFlatLabel.TextStyle.BodyStrong;
+            errataFlatLabel9.TabIndex = 40;
+            errataFlatLabel9.Text = "Accents";
+            errataFlatLabel9.TextAlignment = StringAlignment.Near;
+            // 
+            // errataSeparator7
+            // 
+            errataSeparator7.BackColor = Color.Transparent;
+            errataSeparator7.IgnoreRoles = false;
+            errataSeparator7.IgnoreTheme = false;
+            errataSeparator7.isVertical = false;
+            errataSeparator7.LineColor = Color.FromArgb(128, 128, 128);
+            errataSeparator7.linePattern = ErrataSeparator.LinePattern.Solid;
+            errataSeparator7.LineRole = UIRole.SectionDivider;
+            errataSeparator7.LineStack = ErrataSeparator.lineStack.Single;
+            errataSeparator7.LineTheme = ThemeColorShade.Neutral_500;
+            errataSeparator7.Location = new Point(26, 316);
+            errataSeparator7.MinimumSize = new Size(1, 1);
+            errataSeparator7.Name = "errataSeparator7";
+            errataSeparator7.Offset = 2;
+            errataSeparator7.Size = new Size(62, 10);
+            errataSeparator7.TabIndex = 41;
+            errataSeparator7.Text = "errataSeparator7";
+            errataSeparator7.Thickness = 2F;
+            // 
+            // errataFlatLabel8
+            // 
+            errataFlatLabel8.AutoSize = true;
+            errataFlatLabel8.BackColor = Color.Transparent;
+            errataFlatLabel8.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            errataFlatLabel8.ForeRole = UIRole.BodyTextL1;
+            errataFlatLabel8.ForeTheme = ThemeColorShade.Neutral_800;
+            errataFlatLabel8.IgnoreRoles = false;
+            errataFlatLabel8.IgnoreTheme = false;
+            errataFlatLabel8.LineAlignment = StringAlignment.Center;
+            errataFlatLabel8.Location = new Point(9, 33);
+            errataFlatLabel8.Name = "errataFlatLabel8";
+            errataFlatLabel8.OffsetX = 0;
+            errataFlatLabel8.OffsetY = 0;
+            errataFlatLabel8.Size = new Size(114, 21);
+            errataFlatLabel8.Style = ErrataFlatLabel.TextStyle.BodyStrong;
+            errataFlatLabel8.TabIndex = 38;
+            errataFlatLabel8.Text = "Theme Colors";
+            errataFlatLabel8.TextAlignment = StringAlignment.Near;
+            // 
+            // errataSeparator6
+            // 
+            errataSeparator6.BackColor = Color.Transparent;
+            errataSeparator6.IgnoreRoles = false;
+            errataSeparator6.IgnoreTheme = false;
+            errataSeparator6.isVertical = false;
+            errataSeparator6.LineColor = Color.FromArgb(128, 128, 128);
+            errataSeparator6.linePattern = ErrataSeparator.LinePattern.Solid;
+            errataSeparator6.LineRole = UIRole.SectionDivider;
+            errataSeparator6.LineStack = ErrataSeparator.lineStack.Single;
+            errataSeparator6.LineTheme = ThemeColorShade.Neutral_500;
+            errataSeparator6.Location = new Point(9, 50);
+            errataSeparator6.MinimumSize = new Size(1, 1);
+            errataSeparator6.Name = "errataSeparator6";
+            errataSeparator6.Offset = 2;
+            errataSeparator6.Size = new Size(114, 10);
+            errataSeparator6.TabIndex = 39;
+            errataSeparator6.Text = "errataSeparator6";
+            errataSeparator6.Thickness = 2F;
+            // 
+            // label26
+            // 
+            label26.BackColor = Color.Transparent;
+            label26.Location = new Point(529, 297);
+            label26.Name = "label26";
+            label26.Size = new Size(18, 30);
+            label26.TabIndex = 37;
+            label26.Text = "G";
+            label26.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label25
+            // 
+            label25.BackColor = Color.Transparent;
+            label25.Location = new Point(457, 297);
+            label25.Name = "label25";
+            label25.Size = new Size(18, 30);
+            label25.TabIndex = 36;
+            label25.Text = "F";
+            label25.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label24
+            // 
+            label24.BackColor = Color.Transparent;
+            label24.Location = new Point(385, 297);
+            label24.Name = "label24";
+            label24.Size = new Size(18, 30);
+            label24.TabIndex = 35;
+            label24.Text = "E";
+            label24.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label23
+            // 
+            label23.BackColor = Color.Transparent;
+            label23.Location = new Point(311, 297);
+            label23.Name = "label23";
+            label23.Size = new Size(18, 30);
+            label23.TabIndex = 34;
+            label23.Text = "D";
+            label23.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label22
+            // 
+            label22.BackColor = Color.Transparent;
+            label22.Location = new Point(241, 297);
+            label22.Name = "label22";
+            label22.Size = new Size(18, 30);
+            label22.TabIndex = 33;
+            label22.Text = "C";
+            label22.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label21
+            // 
+            label21.BackColor = Color.Transparent;
+            label21.Location = new Point(169, 297);
+            label21.Name = "label21";
+            label21.Size = new Size(18, 30);
+            label21.TabIndex = 32;
+            label21.Text = "B";
+            label21.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label20
+            // 
+            label20.BackColor = Color.Transparent;
+            label20.Location = new Point(97, 297);
+            label20.Name = "label20";
+            label20.Size = new Size(18, 30);
+            label20.TabIndex = 31;
+            label20.Text = "A";
+            label20.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // pbAccentG
+            // 
+            pbAccentG.BorderStyle = BorderStyle.FixedSingle;
+            pbAccentG.Location = new Point(553, 297);
+            pbAccentG.Name = "pbAccentG";
+            pbAccentG.Size = new Size(30, 30);
+            pbAccentG.TabIndex = 30;
+            pbAccentG.TabStop = false;
+            pbAccentG.Tag = "G";
+            pbAccentG.Click += pbAccent_Click;
+            // 
+            // pbAccentF
+            // 
+            pbAccentF.BorderStyle = BorderStyle.FixedSingle;
+            pbAccentF.Location = new Point(481, 297);
+            pbAccentF.Name = "pbAccentF";
+            pbAccentF.Size = new Size(30, 30);
+            pbAccentF.TabIndex = 29;
+            pbAccentF.TabStop = false;
+            pbAccentF.Tag = "F";
+            pbAccentF.Click += pbAccent_Click;
+            // 
+            // pbAccentE
+            // 
+            pbAccentE.BorderStyle = BorderStyle.FixedSingle;
+            pbAccentE.Location = new Point(409, 297);
+            pbAccentE.Name = "pbAccentE";
+            pbAccentE.Size = new Size(30, 30);
+            pbAccentE.TabIndex = 28;
+            pbAccentE.TabStop = false;
+            pbAccentE.Tag = "E";
+            pbAccentE.Click += pbAccent_Click;
+            // 
+            // pbAccentD
+            // 
+            pbAccentD.BorderStyle = BorderStyle.FixedSingle;
+            pbAccentD.Location = new Point(335, 297);
+            pbAccentD.Name = "pbAccentD";
+            pbAccentD.Size = new Size(30, 30);
+            pbAccentD.TabIndex = 27;
+            pbAccentD.TabStop = false;
+            pbAccentD.Tag = "D";
+            pbAccentD.Click += pbAccent_Click;
+            // 
+            // pbAccentC
+            // 
+            pbAccentC.BorderStyle = BorderStyle.FixedSingle;
+            pbAccentC.Location = new Point(265, 297);
+            pbAccentC.Name = "pbAccentC";
+            pbAccentC.Size = new Size(30, 30);
+            pbAccentC.TabIndex = 26;
+            pbAccentC.TabStop = false;
+            pbAccentC.Tag = "C";
+            pbAccentC.Click += pbAccent_Click;
+            // 
+            // pbAccentB
+            // 
+            pbAccentB.BorderStyle = BorderStyle.FixedSingle;
+            pbAccentB.Location = new Point(193, 297);
+            pbAccentB.Name = "pbAccentB";
+            pbAccentB.Size = new Size(30, 30);
+            pbAccentB.TabIndex = 25;
+            pbAccentB.TabStop = false;
+            pbAccentB.Tag = "B";
+            pbAccentB.Click += pbAccent_Click;
+            // 
+            // pbAccentA
+            // 
+            pbAccentA.BorderStyle = BorderStyle.FixedSingle;
+            pbAccentA.Location = new Point(121, 297);
+            pbAccentA.Name = "pbAccentA";
+            pbAccentA.Size = new Size(30, 30);
+            pbAccentA.TabIndex = 24;
+            pbAccentA.TabStop = false;
+            pbAccentA.Tag = "A";
+            pbAccentA.Click += pbAccent_Click;
+            // 
+            // errataSeparator5
+            // 
+            errataSeparator5.BackColor = Color.Transparent;
+            errataSeparator5.IgnoreRoles = false;
+            errataSeparator5.IgnoreTheme = false;
+            errataSeparator5.isVertical = false;
+            errataSeparator5.LineColor = Color.FromArgb(128, 128, 128);
+            errataSeparator5.linePattern = ErrataSeparator.LinePattern.Solid;
+            errataSeparator5.LineRole = UIRole.SectionDivider;
+            errataSeparator5.LineStack = ErrataSeparator.lineStack.Single;
+            errataSeparator5.LineTheme = ThemeColorShade.Neutral_500;
+            errataSeparator5.Location = new Point(6, 280);
+            errataSeparator5.MinimumSize = new Size(1, 1);
+            errataSeparator5.Name = "errataSeparator5";
+            errataSeparator5.Offset = 2;
+            errataSeparator5.Size = new Size(592, 10);
+            errataSeparator5.TabIndex = 23;
+            errataSeparator5.Text = "errataSeparator5";
+            errataSeparator5.Thickness = 2F;
             // 
             // themeManagerPictureBox2
             // 
             themeManagerPictureBox2.BackColor = Color.FromArgb(145, 113, 0);
             themeManagerPictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox2.Location = new Point(244, 197);
+            themeManagerPictureBox2.Location = new Point(244, 211);
             themeManagerPictureBox2.Name = "themeManagerPictureBox2";
             themeManagerPictureBox2.Size = new Size(30, 30);
             themeManagerPictureBox2.TabIndex = 17;
@@ -406,7 +698,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox7.BackColor = Color.FromArgb(131, 0, 7);
             themeManagerPictureBox7.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox7.Location = new Point(244, 233);
+            themeManagerPictureBox7.Location = new Point(244, 247);
             themeManagerPictureBox7.Name = "themeManagerPictureBox7";
             themeManagerPictureBox7.Size = new Size(30, 30);
             themeManagerPictureBox7.TabIndex = 18;
@@ -418,7 +710,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox9.BackColor = Color.FromArgb(48, 0, 147);
             themeManagerPictureBox9.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox9.Location = new Point(244, 125);
+            themeManagerPictureBox9.Location = new Point(244, 139);
             themeManagerPictureBox9.Name = "themeManagerPictureBox9";
             themeManagerPictureBox9.Size = new Size(30, 30);
             themeManagerPictureBox9.TabIndex = 19;
@@ -430,7 +722,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox10.BackColor = Color.FromArgb(0, 77, 23);
             themeManagerPictureBox10.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox10.Location = new Point(244, 161);
+            themeManagerPictureBox10.Location = new Point(244, 175);
             themeManagerPictureBox10.Name = "themeManagerPictureBox10";
             themeManagerPictureBox10.Size = new Size(30, 30);
             themeManagerPictureBox10.TabIndex = 20;
@@ -442,7 +734,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox11.BackColor = Color.FromArgb(77, 77, 77);
             themeManagerPictureBox11.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox11.Location = new Point(244, 53);
+            themeManagerPictureBox11.Location = new Point(244, 67);
             themeManagerPictureBox11.Name = "themeManagerPictureBox11";
             themeManagerPictureBox11.Size = new Size(30, 30);
             themeManagerPictureBox11.TabIndex = 21;
@@ -454,7 +746,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox12.BackColor = Color.FromArgb(0, 87, 132);
             themeManagerPictureBox12.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox12.Location = new Point(244, 89);
+            themeManagerPictureBox12.Location = new Point(244, 103);
             themeManagerPictureBox12.Name = "themeManagerPictureBox12";
             themeManagerPictureBox12.Size = new Size(30, 30);
             themeManagerPictureBox12.TabIndex = 22;
@@ -467,7 +759,7 @@ namespace ErrataUI.Forms
             label19.BackColor = Color.Transparent;
             label19.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label19.ImageAlign = ContentAlignment.MiddleLeft;
-            label19.Location = new Point(242, 35);
+            label19.Location = new Point(242, 49);
             label19.Name = "label19";
             label19.Size = new Size(30, 15);
             label19.TabIndex = 16;
@@ -478,7 +770,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox8.BackColor = Color.FromArgb(255, 233, 234);
             themeManagerPictureBox8.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox8.Location = new Point(568, 233);
+            themeManagerPictureBox8.Location = new Point(568, 247);
             themeManagerPictureBox8.Name = "themeManagerPictureBox8";
             themeManagerPictureBox8.Size = new Size(30, 30);
             themeManagerPictureBox8.TabIndex = 15;
@@ -490,7 +782,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox1.BackColor = Color.FromArgb(255, 250, 232);
             themeManagerPictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox1.Location = new Point(568, 197);
+            themeManagerPictureBox1.Location = new Point(568, 211);
             themeManagerPictureBox1.Name = "themeManagerPictureBox1";
             themeManagerPictureBox1.Size = new Size(30, 30);
             themeManagerPictureBox1.TabIndex = 7;
@@ -502,7 +794,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox3.BackColor = Color.FromArgb(241, 234, 255);
             themeManagerPictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox3.Location = new Point(568, 125);
+            themeManagerPictureBox3.Location = new Point(568, 139);
             themeManagerPictureBox3.Name = "themeManagerPictureBox3";
             themeManagerPictureBox3.Size = new Size(30, 30);
             themeManagerPictureBox3.TabIndex = 9;
@@ -514,7 +806,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox4.BackColor = Color.FromArgb(234, 255, 241);
             themeManagerPictureBox4.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox4.Location = new Point(568, 161);
+            themeManagerPictureBox4.Location = new Point(568, 175);
             themeManagerPictureBox4.Name = "themeManagerPictureBox4";
             themeManagerPictureBox4.Size = new Size(30, 30);
             themeManagerPictureBox4.TabIndex = 10;
@@ -526,7 +818,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox5.BackColor = Color.FromArgb(255, 255, 255);
             themeManagerPictureBox5.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox5.Location = new Point(568, 53);
+            themeManagerPictureBox5.Location = new Point(568, 67);
             themeManagerPictureBox5.Name = "themeManagerPictureBox5";
             themeManagerPictureBox5.Size = new Size(30, 30);
             themeManagerPictureBox5.TabIndex = 11;
@@ -538,7 +830,7 @@ namespace ErrataUI.Forms
             // 
             themeManagerPictureBox6.BackColor = Color.FromArgb(231, 247, 255);
             themeManagerPictureBox6.BorderStyle = BorderStyle.FixedSingle;
-            themeManagerPictureBox6.Location = new Point(568, 89);
+            themeManagerPictureBox6.Location = new Point(568, 103);
             themeManagerPictureBox6.Name = "themeManagerPictureBox6";
             themeManagerPictureBox6.Size = new Size(30, 30);
             themeManagerPictureBox6.TabIndex = 12;
@@ -551,7 +843,7 @@ namespace ErrataUI.Forms
             label18.BackColor = Color.Transparent;
             label18.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label18.ImageAlign = ContentAlignment.MiddleLeft;
-            label18.Location = new Point(563, 35);
+            label18.Location = new Point(563, 49);
             label18.Name = "label18";
             label18.Size = new Size(30, 15);
             label18.TabIndex = 6;
@@ -562,7 +854,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox36.BackColor = Color.FromArgb(255, 243, 198);
             themedPictureBox36.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox36.Location = new Point(532, 197);
+            themedPictureBox36.Location = new Point(532, 211);
             themedPictureBox36.Name = "themedPictureBox36";
             themedPictureBox36.Size = new Size(30, 30);
             themedPictureBox36.TabIndex = 5;
@@ -574,7 +866,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox30.BackColor = Color.FromArgb(255, 235, 164);
             themedPictureBox30.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox30.Location = new Point(496, 197);
+            themedPictureBox30.Location = new Point(496, 211);
             themedPictureBox30.Name = "themedPictureBox30";
             themedPictureBox30.Size = new Size(30, 30);
             themedPictureBox30.TabIndex = 5;
@@ -586,7 +878,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox60.BackColor = Color.FromArgb(217, 170, 5);
             themedPictureBox60.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox60.Location = new Point(316, 197);
+            themedPictureBox60.Location = new Point(316, 211);
             themedPictureBox60.Name = "themedPictureBox60";
             themedPictureBox60.Size = new Size(30, 30);
             themedPictureBox60.TabIndex = 5;
@@ -598,7 +890,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox24.BackColor = Color.FromArgb(255, 228, 130);
             themedPictureBox24.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox24.Location = new Point(460, 197);
+            themedPictureBox24.Location = new Point(460, 211);
             themedPictureBox24.Name = "themedPictureBox24";
             themedPictureBox24.Size = new Size(30, 30);
             themedPictureBox24.TabIndex = 5;
@@ -610,7 +902,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox59.BackColor = Color.FromArgb(181, 141, 0);
             themedPictureBox59.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox59.Location = new Point(280, 197);
+            themedPictureBox59.Location = new Point(280, 211);
             themedPictureBox59.Name = "themedPictureBox59";
             themedPictureBox59.Size = new Size(30, 30);
             themedPictureBox59.TabIndex = 5;
@@ -622,7 +914,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox18.BackColor = Color.FromArgb(255, 218, 85);
             themedPictureBox18.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox18.Location = new Point(424, 197);
+            themedPictureBox18.Location = new Point(424, 211);
             themedPictureBox18.Name = "themedPictureBox18";
             themedPictureBox18.Size = new Size(30, 30);
             themedPictureBox18.TabIndex = 5;
@@ -634,7 +926,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox58.BackColor = Color.FromArgb(120, 94, 0);
             themedPictureBox58.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox58.Location = new Point(208, 197);
+            themedPictureBox58.Location = new Point(208, 211);
             themedPictureBox58.Name = "themedPictureBox58";
             themedPictureBox58.Size = new Size(30, 30);
             themedPictureBox58.TabIndex = 5;
@@ -646,7 +938,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox12.BackColor = Color.FromArgb(255, 210, 51);
             themedPictureBox12.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox12.Location = new Point(388, 197);
+            themedPictureBox12.Location = new Point(388, 211);
             themedPictureBox12.Name = "themedPictureBox12";
             themedPictureBox12.Size = new Size(30, 30);
             themedPictureBox12.TabIndex = 5;
@@ -658,7 +950,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox66.BackColor = Color.FromArgb(29, 23, 0);
             themedPictureBox66.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox66.Location = new Point(136, 197);
+            themedPictureBox66.Location = new Point(136, 211);
             themedPictureBox66.Name = "themedPictureBox66";
             themedPictureBox66.Size = new Size(30, 30);
             themedPictureBox66.TabIndex = 5;
@@ -670,7 +962,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox57.BackColor = Color.FromArgb(60, 47, 0);
             themedPictureBox57.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox57.Location = new Point(172, 197);
+            themedPictureBox57.Location = new Point(172, 211);
             themedPictureBox57.Name = "themedPictureBox57";
             themedPictureBox57.Size = new Size(30, 30);
             themedPictureBox57.TabIndex = 5;
@@ -682,7 +974,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox6.BackColor = Color.FromArgb(241, 194, 27);
             themedPictureBox6.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox6.Location = new Point(352, 197);
+            themedPictureBox6.Location = new Point(352, 211);
             themedPictureBox6.Name = "themedPictureBox6";
             themedPictureBox6.Size = new Size(30, 30);
             themedPictureBox6.TabIndex = 5;
@@ -694,7 +986,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox35.BackColor = Color.FromArgb(255, 200, 203);
             themedPictureBox35.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox35.Location = new Point(532, 233);
+            themedPictureBox35.Location = new Point(532, 247);
             themedPictureBox35.Name = "themedPictureBox35";
             themedPictureBox35.Size = new Size(30, 30);
             themedPictureBox35.TabIndex = 5;
@@ -706,7 +998,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox29.BackColor = Color.FromArgb(255, 167, 172);
             themedPictureBox29.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox29.Location = new Point(496, 233);
+            themedPictureBox29.Location = new Point(496, 247);
             themedPictureBox29.Name = "themedPictureBox29";
             themedPictureBox29.Size = new Size(30, 30);
             themedPictureBox29.TabIndex = 5;
@@ -718,7 +1010,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox56.BackColor = Color.FromArgb(196, 10, 20);
             themedPictureBox56.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox56.Location = new Point(316, 233);
+            themedPictureBox56.Location = new Point(316, 247);
             themedPictureBox56.Name = "themedPictureBox56";
             themedPictureBox56.Size = new Size(30, 30);
             themedPictureBox56.TabIndex = 5;
@@ -730,7 +1022,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox23.BackColor = Color.FromArgb(255, 134, 140);
             themedPictureBox23.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox23.Location = new Point(460, 233);
+            themedPictureBox23.Location = new Point(460, 247);
             themedPictureBox23.Name = "themedPictureBox23";
             themedPictureBox23.Size = new Size(30, 30);
             themedPictureBox23.TabIndex = 5;
@@ -742,7 +1034,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox55.BackColor = Color.FromArgb(164, 0, 9);
             themedPictureBox55.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox55.Location = new Point(280, 233);
+            themedPictureBox55.Location = new Point(280, 247);
             themedPictureBox55.Name = "themedPictureBox55";
             themedPictureBox55.Size = new Size(30, 30);
             themedPictureBox55.TabIndex = 5;
@@ -754,7 +1046,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox17.BackColor = Color.FromArgb(251, 89, 97);
             themedPictureBox17.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox17.Location = new Point(424, 233);
+            themedPictureBox17.Location = new Point(424, 247);
             themedPictureBox17.Name = "themedPictureBox17";
             themedPictureBox17.Size = new Size(30, 30);
             themedPictureBox17.TabIndex = 5;
@@ -766,7 +1058,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox54.BackColor = Color.FromArgb(109, 0, 6);
             themedPictureBox54.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox54.Location = new Point(208, 233);
+            themedPictureBox54.Location = new Point(208, 247);
             themedPictureBox54.Name = "themedPictureBox54";
             themedPictureBox54.Size = new Size(30, 30);
             themedPictureBox54.TabIndex = 5;
@@ -778,7 +1070,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox11.BackColor = Color.FromArgb(238, 53, 63);
             themedPictureBox11.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox11.Location = new Point(388, 233);
+            themedPictureBox11.Location = new Point(388, 247);
             themedPictureBox11.Name = "themedPictureBox11";
             themedPictureBox11.Size = new Size(30, 30);
             themedPictureBox11.TabIndex = 5;
@@ -790,7 +1082,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox65.BackColor = Color.FromArgb(26, 0, 1);
             themedPictureBox65.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox65.Location = new Point(136, 233);
+            themedPictureBox65.Location = new Point(136, 247);
             themedPictureBox65.Name = "themedPictureBox65";
             themedPictureBox65.Size = new Size(30, 30);
             themedPictureBox65.TabIndex = 5;
@@ -802,7 +1094,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox53.BackColor = Color.FromArgb(54, 0, 3);
             themedPictureBox53.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox53.Location = new Point(172, 233);
+            themedPictureBox53.Location = new Point(172, 247);
             themedPictureBox53.Name = "themedPictureBox53";
             themedPictureBox53.Size = new Size(30, 30);
             themedPictureBox53.TabIndex = 5;
@@ -814,7 +1106,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox5.BackColor = Color.FromArgb(218, 30, 40);
             themedPictureBox5.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox5.Location = new Point(352, 233);
+            themedPictureBox5.Location = new Point(352, 247);
             themedPictureBox5.Name = "themedPictureBox5";
             themedPictureBox5.Size = new Size(30, 30);
             themedPictureBox5.TabIndex = 5;
@@ -826,7 +1118,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox34.BackColor = Color.FromArgb(220, 203, 255);
             themedPictureBox34.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox34.Location = new Point(532, 125);
+            themedPictureBox34.Location = new Point(532, 139);
             themedPictureBox34.Name = "themedPictureBox34";
             themedPictureBox34.Size = new Size(30, 30);
             themedPictureBox34.TabIndex = 5;
@@ -838,7 +1130,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox28.BackColor = Color.FromArgb(199, 172, 255);
             themedPictureBox28.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox28.Location = new Point(496, 125);
+            themedPictureBox28.Location = new Point(496, 139);
             themedPictureBox28.Name = "themedPictureBox28";
             themedPictureBox28.Size = new Size(30, 30);
             themedPictureBox28.TabIndex = 5;
@@ -850,7 +1142,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox52.BackColor = Color.FromArgb(87, 22, 220);
             themedPictureBox52.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox52.Location = new Point(316, 125);
+            themedPictureBox52.Location = new Point(316, 139);
             themedPictureBox52.Name = "themedPictureBox52";
             themedPictureBox52.Size = new Size(30, 30);
             themedPictureBox52.TabIndex = 5;
@@ -862,7 +1154,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox22.BackColor = Color.FromArgb(178, 141, 255);
             themedPictureBox22.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox22.Location = new Point(460, 125);
+            themedPictureBox22.Location = new Point(460, 139);
             themedPictureBox22.Name = "themedPictureBox22";
             themedPictureBox22.Size = new Size(30, 30);
             themedPictureBox22.TabIndex = 5;
@@ -874,7 +1166,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox51.BackColor = Color.FromArgb(62, 4, 184);
             themedPictureBox51.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox51.Location = new Point(280, 125);
+            themedPictureBox51.Location = new Point(280, 139);
             themedPictureBox51.Name = "themedPictureBox51";
             themedPictureBox51.Size = new Size(30, 30);
             themedPictureBox51.TabIndex = 5;
@@ -886,7 +1178,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox16.BackColor = Color.FromArgb(150, 99, 255);
             themedPictureBox16.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox16.Location = new Point(424, 125);
+            themedPictureBox16.Location = new Point(424, 139);
             themedPictureBox16.Name = "themedPictureBox16";
             themedPictureBox16.Size = new Size(30, 30);
             themedPictureBox16.TabIndex = 5;
@@ -898,7 +1190,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox50.BackColor = Color.FromArgb(40, 0, 122);
             themedPictureBox50.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox50.Location = new Point(208, 125);
+            themedPictureBox50.Location = new Point(208, 139);
             themedPictureBox50.Name = "themedPictureBox50";
             themedPictureBox50.Size = new Size(30, 30);
             themedPictureBox50.TabIndex = 5;
@@ -910,7 +1202,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox10.BackColor = Color.FromArgb(129, 68, 255);
             themedPictureBox10.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox10.Location = new Point(388, 125);
+            themedPictureBox10.Location = new Point(388, 139);
             themedPictureBox10.Name = "themedPictureBox10";
             themedPictureBox10.Size = new Size(30, 30);
             themedPictureBox10.TabIndex = 5;
@@ -922,7 +1214,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox64.BackColor = Color.FromArgb(10, 0, 29);
             themedPictureBox64.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox64.Location = new Point(136, 125);
+            themedPictureBox64.Location = new Point(136, 139);
             themedPictureBox64.Name = "themedPictureBox64";
             themedPictureBox64.Size = new Size(30, 30);
             themedPictureBox64.TabIndex = 5;
@@ -934,7 +1226,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox49.BackColor = Color.FromArgb(20, 0, 61);
             themedPictureBox49.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox49.Location = new Point(172, 125);
+            themedPictureBox49.Location = new Point(172, 139);
             themedPictureBox49.Name = "themedPictureBox49";
             themedPictureBox49.Size = new Size(30, 30);
             themedPictureBox49.TabIndex = 5;
@@ -946,7 +1238,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox4.BackColor = Color.FromArgb(110, 45, 245);
             themedPictureBox4.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox4.Location = new Point(352, 125);
+            themedPictureBox4.Location = new Point(352, 139);
             themedPictureBox4.Name = "themedPictureBox4";
             themedPictureBox4.Size = new Size(30, 30);
             themedPictureBox4.TabIndex = 5;
@@ -958,7 +1250,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox33.BackColor = Color.FromArgb(199, 250, 215);
             themedPictureBox33.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox33.Location = new Point(532, 161);
+            themedPictureBox33.Location = new Point(532, 175);
             themedPictureBox33.Name = "themedPictureBox33";
             themedPictureBox33.Size = new Size(30, 30);
             themedPictureBox33.TabIndex = 5;
@@ -970,7 +1262,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox27.BackColor = Color.FromArgb(144, 212, 165);
             themedPictureBox27.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox27.Location = new Point(496, 161);
+            themedPictureBox27.Location = new Point(496, 175);
             themedPictureBox27.Name = "themedPictureBox27";
             themedPictureBox27.Size = new Size(30, 30);
             themedPictureBox27.TabIndex = 5;
@@ -982,7 +1274,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox48.BackColor = Color.FromArgb(13, 115, 44);
             themedPictureBox48.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox48.Location = new Point(316, 161);
+            themedPictureBox48.Location = new Point(316, 175);
             themedPictureBox48.Name = "themedPictureBox48";
             themedPictureBox48.Size = new Size(30, 30);
             themedPictureBox48.TabIndex = 5;
@@ -994,7 +1286,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox21.BackColor = Color.FromArgb(103, 186, 128);
             themedPictureBox21.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox21.Location = new Point(460, 161);
+            themedPictureBox21.Location = new Point(460, 175);
             themedPictureBox21.Name = "themedPictureBox21";
             themedPictureBox21.Size = new Size(30, 30);
             themedPictureBox21.TabIndex = 5;
@@ -1006,7 +1298,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox47.BackColor = Color.FromArgb(3, 96, 31);
             themedPictureBox47.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox47.Location = new Point(280, 161);
+            themedPictureBox47.Location = new Point(280, 175);
             themedPictureBox47.Name = "themedPictureBox47";
             themedPictureBox47.Size = new Size(30, 30);
             themedPictureBox47.TabIndex = 5;
@@ -1018,7 +1310,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox15.BackColor = Color.FromArgb(58, 147, 85);
             themedPictureBox15.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox15.Location = new Point(424, 161);
+            themedPictureBox15.Location = new Point(424, 175);
             themedPictureBox15.Name = "themedPictureBox15";
             themedPictureBox15.Size = new Size(30, 30);
             themedPictureBox15.TabIndex = 5;
@@ -1030,7 +1322,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox46.BackColor = Color.FromArgb(0, 64, 19);
             themedPictureBox46.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox46.Location = new Point(208, 161);
+            themedPictureBox46.Location = new Point(208, 175);
             themedPictureBox46.Name = "themedPictureBox46";
             themedPictureBox46.Size = new Size(30, 30);
             themedPictureBox46.TabIndex = 5;
@@ -1042,7 +1334,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox9.BackColor = Color.FromArgb(38, 140, 69);
             themedPictureBox9.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox9.Location = new Point(388, 161);
+            themedPictureBox9.Location = new Point(388, 175);
             themedPictureBox9.Name = "themedPictureBox9";
             themedPictureBox9.Size = new Size(30, 30);
             themedPictureBox9.TabIndex = 5;
@@ -1054,7 +1346,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox63.BackColor = Color.FromArgb(0, 15, 5);
             themedPictureBox63.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox63.Location = new Point(136, 161);
+            themedPictureBox63.Location = new Point(136, 175);
             themedPictureBox63.Name = "themedPictureBox63";
             themedPictureBox63.Size = new Size(30, 30);
             themedPictureBox63.TabIndex = 5;
@@ -1066,7 +1358,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox45.BackColor = Color.FromArgb(0, 32, 10);
             themedPictureBox45.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox45.Location = new Point(172, 161);
+            themedPictureBox45.Location = new Point(172, 175);
             themedPictureBox45.Name = "themedPictureBox45";
             themedPictureBox45.Size = new Size(30, 30);
             themedPictureBox45.TabIndex = 5;
@@ -1078,7 +1370,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox3.BackColor = Color.FromArgb(25, 128, 56);
             themedPictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox3.Location = new Point(352, 161);
+            themedPictureBox3.Location = new Point(352, 175);
             themedPictureBox3.Name = "themedPictureBox3";
             themedPictureBox3.Size = new Size(30, 30);
             themedPictureBox3.TabIndex = 5;
@@ -1090,7 +1382,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox32.BackColor = Color.FromArgb(250, 250, 250);
             themedPictureBox32.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox32.Location = new Point(532, 53);
+            themedPictureBox32.Location = new Point(532, 67);
             themedPictureBox32.Name = "themedPictureBox32";
             themedPictureBox32.Size = new Size(30, 30);
             themedPictureBox32.TabIndex = 5;
@@ -1102,7 +1394,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox31.BackColor = Color.FromArgb(196, 235, 255);
             themedPictureBox31.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox31.Location = new Point(532, 89);
+            themedPictureBox31.Location = new Point(532, 103);
             themedPictureBox31.Name = "themedPictureBox31";
             themedPictureBox31.Size = new Size(30, 30);
             themedPictureBox31.TabIndex = 5;
@@ -1114,7 +1406,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox26.BackColor = Color.FromArgb(212, 212, 212);
             themedPictureBox26.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox26.Location = new Point(496, 53);
+            themedPictureBox26.Location = new Point(496, 67);
             themedPictureBox26.Name = "themedPictureBox26";
             themedPictureBox26.Size = new Size(30, 30);
             themedPictureBox26.TabIndex = 5;
@@ -1126,7 +1418,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox25.BackColor = Color.FromArgb(160, 223, 255);
             themedPictureBox25.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox25.Location = new Point(496, 89);
+            themedPictureBox25.Location = new Point(496, 103);
             themedPictureBox25.Name = "themedPictureBox25";
             themedPictureBox25.Size = new Size(30, 30);
             themedPictureBox25.TabIndex = 5;
@@ -1138,7 +1430,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox44.BackColor = Color.FromArgb(115, 115, 115);
             themedPictureBox44.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox44.Location = new Point(316, 53);
+            themedPictureBox44.Location = new Point(316, 67);
             themedPictureBox44.Name = "themedPictureBox44";
             themedPictureBox44.Size = new Size(30, 30);
             themedPictureBox44.TabIndex = 5;
@@ -1150,7 +1442,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox43.BackColor = Color.FromArgb(0, 130, 198);
             themedPictureBox43.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox43.Location = new Point(316, 89);
+            themedPictureBox43.Location = new Point(316, 103);
             themedPictureBox43.Name = "themedPictureBox43";
             themedPictureBox43.Size = new Size(30, 30);
             themedPictureBox43.TabIndex = 5;
@@ -1162,7 +1454,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox20.BackColor = Color.FromArgb(186, 186, 186);
             themedPictureBox20.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox20.Location = new Point(460, 53);
+            themedPictureBox20.Location = new Point(460, 67);
             themedPictureBox20.Name = "themedPictureBox20";
             themedPictureBox20.Size = new Size(30, 30);
             themedPictureBox20.TabIndex = 5;
@@ -1174,7 +1466,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox42.BackColor = Color.FromArgb(96, 96, 96);
             themedPictureBox42.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox42.Location = new Point(280, 53);
+            themedPictureBox42.Location = new Point(280, 67);
             themedPictureBox42.Name = "themedPictureBox42";
             themedPictureBox42.Size = new Size(30, 30);
             themedPictureBox42.TabIndex = 5;
@@ -1186,7 +1478,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox19.BackColor = Color.FromArgb(124, 210, 255);
             themedPictureBox19.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox19.Location = new Point(460, 89);
+            themedPictureBox19.Location = new Point(460, 103);
             themedPictureBox19.Name = "themedPictureBox19";
             themedPictureBox19.Size = new Size(30, 30);
             themedPictureBox19.TabIndex = 5;
@@ -1198,7 +1490,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox41.BackColor = Color.FromArgb(0, 109, 165);
             themedPictureBox41.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox41.Location = new Point(280, 89);
+            themedPictureBox41.Location = new Point(280, 103);
             themedPictureBox41.Name = "themedPictureBox41";
             themedPictureBox41.Size = new Size(30, 30);
             themedPictureBox41.TabIndex = 5;
@@ -1210,7 +1502,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox14.BackColor = Color.FromArgb(147, 147, 147);
             themedPictureBox14.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox14.Location = new Point(424, 53);
+            themedPictureBox14.Location = new Point(424, 67);
             themedPictureBox14.Name = "themedPictureBox14";
             themedPictureBox14.Size = new Size(30, 30);
             themedPictureBox14.TabIndex = 5;
@@ -1222,7 +1514,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox40.BackColor = Color.FromArgb(64, 64, 64);
             themedPictureBox40.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox40.Location = new Point(208, 53);
+            themedPictureBox40.Location = new Point(208, 67);
             themedPictureBox40.Name = "themedPictureBox40";
             themedPictureBox40.Size = new Size(30, 30);
             themedPictureBox40.TabIndex = 5;
@@ -1234,7 +1526,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox13.BackColor = Color.FromArgb(76, 193, 253);
             themedPictureBox13.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox13.Location = new Point(424, 89);
+            themedPictureBox13.Location = new Point(424, 103);
             themedPictureBox13.Name = "themedPictureBox13";
             themedPictureBox13.Size = new Size(30, 30);
             themedPictureBox13.TabIndex = 5;
@@ -1246,7 +1538,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox39.BackColor = Color.FromArgb(0, 72, 110);
             themedPictureBox39.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox39.Location = new Point(208, 89);
+            themedPictureBox39.Location = new Point(208, 103);
             themedPictureBox39.Name = "themedPictureBox39";
             themedPictureBox39.Size = new Size(30, 30);
             themedPictureBox39.TabIndex = 5;
@@ -1258,7 +1550,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox8.BackColor = Color.FromArgb(140, 140, 140);
             themedPictureBox8.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox8.Location = new Point(388, 53);
+            themedPictureBox8.Location = new Point(388, 67);
             themedPictureBox8.Name = "themedPictureBox8";
             themedPictureBox8.Size = new Size(30, 30);
             themedPictureBox8.TabIndex = 5;
@@ -1270,7 +1562,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox62.BackColor = Color.FromArgb(15, 15, 15);
             themedPictureBox62.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox62.Location = new Point(136, 53);
+            themedPictureBox62.Location = new Point(136, 67);
             themedPictureBox62.Name = "themedPictureBox62";
             themedPictureBox62.Size = new Size(30, 30);
             themedPictureBox62.TabIndex = 5;
@@ -1282,7 +1574,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox38.BackColor = Color.FromArgb(32, 32, 32);
             themedPictureBox38.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox38.Location = new Point(172, 53);
+            themedPictureBox38.Location = new Point(172, 67);
             themedPictureBox38.Name = "themedPictureBox38";
             themedPictureBox38.Size = new Size(30, 30);
             themedPictureBox38.TabIndex = 5;
@@ -1294,7 +1586,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox61.BackColor = Color.FromArgb(0, 17, 26);
             themedPictureBox61.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox61.Location = new Point(136, 89);
+            themedPictureBox61.Location = new Point(136, 103);
             themedPictureBox61.Name = "themedPictureBox61";
             themedPictureBox61.Size = new Size(30, 30);
             themedPictureBox61.TabIndex = 5;
@@ -1306,7 +1598,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox7.BackColor = Color.FromArgb(39, 171, 240);
             themedPictureBox7.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox7.Location = new Point(388, 89);
+            themedPictureBox7.Location = new Point(388, 103);
             themedPictureBox7.Name = "themedPictureBox7";
             themedPictureBox7.Size = new Size(30, 30);
             themedPictureBox7.TabIndex = 5;
@@ -1318,7 +1610,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox37.BackColor = Color.FromArgb(0, 36, 55);
             themedPictureBox37.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox37.Location = new Point(172, 89);
+            themedPictureBox37.Location = new Point(172, 103);
             themedPictureBox37.Name = "themedPictureBox37";
             themedPictureBox37.Size = new Size(30, 30);
             themedPictureBox37.TabIndex = 5;
@@ -1330,7 +1622,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox2.BackColor = Color.FromArgb(128, 128, 128);
             themedPictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox2.Location = new Point(352, 53);
+            themedPictureBox2.Location = new Point(352, 67);
             themedPictureBox2.Name = "themedPictureBox2";
             themedPictureBox2.Size = new Size(30, 30);
             themedPictureBox2.TabIndex = 5;
@@ -1342,7 +1634,7 @@ namespace ErrataUI.Forms
             // 
             themedPictureBox1.BackColor = Color.FromArgb(15, 150, 220);
             themedPictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            themedPictureBox1.Location = new Point(352, 89);
+            themedPictureBox1.Location = new Point(352, 103);
             themedPictureBox1.Name = "themedPictureBox1";
             themedPictureBox1.Size = new Size(30, 30);
             themedPictureBox1.TabIndex = 5;
@@ -1355,7 +1647,7 @@ namespace ErrataUI.Forms
             label17.BackColor = Color.Transparent;
             label17.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label17.ImageAlign = ContentAlignment.MiddleLeft;
-            label17.Location = new Point(527, 35);
+            label17.Location = new Point(527, 49);
             label17.Name = "label17";
             label17.Size = new Size(30, 15);
             label17.TabIndex = 3;
@@ -1367,7 +1659,7 @@ namespace ErrataUI.Forms
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label16.ImageAlign = ContentAlignment.MiddleLeft;
-            label16.Location = new Point(494, 35);
+            label16.Location = new Point(494, 49);
             label16.Name = "label16";
             label16.Size = new Size(30, 15);
             label16.TabIndex = 3;
@@ -1379,7 +1671,7 @@ namespace ErrataUI.Forms
             label15.BackColor = Color.Transparent;
             label15.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label15.ImageAlign = ContentAlignment.MiddleLeft;
-            label15.Location = new Point(458, 35);
+            label15.Location = new Point(458, 49);
             label15.Name = "label15";
             label15.Size = new Size(30, 15);
             label15.TabIndex = 3;
@@ -1391,7 +1683,7 @@ namespace ErrataUI.Forms
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label14.ImageAlign = ContentAlignment.MiddleLeft;
-            label14.Location = new Point(422, 35);
+            label14.Location = new Point(422, 49);
             label14.Name = "label14";
             label14.Size = new Size(30, 15);
             label14.TabIndex = 3;
@@ -1403,7 +1695,7 @@ namespace ErrataUI.Forms
             label13.BackColor = Color.Transparent;
             label13.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label13.ImageAlign = ContentAlignment.MiddleLeft;
-            label13.Location = new Point(386, 35);
+            label13.Location = new Point(386, 49);
             label13.Name = "label13";
             label13.Size = new Size(30, 15);
             label13.TabIndex = 3;
@@ -1415,7 +1707,7 @@ namespace ErrataUI.Forms
             label12.BackColor = Color.Transparent;
             label12.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label12.ImageAlign = ContentAlignment.MiddleLeft;
-            label12.Location = new Point(350, 35);
+            label12.Location = new Point(350, 49);
             label12.Name = "label12";
             label12.Size = new Size(30, 15);
             label12.TabIndex = 3;
@@ -1428,7 +1720,7 @@ namespace ErrataUI.Forms
             label11.BackColor = Color.Transparent;
             label11.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label11.ImageAlign = ContentAlignment.MiddleLeft;
-            label11.Location = new Point(314, 35);
+            label11.Location = new Point(314, 49);
             label11.Name = "label11";
             label11.Size = new Size(30, 15);
             label11.TabIndex = 3;
@@ -1440,7 +1732,7 @@ namespace ErrataUI.Forms
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label10.ImageAlign = ContentAlignment.MiddleLeft;
-            label10.Location = new Point(278, 35);
+            label10.Location = new Point(278, 49);
             label10.Name = "label10";
             label10.Size = new Size(30, 15);
             label10.TabIndex = 3;
@@ -1453,7 +1745,7 @@ namespace ErrataUI.Forms
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label7.ImageAlign = ContentAlignment.MiddleLeft;
-            label7.Location = new Point(134, 35);
+            label7.Location = new Point(134, 49);
             label7.Name = "label7";
             label7.Size = new Size(30, 15);
             label7.TabIndex = 3;
@@ -1465,7 +1757,7 @@ namespace ErrataUI.Forms
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label9.ImageAlign = ContentAlignment.MiddleLeft;
-            label9.Location = new Point(206, 35);
+            label9.Location = new Point(206, 49);
             label9.Name = "label9";
             label9.Size = new Size(30, 15);
             label9.TabIndex = 3;
@@ -1477,7 +1769,7 @@ namespace ErrataUI.Forms
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI Semibold", 8.25F, FontStyle.Bold);
             label8.ImageAlign = ContentAlignment.MiddleLeft;
-            label8.Location = new Point(170, 35);
+            label8.Location = new Point(170, 49);
             label8.Name = "label8";
             label8.Size = new Size(30, 15);
             label8.TabIndex = 3;
@@ -1495,7 +1787,7 @@ namespace ErrataUI.Forms
             errataSeparator1.LineRole = UIRole.SectionDivider;
             errataSeparator1.LineStack = ErrataSeparator.lineStack.Single;
             errataSeparator1.LineTheme = ThemeColorShade.Neutral_500;
-            errataSeparator1.Location = new Point(118, 53);
+            errataSeparator1.Location = new Point(118, 67);
             errataSeparator1.MinimumSize = new Size(1, 1);
             errataSeparator1.Name = "errataSeparator1";
             errataSeparator1.Offset = 2;
@@ -1507,7 +1799,7 @@ namespace ErrataUI.Forms
             // label6
             // 
             label6.BackColor = Color.Transparent;
-            label6.Location = new Point(6, 235);
+            label6.Location = new Point(6, 249);
             label6.Name = "label6";
             label6.Size = new Size(69, 30);
             label6.TabIndex = 1;
@@ -1517,7 +1809,7 @@ namespace ErrataUI.Forms
             // label3
             // 
             label3.BackColor = Color.Transparent;
-            label3.Location = new Point(6, 126);
+            label3.Location = new Point(6, 140);
             label3.Name = "label3";
             label3.Size = new Size(69, 30);
             label3.TabIndex = 1;
@@ -1527,7 +1819,7 @@ namespace ErrataUI.Forms
             // label5
             // 
             label5.BackColor = Color.Transparent;
-            label5.Location = new Point(6, 199);
+            label5.Location = new Point(6, 213);
             label5.Name = "label5";
             label5.Size = new Size(69, 30);
             label5.TabIndex = 1;
@@ -1537,7 +1829,7 @@ namespace ErrataUI.Forms
             // label2
             // 
             label2.BackColor = Color.Transparent;
-            label2.Location = new Point(6, 90);
+            label2.Location = new Point(6, 104);
             label2.Name = "label2";
             label2.Size = new Size(69, 30);
             label2.TabIndex = 1;
@@ -1547,7 +1839,7 @@ namespace ErrataUI.Forms
             // label4
             // 
             label4.BackColor = Color.Transparent;
-            label4.Location = new Point(6, 162);
+            label4.Location = new Point(6, 176);
             label4.Name = "label4";
             label4.Size = new Size(69, 30);
             label4.TabIndex = 1;
@@ -1557,7 +1849,7 @@ namespace ErrataUI.Forms
             // label1
             // 
             label1.BackColor = Color.Transparent;
-            label1.Location = new Point(6, 53);
+            label1.Location = new Point(6, 67);
             label1.Name = "label1";
             label1.Size = new Size(69, 30);
             label1.TabIndex = 1;
@@ -1567,7 +1859,7 @@ namespace ErrataUI.Forms
             // pbSemanticC
             // 
             pbSemanticC.BorderStyle = BorderStyle.FixedSingle;
-            pbSemanticC.Location = new Point(81, 233);
+            pbSemanticC.Location = new Point(81, 247);
             pbSemanticC.Name = "pbSemanticC";
             pbSemanticC.Size = new Size(30, 30);
             pbSemanticC.TabIndex = 0;
@@ -1577,7 +1869,7 @@ namespace ErrataUI.Forms
             // pbSecondary
             // 
             pbSecondary.BorderStyle = BorderStyle.FixedSingle;
-            pbSecondary.Location = new Point(81, 125);
+            pbSecondary.Location = new Point(81, 139);
             pbSecondary.Name = "pbSecondary";
             pbSecondary.Size = new Size(30, 30);
             pbSecondary.TabIndex = 0;
@@ -1587,7 +1879,7 @@ namespace ErrataUI.Forms
             // pbSemanticB
             // 
             pbSemanticB.BorderStyle = BorderStyle.FixedSingle;
-            pbSemanticB.Location = new Point(81, 197);
+            pbSemanticB.Location = new Point(81, 211);
             pbSemanticB.Name = "pbSemanticB";
             pbSemanticB.Size = new Size(30, 30);
             pbSemanticB.TabIndex = 0;
@@ -1597,7 +1889,7 @@ namespace ErrataUI.Forms
             // pbPrimary
             // 
             pbPrimary.BorderStyle = BorderStyle.FixedSingle;
-            pbPrimary.Location = new Point(81, 89);
+            pbPrimary.Location = new Point(81, 103);
             pbPrimary.Name = "pbPrimary";
             pbPrimary.Size = new Size(30, 30);
             pbPrimary.TabIndex = 0;
@@ -1607,7 +1899,7 @@ namespace ErrataUI.Forms
             // pbSemanticA
             // 
             pbSemanticA.BorderStyle = BorderStyle.FixedSingle;
-            pbSemanticA.Location = new Point(81, 161);
+            pbSemanticA.Location = new Point(81, 175);
             pbSemanticA.Name = "pbSemanticA";
             pbSemanticA.Size = new Size(30, 30);
             pbSemanticA.TabIndex = 0;
@@ -1617,7 +1909,7 @@ namespace ErrataUI.Forms
             // pbNeutral
             // 
             pbNeutral.BorderStyle = BorderStyle.FixedSingle;
-            pbNeutral.Location = new Point(81, 53);
+            pbNeutral.Location = new Point(81, 67);
             pbNeutral.Name = "pbNeutral";
             pbNeutral.Size = new Size(30, 30);
             pbNeutral.TabIndex = 0;
@@ -1702,7 +1994,7 @@ namespace ErrataUI.Forms
             cbSaturation.HighlightTextColorTheme = ThemeColorShade.Neutral_100;
             cbSaturation.IgnoreRoles = false;
             cbSaturation.IgnoreTheme = false;
-            cbSaturation.Location = new Point(283, 223);
+            cbSaturation.Location = new Point(284, 196);
             cbSaturation.Name = "cbSaturation";
             cbSaturation.Size = new Size(150, 30);
             cbSaturation.TabIndex = 25;
@@ -1744,7 +2036,7 @@ namespace ErrataUI.Forms
             cbBrightness.HighlightTextColorTheme = ThemeColorShade.Neutral_100;
             cbBrightness.IgnoreRoles = false;
             cbBrightness.IgnoreTheme = false;
-            cbBrightness.Location = new Point(284, 112);
+            cbBrightness.Location = new Point(284, 86);
             cbBrightness.Name = "cbBrightness";
             cbBrightness.Size = new Size(150, 30);
             cbBrightness.TabIndex = 25;
@@ -1766,7 +2058,7 @@ namespace ErrataUI.Forms
             errataFlatLabel4.IgnoreRoles = false;
             errataFlatLabel4.IgnoreTheme = false;
             errataFlatLabel4.LineAlignment = StringAlignment.Center;
-            errataFlatLabel4.Location = new Point(9, 177);
+            errataFlatLabel4.Location = new Point(9, 168);
             errataFlatLabel4.Name = "errataFlatLabel4";
             errataFlatLabel4.OffsetX = 0;
             errataFlatLabel4.OffsetY = 0;
@@ -1786,7 +2078,7 @@ namespace ErrataUI.Forms
             lblSaturationMid.IgnoreRoles = false;
             lblSaturationMid.IgnoreTheme = false;
             lblSaturationMid.LineAlignment = StringAlignment.Center;
-            lblSaturationMid.Location = new Point(74, 177);
+            lblSaturationMid.Location = new Point(74, 168);
             lblSaturationMid.Name = "lblSaturationMid";
             lblSaturationMid.OffsetX = 0;
             lblSaturationMid.OffsetY = 0;
@@ -1805,7 +2097,7 @@ namespace ErrataUI.Forms
             lblBrightMid.IgnoreRoles = false;
             lblBrightMid.IgnoreTheme = false;
             lblBrightMid.LineAlignment = StringAlignment.Center;
-            lblBrightMid.Location = new Point(74, 67);
+            lblBrightMid.Location = new Point(74, 58);
             lblBrightMid.Name = "lblBrightMid";
             lblBrightMid.OffsetX = 0;
             lblBrightMid.OffsetY = 0;
@@ -1824,7 +2116,7 @@ namespace ErrataUI.Forms
             errataFlatLabel3.IgnoreRoles = false;
             errataFlatLabel3.IgnoreTheme = false;
             errataFlatLabel3.LineAlignment = StringAlignment.Center;
-            errataFlatLabel3.Location = new Point(9, 67);
+            errataFlatLabel3.Location = new Point(9, 58);
             errataFlatLabel3.Name = "errataFlatLabel3";
             errataFlatLabel3.OffsetX = 0;
             errataFlatLabel3.OffsetY = 0;
@@ -1844,7 +2136,7 @@ namespace ErrataUI.Forms
             errataFlatLabel1.IgnoreRoles = false;
             errataFlatLabel1.IgnoreTheme = false;
             errataFlatLabel1.LineAlignment = StringAlignment.Center;
-            errataFlatLabel1.Location = new Point(9, 36);
+            errataFlatLabel1.Location = new Point(9, 37);
             errataFlatLabel1.Name = "errataFlatLabel1";
             errataFlatLabel1.OffsetX = 0;
             errataFlatLabel1.OffsetY = 0;
@@ -1948,10 +2240,10 @@ namespace ErrataUI.Forms
             escSaturation.MarkerColorRole = UIRole.ChartSecondary;
             escSaturation.MarkerColorTheme = ThemeColorShade.Secondary_500;
             escSaturation.Name = "escSaturation";
-            escSaturation.Size = new Size(315, 75);
+            escSaturation.Size = new Size(315, 48);
             escSaturation.TabIndex = 8;
             escSaturation.Text = "errataSimpleChart2";
-            escSaturation.Type = ErrataGraphSimpleChart.ControlType.Line;
+            escSaturation.Type = ErrataSimpleChart.ControlType.Line;
             escSaturation.VerticalBuffer = 0.05F;
             // 
             // errataFlatLabel2
@@ -1964,7 +2256,7 @@ namespace ErrataUI.Forms
             errataFlatLabel2.IgnoreRoles = false;
             errataFlatLabel2.IgnoreTheme = false;
             errataFlatLabel2.LineAlignment = StringAlignment.Center;
-            errataFlatLabel2.Location = new Point(9, 147);
+            errataFlatLabel2.Location = new Point(9, 148);
             errataFlatLabel2.Name = "errataFlatLabel2";
             errataFlatLabel2.OffsetX = 0;
             errataFlatLabel2.OffsetY = 0;
@@ -2028,10 +2320,10 @@ namespace ErrataUI.Forms
             escBrightness.MarkerColorRole = UIRole.ChartSecondary;
             escBrightness.MarkerColorTheme = ThemeColorShade.Secondary_500;
             escBrightness.Name = "escBrightness";
-            escBrightness.Size = new Size(311, 75);
+            escBrightness.Size = new Size(311, 49);
             escBrightness.TabIndex = 4;
             escBrightness.Text = "errataSimpleChart1";
-            escBrightness.Type = ErrataGraphSimpleChart.ControlType.Line;
+            escBrightness.Type = ErrataSimpleChart.ControlType.Line;
             escBrightness.VerticalBuffer = 0.05F;
             // 
             // errataFlatLabel5
@@ -2043,7 +2335,7 @@ namespace ErrataUI.Forms
             errataFlatLabel5.IgnoreRoles = false;
             errataFlatLabel5.IgnoreTheme = false;
             errataFlatLabel5.LineAlignment = StringAlignment.Center;
-            errataFlatLabel5.Location = new Point(147, 226);
+            errataFlatLabel5.Location = new Point(147, 200);
             errataFlatLabel5.Name = "errataFlatLabel5";
             errataFlatLabel5.OffsetX = 0;
             errataFlatLabel5.OffsetY = 0;
@@ -2062,7 +2354,7 @@ namespace ErrataUI.Forms
             errataFlatLabel6.IgnoreRoles = false;
             errataFlatLabel6.IgnoreTheme = false;
             errataFlatLabel6.LineAlignment = StringAlignment.Center;
-            errataFlatLabel6.Location = new Point(147, 115);
+            errataFlatLabel6.Location = new Point(147, 89);
             errataFlatLabel6.Name = "errataFlatLabel6";
             errataFlatLabel6.OffsetX = 0;
             errataFlatLabel6.OffsetY = 0;
@@ -2124,11 +2416,11 @@ namespace ErrataUI.Forms
             errataGroupPanel1.IgnoreTheme = false;
             errataGroupPanel1.LeftPadding = 8;
             errataGroupPanel1.LetterSpacing = -3.5F;
-            errataGroupPanel1.Location = new Point(6, 319);
+            errataGroupPanel1.Location = new Point(6, 384);
             errataGroupPanel1.Name = "errataGroupPanel1";
             errataGroupPanel1.Padding = new Padding(0, 26, 0, 0);
             errataGroupPanel1.ShowCaptionLine = true;
-            errataGroupPanel1.Size = new Size(611, 265);
+            errataGroupPanel1.Size = new Size(611, 235);
             errataGroupPanel1.TabIndex = 28;
             errataGroupPanel1.TopPadding = 6;
             // 
@@ -2141,7 +2433,7 @@ namespace ErrataUI.Forms
             errataFlatLabel7.IgnoreRoles = false;
             errataFlatLabel7.IgnoreTheme = false;
             errataFlatLabel7.LineAlignment = StringAlignment.Center;
-            errataFlatLabel7.Location = new Point(456, 114);
+            errataFlatLabel7.Location = new Point(456, 101);
             errataFlatLabel7.Name = "errataFlatLabel7";
             errataFlatLabel7.OffsetX = 0;
             errataFlatLabel7.OffsetY = 0;
@@ -2159,7 +2451,7 @@ namespace ErrataUI.Forms
             togDarkMode.IgnoreRoles = true;
             togDarkMode.IgnoreTheme = false;
             togDarkMode.IsChecked = false;
-            togDarkMode.Location = new Point(544, 113);
+            togDarkMode.Location = new Point(544, 100);
             togDarkMode.Name = "togDarkMode";
             togDarkMode.OffBackColor = Color.FromArgb(186, 186, 186);
             togDarkMode.OffBackRole = UIRole.ModalBackground;
@@ -2217,11 +2509,11 @@ namespace ErrataUI.Forms
             errataSeparator4.LineRole = UIRole.SectionDivider;
             errataSeparator4.LineStack = ErrataSeparator.lineStack.Single;
             errataSeparator4.LineTheme = ThemeColorShade.Primary_500;
-            errataSeparator4.Location = new Point(440, 42);
+            errataSeparator4.Location = new Point(440, 40);
             errataSeparator4.MinimumSize = new Size(1, 1);
             errataSeparator4.Name = "errataSeparator4";
             errataSeparator4.Offset = 2;
-            errataSeparator4.Size = new Size(10, 211);
+            errataSeparator4.Size = new Size(12, 187);
             errataSeparator4.TabIndex = 28;
             errataSeparator4.Text = "errataSeparator4";
             errataSeparator4.Thickness = 2F;
@@ -2253,7 +2545,7 @@ namespace ErrataUI.Forms
             btnSaveTheme.IgnoreMouseForeColor = true;
             btnSaveTheme.IgnoreRoles = false;
             btnSaveTheme.IgnoreTheme = false;
-            btnSaveTheme.Location = new Point(458, 217);
+            btnSaveTheme.Location = new Point(458, 192);
             btnSaveTheme.MouseDownBackColor = Color.FromArgb(38, 140, 69);
             btnSaveTheme.MouseDownBackColorRole = UIRole.PrimaryButtonBackground;
             btnSaveTheme.MouseDownBackColorTheme = ThemeColorShade.SemanticA_400;
@@ -2302,7 +2594,7 @@ namespace ErrataUI.Forms
             btnLoadTheme.IgnoreMouseForeColor = true;
             btnLoadTheme.IgnoreRoles = false;
             btnLoadTheme.IgnoreTheme = false;
-            btnLoadTheme.Location = new Point(458, 176);
+            btnLoadTheme.Location = new Point(458, 151);
             btnLoadTheme.MouseDownBackColor = Color.FromArgb(39, 171, 240);
             btnLoadTheme.MouseDownBackColorRole = UIRole.PrimaryButtonBackground;
             btnLoadTheme.MouseDownBackColorTheme = ThemeColorShade.Primary_400;
@@ -2328,7 +2620,7 @@ namespace ErrataUI.Forms
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(626, 592);
+            ClientSize = new Size(626, 629);
             Controls.Add(errataGroupPanel1);
             Controls.Add(errataGroupPanel2);
             FormTitle = "Theme Manager";
@@ -2343,6 +2635,14 @@ namespace ErrataUI.Forms
             Controls.SetChildIndex(errataGroupPanel2, 0);
             Controls.SetChildIndex(errataGroupPanel1, 0);
             errataGroupPanel2.ResumeLayout(false);
+            errataGroupPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbAccentG).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentF).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentE).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentD).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentC).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentB).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbAccentA).EndInit();
             ((System.ComponentModel.ISupportInitialize)themeManagerPictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)themeManagerPictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)themeManagerPictureBox9).EndInit();
@@ -2539,10 +2839,10 @@ namespace ErrataUI.Forms
         private ThemeManagerPictureBox themeManagerPictureBox11;
         private ThemeManagerPictureBox themeManagerPictureBox12;
         private Label label19;
-        private ErrataGraphSimpleChart escBrightness;
+        private ErrataSimpleChart escBrightness;
         private ErrataFlatLabel errataFlatLabel1;
         private ErrataFlatLabel errataFlatLabel2;
-        private ErrataGraphSimpleChart escSaturation;
+        private ErrataSimpleChart escSaturation;
         private ErrataSeparator errataSeparator2;
         private ErrataFlatLabel errataFlatLabel3;
         private ErrataSeparator errataSeparator3;
@@ -2560,5 +2860,24 @@ namespace ErrataUI.Forms
         private ErrataSeparator errataSeparator4;
         private ErrataFlatLabel errataFlatLabel7;
         private ErrataToggleSwitch togDarkMode;
+        private PictureBox pbAccentB;
+        private PictureBox pbAccentA;
+        private ErrataSeparator errataSeparator5;
+        private Label label26;
+        private Label label25;
+        private Label label24;
+        private Label label23;
+        private Label label22;
+        private Label label21;
+        private Label label20;
+        private PictureBox pbAccentG;
+        private PictureBox pbAccentF;
+        private PictureBox pbAccentE;
+        private PictureBox pbAccentD;
+        private PictureBox pbAccentC;
+        private ErrataFlatLabel errataFlatLabel9;
+        private ErrataSeparator errataSeparator7;
+        private ErrataFlatLabel errataFlatLabel8;
+        private ErrataSeparator errataSeparator6;
     }
 }

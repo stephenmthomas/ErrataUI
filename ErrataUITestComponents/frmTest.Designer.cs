@@ -151,7 +151,7 @@
             errataGroupPanelShadow1.IgnoreTheme = false;
             errataGroupPanelShadow1.LeftPadding = 8;
             errataGroupPanelShadow1.LetterSpacing = -3.5F;
-            errataGroupPanelShadow1.Location = new Point(304, 90);
+            errataGroupPanelShadow1.Location = new Point(320, 58);
             errataGroupPanelShadow1.Margin = new Padding(0);
             errataGroupPanelShadow1.Name = "errataGroupPanelShadow1";
             errataGroupPanelShadow1.Padding = new Padding(7, 13, 7, 7);
@@ -238,7 +238,7 @@
             eDrawer.IsExpanded = false;
             eDrawer.Location = new Point(1, 30);
             eDrawer.Name = "eDrawer";
-            eDrawer.Size = new Size(50, 569);
+            eDrawer.Size = new Size(50, 648);
             eDrawer.TabIndex = 8;
             // 
             // errataPanel2
@@ -268,7 +268,7 @@
             errataPanel2.GradientColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Primary_600;
             errataPanel2.IgnoreRoles = false;
             errataPanel2.IgnoreTheme = false;
-            errataPanel2.Location = new Point(0, 44);
+            errataPanel2.Location = new Point(0, 123);
             errataPanel2.Name = "errataPanel2";
             errataPanel2.RadiusBorderColor = Color.FromArgb(115, 115, 115);
             errataPanel2.RadiusBorderRole = ErrataUI.ThemeManager.UIRole.GeneralBorders;
@@ -874,7 +874,7 @@
             errataFlatMenuStrip1.SeparatorColor = Color.FromArgb(250, 250, 250);
             errataFlatMenuStrip1.SeparatorColorRole = ErrataUI.ThemeManager.UIRole.EmphasizedBorders;
             errataFlatMenuStrip1.SeparatorColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_100;
-            errataFlatMenuStrip1.Size = new Size(501, 24);
+            errataFlatMenuStrip1.Size = new Size(513, 24);
             errataFlatMenuStrip1.TabIndex = 9;
             errataFlatMenuStrip1.Text = "errataFlatMenuStrip1";
             errataFlatMenuStrip1.TextColor = Color.FromArgb(212, 212, 212);
@@ -979,7 +979,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 255);
             BackColorTheme = ErrataUI.ThemeManager.ThemeColorShade.Neutral_50;
-            ClientSize = new Size(553, 600);
+            ClientSize = new Size(565, 679);
             Controls.Add(errataFlatMenuStrip1);
             Controls.Add(eDrawer);
             Controls.Add(errataGroupPanelShadow1);

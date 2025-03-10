@@ -40,6 +40,49 @@ namespace ErrataUI
             }
         }
 
+        private int _borderPadX = 0;
+        [Category("Misc")]
+        public int BorderPadX
+        {
+            get => _borderPadX;
+            set
+            {
+                _borderPadX = value; Invalidate();
+            }
+        }
+
+        private int _borderPadY = 0;
+        [Category("Misc")]
+        public int BorderPadY
+        {
+            get => _borderPadY;
+            set
+            {
+                _borderPadY = value; Invalidate();
+            }
+        }
+
+        private int _borderPadH = 0;
+        [Category("Misc")]
+        public int BorderPadH
+        {
+            get => _borderPadH;
+            set
+            {
+                _borderPadH = value; Invalidate();
+            }
+        }
+
+        private int _borderPadW = 0;
+        [Category("Misc")]
+        public int BorderPadW
+        {
+            get => _borderPadW;
+            set
+            {
+                _borderPadW = value; Invalidate();
+            }
+        }
 
         #region BACKCOLOR
         //BACKCOLOR
@@ -502,7 +545,7 @@ namespace ErrataUI
         {
             using (Pen borderPen = new Pen(_borderColor, _borderWidth))
             {
-                Rectangle borderRect = new Rectangle(0, 0, Width - 1, Height - 1);
+                Rectangle borderRect = new Rectangle(0 + _borderPadX, 0 + _borderPadY, Width - 1 - _borderPadW, Height - 1 - _borderPadH);
                 g.DrawRectangle(borderPen, borderRect);
             }
         }
